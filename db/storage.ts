@@ -1,0 +1,2 @@
+import { env } from 'cloudflare:workers';
+export async function storage(){const db=env.DB;if(!db)throw new Error('No se puede acceder al almacenamiento.');await db.batch([db.prepare('CREATE TABLE IF NOT EXISTS projects (id TEXT PRIMARY KEY, payload TEXT NOT NULL, revision INTEGER NOT NULL DEFAULT 1)'),db.prepare('CREATE TABLE IF NOT EXISTS ideas (id TEXT PRIMARY KEY, payload TEXT NOT NULL)'),db.prepare('CREATE TABLE IF NOT EXISTS events (id TEXT PRIMARY KEY, project_id TEXT NOT NULL, date TEXT NOT NULL, title TEXT NOT NULL)')]);return db;}
