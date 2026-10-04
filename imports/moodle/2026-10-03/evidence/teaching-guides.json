@@ -1,0 +1,698 @@
+[
+  {
+    "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=7",
+    "final_url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=7",
+    "status": 200,
+    "title": "Guia docente 2026_27 Escola Superior de Enxeñaría Informática",
+    "text": "GalegoCastellanoEnglish\n2026_27\n2025_26\n2024_25\n2023_24\n2022_23\n2021_22\n2020_21\n2019_20\n2018_19\n2017_18\n2016_17\n2015_16\n2014_15\n2013_14\n2012_13\n2011_12\n2010_11\n2009_10\nUtilidades\nGuia docente 2026_27Escola Superior de Enxeñaría Informática\nCentro\nPresentación\nOrganigrama\nLocalización\nNormativa e lexislación\nServizos do centro \nTitulacións \nGrao Grao en Enxeñaría Informática\nGrao en Intelixencia Artificial\nMestrado Máster Universitario en Enxeñaría Informática\nMáster universitario en Intelixencia artificial\nInformación de interese\nWeb principal \nSecretaría\nBibliografía \nGrao en Enxeñaría Informática Materias  Seguridade en sistemas informáticos   Avaliación \ngalego\ncastellano\nDATOS IDENTIFICATIVOS\n2026_27\nMateria\nSeguridade en sistemas informáticos\nCódigo\nO06G151V01401\nTitulación\nGrao en Enxeñaría Informática \nDescritores\nCr.totais\nSinale\nCurso\nCuadrimestre\n6\nOB\n4\n1c\nResultados de Formación e AprendizaxeResultados previstos na materiaContidosPlanificaciónMetodoloxía docenteAtención personalizadaAvaliaciónBibliografía. Fontes de informaciónRecomendacións\nDescrición\nCualificación\nResultados de Formación e Aprendizaxe \nPrácticas de laboratorio \n* Avaliación das competencias revisadas no proxecto de programación con APIs criptográficas. \nEntregarase o código desenvolvido xunta con unha pequena memoria explicativa. Avaliarase a idoneidade e o uso eficaz das diversas técnicas criptográficas que sexa preciso empregar, xunto coa calidade da implementación realizada.\n* Avaliación das competencias revisadas nas sesións de laboratorio relativas a seguridade en redes e sistemas operativos. \nO guión de cada actividade proposta incluirá unha serie de cuestións teóricas e/ou comprobacións prácticas relacionadas co contido da práctica. A avaliación de cada un destes traballos farease mediante (1) a entrega dun \"informe da práctica\" que incluirá a descripcion das tarefas realizadas e a resposta ás cuestións/comprobacións e (2) a realización dun cuestionario de resposta múltipe (presencial e/ou online) unha vez entregado na plataforma o \"informe\" de cada práctica.\n- PUNTUACIÓN MÍNIMA: 4 puntos sobre 10\n- RESULTADOS ESPERADOS: RA1, RA2, RA3, RA4, RA5 \n45 \nA2 \nB3 B4 B7 \nC7 C29 C32 C34 \nD7 D8 D9 D11 D14 \nPresentación \nAvaliación da presentación do traballo tutelado. Avaliarase a capacidade de síntese e de comunicación das ideas másis relevante, así como o fomento da discusión e a defensa/aclaración das dúbidas ou cuestións presentadas. \n- PUNTUACIÓN MÍNIMA: non hai mínimo\n- RESULTADOS ESPERADOS: RA2, RA3, RA4, RA5 \n5 \nA3 \nB7 B12 \nC7 C29 C37 \nD4 D7 \nExame de preguntas obxectivas \nProba escrita onde se avaliarán os contidos e competencias revisados nas sesións maxistrais e os aspectos teóricos da súa posta en práctica levada a cabo nas sesión prácticas. O tipo de proba consitirá nun conxunto de cuestións tipo test ou de resposta curta sobre conceptos concretos. A súa finalidade será comprobar a asimilación dos mesmos e a capacidade do alumnado para relacionar entre sí os diversos contidos teórico e técnicas presentados no curso. \n- PUNTUACIÓN MÍNIMA: 4 puntos sobre 10\n- RESULTADOS ESPERADOS: RA1, RA2, RA3, RA4, RA5 \n40\nA3 \nB3 B7 \nC7 C29 C32 C34 C37 \nD4 D7 D8 \nTraballo \nAvaliación da memoria do traballo de investigación tutelado. Avaliarase a capacidade de síntese e a completitude e adecuada presentación das ideas e conceptos relativos ao tema escollido. \n- PUNTUACIÓN MÍNIMA: non hai mínimo\n- RESULTADOS ESPERADOS: RA2, RA3, RA4, RA5 \n10\nA3 \nB7 B12 \nC7 C29 C37 \nD4 D7 D9 D11 \nOutros comentarios sobre a Avaliación \n(1) SISTEMA DE AVALIACIÓN CONTINUAPROBA 1: Proxecto de cifrado coa API de JavaDescripción: Avaliación do código e a memoria do proxecto de desenvolvementeo emprgando a API de cifrado JCA.Metodoloxía(s): Prácticas de laboratorio% Calificación: 10%% Mínimo: 4 puntos sobre 10RFAs avaliados: B3, C7, C32Resultados esperados:   RA1 PROBA 2: Prácticas guiadas Descripción: Avaliación dos entregables (70%) e  dos cuestionarios  (30%) correspondentes ás prácticas guiadas propostasMetodoloxía(s): Prácticas de laboratorio% Calificación: 35%% Mínimo: 4 puntos sobre 10RFAs avaliados: A2,B3,B4,B7,C7,C29,C32,C34,D7,D8,D9,D11,D14Resultados esperados:   RA2, RA3, RA4, RA5PROBA 3:Traballo tuteladoDescripción: Avaliación da memoria do traballo de investigación tuteladoMetodoloxía(s): Traballo% Calificación: 10%% Mínimo: non hai mínimoRFAs avaliados: A3,B7,B12,C7,C29,C37,D4,D7,D9,D11Resultados esperados: RA2, RA3, RA4, RA5PROBA 4: PresentaciónDescripción: Avaliación da presentación do traballo de investigación tuteladoMetodoloxía(s): Presentación% Calificación: 5%% Mínimo: non hai mínimoRFAs avaliados: A3,B7,B12,C7,C29,C37,D4,D7Resultados esperados: RA2, RA3, RA4, RA5PROBA 5:Exame finalDescripción: Exame tipo test sobre os contenidos teóricos da materiaMetodoloxía(s): Exame de preguntas obxectivas% Calificación: 40%% Mínimo: 4 puntos sobre 10RFAs avaliados: A3,B3,B7,C7,C29,C32,C34,C37,D4,D7,D8Resultados esperados: RA1, RA2, RA3, RA4, RA5ACLARACIÓNS ADICIONAISPara superar a materia é preciso alcanzar os mínimos indicados nas probas anteriores e sumar na nota final ponderada un mínimo de 5 puntos sobre 10.No caso de constatar un comportamiento non ético (copia, plaxio) nalgunha das entregas realizadas (total ou parcial), anularáse a totalidad da contribución do correspondiente elemento de avaliación sobre la cualificación final (2) SISTEMA DE AVALIACIÓN GLOBALProcedemento para a elección da modalidad de avaliación global: Asúmese por defecto a modalidad de avaliación contínua. Os alumnos que opten pola avaliación global deberán comunicalo via Moovi, mediante os mecanismos que se habiliten e no prazo estipulado, una vez superado un mes dende o comenzo do cuatrimestrePROBA 1: Proxecto de cifrado coa API de JavaDescripción: Avaliación do código e da memoria do proxecto de desenvolvemento empregando a API de cifrado JCA.Metodoloxía(s): Prácticas de laboratorio% Calificación: 10%% Mínimo: 5 puntos sobre 10RFAs avaliados: B3, C7, C32Resultados esperados:  RA1PROBA 2: Prácticas guiadas Descripción:  Avaliación dos entregables (70%) e  dos cuestionarios  (30%) correspondentes ás prácticas guiadas propostasMetodoloxía(s): Prácticas de laboratorio% Calificación: 35%% Mínimo: 5 puntos sobre 10RFAs avaliados: A2,B3,B4,B7,C7,C29,C32,C34,D7,D8,D9,D11,D14Resultados esperados:   RA2, RA3, RA4, RA5PROBA 3: Exame finalDescripción: Exame tipo test sobre ls contidos teóricos da materiaMetodoloxía(s): Exame de preguntas obxectivas% Calificación: 55%% Mínimo: 5 puntos sobre 10RFAs avaliados: A3,B3,B7,C7,C29,C32,C34,C37,D4,D7,D8Resultados esperados: RA1, RA2, RA3, RA4, RA5ACLARACIÓNS ADICIONAISPara superar a materia é preciso alcanzar os mínimos indicados nas probas anteriores e sumar na nota final ponderada un mínimo de 5 puntos sobre 10.No caso de constatar un comportamento non ético (copia, plaxio) nalgunha das entregas realizadas (total ou parcial), anularáse a totalidade da contribución do correspondente elemento de avaliaicón sobre la calificación final (3) CRITERIOS DE AVALIACIÓN PARA A CONVOCATORIA EXTRAORDINARIA E FIN DE CARREIRAEmpregaránse os sistemas de avaliación continua e global expostos anteriormente.Nestas convocatorias, os alumnos so deberán realizar as probas nas que non teñan obtido a cualificación mínima indicada.(4) PROCESO DE CALIFICACIÓN DE ACTASNo caso dos alumnos que superen parte dos elementos avaliados, pero non acaden o mínimo preciso para aprobar a materia completa, a calificación a incluir nas respectivas actas calcularase coma o mínimo entre el promedio ponderado das partes superadas e 4,9.(5) DATAS DE AVALIACIÓNAs datas oficiais de exame das diferentes convocatorias, aprobadas oficialmente pola Xunta de Centro da ESEI, atópanse publicadas na páxina web da ESEI https://esei.uvigo.es/docencia/exames/.(6) EMPREGO DE DISPOSITIVOS MÓBILESLémbrase a todo o alumnado a prohibición do uso de dispositivos móbiles en exercicios e prácticas, en cumprimento do artigo 13.2.d) do Estatuto do Estudante Universitario, relativo aos deberes do estudantado universitario, que establece o deber de \"Absterse da utilización ou cooperación en procedementos fraudulentos nas probas de avaliación, nos traballos que se realicen ou en documentos oficiais da universidade.\"(7) CONSULTA/SOLICITUDE DE TITORÍASAs titorías pódense consultar a través da páxina persoal do profesorado, accesible a través de https://esei.uvigo.es/docencia/profesorado/(8) USO DA INTELIXENCIA ARTIFICIALA IA está limitada nalgunhas probas de avaliación, tanto continuas como globais.A IA está limitada nalgunhas actividades docentes.As probas nas que estea permitido o uso da IA serán convenientemente notificadas por parte do PDI. Ademais, toda persoa que empregue IA en traballos académicos, científicos, creativos, administrativos ou de investigación deberá declarar a ferramenta utilizada, a función realizada, o alcance da súa intervención e a parte do traballo que constitúe autoría humana.(9) DETECCIÓN DE PLAXIONo caso de detección de copia ou plaxio en calquera das probas de avaliación (continua ou global), a cualificación final será de SUSPENSO (0) e o feito será comunicado á Dirección do Centro para os efectos oportunos.\nUniversidade de Vigo\n| \nReitoría |\nCampus Universitario |\nC.P. 36.310 Vigo (Pontevedra) |\nEspaña |\nTlf: +34 986 812 000",
+    "links": [
+      {
+        "label": "",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/"
+      },
+      {
+        "label": "Galego",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=7&idioma=gal"
+      },
+      {
+        "label": "Castellano",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=7&idioma=cast"
+      },
+      {
+        "label": "English",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=7&idioma=eng"
+      },
+      {
+        "label": "",
+        "url": "https://www.facebook.com/uvigo"
+      },
+      {
+        "label": "",
+        "url": "https://twitter.com/uvigo"
+      },
+      {
+        "label": "",
+        "url": "https://www.youtube.com/user/uvigo"
+      },
+      {
+        "label": "Utilidades",
+        "url": "https://secretaria.uvigo.gal/uvigo_gl/utilidades/"
+      },
+      {
+        "label": "Centro",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&apartat=7"
+      },
+      {
+        "label": "Presentación",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/?centre=106&apartat=7&subapartat=88"
+      },
+      {
+        "label": "Organigrama",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/?centre=106&apartat=7&subapartat=92"
+      },
+      {
+        "label": "Localización",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/?centre=106&apartat=7&subapartat=89"
+      },
+      {
+        "label": "Normativa e lexislación",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/?centre=106&apartat=7&subapartat=90"
+      },
+      {
+        "label": "Servizos do centro",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/?centre=106&apartat=7&subapartat=91"
+      },
+      {
+        "label": "Titulacións",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=null"
+      },
+      {
+        "label": "Grao en Enxeñaría Informática",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01"
+      },
+      {
+        "label": "Grao en Intelixencia Artificial",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G460V01"
+      },
+      {
+        "label": "Máster Universitario en Enxeñaría Informática",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=10415-SV01"
+      },
+      {
+        "label": "Máster universitario en Intelixencia artificial",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06M193V01"
+      },
+      {
+        "label": "Información de interese",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&apartat=info"
+      },
+      {
+        "label": "Web principal",
+        "url": "https://www.uvigo.gal/"
+      },
+      {
+        "label": "Secretaría",
+        "url": "https://secretaria.uvigo.gal/"
+      },
+      {
+        "label": "Bibliografía",
+        "url": "https://perseo.uvigo.gal/discovery/search?query=course_name,contains,,&query=course_department_name,contains,,&tab=CourseReserves&search_scope=CourseReserves&vid=34CISUG_UVIGO:VU1&lang=gl&mode=advanced&offset=0"
+      },
+      {
+        "label": "Grao en Enxeñaría Informática",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&idioma_assig="
+      },
+      {
+        "label": "Materias",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&consulta=assignatures&idioma_assig="
+      },
+      {
+        "label": "Seguridade en sistemas informáticos",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01401&idioma_assig="
+      },
+      {
+        "label": "galego",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=7&idioma_assig=gal"
+      },
+      {
+        "label": "castellano",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=7&idioma_assig=cast"
+      },
+      {
+        "label": "DATOS IDENTIFICATIVOS",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01401&idioma_assig="
+      },
+      {
+        "label": "Resultados de Formación e Aprendizaxe",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=1&idioma_assig="
+      },
+      {
+        "label": "Resultados previstos na materia",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=2&idioma_assig="
+      },
+      {
+        "label": "Contidos",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=3&idioma_assig="
+      },
+      {
+        "label": "Planificación",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=4&idioma_assig="
+      },
+      {
+        "label": "Metodoloxía docente",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=5&idioma_assig="
+      },
+      {
+        "label": "Atención personalizada",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=6&idioma_assig="
+      },
+      {
+        "label": "Avaliación",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=7&idioma_assig="
+      },
+      {
+        "label": "Bibliografía. Fontes de información",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=8&idioma_assig="
+      },
+      {
+        "label": "Recomendacións",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=9&idioma_assig="
+      },
+      {
+        "label": "Universidade de Vigo",
+        "url": "http://www.uvigo.gal/"
+      }
+    ],
+    "dates": [],
+    "consulted_at": "2026-10-03T18:09:59.375Z"
+  },
+  {
+    "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=8",
+    "final_url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=8",
+    "status": 200,
+    "title": "Guia docente 2026_27 Escola Superior de Enxeñaría Informática",
+    "text": "GalegoCastellanoEnglish\n2026_27\n2025_26\n2024_25\n2023_24\n2022_23\n2021_22\n2020_21\n2019_20\n2018_19\n2017_18\n2016_17\n2015_16\n2014_15\n2013_14\n2012_13\n2011_12\n2010_11\n2009_10\nUtilidades\nGuia docente 2026_27Escola Superior de Enxeñaría Informática\nCentro\nPresentación\nOrganigrama\nLocalización\nNormativa e lexislación\nServizos do centro \nTitulacións \nGrao Grao en Enxeñaría Informática\nGrao en Intelixencia Artificial\nMestrado Máster Universitario en Enxeñaría Informática\nMáster universitario en Intelixencia artificial\nInformación de interese\nWeb principal \nSecretaría\nBibliografía \nGrao en Enxeñaría Informática Materias  Seguridade en sistemas informáticos   Bibliografía. Fontes de información \ngalego\ncastellano\nDATOS IDENTIFICATIVOS\n2026_27\nMateria\nSeguridade en sistemas informáticos\nCódigo\nO06G151V01401\nTitulación\nGrao en Enxeñaría Informática \nDescritores\nCr.totais\nSinale\nCurso\nCuadrimestre\n6\nOB\n4\n1c\nResultados de Formación e AprendizaxeResultados previstos na materiaContidosPlanificaciónMetodoloxía docenteAtención personalizadaAvaliaciónBibliografía. Fontes de informaciónRecomendacións\nBibliografía Básica\nW. Stallings, Cryptography and Network Security: Principles and Practice, 978-1292158587, 7th edition, Prentice Hall, 2017 \nW. Stallings, L. Brown, Computer Security: Principles and Practice, 978-0134794105, 4rd edition, Prentice Hall, 2018 \nJ. L. García Rambla, Ataques en redes de datos IPv4 e IPv6, 978-8409240630, 2da edición, 0xWORD, 2014 \nBibliografía Complementaria\nCarlos Álvarez Martín y Pablo González Pérez, Hardening de servidores GNU / Linux, 978-84-09-24061-6, 4ª edición, 0xWORD, 2020 \nDarril Gibson, Microsoft Windows Security Essentials, 978-1118016848, 1st Edition, John Wiley and Sons, 2011 \nUniversidade de Vigo\n| \nReitoría |\nCampus Universitario |\nC.P. 36.310 Vigo (Pontevedra) |\nEspaña |\nTlf: +34 986 812 000",
+    "links": [
+      {
+        "label": "",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/"
+      },
+      {
+        "label": "Galego",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=8&idioma=gal"
+      },
+      {
+        "label": "Castellano",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=8&idioma=cast"
+      },
+      {
+        "label": "English",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=8&idioma=eng"
+      },
+      {
+        "label": "",
+        "url": "https://www.facebook.com/uvigo"
+      },
+      {
+        "label": "",
+        "url": "https://twitter.com/uvigo"
+      },
+      {
+        "label": "",
+        "url": "https://www.youtube.com/user/uvigo"
+      },
+      {
+        "label": "Utilidades",
+        "url": "https://secretaria.uvigo.gal/uvigo_gl/utilidades/"
+      },
+      {
+        "label": "Centro",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&apartat=7"
+      },
+      {
+        "label": "Presentación",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/?centre=106&apartat=7&subapartat=88"
+      },
+      {
+        "label": "Organigrama",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/?centre=106&apartat=7&subapartat=92"
+      },
+      {
+        "label": "Localización",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/?centre=106&apartat=7&subapartat=89"
+      },
+      {
+        "label": "Normativa e lexislación",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/?centre=106&apartat=7&subapartat=90"
+      },
+      {
+        "label": "Servizos do centro",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/?centre=106&apartat=7&subapartat=91"
+      },
+      {
+        "label": "Titulacións",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=null"
+      },
+      {
+        "label": "Grao en Enxeñaría Informática",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01"
+      },
+      {
+        "label": "Grao en Intelixencia Artificial",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G460V01"
+      },
+      {
+        "label": "Máster Universitario en Enxeñaría Informática",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=10415-SV01"
+      },
+      {
+        "label": "Máster universitario en Intelixencia artificial",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06M193V01"
+      },
+      {
+        "label": "Información de interese",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&apartat=info"
+      },
+      {
+        "label": "Web principal",
+        "url": "https://www.uvigo.gal/"
+      },
+      {
+        "label": "Secretaría",
+        "url": "https://secretaria.uvigo.gal/"
+      },
+      {
+        "label": "Bibliografía",
+        "url": "https://perseo.uvigo.gal/discovery/search?query=course_name,contains,,&query=course_department_name,contains,,&tab=CourseReserves&search_scope=CourseReserves&vid=34CISUG_UVIGO:VU1&lang=gl&mode=advanced&offset=0"
+      },
+      {
+        "label": "Grao en Enxeñaría Informática",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&idioma_assig="
+      },
+      {
+        "label": "Materias",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&consulta=assignatures&idioma_assig="
+      },
+      {
+        "label": "Seguridade en sistemas informáticos",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01401&idioma_assig="
+      },
+      {
+        "label": "galego",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=8&idioma_assig=gal"
+      },
+      {
+        "label": "castellano",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=8&idioma_assig=cast"
+      },
+      {
+        "label": "DATOS IDENTIFICATIVOS",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01401&idioma_assig="
+      },
+      {
+        "label": "Resultados de Formación e Aprendizaxe",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=1&idioma_assig="
+      },
+      {
+        "label": "Resultados previstos na materia",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=2&idioma_assig="
+      },
+      {
+        "label": "Contidos",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=3&idioma_assig="
+      },
+      {
+        "label": "Planificación",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=4&idioma_assig="
+      },
+      {
+        "label": "Metodoloxía docente",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=5&idioma_assig="
+      },
+      {
+        "label": "Atención personalizada",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=6&idioma_assig="
+      },
+      {
+        "label": "Avaliación",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=7&idioma_assig="
+      },
+      {
+        "label": "Bibliografía. Fontes de información",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=8&idioma_assig="
+      },
+      {
+        "label": "Recomendacións",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=9&idioma_assig="
+      },
+      {
+        "label": "Universidade de Vigo",
+        "url": "http://www.uvigo.gal/"
+      }
+    ],
+    "dates": [],
+    "consulted_at": "2026-10-03T18:09:59.222Z"
+  },
+  {
+    "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01301&fitxa_apartat=7",
+    "final_url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01301&fitxa_apartat=7",
+    "status": 200,
+    "title": "Guia docente 2026_27 Escola Superior de Enxeñaría Informática",
+    "text": "GalegoCastellanoEnglish\n2026_27\n2025_26\n2024_25\n2023_24\n2022_23\n2021_22\n2020_21\n2019_20\n2018_19\n2017_18\n2016_17\n2015_16\n2014_15\n2013_14\n2012_13\n2011_12\n2010_11\n2009_10\nUtilidades\nGuia docente 2026_27Escola Superior de Enxeñaría Informática\nCentro\nPresentación\nOrganigrama\nLocalización\nNormativa e lexislación\nServizos do centro \nTitulacións \nGrao Grao en Enxeñaría Informática\nGrao en Intelixencia Artificial\nMestrado Máster Universitario en Enxeñaría Informática\nMáster universitario en Intelixencia artificial\nInformación de interese\nWeb principal \nSecretaría\nBibliografía \nGrao en Enxeñaría Informática Materias  Lóxica para a computación   Avaliación \ngalego\ncastellano\nDATOS IDENTIFICATIVOS\n2026_27\nMateria\nLóxica para a computación\nCódigo\nO06G151V01301\nTitulación\nGrao en Enxeñaría Informática \nDescritores\nCr.totais\nSinale\nCurso\nCuadrimestre\n6\nOB\n3\n1c\nResultados de Formación e AprendizaxeResultados previstos na materiaContidosPlanificaciónMetodoloxía docenteAtención personalizadaAvaliaciónBibliografía. Fontes de informaciónRecomendacións\nDescrición\nCualificación\nResultados de Formación e Aprendizaxe \nPrácticas de laboratorio \nOs alumnos deberán realizar unha defensa das prácticas realizadas, consistente nunha proba de funcionamiento e na contestación das preguntas realizadas polo profesor, co obxectivo de comprobar o aprendido polos alumnos durante a realización do traballo. A nota final dependerá da calidade do traballo realizado e da defensa realizada polos alumnos.\nResultados de Aprendizaxe: RA1,RA2,RA3 \n40 \nA2 \nB8 B9 \nC3 C4 C5 C12 C14 C28 C32 \nD4 D6 \nExame de preguntas de desenvolvemento \nRealización de dúas probas escritas obrigatorias nas que se examinará aos alumnos sobre os coñecementos adquiridos nas clases teóricas. \nResultados de Aprendizaxe: RA1,RA2,RA3 \n60\nA2 \nB8 B9 \nC3 C4 C5 C12 C13 C14 C28 C32 \nD4 D6 D7 \nOutros comentarios sobre a Avaliación \nSISTEMA DE AVALIACIÓN CONTINUAPROBA 1: Avaliación teóricaDescrición: Proba obxectiva na que se examinará aos alumnos sobre os coñecementos adquiridos nas clases de teoría.Metodoloxía(s) aplicada(s): Exame de preguntas de desenvolvemento.% Calificación: 25%RFAs avaliados: A2, B8, B9, C3, C4, C5, C12, C13, C14, C28, C32, D4, D6, D7Resultados previstos avaliados: RA1, RA2, RA3PROBA 2: Prácticas de laboratorioDescrición: Entrega e defensa ante o profesor de tódalas prácticas de laboratorio plantexadas ao longo do curso nas datas estipuladas.Metodoloxía(s) aplicada(s): Prácticas de laboratorio.% Calificación: 40%RFAs avaliadas: A2, B8, B9, C3, C4, C5, C12, C14, C28, C32, D4, D6Resultados previstos avaliados: RA1, RA2, RA3PROBA 3: Avaliación teóricaDescrición: Proba obxectiva final na que se examinará aos alumnos sobre os coñecementos adquiridos nas clases de teoría.Metodoloxía(s) aplicada(s): Exame de preguntas de desenvolvemento.% Calificación: 35%RFAs avaliados: A2, B8, B9, C3, C4, C5, C12, C13, C14, C28, C32, D4, D6, D7Resultados previstos avaliados: RA1, RA2, RA3Para aprobar a asignatura será necesario obter polo menos o 50% da nota máxima na suma das dúas avaliacións teóricas (3 sobre 6), que as prácticas sexan presentadas e defendidas no tempo e prazo especificado polo profesor, e que a suma das notas de teoría e prácticas alcance, polo menos, o 50% da nota máxima da materia (5 sobre 10).SISTEMA DE AVALIACIÓN GLOBALProcedemento para a elección da modalidade de avaliación global: Se considera que o estudiantado opta polo sistema de avaliación global se así o notifica nun escrito firmado dixitalmente, e enviado por correo electrónico ao coordinador da asignatura no primeiro mes despois do comienzo das clases.PROBA 1: Avaliación teóricaDescrición: Proba obxectiva na que se examinará aos alumnos sobre os coñecementos adquiridos nas clases de teoría.Metodoloxía(s) aplicada(s): Exame de preguntas de desenvolvemento.% Calificación: 60%RFAs avaliados: A2, B8, B9, C3, C4, C5, C12, C13, C14, C28, C32, D4, D6, D7Resultados previstos avaliados: RA1, RA2, RA3PROBA 2: Prácticas de laboratorioDescrición: Entrega e defensa ante o profesor de tódalas prácticas de laboratorio plantexadas ao longo do curso nas datas estipuladas.Metodoloxía(s) aplicada(s): Prácticas de laboratorio.% Calificación: 40%RFAs avaliados: A2, B8, B9, C3, C4, C5, C12, C14, C28, C32, D4, D6Resultados previstos avaliados: RA1, RA2, RA3Para aprobar a asignatura será necesario obter polo menos o 50% da nota máxima na avaliación teórica (3 sobre 6), que as prácticas sexan presentados e defendidas no tempo e prazo especificado polo profesor, e que a suma das notas de teoría e prácticas alcance, polo menos, o 50% da nota máxima da materia (5 sobre 10).CRITERIOS DE AVALIACIÓN PARA CONVOCATORIA EXTRAORDINARIA E FIN DE CARREIRAAplicarase o mesmo sistema que na avaliación global exposta anteriormente, a tódolos alumnos.PROCESO DE CUALIFICACIÓN DE ACTASA nota da asignatura será a suma das notas da(s) proba(s) teórica(s) e de prácticas, excepto en catro casos:a) Se algunha das prácticas non é entregada e defendida no prazo establecido polo profesor, a nota da asignatura será un 0, independentemente da nota obtida na(s) proba(s) teórica(s).b) Se o alumno preséntase só a algunhas das probas teóricas pero non a todas, a nota da asignatura será un 0, independentemente da nota obtida nas prácticas.c) Se a nota da avaliación teórica é inferior ao 50% da nota máxima en dita avaliación, sumaranse a ela as cualificaciones de prácticas para obter a nota final, hasta un máximo de 4 puntos (sobre 10).d) Se o alumno non se presenta a ningunha das probas teóricas, constará como \"non presentado\".DATAS DE AVALIACIÓNAs datas das probas correspondentes ao sistema de avaliación continua publicaranse no calendario de actividades, dispoñible na páxina web da ESEIhttps://esei.uvigo.es/docencia/horarios/As datas oficiales de exame das diferentes convocatorias, aprobadas oficialmente pola Xunta de Centro da ESEI, atópanse publicadas na páxina web da ESEIhttps://esei.uvigo.es/docencia/exames/EMPREGO DE DISPOSITIVOS MÓBILESLémbrase a todo o alumnado a prohibición do uso de dispositivos móbiles en exercicios e prácticas, en cumprimento do artigo 13.2.d) do Estatuto do Estudante Universitario, relativo aos deberes do estudantado universitario, que establece o deber de \"Absterse da utilización ou cooperación en procedementos fraudulentos nas probas de avaliación, nos traballos que se realicen ou en documentos oficiais da universidade.\"USO DE INTELIXENCIA ARTIFICIALA IA está prohibida en todas as probas de avaliación, tanto continuas como globais.A IA está prohibida en todas as actividades docentes.DETECCIÓN DE PLAXIOEn caso de detección de copia ou plaxio en calquera das probas de avaliación (continua ou global), a cualificación final será de SUSPENSO (0) e o feito será comunicado á Dirección do Centro para os efectos oportunos.CONSULTA/SOLICITUDE DE TUTORÍASAs tutorías pódense consultar a través da páxina persoal do profesorado, accesible a través de https://esei.uvigo.es/docencia/profesorado/\nUniversidade de Vigo\n| \nReitoría |\nCampus Universitario |\nC.P. 36.310 Vigo (Pontevedra) |\nEspaña |\nTlf: +34 986 812 000",
+    "links": [
+      {
+        "label": "",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/"
+      },
+      {
+        "label": "Galego",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?ensenyament=O06G151V01&assignatura=O06G151V01301&fitxa_apartat=7&idioma=gal"
+      },
+      {
+        "label": "Castellano",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?ensenyament=O06G151V01&assignatura=O06G151V01301&fitxa_apartat=7&idioma=cast"
+      },
+      {
+        "label": "English",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?ensenyament=O06G151V01&assignatura=O06G151V01301&fitxa_apartat=7&idioma=eng"
+      },
+      {
+        "label": "",
+        "url": "https://www.facebook.com/uvigo"
+      },
+      {
+        "label": "",
+        "url": "https://twitter.com/uvigo"
+      },
+      {
+        "label": "",
+        "url": "https://www.youtube.com/user/uvigo"
+      },
+      {
+        "label": "Utilidades",
+        "url": "https://secretaria.uvigo.gal/uvigo_gl/utilidades/"
+      },
+      {
+        "label": "Centro",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&apartat=7"
+      },
+      {
+        "label": "Presentación",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/?centre=106&apartat=7&subapartat=88"
+      },
+      {
+        "label": "Organigrama",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/?centre=106&apartat=7&subapartat=92"
+      },
+      {
+        "label": "Localización",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/?centre=106&apartat=7&subapartat=89"
+      },
+      {
+        "label": "Normativa e lexislación",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/?centre=106&apartat=7&subapartat=90"
+      },
+      {
+        "label": "Servizos do centro",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/?centre=106&apartat=7&subapartat=91"
+      },
+      {
+        "label": "Titulacións",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=null"
+      },
+      {
+        "label": "Grao en Enxeñaría Informática",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01"
+      },
+      {
+        "label": "Grao en Intelixencia Artificial",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G460V01"
+      },
+      {
+        "label": "Máster Universitario en Enxeñaría Informática",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=10415-SV01"
+      },
+      {
+        "label": "Máster universitario en Intelixencia artificial",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06M193V01"
+      },
+      {
+        "label": "Información de interese",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&apartat=info"
+      },
+      {
+        "label": "Web principal",
+        "url": "https://www.uvigo.gal/"
+      },
+      {
+        "label": "Secretaría",
+        "url": "https://secretaria.uvigo.gal/"
+      },
+      {
+        "label": "Bibliografía",
+        "url": "https://perseo.uvigo.gal/discovery/search?query=course_name,contains,,&query=course_department_name,contains,,&tab=CourseReserves&search_scope=CourseReserves&vid=34CISUG_UVIGO:VU1&lang=gl&mode=advanced&offset=0"
+      },
+      {
+        "label": "Grao en Enxeñaría Informática",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&idioma_assig="
+      },
+      {
+        "label": "Materias",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&consulta=assignatures&idioma_assig="
+      },
+      {
+        "label": "Lóxica para a computación",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01301&idioma_assig="
+      },
+      {
+        "label": "galego",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?ensenyament=O06G151V01&assignatura=O06G151V01301&fitxa_apartat=7&idioma_assig=gal"
+      },
+      {
+        "label": "castellano",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?ensenyament=O06G151V01&assignatura=O06G151V01301&fitxa_apartat=7&idioma_assig=cast"
+      },
+      {
+        "label": "DATOS IDENTIFICATIVOS",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01301&idioma_assig="
+      },
+      {
+        "label": "Resultados de Formación e Aprendizaxe",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01301&fitxa_apartat=1&idioma_assig="
+      },
+      {
+        "label": "Resultados previstos na materia",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01301&fitxa_apartat=2&idioma_assig="
+      },
+      {
+        "label": "Contidos",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01301&fitxa_apartat=3&idioma_assig="
+      },
+      {
+        "label": "Planificación",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01301&fitxa_apartat=4&idioma_assig="
+      },
+      {
+        "label": "Metodoloxía docente",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01301&fitxa_apartat=5&idioma_assig="
+      },
+      {
+        "label": "Atención personalizada",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01301&fitxa_apartat=6&idioma_assig="
+      },
+      {
+        "label": "Avaliación",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01301&fitxa_apartat=7&idioma_assig="
+      },
+      {
+        "label": "Bibliografía. Fontes de información",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01301&fitxa_apartat=8&idioma_assig="
+      },
+      {
+        "label": "Recomendacións",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01301&fitxa_apartat=9&idioma_assig="
+      },
+      {
+        "label": "https://esei.uvigo.es/docencia/horarios/",
+        "url": "https://esei.uvigo.es/docencia/horarios/"
+      },
+      {
+        "label": "https://esei.uvigo.es/docencia/",
+        "url": "https://esei.uvigo.es/docencia/horarios/"
+      },
+      {
+        "label": "exames",
+        "url": "https://esei.uvigo.es/docencia/horarios/"
+      },
+      {
+        "label": "/",
+        "url": "https://esei.uvigo.es/docencia/horarios/"
+      },
+      {
+        "label": "https://esei.uvigo.es/docencia/profesorado/",
+        "url": "https://esei.uvigo.es/docencia/profesorado/"
+      },
+      {
+        "label": "Universidade de Vigo",
+        "url": "http://www.uvigo.gal/"
+      }
+    ],
+    "dates": [],
+    "consulted_at": "2026-10-03T18:09:59.266Z"
+  },
+  {
+    "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01201&fitxa_apartat=7",
+    "final_url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01201&fitxa_apartat=7",
+    "status": 200,
+    "title": "Guia docente 2026_27 Escola Superior de Enxeñaría Informática",
+    "text": "GalegoCastellanoEnglish\n2026_27\n2025_26\n2024_25\n2023_24\n2022_23\n2021_22\n2020_21\n2019_20\n2018_19\n2017_18\n2016_17\n2015_16\n2014_15\n2013_14\n2012_13\n2011_12\n2010_11\n2009_10\nUtilidades\nGuia docente 2026_27Escola Superior de Enxeñaría Informática\nCentro\nPresentación\nOrganigrama\nLocalización\nNormativa e lexislación\nServizos do centro \nTitulacións \nGrao Grao en Enxeñaría Informática\nGrao en Intelixencia Artificial\nMestrado Máster Universitario en Enxeñaría Informática\nMáster universitario en Intelixencia artificial\nInformación de interese\nWeb principal \nSecretaría\nBibliografía \nGrao en Enxeñaría Informática Materias  Matemáticas: Estatística   Avaliación \ngalego\ncastellano\nDATOS IDENTIFICATIVOS\n2026_27\nMateria\nMatemáticas: Estatística\nCódigo\nO06G151V01201\nTitulación\nGrao en Enxeñaría Informática \nDescritores\nCr.totais\nSinale\nCurso\nCuadrimestre\n6\nFB\n2\n1c\nResultados de Formación e AprendizaxeResultados previstos na materiaContidosPlanificaciónMetodoloxía docenteAtención personalizadaAvaliaciónBibliografía. Fontes de informaciónRecomendacións\nDescrición\nCualificación\nResultados de Formación e Aprendizaxe \nResolución de problemas e/ou exercicios \nRealizaranse probas parciais ao longo do cuadrimestre, coas que se pretende comprobar se o alumno vai alcanzando as competencias básicas desta materia.\nEstas probas consistirán na resolución de preguntas obxetivas e/ou de desenrolo.\nResultados de aprendizaje evaluados:\nRA1, RA2, RA3, RA4, RA5, RA6, RA7, RA8 e RA9. \n100\nA1 A2 A3 \nB8 B9 \nC1 C3 C4 C12 C25 C28 \nD4 D5 D6 D11 D14 \nOutros comentarios sobre a Avaliación \nSISTEMA DE AVALIACIÓN CONTINUA NA 1ª EDICIÓNDE ACTASPROBA 1: Cálculo de Probabilidades Descrición: Proba obxectiva que incluirá avaliación de conceptos teóricos e resolución de exercicios. Metodoloxía(s) aplicada(s): Resolución de problemas e/ou exercicios. % Cualificación: 30% % Mínimo: Para a liberación desta parte da materia o estudante deberá obter unha cualificación igual ou superior a 3.5 puntos (sobre 10). RFAs avaliados: Todas as establecidas. Resultados previstos avaliados: Todos os establecidos. ---------------------------------------------------------------------------- PROBA 2: Variables Aleatorias Descrición: Proba obxectiva que incluirá avaliación de conceptos teóricos e resolución de exercicios. Metodoloxía(s) aplicada(s): Resolución de problemas e/ou exercicios. % Cualificación: 30% % Mínimo: Para a liberación desta parte da materia o estudante deberá obter unha cualificación igual ou superior a 3.5 puntos (sobre 10). RFAs avaliados: Todas as establecidas. Resultados previstos avaliados: Todos os establecidos. ---------------------------------------------------------------------------- PROBA 3. Temario restante. Descrición: Proba obxectiva que incluirá avaliación de conceptos teóricos e resolución de exercicios. Metodoloxía(s) aplicada(s): Resolución de problemas e/ou exercicios. % Cualificación: 40% % Mínimo: Para a liberación desta parte da materia o estudante deberá obter unha cualificación igual ou superior a 3.5 puntos (sobre 10). RFAs avaliados: Todas as establecidas. Resultados previstos avaliados: Todos os establecidos. ---------------------------------------------------------------------------- No caso de non alcanzar nas probas 1 e 2 a nota mínima de 3.5 en cada unha delas, na proba 3 da 1ª edición de actas, os estudantes poderán recuperar as notas parciais. Todos os estudantes que se presenten a calquera das probas enténdese que se acollen ao procedemento de avaliación continua que se describe. A asistencia a clases non ten porcentaxe de avaliación, pero é altamente recomendable a asistencia activa, tanto ás clases de Grupo Grande como de Grupo Pequeno. PROCESO DE CUALIFICACIÓN DE ACTAS A cualificación de actas será a suma ponderada das notas das 3 probas. En caso de non alcanzar nalgunha proba a nota mínima de 3.5, a cualificación de actas será o mínimo entre a media ponderada e 3.5. SISTEMA DE AVALIACIÓN GLOBAL Procedemento para a elección da modalidade de avaliación global: O estudiantado opta polo sistema de avaliación global se non se presenta a ningunha das probas. PROBA 1: Haberá un sistema de avaliación para os estudantes de avaliación global consistente nunha única proba onde se avaliará os contidos expostos ao longo do curso. Consistirá na resolución de problemas teórico/prácticos contando coa axuda de software estatístico (100% da nota). Descrición: Proba obxectiva que incluirá avaliación de conceptos teóricos e resolución de exercicios. Metodoloxía(s) aplicada(s): Resolución de problemas e/ou exercicios. % Cualificación: 100% % Mínimo: Non se contempla. RFAs avaliados: Todas as establecidas. Resultados previstos avaliados: Todos os establecidos. ---------------------------------------------------------------------------- PROCESO DE CUALIFICACIÓN DE ACTAS A cualificación de actas será a nota obtida na proba. CRITERIOS DE AVALIACIÓN PARA CONVOCATORIA EXTRAORDINARIA E FIN DE CARREIRA O sistema de avaliación da convocatoria de Xullo e Extraordinaria (Fin de Carreira) para todos os alumnos será o mesmo que o empregado na 1ª convocatoria para os alumnos por avaliación global. PROCESO DE CUALIFICACIÓN DE ACTAS A cualificación de actas será a nota obtida na proba. DATAS DE AVALIACIÓN As datas das probas correspondentes ao sistema de avaliación continua publicarase no calendario de actividades, dispoñible na páxina web da ESEI  https://esei.uvigo.es/docencia/exames/. As datas oficiais de exame das diferentes convocatorias, aprobadas oficialmente pola Xunta de Centro da ESEI, atópanse publicadas na páxina web da ESEI  https://esei.uvigo.es/docencia/exames/.EMPREGO DE DISPOSITIVOS MÓBILES Lémbrase a todo o alumnado a prohibición do uso de dispositivos móbiles en exercicios e prácticas, en cumprimento do artigo13.2.d) do Estatuto do Estudante Universitario, relativo aos deberes do estudiantado universitario, que establece o deber de \"Absterse da utilización ou cooperación en procedementos fraudulentos nas probas de avaliación, nos traballos que se realicen ou en documentos oficiais da universidade.\"EMPREGO DA INTELIXENCIA ARTIFICIAL A IA está prohibida en todas as probas de avaliación, tanto continuas como globais. A IA está prohibida en todas as actividades docentes. No caso de que algunha  actividade docente precisase de IA, está será convenientemente notificada por parte do profesorado. Ademais, toda persoa que empregue IA en traballos académicos, científicos,creativos, administrativos ou de investigación deberá declarar a ferramenta utilizada, a función realizada, o alcance da súa intervención e a parte do traballo que constitúe autoría humana.DETECCIÓN DE PLAXIOEn caso de detección de plaxio ou copia en calquera das probas de avaliación (continua ou global), a cualificación final será de SUSPENSO (0) e ou feito será comunicado á dirección do Centro para os efectos oportunos.CONSULTA/SOLICITUDE DE TUTORÍAS As tutorías poden consultarse a través da páxina persoal do profesorado, accesible a través de https://esei.uvigo.é/docencia/profesorado/\nUniversidade de Vigo\n| \nReitoría |\nCampus Universitario |\nC.P. 36.310 Vigo (Pontevedra) |\nEspaña |\nTlf: +34 986 812 000",
+    "links": [
+      {
+        "label": "",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/"
+      },
+      {
+        "label": "Galego",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?ensenyament=O06G151V01&assignatura=O06G151V01201&fitxa_apartat=7&idioma=gal"
+      },
+      {
+        "label": "Castellano",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?ensenyament=O06G151V01&assignatura=O06G151V01201&fitxa_apartat=7&idioma=cast"
+      },
+      {
+        "label": "English",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?ensenyament=O06G151V01&assignatura=O06G151V01201&fitxa_apartat=7&idioma=eng"
+      },
+      {
+        "label": "",
+        "url": "https://www.facebook.com/uvigo"
+      },
+      {
+        "label": "",
+        "url": "https://twitter.com/uvigo"
+      },
+      {
+        "label": "",
+        "url": "https://www.youtube.com/user/uvigo"
+      },
+      {
+        "label": "Utilidades",
+        "url": "https://secretaria.uvigo.gal/uvigo_gl/utilidades/"
+      },
+      {
+        "label": "Centro",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&apartat=7"
+      },
+      {
+        "label": "Presentación",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/?centre=106&apartat=7&subapartat=88"
+      },
+      {
+        "label": "Organigrama",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/?centre=106&apartat=7&subapartat=92"
+      },
+      {
+        "label": "Localización",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/?centre=106&apartat=7&subapartat=89"
+      },
+      {
+        "label": "Normativa e lexislación",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/?centre=106&apartat=7&subapartat=90"
+      },
+      {
+        "label": "Servizos do centro",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/?centre=106&apartat=7&subapartat=91"
+      },
+      {
+        "label": "Titulacións",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=null"
+      },
+      {
+        "label": "Grao en Enxeñaría Informática",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01"
+      },
+      {
+        "label": "Grao en Intelixencia Artificial",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G460V01"
+      },
+      {
+        "label": "Máster Universitario en Enxeñaría Informática",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=10415-SV01"
+      },
+      {
+        "label": "Máster universitario en Intelixencia artificial",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06M193V01"
+      },
+      {
+        "label": "Información de interese",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&apartat=info"
+      },
+      {
+        "label": "Web principal",
+        "url": "https://www.uvigo.gal/"
+      },
+      {
+        "label": "Secretaría",
+        "url": "https://secretaria.uvigo.gal/"
+      },
+      {
+        "label": "Bibliografía",
+        "url": "https://perseo.uvigo.gal/discovery/search?query=course_name,contains,,&query=course_department_name,contains,,&tab=CourseReserves&search_scope=CourseReserves&vid=34CISUG_UVIGO:VU1&lang=gl&mode=advanced&offset=0"
+      },
+      {
+        "label": "Grao en Enxeñaría Informática",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&idioma_assig="
+      },
+      {
+        "label": "Materias",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&consulta=assignatures&idioma_assig="
+      },
+      {
+        "label": "Matemáticas: Estatística",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01201&idioma_assig="
+      },
+      {
+        "label": "galego",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?ensenyament=O06G151V01&assignatura=O06G151V01201&fitxa_apartat=7&idioma_assig=gal"
+      },
+      {
+        "label": "castellano",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?ensenyament=O06G151V01&assignatura=O06G151V01201&fitxa_apartat=7&idioma_assig=cast"
+      },
+      {
+        "label": "DATOS IDENTIFICATIVOS",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01201&idioma_assig="
+      },
+      {
+        "label": "Resultados de Formación e Aprendizaxe",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01201&fitxa_apartat=1&idioma_assig="
+      },
+      {
+        "label": "Resultados previstos na materia",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01201&fitxa_apartat=2&idioma_assig="
+      },
+      {
+        "label": "Contidos",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01201&fitxa_apartat=3&idioma_assig="
+      },
+      {
+        "label": "Planificación",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01201&fitxa_apartat=4&idioma_assig="
+      },
+      {
+        "label": "Metodoloxía docente",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01201&fitxa_apartat=5&idioma_assig="
+      },
+      {
+        "label": "Atención personalizada",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01201&fitxa_apartat=6&idioma_assig="
+      },
+      {
+        "label": "Avaliación",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01201&fitxa_apartat=7&idioma_assig="
+      },
+      {
+        "label": "Bibliografía. Fontes de información",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01201&fitxa_apartat=8&idioma_assig="
+      },
+      {
+        "label": "Recomendacións",
+        "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01201&fitxa_apartat=9&idioma_assig="
+      },
+      {
+        "label": "https://esei.uvigo.es/docencia/exames/",
+        "url": "https://esei.uvigo.es/es/docencia/exames/"
+      },
+      {
+        "label": "https://esei.uvigo.es/docencia/exames/",
+        "url": "https://esei.uvigo.es/es/docencia/exames/"
+      },
+      {
+        "label": "Universidade de Vigo",
+        "url": "http://www.uvigo.gal/"
+      }
+    ],
+    "dates": [],
+    "consulted_at": "2026-10-03T18:09:59.236Z"
+  }
+]

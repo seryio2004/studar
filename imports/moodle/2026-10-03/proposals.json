@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-03",
+  "report_timezone": "Europe/Madrid",
+  "local_consulted_at": "2026-10-03T16:03:47.268Z",
+  "status": "awaiting_authentication",
+  "complete": false,
+  "first_completed_review": null,
+  "target_platform_url": "https://moovi.uvigo.gal/",
+  "target_url_basis": "URL comprobada mediante chrome-devtools MCP en esta ejecución.",
+  "scope": "Primera revisión completa: actividades vigentes y futuras de todos los cursos activos; incluir calendario, anuncios y documentos.",
+  "destination": "Por confirmar",
+  "import_mechanism_available": true,
+  "proposals": [],
+  "detected_changes": [],
+  "reviewed_courses": [],
+  "course_candidates": [
+    {
+      "name": "ABP",
+      "source": "src/data.js",
+      "active_in_moodle": null,
+      "reviewed": false
+    },
+    {
+      "name": "SSI",
+      "source": "src/data.js",
+      "active_in_moodle": null,
+      "reviewed": false
+    },
+    {
+      "name": "ACII",
+      "source": "src/data.js",
+      "active_in_moodle": null,
+      "reviewed": false
+    },
+    {
+      "name": "EST",
+      "source": "src/data.js",
+      "active_in_moodle": null,
+      "reviewed": false
+    },
+    {
+      "name": "LC",
+      "source": "src/data.js",
+      "active_in_moodle": null,
+      "reviewed": false
+    }
+  ],
+  "previous_imports_found": false,
+  "comparison": {
+    "local_reference": "local-reference.json",
+    "local_reference_record_count": 13,
+    "live_studytracker_accessed": false,
+    "live_state_location": "localStorage studytracker:v1 del navegador del usuario",
+    "result": "No es posible determinar novedades, cambios ni duplicados sin consultar Moodle y los registros actuales."
+  },
+  "access_issues": [
+    {
+      "resource": "Moovi: cursos, actividades, calendario, anuncios, documentos y adjuntos",
+      "reason": "Chromium MCP conectado; Moovi accesible sin sesión iniciada. Pendiente de autenticación en https://moovi.uvigo.gal/login/index.php."
+    },
+    {
+      "resource": "StudyTracker: registros actuales del navegador",
+      "reason": "La única pestaña inicial del Chromium MCP era about:blank; no se ha accedido al estado real del usuario. Los registros de inicialización no equivalen a sus registros actuales."
+    }
+  ],
+  "downloaded_attachments": [],
+  "local_evidence": [
+    {
+      "kind": "local_project_file",
+      "path": "src/data.js",
+      "snapshot": "evidence/src__data.js",
+      "sha256": "d7199a772079c108efa6c02e0029984a1ed0c37c7a58e9d38f6fae5ff76ab88a",
+      "consulted_at": "2026-10-03T16:03:47.268Z",
+      "moodle_verified": false
+    },
+    {
+      "kind": "local_project_file",
+      "path": "README.md",
+      "snapshot": "evidence/README.md",
+      "sha256": "caa9fd5d53b950a7b18b55d422a357542fe1e3cdff12230a7fb18093d5479cae",
+      "consulted_at": "2026-10-03T16:03:47.268Z",
+      "moodle_verified": false
+    },
+    {
+      "kind": "local_project_file",
+      "path": "docs/ssi/practica-1-cifrado-java.md",
+      "snapshot": "evidence/docs__ssi__practica-1-cifrado-java.md",
+      "sha256": "0a9a3093cb7824f129a77fefb824bf94277b81bb272eabc7806126e8759793ea",
+      "consulted_at": "2026-10-03T16:03:47.268Z",
+      "moodle_verified": false
+    }
+  ],
+  "uncertainties": [
+    "Completar la autenticación en el Chromium MCP para revisar todos los cursos activos.",
+    "Confirmar cursos activos y grupos del usuario con fuentes accesibles.",
+    "Verificar los datos del proyecto contra Moodle antes de formular propuestas."
+  ],
+  "absence_semantics": "Las listas vacías significan que no se ha podido revisar; no indican ausencia de actividades, de novedades o eliminación de registros.",
+  "confirmed_records_modified": false,
+  "moodle_modified": false,
+  "access_context": {
+    "user_reported_browser": "Chromium",
+    "user_reported_signed_in": true,
+    "verified_by_agent": true,
+    "credentials_requested": true,
+    "reported_context_source": "list_pages: única pestaña about:blank. Navegación a Moovi: enlace Log in; formulario de usuario y contraseña accesible.",
+    "session_active": false,
+    "browser_connection_verified": true
+  },
+  "import_mechanism": {
+    "name": "Por confirmar",
+    "project_file": "imports/moodle/2026-10-03/proposals.json",
+    "load_action": "Cargar revisión del proyecto",
+    "alternative_action": "Importar revisión JSON",
+    "loaded_into_live_app": false
+  },
+  "review_attempts": [
+    {
+      "consulted_at": "2026-10-03T17:05:13Z",
+      "result": "blocked_before_session_check",
+      "error": "Importing module \"node:process\" is not allowed in node_repl",
+      "session_verified": false,
+      "academic_resources_reviewed": false
+    },
+    {
+      "consulted_at": "2026-10-03T17:26:27Z",
+      "result": "blocked_before_session_check",
+      "error": "Importing module \"node:process\" is not allowed in node_repl",
+      "session_verified": false,
+      "academic_resources_reviewed": false
+    },
+    {
+      "consulted_at": "2026-10-03T17:29:04Z",
+      "browser_tool": "chrome-devtools MCP",
+      "result": "blocked_before_session_check",
+      "error": "The browser is already running for /home/sk/.cache/chrome-devtools-mcp/chrome-profile. Use --isolated to run multiple browser instances.",
+      "session_verified": false,
+      "academic_resources_reviewed": false
+    },
+    {
+      "consulted_at": "2026-10-03T17:49:14Z",
+      "browser_tool": "chrome-devtools MCP",
+      "operation": "list_pages",
+      "result": "blocked_before_session_check",
+      "error": "The browser is already running for /home/sk/snap/chromium/common/codex-mcp-profile. Use --isolated to run multiple browser instances.\nCause: The browser is already running for /home/sk/snap/chromium/common/codex-mcp-profile. Use a different `userDataDir` or stop the running browser first.",
+      "session_verified": false,
+      "academic_resources_reviewed": false
+    },
+    {
+      "consulted_at": "2026-10-03T17:51:14Z",
+      "browser_tool": "chrome-devtools MCP",
+      "operations": [
+        "list_pages",
+        "navigate_page",
+        "take_snapshot"
+      ],
+      "result": "awaiting_authentication",
+      "browser_connection_verified": true,
+      "session_verified": true,
+      "session_active": false,
+      "academic_resources_reviewed": false,
+      "evidence": "Página Home | Moovi con enlace Log in; página Log in to the site | Moovi con formulario de acceso."
+    }
+  ],
+  "previous_incomplete_report_found": true,
+  "last_attempt_at": "2026-10-03T17:51:14Z"
+}

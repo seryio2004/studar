@@ -1,0 +1,92 @@
+ABP 2026-2027 · Sesión 2
+
+
+Actividad de hoy
+Caso real y descomposición de un proyecto
+
+
+
+Análisis en grupo y ejercicio práctico · 16 de septiembre de 2026
+Profesor: Gerardo Rodríguez Martínez
+Índice
+1. Caso real: un proyecto gestionado en cascada.....................................................................3
+
+2. Ejercicio: descompón un proyecto ficticio en fases y entregables........................................4
+
+3. Notas propias....................................................................................................................... 4
+
+
+
+
+ABP 2026-2027 · Actividad: caso real y descomposición                                                                     Página 2 de 5
+Antes de que vuestro equipo planifique su propio proyecto, esta ficha os guía por dos ejercicios cortos:
+analizar un caso real gestionado en cascada (con más detalle en Sesion2_Casos_Reales.docx) y practicar la
+descomposición de un proyecto en fases y entregables. Esta reflexión es la semilla del alcance que
+empezaréis a esbozar en la próxima sesión práctica.
+
+
+1. Caso real: un proyecto gestionado en cascada
+Vuestro grupo va a analizar uno de los cuatro casos reales de Sesion2_Casos_Reales.docx — el profesor os
+dirá cuál os toca. Leed la tabla de hechos del caso y discutid:
+Caso asignado a vuestro grupo: ________________________________
+
+  • ¿Qué se decidió al principio (alcance, plazo, presupuesto)?
+  • ¿Se cumplió el plan inicial? ¿Por qué sí o por qué no?
+  • ¿Qué llevó al éxito — o al fracaso — de ese proyecto?
+  • ¿Qué habría cambiado si se hubiera gestionado de forma ágil?
+  • Pregunta específica de vuestro caso (la encontraréis al final de su ficha en
+    Sesion2_Casos_Reales.docx).
+
+
+
+
+ABP 2026-2027 · Actividad: caso real y descomposición                                    Página 3 de 5
+2. Ejercicio: descompón un proyecto ficticio en fases y entregables
+El profesor asignará a vuestro grupo uno de estos cinco proyectos ficticios (por defecto, el primero). Todos
+son igual de válidos para practicar la descomposición — el objetivo es la mecánica, no el dominio.
+Proyecto asignado a vuestro grupo: ________________________________
+
+  • App de turnos para clínica veterinaria (proyecto por defecto): los clientes piden cita online y el
+    personal gestiona el calendario del día.
+  • Plataforma de venta de entradas para eventos: una sala de conciertos de tamaño medio quiere
+    vender sus entradas online (antes solo se vendían en taquilla) y controlar el aforo en tiempo real.
+  • Sistema de préstamo de libros y salas (biblioteca universitaria): la biblioteca quiere sustituir su
+    sistema actual, obsoleto, de préstamo de libros y reserva de salas de estudio, sin perder el histórico.
+  • App de seguimiento de entrenamientos (fitness): un gimnasio quiere una app para que sus socios
+    registren sus entrenamientos y sigan rutinas personalizadas asignadas por sus entrenadores.
+  • Recomendador de contenidos (streaming): una plataforma de streaming pequeña quiere añadir
+    recomendaciones personalizadas en su página de inicio, que hoy solo muestra novedades por orden
+    de fecha.
+
+En grupos pequeños, descomponed vuestro proyecto asignado en las cinco fases vistas hoy y anotad, para
+cada una, uno o dos entregables concretos.
+
+  Fase                                  Entregable(s) de esta fase
+
+  Iniciación
+
+  Planificación
+
+  Ejecución
+
+  Seguimiento y control
+
+  Cierre
+
+
+
+
+3. Notas propias
+
+
+
+
+ABP 2026-2027 · Actividad: caso real y descomposición                                       Página 4 de 5
+Recordad: esta reflexión es la base para el alcance inicial (qué incluye y qué no) que empezaréis a esbozar en la
+primera sesión práctica, la semana del 21 de septiembre.
+
+
+
+
+ABP 2026-2027 · Actividad: caso real y descomposición                                                 Página 5 de 5
+

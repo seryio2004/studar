@@ -1,0 +1,377 @@
+                   DIMM
+• Módulo de memoria o tarjeta de circuito
+  impreso que físicamente incorpora varios chips
+  de memoria y lógicamente formado por al
+  menos un Rank.
+• También accede a 64 bits.
+                DIMM
+• Módulo DIMM de 2 Rank
+                    DIMM
+• Sided: chips por una cara o por las 2
+                               DIMM
+
+
+
+
+https://www.cgdirector.com/single-vs-double-sided-memory/
+       DIMM
+                           Número de bits por chip
+
+
+
+
+https://www.kingston.com/datasheets/KVR48U40BS6-8.pdf
+                         DIMM
+• Notación: rRxb, por ejemplo, 1Rx16
+  – r número de Ranks,
+  – b número de bits por chip
+
+
+
+
+        https://www.kingston.com/datasheets/KVR48U40BS6-8.pdf
+       Chip de memoria
+                                         DIMM
+                         Lógica de control
+
+                                             Sided: chips por una
+1Rx8                                         cara o por las 2
+                                             Rank: 1, 2, o 4
+1Rx4
+
+
+
+
+2Rx8
+
+
+
+4Rx8
+       DIMM
+
+
+1Rx8
+
+
+
+1Rx4
+
+
+
+
+2Rx8
+Single Sided
+Detección y corrección de errores
+  Detección y corrección de errores
+• En la memoria pueden producirse errores
+• Algunos módulos de memoria incorporan
+  mecanismos de detección y corrección de errores
+     – Detección: únicamente comprueba si hay errores, hay
+       o no hay errores (dentro de unos límites)
+     – Corrección: corrige algunos errores indicando el bit o
+       los bits que han cambiado de valor
+• ECC: Error Correcting Code
+• Las memorias ECC suelen ser SECDED: Single
+  Error Correcting and Double Error Detecting
+http://computadoras.about.com/od/memorias/fl/iquestQueacute-es-una-memoria-RAM-ECC-y-una-NON-ECC.htm
+  Detección y corrección de errores
+En la memoria principal, los contenidos son almacenados en forma de código binario,
+en otras palabras, están compuestos por unos y ceros para que el ordenador pueda
+procesarlos. Los dígitos binarios se conocen como bits. Factores como
+• fluctuaciones del voltaje,
+• overclocking,
+• módulos de memoria defectuosos y viejos
+• o radiación de alta energía
+pueden generar un error de bit, modificando, como consecuencia, un registro en la
+memoria. Estos fallos de bit se presentan cuando un bit toma el valor falso, es decir
+“1” en vez de “0” y viceversa. En muchas aplicaciones, las consecuencias de estos
+fallos son apenas perceptibles. Por ejemplo, si aparece un error de bit cuando se
+trabaja con un programa de edición de imágenes, puede que uno de los pixeles reciba
+un color diferente al esperado, un detalle mínimo que no es detectable por el ojo
+humano. Sin embargo, el panorama es diferente en el caso de bases de datos o
+aplicaciones de cálculo complejas donde el más mínimo error de bit puede tener
+consecuencias desastrosas. En algunos casos, estos errores pueden ocasionar fallos en
+el sistema, especialmente cuando tienen lugar en una zona de memoria que es
+utilizada por el sistema operativo.
+
+
+ https://www.ionos.es/digitalguide/servidores/know-how/memoria-ecc-almacenamiento-seguro-de-datos/
+Detección y corrección de errores
+ Detección y corrección de errores
+• Una función matemática conocida genera una
+  redundancia que también se guarda en memoria
+
+
+            D
+
+            D            D           R
+                   D
+            R            R
+                   R
+ Detección y corrección de errores
+• La detección de errores la realiza la memoria y la
+  placa base.
+
+
+                D
+
+                D               D         R
+                       D
+                R               R
+                       R
+                     Memoria
+                     con más
+   Placa Base                           Placa Base
+                    capacidad
+ Detección y corrección de errores
+PARIDAD:
+
+
+                        NÚMERO PAR DE 1s
+Detección y corrección de errores
+ Detección y corrección de errores
+• Ejemplo Paridad Par, ningún error.
+
+        : 0 no hay error, 1 sí hay error       0: no hay error y
+                                               no se detecta error
+      11001010
+
+                                                                       0
+      11001010            11001010         11001010          n0
+
+                     0                       0   b7⊕b6⊕b5⊕b4⊕…
+                                                                  R ⊕ Rn
+                                                 b3⊕b2⊕b1⊕b0
+                                  0
+     b7⊕b6⊕b5⊕b4⊕…
+     b3⊕b2⊕b1⊕b0
+ Detección y corrección de errores
+• Ejemplo Paridad Par, un error, sí detecta y no corrige
+
+         :0 no hay error, 1 sí hay error
+                                                  1: hay error y se
+                                                  detecta ese error
+      11011010
+              1 ERROR: 11001010                                         1
+      11001010             11011010        11011010            n1
+
+
+                      0                       0    b7⊕b6⊕b5⊕b4⊕…
+                                                   b3⊕b2⊕b1⊕b0      R ⊕ Rn
+                                  0
+      b7⊕b6⊕b5⊕b4⊕…
+      b3⊕b2⊕b1⊕b0
+ Detección y corrección de errores
+• Ejemplo Paridad Par, dos errores, no detecta.
+
+         :0 no hay error, 1 sí hay error   0: hay error y no se
+                                           detecta ese error
+      11101000
+           2 ERRORES: 11001010
+                                                                     0
+      11001010             11101000 11101000               n0
+
+                      0                    0   b7⊕b6⊕b5⊕b4⊕…
+                                               b3⊕b2⊕b1⊕b0      R ⊕ Rn
+                                  0
+      b7⊕b6⊕b5⊕b4⊕…
+      b3⊕b2⊕b1⊕b0
+ Detección y corrección de errores
+• Corrección de errores: Hamming (7,4)
+
+
+
+                  D
+
+
+
+                  D             D                 R
+                        D
+                  R             R   Hamming 7,4
+                        R
+                                      Placa Base
+    Hamming 7,4       Memoria
+                       ECC
+ Detección y corrección de errores
+• El código SEC Hamming (7,4) permite la
+  detección y corrección de un error simple
+
+
+
+
+http://www.systems.caltech.edu/EE/Faculty/rjm/SAMPLE_20040708.html
+ Detección y corrección de errores
+• Ejemplo:
+ Detección y corrección de errores
+• ¿Qué sucede si hay dos errores?
+ Detección y corrección de errores
+• https://en.wikipedia.org/wiki/Hamming(7,4)
+• Cálculo de un valor: z o syndrome
+                                    Módulo 2
+
+
+
+
+    H: parity-check matrix        1x20+0x21+1x22=5
+Detección y corrección de errores
+
+
+
+  24                          27
+ Detección y corrección de errores
+• Hamming(8,4) = Hamming(7,4) + Paridad p4
+
+• Corrige errores simples y
+  detecta errores dobles
+• Si el número de errores es:
+  – 0: ____________________
+  – 1: ____________________
+  – 2: ____________________
+  – 3 o +: _________________
+ Detección y corrección de errores
+• Ningún bit erróneo -> Hamming(7,4) OK y Paridad p4
+  OK
+• Un bit erróneo -> Paridad p4 MAL siempre
+   – Si Hamming(7,4) OK, -> el bit erróneo esta en la
+     Paridad, cambia el valor del bit de paridad.
+   – Si Hamming(7,4) MAL, corrijo según Hamming(7,4)
+• Dos bits erróneos-> Paridad p4 OK y
+  Hamming(7,4) MAL, detecto error doble, informo
+  y NO corrijo
+• Otros casos, 3 o más bits erróneos, no se
+  contempla. Lo que haga, lo hará mal.
+ Detección y corrección de errores
+• Ningún bit erróneo <-> Hamming(7,4) OK y
+  Paridad p4 OK
+• Un bit erróneo <-> Paridad p4 MAL siempre
+  – Si Hamming(7,4) OK, -> el bit erróneo esta en la
+    Paridad, cambia el valor del bit de paridad.
+  – Si Hamming(7,4) MAL, corrijo según
+    Hamming(7,4)
+• Dos bits erróneos <-> Paridad p4 OK y
+  Hamming(7,4) MAL, detecto error doble,
+  informo y NO corrijo
+      Detección y corrección de errores
+ ORIGINAL                                        1 error en datos
+                                 1 error en p4
+
+
+
+
+1 error en redundacia haming (7,4)   2 errores   3 errores
+
+
+
+
+                                      1
+Detección y corrección de errores
+Detección y corrección de errores
+
+
+
+
+   Hamming (72,64)
+ Detección y corrección de errores
+• Hamming (72,64)
+
+
+
+
+• También puede producirse errores en la
+  redundancia
+ Detección y corrección de errores
+• La probabilidad de fallo es proporcional a la
+  cantidad de memoria y al tiempo que el
+  sistema está encendido
+• La memoria ECC se usa en sistemas de alta
+  disponibilidad, (High Availability, 24x7, …) por
+  ejemplo, servidores
+• Más cara (sobre un 12% más cara) y un poco
+  más lenta (2%-3%)
+ Detección y corrección de errores
+• MD5, Message-Digest Algorithm 5, se utilizan extensamente en el
+  mundo del software para proporcionar la seguridad de que un
+  archivo descargado de Internet no se ha alterado. Comparando una
+  suma MD5 publicada con la suma de comprobación del archivo
+  descargado, un usuario puede tener la confianza suficiente de que
+  el archivo es igual que el publicado por los desarrolladores.
+• Genera un número de 128 bits,
+  de 32 cifras en hexadecimal,
+   http://www.puertosabiertos.com/es/md5-online.htm
+• Esto protege al usuario contra los
+  'Caballos de Troya' o 'Troyanos' y
+  virus que algún otro usuario
+  malicioso pudiera incluir en el
+  software.
+• También existen los CRC, Cyclic
+  Redundancy Check
+
+https://es.wikipedia.org/wiki/MD5
+Detección y corrección de errores
+ Detección y corrección de errores
+• NIF:
+
+
+
+
+  – Dos números de DNI que difieren en un único
+    dígito no pueden tener la misma letra
+  – Dos números de DNI con sólo dos dígitos
+    intercambiados no tienen la misma letra
+• Otros: IBAN, Código de barras, …
+     http://www.sinewton.org/numeros/numeros/71/Articulos_04.pdf
+Buffered, registered memory
+     Buffered, registered memory
+• Cuando la capacidad de la memoria es muy alta
+  (muchos módulos, muchos chips en cada
+  módulo), aparecen problemas eléctricos en el
+  funcionamiento de la memoria.
+• El uso de la memoria registered aumenta la
+  fiabilidad del sistema (eléctrico), pero también la
+  retarda y encarece.
+• No todas las placas soportan estos módulos
+• Uso principalmente en servidores, aportan
+  escalabilidad y robustez
+ Regeneración de una señal digital
+• Regeneración de una señal digital
+ Regeneración de una señal digital
+• ¿Cuál es la longitud máxima de un cable
+  Ethernet de par trenzado? En general, los
+  cables Ethernet con conectores modulares
+  RJ45 pueden tener una longitud máxima de
+  100 metros sin necesidad de regenerar las
+  señales
+• Los switchs y routers regeneran la señal
+  Ethernet.
+
+   https://community.fs.com/es/blog/ethernet-cable-length-case-study.html
+  Regeneración de una señal digital
+https://blogthinkbig.com/cable-submarino
+
+                                           • … y también hay un cable
+                                             especial que transmite energía
+                                             eléctrica para alimentar los
+                                             amplificadores que están en el
+                                             lecho del mar. …. el
+                                             amplificador / regenerador, se
+                                             instala cada 100 Km, y
+                                             amplifica la señal pasándola al
+                                             tramo siguiente.
+
+                                               https://blog.ciriontechnologies.com/es
+                                               /cable-submarino-internet/
+Buffered, registered memory
+           Buffered, registered memory
+    • DIMM o UDIMM: Unbuffered/unregistered
+    • RDIMM: Registered/buffered. En el registro se
+      almacenan las líneas de dirección y control
+    • LRDIMM: Load Reduced. En el registro se
+      almacenan además las líneas de datos
+
+
+
+
+https://www.simmtester.com/News/PublicationArticle/167
+Buffered, registered memory
+Buffered, registered memory
+

@@ -1,0 +1,300 @@
+ABP · PRÁCTICAS · SESIÓN 1 DE 13
+
+
+Para el alumnado
+
+
+Arranque del proyecto: dinámica, equipos y
+primeras decisiones
+Sesión 1 de prácticas · 21/09, 22/09 y 23/09 de 2026
+Gerardo Rodríguez Martínez · Adrián Novoa Sousa — Prácticas ABP
+
+
+Hoy arrancáis el proyecto que os va a ocupar todo el cuatrimestre: cómo funciona, cómo se forman los equipos y, sobre todo, cómo
+elegir bien vuestra temática y dataset.
+EN ESTA SESIÓN
+
+
+¿Qué vamos a ver hoy?
+• 1. La dinámica del ABP:
+
+• cómo funcionan las 13 sesiones de prácticas y qué se espera de cada equipo.
+
+• 2. Formación de equipos:
+
+• reglas y fecha límite (25/09).
+
+• 3. El calendario de sprints:
+
+• qué se entrega, cuándo y cómo se evalúa.
+
+• 4. El bloque central de hoy:
+
+• cómo elegir vuestra temática y encontrar datasets candidatos — con 20 ejemplos y una lista de sitios donde buscar datos gratis.
+
+
+
+
+Prácticas ABP · Sesión 1: Arranque (alumnado)                                                                                       21/09 · 22/09 · 23/09 · 2026
+CÓMO FUNCIONA EL CURSO
+
+
+La dinámica ABP en pocas palabras
+• Aprendizaje Basado en Proyectos:
+
+• en vez de ejercicios sueltos, construís un producto real de principio a fin, en equipo, a lo largo de todo el cuatrimestre.
+
+• 13 sesiones de prácticas,
+
+• casi todas con el mismo formato: apertura breve, revisión rotativa por equipos y cierre. A partir de la sesión 2 os iremos revisando el
+  avance sesión a sesión.
+• 4 talleres técnicos obligatorios,
+
+• repartidos entre octubre y noviembre, donde os enseñamos con código las técnicas que el proyecto exige: recomendación por
+  contenido, sentimiento, visión artificial y valoración de ítems.
+• Evaluación continua por sprints,
+
+• más una memoria final y una presentación comercial — nada se decide todo de golpe al final.
+
+
+
+
+Prácticas ABP · Sesión 1: Arranque (alumnado)                                                                                       21/09 · 22/09 · 23/09 · 2026
+CALENDARIO DEL PROYECTO
+
+
+Los hitos oficiales, de aquí a enero
+Fechas comunes a los seis grupos de prácticas — el calendario exacto sesión a sesión puede variar un poco según vuestra franja
+
+
+ Hito                                                       Fecha límite                                        Evaluación
+ Formación y validación de grupos                           25/09                                               —
+ Sprint 1 — documentación inicial (dominio, dataset,
+                                                            02/10                                               10% (0–3)
+ requisitos)
+ Sprint 2 — documentación (CRUDs de ítems)                  16/10                                               Solo feedback
+ Sprint 3 — recomendador funcionando                        30/10                                               10% (0–3)
+ Sprint 4 — comparación de técnicas + valoración de ítems   13/11                                               Solo feedback
+ Envío de la presentación comercial                         23/11 (23:59)                                       —
+ Defensa de la presentación comercial (en teoría)           25/11 – 16/12                                       10% (0–3)
+ Sprint 5 — documentación                                   11/12                                               Solo feedback
+ Entrega de la memoria final                                08/01/2027                                          70% (0–10)
+
+
+
+
+Prácticas ABP · Sesión 1: Arranque (alumnado)                                                                                    21/09 · 22/09 · 23/09 · 2026
+ANTES DEL 25/09
+
+
+Formación de equipos
+
+
+          Equipos de hasta 4 personas — también se admite trabajar en solitario si lo preferís.
+
+
+
+
+          Fecha límite para tener el equipo formado y validado: 25/09.
+
+
+
+
+          Nadie se queda sin equipo: si no encontráis grupo, decídnoslo y os ayudamos a encajar en uno.
+
+
+
+
+          La nota de cada hito evaluable es única para todo el equipo — elegid compañeros con los que podáis comprometeros a un ritmo de trabajo similar.
+
+
+
+
+          En cuanto tengáis equipo, empezad ya a hablar de temática — es el primer paso del Sprint 1.
+
+
+
+
+Prácticas ABP · Sesión 1: Arranque (alumnado)                                                                                               21/09 · 22/09 · 23/09 · 2026
+ 02
+ Elegid bien: temática y dataset
+ La decisión más importante de las próximas dos semanas — condiciona todo lo que viene después
+
+
+
+
+Prácticas ABP · Sesión 1: Arranque (alumnado)                                                    21/09 · 22/09 · 23/09 · 2026
+POR QUÉ IMPORTA TANTO
+
+
+El dataset es la base de los 4 talleres
+• El Sprint 1 (02/10) ya pide
+
+• vuestra temática y un dataset candidato — no hace falta tenerlo cerrado hoy, pero sí encaminado.
+
+• Todas las técnicas del curso trabajan sobre vuestro dataset:
+
+• si el dataset no encaja bien, os costará mucho más aplicar cada taller a partir de octubre.
+
+• Cambiar de dataset a mitad de curso es caro:
+
+• mejor invertir estas dos semanas en elegir bien que arrepentirse en el Taller 1.
+
+• No existe el dataset perfecto:
+
+• el objetivo es encontrar uno razonablemente completo y, para lo que falte, saber justificar cómo lo vais a adaptar (lo veremos en cada
+  taller).
+
+
+
+
+Prácticas ABP · Sesión 1: Arranque (alumnado)                                                                                     21/09 · 22/09 · 23/09 · 2026
+CHECKLIST TÉCNICO
+
+
+¿Qué hace bueno un dataset para este proyecto?
+Cada característica alimenta uno de los cuatro talleres técnicos
+
+
+
+
+        1                                           2                                            3                                          4
+
+
+                                                                                                                                         Valoraciones o etiquetas
+    Texto descriptivo (obligatorio)             Opiniones o reseñas (ideal)                  Imágenes (ideal)
+                                                                                                                                         (ideal)
+    Un campo de descripción/sinopsis por        Comentarios o reviews de usuarios            Una imagen por ítem (portada, foto,         Puntuaciones, estrellas o categorías
+    ítem, en inglés y con contenido             sobre cada ítem. Alimentan el Taller 2       captura). Necesarias para el Taller 3       (Like/No Like) por ítem. Sirven de base
+    suficiente. Es la base del Taller 1         (análisis de sentimientos) y la              (recomendación por visión artificial        para entrenar y evaluar el clasificador
+    (recomendación por contenidos) —            valoración automática del Taller 4.          mediante embeddings                         del Taller 4.
+    sin esto, no hay proyecto.                                                               preentrenados).
+
+
+
+
+Si vuestro dataset no cubre las cuatro, no pasa nada: en cada taller veremos cómo justificar y adaptar la técnica a lo que sí tengáis.
+
+
+
+Prácticas ABP · Sesión 1: Arranque (alumnado)                                                                                                             21/09 · 22/09 · 23/09 · 2026
+20 IDEAS PARA ARRANCAR (1/2)
+
+
+Ejemplos de temáticas de proyecto
+Ninguna es obligatoria — sirven como punto de partida para vuestra propia búsqueda
+
+
+ Temática                                              Qué suele traer                                    Dónde buscar
+ Películas y series                                    Sinopsis, géneros, reseñas de usuarios, carteles   Kaggle · TMDB (API gratuita)
+ Videojuegos                                           Descripción, reseñas de la tienda, capturas        Kaggle (Steam games/reviews)
+ Libros                                                Sinopsis, reseñas, portadas                        Kaggle (Goodreads) · Open Library API
+ Música / álbumes                                      Descripción, metadatos, portadas, popularidad      Kaggle (Spotify) · MusicBrainz
+ Anime / manga                                         Sinopsis, reseñas, imágenes                        Kaggle (MyAnimeList)
+ Recetas de cocina                                     Ingredientes/descripción, reseñas, fotos           Kaggle (Food.com)
+ Restaurantes                                          Descripción, reseñas, fotos                        Yelp Open Dataset · Kaggle
+ Alojamientos turísticos                               Descripción, reseñas, fotos                        Inside Airbnb
+ Hoteles                                               Descripción, reseñas, fotos                        Kaggle (hotel reviews)
+ Vinos                                                 Notas de cata (texto), puntuación                  Kaggle (wine reviews)
+
+
+
+
+Prácticas ABP · Sesión 1: Arranque (alumnado)                                                                                               21/09 · 22/09 · 23/09 · 2026
+20 IDEAS PARA ARRANCAR (2/2)
+
+
+Ejemplos de temáticas de proyecto
+Continuación de la lista anterior
+
+
+ Temática                                       Qué suele traer                              Dónde buscar
+ Cervezas artesanales                           Descripción, reseñas, valoración             Kaggle (beer reviews)
+ Perfumes / fragancias                          Descripción de notas olfativas, reseñas      Kaggle (buscar “fragrance/perfume dataset”)
+ Cosmética / skincare                           Descripción de producto, reseñas, imágenes   Kaggle (buscar “skincare/cosmetics reviews”)
+ Moda / ropa                                    Descripción, reseñas, fotos de producto      Kaggle (fashion product images, H&M)
+ Calzado / sneakers                             Descripción, reseñas, fotos                  Kaggle (buscar “sneakers dataset”)
+ Juegos de mesa                                 Mecánicas/descripción, reseñas, imágenes     Kaggle (board games, BoardGameGeek)
+ Apps móviles                                   Descripción, reseñas de la tienda, iconos    Kaggle (Google Play Store apps)
+ Coches de segunda mano                         Descripción, opiniones, fotos                Kaggle (buscar “used cars dataset”)
+ Cursos online                                  Descripción, reseñas del alumnado            Kaggle (buscar “Coursera courses dataset”)
+ Productos de Amazon (una categoría)            Descripción, reseñas, imágenes               Kaggle · Amazon Review Data (UCSD)
+
+
+
+
+Prácticas ABP · Sesión 1: Arranque (alumnado)                                                                                      21/09 · 22/09 · 23/09 · 2026
+BUSCAD POR VUESTRA CUENTA
+
+
+Sitios donde encontrar datasets gratuitos
+Repositorios generales — buenos para cualquier temática, no solo las 20 de antes
+
+
+ Sitio                                                                             Qué encontraréis
+                                                                                   El más grande y variado; casi siempre incluye texto, y a menudo imágenes y
+ Kaggle Datasets (kaggle.com/datasets)
+                                                                                   valoraciones.
+ UCI Machine Learning Repository (archive.ics.uci.edu)                             Datasets clásicos, muy limpios, orientados a aprendizaje automático.
+ Hugging Face Datasets (huggingface.co/datasets)                                   Fuerte en texto y reseñas; muchos datasets de sentimiento ya etiquetados.
+ Google Dataset Search (datasetsearch.research.google.com)                         Buscador que indexa datasets de miles de fuentes distintas — buen punto de partida.
+ Registry of Open Data on AWS (registry.opendata.aws)                              Datasets grandes alojados gratuitamente en AWS.
+ Awesome Public Datasets (GitHub)                                                  Lista curada y organizada por temática, mantenida por la comunidad.
+ Zenodo (zenodo.org)                                                               Datasets de investigación, con cita académica — útil si queréis algo más riguroso.
+ OpenML (openml.org)                                                               Datasets listos para tareas de clasificación/regresión, con metadatos comparables.
+                                                                                   Datasets clásicos de valoraciones de usuarios — el origen académico de referencia en
+ GroupLens / MovieLens (grouplens.org/datasets)
+                                                                                   sistemas de recomendación.
+                                                                                   Datos abiertos oficiales (España y UE) — buena fuente si vuestro proyecto tiene
+ datos.gob.es / data.europa.eu / INE (ine.es)
+                                                                                   enfoque social o estadístico.
+
+
+
+
+Prácticas ABP · Sesión 1: Arranque (alumnado)                                                                                                         21/09 · 22/09 · 23/09 · 2026
+ANTES DE LA PRÓXIMA SESIÓN
+
+
+Cómo decidir: guía rápida en 5 pasos
+
+
+          1. Elegid un dominio que os interese de verdad — vais a trabajar con él todo el cuatrimestre.
+
+
+
+
+          2. Buscad 2-3 datasets candidatos, no os quedéis con el primero que encontréis.
+
+
+
+
+          3. Comprobad para cada uno: ¿tiene texto descriptivo? ¿reseñas? ¿imágenes? ¿valoraciones?
+
+
+
+
+          4. Revisad el tamaño y el idioma (inglés facilita el preprocesado de los talleres 1, 2 y 4) y la licencia de uso.
+
+
+
+
+          5. Si ninguno cumple todo, elegid el más completo y anotad qué le falta — lo justificaréis en cada taller.
+
+
+
+
+Prácticas ABP · Sesión 1: Arranque (alumnado)                                                                                 21/09 · 22/09 · 23/09 · 2026
+ Próximos pasos
+ De aquí a la sesión 2 (28/09, 29/09 o 30/09 según vuestra franja)
+
+  • Cerrar el equipo antes del 25/09.
+  • Traer a la sesión 2 al menos una idea de dominio y uno o dos datasets candidatos.
+  • Dudas generales de organización: preguntadlas ya, no esperéis al Sprint 1.
+  • El Sprint 1 (dominio + dataset + primeros artefactos de análisis) se entrega el 02/10 — ¡dos semanas dan para bastante!
+
+
+
+
+Prácticas ABP · Sesión 1: Arranque (alumnado)                                                                                 21/09 · 22/09 · 23/09 · 2026
+

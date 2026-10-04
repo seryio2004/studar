@@ -1,0 +1,557 @@
+      ARQUITECTUR A DE CO MPUTA DORES II                             P6 · ORDENADOR DE A BORDO
+
+
+
+
+PRÁCTICA 6
+
+
+
+
+Ordenador de a bordo
+DOCUMENTO                 A S I G N AT U R A     TITUL ACIÓN            CENTRO
+
+Del alumnado              Arq. de Computadores   Grado en Ing.          ESEI · Universidade de
+                          II                     Informática · 2.º      Vigo
+
+
+
+
+                                                                                        Página.-1
+         ARQUITECTUR A DE CO MPUTA DORES II                                                                 P6 · ORDENADOR DE A BORDO
+
+
+
+Contenido
+1. Ficha de la práctica ..................................................................................................................... 3
+
+2. Qué se construye ........................................................................................................................ 3
+
+3. El modelo del vehículo................................................................................................................. 4
+
+    3.1 Cómo evoluciona.......................................................................................................................... 4
+
+    3.2 Las ocho páginas del display ....................................................................................................... 5
+
+4. Por qué la interrupción es imprescindible aquí ............................................................................ 6
+
+5. Desarrollo paso a paso ................................................................................................................ 7
+
+    Paso 1. Leer el acelerador ................................................................................................................. 7
+
+    Paso 2. Velocidad y distancia ............................................................................................................ 7
+
+    Paso 3. Combustible y consumo ........................................................................................................ 7
+
+    Paso 4. Las páginas y los LEDs .......................................................................................................... 7
+
+    Paso 5. Valida el modelo .................................................................................................................... 8
+
+    Paso 6. Atrapa un instante concreto de la simulación ........................................................................ 9
+
+6. Criterios de aceptación............................................................................................................... 9
+
+7. Criterios de evaluación ............................................................................................................... 10
+
+8. Entregables ................................................................................................................................ 11
+
+9. Uso de asistentes de inteligencia artificial .................................................................................. 11
+
+Anexo A. Versión para PC ............................................................................................................... 13
+
+Anexo B. Ampliaciones .................................................................................................................. 13
+
+Anexo C. Conexionado ................................................................................................................... 13
+
+
+
+
+                                                                                                                                       Página.-2
+        ARQUITECTUR A DE CO MPUTA DORES II                                  P6 · ORDENADOR DE A BORDO
+
+
+
+1. Ficha de la práctica
+
+CAMP O                  VALOR
+
+
+Sesión                  Sesiones 9 y 10 de 13 · primera parte del proyecto final
+
+
+Duración                4 horas presenciales, en dos sesiones
+
+
+Modalidad               Individual, en el laboratorio
+
+
+Requisitos previos      P2, P3, P4 y P5. Esta práctica las integra todas
+
+
+                        Placa NUCLEO-F401RE · módulo LED&KEY (TM1638) · potenciómetro ·
+Material
+                        STM32CubeIDE
+
+
+                        Proyecto CubeIDE, tabla de comprobación del modelo y memoria (ver
+Entregables
+                        apartado 8)
+
+
+Plazo                   Una semana desde el final de la segunda sesión, por Moovi
+
+
+
+
+2. Qué se construye
+
+El cuadro de instrumentos de un coche. El potenciómetro hace de pedal del acelerador,
+un temporizador integra la física del vehículo diez veces por segundo, y el display muestra
+la magnitud que se elija con los pulsadores del módulo: velocidad, distancia recorrida,
+combustible restante, consumo medio, autonomía.
+
+Los ocho LEDs son el indicador de nivel de combustible: se van apagando conforme se
+vacía el depósito.
+
+
+
+
+                                                                                             Página.-3
+        ARQUITECTUR A DE CO MPUTA DORES II                              P6 · ORDENADOR DE A BORDO
+
+
+
+  Es la primera de las dos sesiones del proyecto final. No hay concepto nuevo: hay que
+  integrar lo de las cuatro prácticas anteriores en un sistema que hace varias cosas a la
+  vez y que tiene que seguir respondiendo mientras las hace.
+
+
+
+3. El modelo del vehículo
+
+Todo lo que sigue es de obligado cumplimiento: los criterios de aceptación se
+comprueban con estos números.
+
+
+M AG N ITUD                                  VALOR                CO NSTAN T E
+
+
+Capacidad del depósito                       5,0 litros           MAX_TANQUE
+
+
+Consumo de referencia                        5,0 l / 100 km       LITROS_REF_100KM
+
+
+Autonomía con el depósito lleno              100 km               MAX_KM
+
+
+Periodo de integración                       0,1 s (una décima)   t_interval
+
+
+Retención al soltar el acelerador            2,8 m/s²             ACC * 10
+
+
+
+
+Los tres primeros valores son coherentes entre sí y conviene comprobarlo: cinco litros a
+cinco litros cada cien kilómetros dan exactamente cien kilómetros de autonomía. Esa
+coherencia es lo que permite validar el modelo sin salir a la carretera.
+
+
+3.1 Cómo evoluciona
+
+Cada décima de segundo, disparado por la interrupción del temporizador:
+
+   1.    Si el acelerador está pisado, la velocidad aumenta en proporción a cuánto se pise,
+         y se consume combustible en proporción a la velocidad.
+   2. Si no lo está, la velocidad baja a razón de 2,8 m/s², que es la retención del motor.
+         Nunca por debajo de cero.
+
+
+
+
+                                                                                         Página.-4
+       ARQUITECTUR A DE CO MPUTA DORES II                            P6 · ORDENADOR DE A BORDO
+
+
+     3. La distancia aumenta según la velocidad actual.
+     4. El consumo medio se recalcula como litros gastados por cada 100 km recorridos.
+     5. La autonomía sale del combustible que queda y del consumo medio.
+
+
+  Fíjate en que el consumo medio y la autonomía no son constantes del vehículo: son
+  magnitudes calculadas a partir de la historia del viaje. Si conduces suave mejoran, y si
+  aceleras mucho empeoran. Eso es exactamente lo que hace un ordenador de a bordo
+  real, y es lo que distingue esta práctica de un simple contador.
+
+  El consumo medio depende de cómo conduzcas, y eso es deliberado. El motor solo
+  gasta mientras el pedal está pisado, pero el coche sigue avanzando cuando lo sueltas.
+  Por eso, acelerando sin soltar el consumo medio se queda clavado en 5,0 l/100 km —a
+  cualquier velocidad— y en cuanto levantas el pie empieza a bajar. Es lo que hace un
+  coche real al ir en retención: recorre kilómetros sin gastar combustible.
+
+  El modelo no tiene velocidad máxima. No se ha incluido resistencia al avance, así que
+  con el pedal a fondo el coche pasa de 300 km/h y sigue subiendo. Tampoco existe una
+  velocidad de crucero que puedas mantener: pisando sube, soltando baja. Añadir un
+  rozamiento proporcional al cuadrado de la velocidad arregla las dos cosas y está
+  propuesto en el anexo B.
+
+
+3.2 Las ocho páginas del display
+
+Cada tecla del módulo selecciona una magnitud. La letra inicial dice cuál se está viendo:
+
+
+TECL A       M AG N IT UD                           PR E FIJO        UN IDAD
+
+
+S1           Temperatura del chip                   t                °C
+
+
+S2           Aceleración (posición del pedal)       A                0 a 10
+
+
+S3           Velocidad                              v                km/h
+
+
+S4           Distancia recorrida                    d                metros
+
+
+
+
+                                                                                      Página.-5
+       ARQUITECTUR A DE CO MPUTA DORES II                                                                               P6 · ORDENADOR DE A BORDO
+
+
+
+TECL A            M AG N IT UD                                                              PR E FIJO                 UN IDAD
+
+
+S5                Combustible restante                                                      F                         litros
+
+
+S6                Autonomía                                                                 u                         km
+
+
+S7                Consumo medio                                                             c                         l / 100 km
+
+
+S8                Tiempo de viaje                                                                                     segundos
+
+
+
+
+4. Por qué la interrupción es imprescindible aquí
+
+La física se integra dentro de la interrupción del temporizador, cada décima de segundo
+exacta. Y tiene que ser así.
+
+
+
+
+     D O S R I T M O S : L A I N T E R R U P C I Ó N I N T E G R A A I N T E R VA L O S E X A C TO S , E L B U C L E P R E S E N TA C U A N D O P U E D E .
+
+
+Si se integrase en el bucle principal, el paso de integración dependería de lo que el bucle
+estuviera haciendo: leer el ADC, escanear los pulsadores, escribir en el display. La
+
+
+
+
+                                                                                                                                                       Página.-6
+      ARQUITECTUR A DE CO MPUTA DORES II                           P6 · ORDENADOR DE A BORDO
+
+
+velocidad calculada saldría distinta según qué página estuvieras mirando, que es un
+absurdo físico.
+
+
+  Este es el argumento que justifica toda la Práctica 4. Un temporizador por interrupción
+  da un paso de integración constante y garantizado, independiente de la carga del
+  programa. La simulación es correcta porque el paso es fijo, no porque el código sea
+  rápido.
+
+
+
+5. Desarrollo paso a paso
+
+Paso 1. Leer el acelerador
+
+Lee el potenciómetro por DMA, como en P5, y muestra en el display la posición del pedal
+escalada de 0 a 10. Comprueba que responde de forma suave al girarlo.
+
+
+Paso 2. Velocidad y distancia
+
+Configura TIM2 para interrumpir cada 100 ms e integra la velocidad y la distancia. Muestra
+la velocidad y comprueba dos cosas: que al pisar sube, y que al soltar baja hasta pararse.
+
+
+Paso 3. Combustible y consumo
+
+Añade el consumo y el combustible restante. Es el momento de validar el modelo: con el
+pedal quieto en la posición que dé 100 km/h, el consumo medio debe estabilizarse cerca
+de 5 l/100 km. Si no, algo está mal escalado.
+
+
+Paso 4. Las páginas y los LEDs
+
+Selecciona la magnitud con los pulsadores y saca el nivel de combustible por los ocho
+LEDs. El paso de una página a otra debe ser inmediato: si tarda, es que el bucle está
+bloqueado en algún sitio.
+
+
+
+
+                                                                                     Página.-7
+      ARQUITECTUR A DE CO MPUTA DORES II                         P6 · ORDENADOR DE A BORDO
+
+
+
+Paso 5. Valida el modelo
+
+Con el cronómetro del móvil, comprueba que el contador de tiempo de viaje mide
+segundos de verdad, y que la distancia recorrida en un minuto a velocidad conocida
+coincide con lo que dice la física.
+
+
+
+
+                                                                                  Página.-8
+       ARQUITECTUR A DE CO MPUTA DORES II                                 P6 · ORDENADOR DE A BORDO
+
+
+
+Paso 6. Atrapa un instante concreto de la simulación
+
+El modelo cambia diez veces por segundo, así que mirar valores en la pantalla solo
+permite ver dónde acaba, no cómo llega. Con un punto de ruptura condicional se puede
+congelar un instante elegido.
+
+     6. Abre Core/Src/Bordo.c —la física no está en main.c— y pon un punto de ruptura
+
+        condicional en la línea que actualiza la velocidad en km/h, con la condición
+        Panel_bordo.v_kmh > 100.0f.
+
+     7. Acelera. El programa se detendrá exactamente al cruzar esa velocidad.
+     8. Inspecciona la distancia recorrida, el combustible y el consumo medio en ese
+        punto, y comprueba si son coherentes entre sí.
+
+
+  Aquí se nota bien lo que el capítulo 11 llama efecto observador: al parar, el coche de la
+  simulación se para, pero el reloj del chip no. Al reanudar, la base de tiempo se pone al
+  día de golpe. Observa qué le pasa al tiempo de viaje y explícalo en la memoria.
+
+
+
+6. Criterios de aceptación
+
+Nº       PR UE BA                                R ES U LTADO EXIG IDO
+
+
+         Girar el potenciómetro con el           La página de aceleración sigue el mando de
+CA-1
+         vehículo parado.                        forma continua, entre 0 y 10.
+
+
+                                                 La velocidad sube al pisar y baja al soltar hasta
+CA-2     Pisar a fondo unos segundos y soltar.
+                                                 quedarse en 0, sin pasar a negativo.
+
+
+         Desde 100 km/h, soltar el acelerador    Tarda del orden de 10 segundos en pararse. Si
+CA-3
+         y cronometrar.                          tarda 1 s, la deceleración está mal escalada.
+
+
+
+
+                                                                                              Página.-9
+       ARQUITECTUR A DE CO MPUTA DORES II                                    P6 · ORDENADOR DE A BORDO
+
+
+
+Nº       PR UE BA                                   R ES U LTADO EXIG IDO
+
+
+         Acelerar sin soltar desde parado y
+                                                    Acelerando sin soltar se queda en 5,0 l/100 km,
+         mirar el consumo medio. Después
+CA-4                                                sea cual sea la velocidad. Al soltar baja, porque el
+         soltar el pedal un buen rato y volver a
+                                                    coche sigue avanzando sin consumir.
+         mirarlo.
+
+
+         Comparar el tiempo de viaje con un
+CA-5                                                Coincide con menos de 1 s de diferencia.
+         cronómetro externo, un minuto.
+
+
+         Cambiar de página con los                  El cambio es inmediato y la simulación no se
+CA-6
+         pulsadores mientras el coche circula. detiene ni da saltos.
+
+
+
+
+7. Criterios de evaluación
+
+ Condición previa. El proyecto debe compilar sin errores y sin avisos. Un proyecto que
+ no compila no se evalúa: se devuelve para corrección y se califica sobre 5.
+
+
+
+CR ITER IO               Q UÉ SE VALO RA                         ALCANZ ADO A M E DIAS           P ES O
+
+
+1. Lectura del           CA-1: el ADC alimenta la simulación Lee el potenciómetro pero a
+                                                                                                 1,5
+acelerador               de forma continua.                      saltos o con la escala mal.
+
+
+                                                                 Acelera bien pero la
+                         CA-2 y CA-3: velocidad y
+2. Física del vehículo                                           deceleración está mal           2,0
+                         deceleración creíbles.
+                                                                 escalada.
+
+
+                         CA-4: acelerando sin soltar el
+                                                                 Calcula el consumo pero no
+3. Coherencia del        consumo medio da 5,0, y se
+                                                                 sabe explicar por qué           2,0
+modelo                   entiende por qué al levantar el pie
+                                                                 cambia según se conduzca.
+                         baja.
+
+
+
+
+                                                                                                Página.-10
+       ARQUITECTUR A DE CO MPUTA DORES II                                 P6 · ORDENADOR DE A BORDO
+
+
+
+CR ITER IO              Q UÉ SE VALO RA                      ALCANZ ADO A M E DIAS           P ES O
+
+
+                        CA-5: la integración va por          Integra en el bucle principal
+4. Base de tiempo       interrupción y el tiempo es          en lugar de en la               2,0
+                        correcto.                            interrupción.
+
+
+                                                             Las páginas funcionan pero
+                        CA-6: páginas y LEDs, sin bloquear
+5. Interfaz                                                  cambiar de una a otra frena     1,5
+                        la simulación.
+                                                             la simulación.
+
+
+                                                             Responde una de las dos, o
+6. Memoria              Las dos cuestiones del apartado 8.                                   1,0
+                                                             sin justificar.
+
+
+
+
+8. Entregables
+
+   •    Proyecto de STM32CubeIDE comprimido, sin Debug ni Release. Nombre:
+        ACII_P6_Apellido1_Apellido2_Nombre.zip
+   •    Tabla de validación: los valores medidos en CA-3, CA-4 y CA-5 frente a los
+        esperados.
+   •    Memoria breve, máximo dos páginas:
+              o   Explica por qué la física tiene que integrarse en la interrupción y no en el
+                  bucle principal. Describe qué observarías si estuviera en el bucle.
+              o   El consumo medio se calcula dividiendo litros entre distancia. ¿Qué ocurre
+                  en los primeros instantes, cuando la distancia recorrida es casi cero?
+                  ¿Cómo lo evita el código?
+
+
+
+9. Uso de asistentes de inteligencia artificial
+
+Se permite el uso de asistentes de IA como herramienta de consulta y de depuración, con
+tres condiciones:
+
+
+
+                                                                                             Página.-11
+    ARQUITECTUR A DE CO MPUTA DORES II                            P6 · ORDENADOR DE A BORDO
+
+
+•    Declararlo en la memoria: qué asistente y para qué.
+•    Entender lo que entregas. En la defensa se te puede pedir que expliques o
+     modifiques cualquier línea.
+•    No sustituir la validación. Las medidas de la tabla las tomas tú, con la placa y un
+     cronómetro.
+
+
+
+
+                                                                                   Página.-12
+       ARQUITECTUR A DE CO MPUTA DORES II                                 P6 · ORDENADOR DE A BORDO
+
+
+
+Anexo A. Versión para PC
+
+En _simulacion_pc/ hay una versión del mismo modelo escrita para ordenador, con las
+
+interrupciones emuladas mediante señales de UNIX e itimerval. Compila con gcc y se
+
+ejecuta en un terminal.
+
+Sirve para dos cosas: entender el modelo sin pelearse con el hardware, y comparar cómo
+se expresa la misma idea —una rutina que se ejecuta a intervalos fijos— en dos entornos
+muy distintos. Es también la referencia contra la que se validó la versión de la placa.
+
+
+
+Anexo B. Ampliaciones
+
+   •     Limitar la velocidad máxima. Tal como está, el modelo no tiene tope: con el pedal
+         a fondo el vehículo pasa de 300 km/h. Añadir rozamiento proporcional al cuadrado
+         de la velocidad lo arregla y es físicamente correcto.
+   •     Aviso de reserva: que los LEDs parpadeen cuando queden menos de 0,5 litros.
+   •     Consumo instantáneo además del medio, y comparar cómo reacciona cada uno al
+         pisar.
+   •     Cuentakilómetros parcial que se ponga a cero con un pulsador, conservando el
+         total.
+   •     Registro por el puerto serie de velocidad y consumo cada segundo, para dibujar la
+         curva después.
+
+
+
+Anexo C. Conexionado
+
+SEÑ AL                     P IN             PAPE L
+
+
+Potenciómetro              PA1              Pedal del acelerador (ADC1_IN1)
+
+
+TM1638 · STB               PA10             Display y LEDs
+
+
+
+
+                                                                                           Página.-13
+     ARQUITECTUR A DE CO MPUTA DORES II            P6 · ORDENADOR DE A BORDO
+
+
+
+SEÑ AL                   P IN             PAPE L
+
+
+TM1638 · CLK             PB4
+
+
+TM1638 · DIO             PB5
+
+
+
+
+                                                                    Página.-14
+

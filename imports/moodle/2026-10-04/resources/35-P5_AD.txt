@@ -1,0 +1,836 @@
+      ARQUITECTUR A DE CO MPUTA DORES II                  P5 · CONVER SIÓN ANALÓGICA - DIGITAL (ADC)
+
+
+
+
+PRÁCTICA 5
+
+
+
+
+Conversión analógica-digital (ADC)
+DOCUMENTO                 A S I G N AT U R A     TITUL ACIÓN               CENTRO
+
+Del alumnado              Arq. de Computadores   Grado en Ing.             ESEI · Universidade de
+                          II                     Informática · 2.º         Vigo
+
+
+
+
+                                                                                            Página.-1
+         ARQUITECTUR A DE CO MPUTA DORES II                                               P5 · CONVER SIÓN ANALÓGICA - DIGITAL (ADC)
+
+
+
+Contenido
+1. Ficha de la práctica ..................................................................................................................... 4
+
+2. Objetivos de aprendizaje ............................................................................................................. 4
+
+3. Del mundo físico al número ......................................................................................................... 5
+
+4. El ADC del STM32F401RE ............................................................................................................ 5
+
+    4.1 Parámetros .................................................................................................................................. 5
+
+    4.2 Qué se mide ................................................................................................................................ 6
+
+    4.3 De cuentas a magnitudes ............................................................................................................ 7
+
+    4.4 Para qué sirve medir la referencia interna.................................................................................... 8
+
+5. Las tres formas de leer el ADC..................................................................................................... 9
+
+    5.1 Por consulta ................................................................................................................................. 9
+
+    5.2 Por interrupción .......................................................................................................................... 9
+
+    5.3 Por DMA .................................................................................................................................... 10
+
+    5.4 Cuál usar ................................................................................................................................... 10
+
+6. Desarrollo paso a paso ................................................................................................................ 11
+
+    Paso 1. Consulta, un canal ................................................................................................................ 11
+
+    Paso 2. El mismo canal, por interrupción .......................................................................................... 11
+
+    Paso 3. Tres canales por DMA, con temperatura ............................................................................... 11
+
+    Paso 4. La comparación .................................................................................................................. 12
+
+    Paso 5. Separa el dato de su presentación....................................................................................... 13
+
+7. Criterios de aceptación .............................................................................................................. 13
+
+8. Criterios de evaluación .............................................................................................................. 14
+
+9. Entregables ............................................................................................................................... 15
+
+10. Uso de asistentes de inteligencia artificial ............................................................................... 16
+
+Anexo A. Configuración del ADC en CubeMX .................................................................................. 17
+
+Anexo B. Conexionado ................................................................................................................... 18
+
+Anexo C. El sensor de temperatura interno ................................................................................... 20
+
+
+
+
+                                                                                                                                            Página.-2
+ARQUITECTUR A DE CO MPUTA DORES II   P5 · CONVER SIÓN ANALÓGICA - DIGITAL (ADC)
+
+
+
+
+                                                                       Página.-3
+        ARQUITECTUR A DE CO MPUTA DORES II                  P5 · CONVER SIÓN ANALÓGICA - DIGITAL (ADC)
+
+
+
+1. Ficha de la práctica
+
+CAMP O                  VALOR
+
+
+Sesión                  Sesión 8 de 13
+
+
+Duración                2 horas presenciales
+
+
+Modalidad               Individual, en el laboratorio
+
+
+                        P2 (máquina de estados y bucle no bloqueante) y P4 (interrupciones de
+Requisitos previos
+                        temporizador)
+
+
+                        Placa NUCLEO-F401RE · módulo LED&KEY (TM1638) · potenciómetro ·
+Material
+                        STM32CubeIDE · biblioteca TM1638
+
+
+                        Un archivo con los tres proyectos, tabla comparativa y memoria breve (ver
+Entregables
+                        apartado 9)
+
+
+Plazo                   Una semana desde el final de la sesión, por Moovi
+
+
+
+
+2. Objetivos de aprendizaje
+
+Al terminar esta práctica serás capaz de:
+
+   •     Configurar el conversor analógico-digital de un STM32 y entender qué significan
+         su resolución, su rango y su tiempo de muestreo.
+   •     Leer el mismo canal de tres formas distintas —consulta, interrupción y DMA— y
+         explicar qué le cuesta a la CPU cada una.
+   •     Convertir las cuentas que devuelve el ADC en magnitudes físicas: tensión en
+         voltios y temperatura en grados.
+
+
+
+
+                                                                                              Página.-4
+        ARQUITECTUR A DE CO MPUTA DORES II                      P5 · CONVER SIÓN ANALÓGICA - DIGITAL (ADC)
+
+
+    •      Usar el sensor de temperatura interno del microcontrolador y la referencia
+           interna de tensión para corregir la medida.
+    •      Decidir con criterio cuál de los tres métodos conviene a un problema concreto.
+
+
+  El objetivo real de esta práctica no es leer un potenciómetro: es entender el coste de
+  una lectura. Los tres métodos dan el mismo número. Lo que cambia es cuánta CPU se
+  queda esperando, y esa es la decisión que tendrás que tomar en cualquier sistema
+  empotrado.
+
+
+
+3. Del mundo físico al número
+
+Un microcontrolador solo entiende números. La temperatura de una sala, la posición de
+un mando, la corriente que atraviesa un motor: todo eso son tensiones que varían de
+forma continua, y hace falta algo que las traduzca. Ese algo es el conversor analógico-
+digital.
+
+En esta práctica vas a medir tres cosas a la vez con el mismo conversor: la posición de un
+potenciómetro, la temperatura del propio chip y su tensión de referencia interna. Las dos
+últimas no necesitan ningún cable: están dentro del microcontrolador.
+
+
+
+4. El ADC del STM32F401RE
+
+4.1 Parámetros
+
+PAR ÁM ETRO           VALOR              Q UÉ S IGN IFICA
+
+
+                                         Devuelve un entero de 0 a 4095. Nada intermedio: 4096
+Resolución            12 bits
+                                         escalones y ya está.
+
+
+                                         Por encima de 3,3 V no mide más: satura, y puedes dañar el
+Rango de entrada 0 a 3,3 V
+                                         pin.
+
+
+
+
+                                                                                                  Página.-5
+      ARQUITECTUR A DE CO MPUTA DORES II                        P5 · CONVER SIÓN ANALÓGICA - DIGITAL (ADC)
+
+
+
+PAR ÁM ETRO           VALOR              Q UÉ S IGN IFICA
+
+
+                                         Potenciómetro, sensor de temperatura interno y referencia
+Canales usados        3
+                                         interna.
+
+
+                                         3,3 V / 4096. Es el mínimo cambio que el conversor puede
+Escalón               ≈ 0,8 mV
+                                         distinguir.
+
+
+
+De ahí sale la conversión básica de cuentas a voltios:
+
+DE CUENTAS A TENSIÓN
+
+
+ tension = cuentas * 3.3 / 4095.0;                          /* voltios */
+
+
+
+
+  Se divide entre 4095, no entre 4096. El valor máximo que devuelve un ADC de 12 bits es
+  4095, y ese es el que debe corresponder a 3,3 V. Dividir entre 4096 introduce un error
+  sistemático pequeño pero real.
+
+
+4.2 Qué se mide
+
+O RDEN CAN AL                 Q UÉ E S                                       CABLE ADO
+
+
+                                                                             Ninguno: está dentro del
+1.º       VREFINT             Referencia interna de tensión, unos 1,21 V.
+                                                                             chip.
+
+
+                              Sensor de temperatura interno del              Ninguno: está dentro del
+2.º       TEMPSENSOR
+                              microcontrolador.                              chip.
+
+
+                              Potenciómetro. Es la única medida que          Cursor del potenciómetro
+3.º       IN1 (PA1)
+                              viene de fuera.                                a PA1.
+
+
+
+
+                                                                                                  Página.-6
+      ARQUITECTUR A DE CO MPUTA DORES II                    P5 · CONVER SIÓN ANALÓGICA - DIGITAL (ADC)
+
+
+
+  El potenciómetro va a PA1, no a PA0. PA1 es el canal ADC1_IN1. Si lo conectas a PA0 no
+  leerás nada, y el fallo es difícil de ver porque el programa funciona: simplemente mide
+  un pin al aire.
+
+
+El orden importa. Cuando se leen varios canales en secuencia, el ADC los recorre en el
+orden configurado y los deja en un array en ese mismo orden. Si te confundes de índice,
+medirás la temperatura creyendo que es el potenciómetro.
+
+
+4.3 De cuentas a magnitudes
+
+El potenciómetro se escala a un porcentaje de recorrido:
+
+POSICIÓN DEL POTENCIÓMETRO
+
+
+ posicion = crudo[2] / 4095.0 * 100.0;                 /* 0,0 a 100,0 % */
+
+
+
+La temperatura es menos directa. El sensor interno entrega una tensión que crece de
+forma aproximadamente lineal con la temperatura, y el fabricante da dos constantes para
+interpretarla:
+
+
+CO NSTAN T E          VALOR                S IGN IFICADO
+
+
+V25                   0,76 V               Tensión que da el sensor a 25 °C
+
+
+Avg_Slope             2,5 mV/°C            Cuánto sube esa tensión por cada grado
+
+
+VREFINT               1,21 V               Valor nominal de la referencia interna
+
+
+
+
+DE CUENTAS A GRADOS
+
+
+ V_sensor = crudo[1] * V_ref / 4095.0;
+ temperatura = (V_sensor - 0.76) * 1000.0 / 2.5 + 25.0;                        /* grados C */
+
+
+
+Queda una pregunta: ¿de dónde sale V_ref? Ahí entra el tercer canal, y es el apartado
+
+siguiente.
+
+
+
+                                                                                              Página.-7
+      ARQUITECTUR A DE CO MPUTA DORES II               P5 · CONVER SIÓN ANALÓGICA - DIGITAL (ADC)
+
+
+
+4.4 Para qué sirve medir la referencia interna
+
+Lo natural sería suponer que la alimentación son 3,3 V exactos y usar ese número. Pero la
+alimentación real de la placa no es exactamente 3,3 V, y además cambia con la
+temperatura, con la carga y con el USB del que cuelgue.
+
+El truco es que VREFINT vale siempre lo mismo, unos 1,21 V, pase lo que pase con la
+alimentación. Así que midiéndolo se puede deducir cuánto vale de verdad la referencia del
+conversor:
+
+REFERENCIA RE AL, DEDUCIDA
+
+
+ V_ref = 4095.0 * 1.21 / crudo[0];            /* la alimentacion real, en voltios
+ */
+
+
+
+
+  Esto es autocalibración, y es una técnica de uso corriente en instrumentación. Sin ella,
+  un error del 3 % en la alimentación se traslada íntegro a todas las medidas. En la
+  memoria tendrás que razonar por qué esta corrección mejora la medida de
+  temperatura y no mejora la del potenciómetro.
+
+
+
+
+                                                                                         Página.-8
+          ARQUITECTUR A DE CO MPUTA DORES II           P5 · CONVER SIÓN ANALÓGICA - DIGITAL (ADC)
+
+
+
+5. Las tres formas de leer el ADC
+
+El conversor tarda un tiempo en hacer su trabajo. Lo que distingue a los tres métodos es
+qué hace la CPU mientras tanto.
+
+
+5.1 Por consulta
+
+La CPU arranca la conversión y se queda esperando a que termine, preguntando una y
+otra vez.
+
+L E C T U R A P O R C O N S U LTA
+
+
+   HAL_ADC_Start(&hadc1);
+   HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);               /* aqui se bloquea
+   */
+   valor = HAL_ADC_GetValue(&hadc1);
+
+
+
+Sencillísimo de escribir y de depurar, y por eso es por donde se empieza. El problema está
+en la segunda línea: mientras dura, el programa no hace nada más. Si tu bucle tiene que
+atender botones o mover algo, esa espera se nota.
+
+
+5.2 Por interrupción
+
+La CPU arranca la conversión y sigue con lo suyo. Cuando el ADC termina, avisa, y una
+función de atención recoge el dato.
+
+LECTURA POR INTERRUPCIÓN
+
+
+   HAL_ADC_Start_IT(&hadc1);                   /* arranca y vuelve de inmediato */
+
+   void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc) {
+       valor = HAL_ADC_GetValue(hadc);
+       listo = 1;                      /* volatile: lo modifica una
+   interrupcion */
+   }
+
+
+
+
+                                                                                         Página.-9
+      ARQUITECTUR A DE CO MPUTA DORES II                     P5 · CONVER SIÓN ANALÓGICA - DIGITAL (ADC)
+
+
+
+  La bandera que comparten el bucle principal y la función de atención tiene que
+  declararse volatile. Sin esa palabra el compilador puede suponer que nadie más la
+  toca, guardarla en un registro y no releerla nunca: el bucle se queda esperando para
+  siempre un cambio que sí ocurrió. Es el mismo problema que viste en P4.
+
+
+5.3 Por DMA
+
+El acceso directo a memoria es un periférico que copia datos sin molestar a la CPU. Se le
+dice una vez dónde dejar los resultados y se despreocupa: el ADC va convirtiendo canal
+tras canal y el DMA los va dejando en un array.
+
+LECTURA POR DMA
+
+
+ uint16_t crudo[3];
+ HAL_ADC_Start_DMA(&hadc1, (uint32_t *)crudo, 3);                       /* una sola vez */
+
+
+
+Es el único de los tres que escala bien a varios canales. Con consulta, leer tres canales
+cuesta tres esperas; con DMA cuesta lo mismo que leer uno, porque la CPU no participa.
+
+
+5.4 Cuál usar
+
+M ÉTO DO          CO STE PAR A L A CPU     COM PL E JIDAD   CUÁN DO CO N VIE N E
+
+
+                  Alto: espera                              Una medida puntual, o un programa
+Consulta                                   Mínima
+                  bloqueado                                 que no tiene nada mejor que hacer.
+
+
+                                                            Medidas esporádicas mientras el bucle
+Interrupción      Bajo                     Media
+                                                            atiende otras cosas.
+
+
+                                           Alta al          Muestreo continuo, varios canales, o
+DMA               Prácticamente nulo
+                                           configurar       frecuencias altas.
+
+
+
+No hay un ganador absoluto: hay una elección que justificar. Eso es lo que se te va a pedir
+en la memoria.
+
+
+
+
+                                                                                              Página.-10
+      ARQUITECTUR A DE CO MPUTA DORES II                P5 · CONVER SIÓN ANALÓGICA - DIGITAL (ADC)
+
+
+
+6. Desarrollo paso a paso
+
+Tres programas, de menos a más. Cada uno se prueba en la placa antes de pasar al
+siguiente.
+
+
+Paso 1. Consulta, un canal
+
+Configura el ADC1 con un único canal en PA1, resolución de 12 bits, y muestra en el display
+el valor crudo. Comprueba que al girar el potenciómetro recorre de 0 a 4095
+aproximadamente.
+
+Después añade la conversión a tensión y muestra los voltios con un decimal.
+
+
+Paso 2. El mismo canal, por interrupción
+
+Parte del proyecto anterior. Sustituye la espera por el arranque en modo interrupción y la
+función de atención. La bandera compartida, volatile.
+
+El resultado en pantalla debe ser idéntico al del paso 1: si cambia, algo va mal.
+
+
+Paso 3. Tres canales por DMA, con temperatura
+
+Añade los canales de temperatura y referencia interna, y activa el DMA en modo circular.
+Muestra en el display, alternando con el pulsador, la posición del potenciómetro y la
+temperatura del chip. Antepón un prefijo —P o t— para que se sepa qué magnitud se está
+
+viendo.
+
+
+  Para comprobar que la temperatura responde de verdad, pasa primero el display a
+  modo temperatura con el pulsador y luego aprieta el dedo contra el encapsulado del
+  microcontrolador unos segundos. Debe subir algunas décimas. Si no se mueve, o estás
+  leyendo el índice equivocado del array o el sensor no está habilitado en la
+  configuración.
+
+
+
+
+                                                                                         Página.-11
+     ARQUITECTUR A DE CO MPUTA DORES II             P5 · CONVER SIÓN ANALÓGICA - DIGITAL (ADC)
+
+
+
+Paso 4. La comparación
+
+Con los tres funcionando, mide cuánto tiempo consume cada lectura. Una forma sencilla:
+contar cuántas vueltas da el bucle principal en un segundo con cada método, usando
+HAL_GetTick(). Esa cifra es tu dato experimental.
+
+
+
+
+                                                                                     Página.-12
+          ARQUITECTUR A DE CO MPUTA DORES II                   P5 · CONVER SIÓN ANALÓGICA - DIGITAL (ADC)
+
+
+
+Paso 5. Separa el dato de su presentación
+
+Cuando un valor sale raro en pantalla hay dos sospechosos: la lectura y la conversión a
+unidades. El depurador los separa en un minuto.
+
+     1.    Pon un punto de ruptura en el return de LeerPotenciometro, que es donde acaba
+
+           de leerse el conversor.
+     2. Inspecciona el valor crudo, el número de 0 a 4095, antes de convertirlo.
+     3. Continúa e inspecciona el valor ya convertido a milivoltios.
+
+Con el mando en el tope, el crudo debe ser 4095. Si lo es y la tensión mostrada no llega a
+3,3 V, el fallo está en la conversión, no en la lectura. Si el crudo tampoco llega, el fallo está
+antes: en el montaje o en la configuración.
+
+
+  Mira además, en la vista de periféricos, la configuración del conversor: la resolución y
+  el divisor de su reloj. Comprueba que la frecuencia resultante está dentro del máximo
+  del chip. Indícalo en la memoria.
+
+
+
+7. Criterios de aceptación
+
+Tu entrega se comprobará con estas pruebas, en la placa.
+
+
+Nº          PR UE BA                                R ES U LTADO EXIG IDO
+
+
+            Girar el potenciómetro de un extremo El valor recorre de 0 a 4095 de forma continua,
+CA-1
+            a otro, en el programa por consulta.    sin saltos ni valores congelados.
+
+
+            Mostrar la tensión con el
+                                                    Aproximadamente 0,0 V, 1,6 V y 3,3 V, con
+CA-2        potenciómetro al mínimo, a la mitad y
+                                                    tolerancia de ±0,2 V.
+            al máximo.
+
+
+
+
+                                                                                                Página.-13
+       ARQUITECTUR A DE CO MPUTA DORES II                  P5 · CONVER SIÓN ANALÓGICA - DIGITAL (ADC)
+
+
+
+Nº       PR UE BA                               R ES U LTADO EXIG IDO
+
+
+         Comparar la lectura del programa por
+                                                Los dos muestran el mismo valor para la misma
+CA-3     consulta con la del programa por
+                                                posición, dentro de ±2 cuentas.
+         interrupción.
+
+
+                                                El display cambia de magnitud, el prefijo indica
+         Alternar con el pulsador entre
+CA-4                                            cuál se ve (P o t), y ambas siguen
+         potenciómetro y temperatura.
+                                                actualizándose.
+
+
+         Con el display en modo temperatura,    La temperatura sube de forma apreciable y
+CA-5     apretar el dedo sobre el chip 10       vuelve a bajar al soltar. Requiere haber pasado
+         segundos.                              CA-4.
+
+
+                                                La bandera compartida está declarada volatile y
+         Revisar el código de la versión por
+CA-6                                            el bucle principal no contiene ninguna espera
+         interrupción.
+                                                bloqueante.
+
+
+
+
+8. Criterios de evaluación
+
+  Condición previa. Los tres proyectos deben compilar en STM32CubeIDE sin errores y
+  sin avisos. Un proyecto que no compila no se evalúa: se devuelve para corrección y se
+  califica sobre 5.
+
+
+La práctica se califica sobre 10 puntos. Cada criterio se valora en tres niveles: no
+alcanzado (0 puntos), alcanzado a medias (mitad del peso) y alcanzado (peso completo).
+
+
+
+
+                                                                                            Página.-14
+       ARQUITECTUR A DE CO MPUTA DORES II                    P5 · CONVER SIÓN ANALÓGICA - DIGITAL (ADC)
+
+
+
+CR ITER IO              Q UÉ SE VALO RA                       ALCANZ ADO A M E DIAS            P ES O
+
+
+                                                              Lee el valor crudo pero la
+1. Lectura por          CA-1 y CA-2: valor crudo y
+                                                              conversión a voltios está mal 2,0
+consulta                conversión a tensión correctos.
+                                                              escalada.
+
+
+                                                              Funciona pero falta volatile,
+2. Lectura por          CA-3 y CA-6: mismo resultado, sin
+                                                              o queda una espera               2,0
+interrupción            bloqueo y con la bandera volatile.
+                                                              bloqueante en el bucle.
+
+
+                                                              El DMA funciona pero la
+                        CA-4 y CA-5: tres canales,
+3. DMA y                                                      temperatura no responde o
+                        alternancia en pantalla y                                              2,5
+temperatura                                                   el índice del array está
+                        temperatura que responde.
+                                                              cambiado.
+
+
+                        Paso 4: dato experimental del
+4. Comparación                                                Compara los métodos pero
+                        coste de cada método, no una                                           1,5
+medida                                                        sin haber medido nada.
+                        opinión.
+
+
+                        Sin números mágicos, constantes       Funciona pero quedan
+5. Calidad del código con nombre, sin avisos del              valores literales sueltos o      1,0
+                        compilador.                           algún aviso.
+
+
+                        Las dos cuestiones del apartado 9,    Responde una de las dos, o
+6. Memoria                                                                                     1,0
+                        razonadas.                            las dos sin justificar.
+
+
+
+
+9. Entregables
+
+   •    Los tres proyectos de CubeIDE comprimidos en un único archivo, sin las carpetas
+        Debug ni Release. Nombre: ACII_P5_Apellido1_Apellido2_Nombre.zip
+   •    Tabla comparativa de los tres métodos con tu medida experimental del paso 4.
+   •    Memoria breve, máximo dos páginas, que responda a estas dos preguntas:
+
+
+
+                                                                                              Página.-15
+       ARQUITECTUR A DE CO MPUTA DORES II                P5 · CONVER SIÓN ANALÓGICA - DIGITAL (ADC)
+
+
+              o   Por qué medir la referencia interna mejora la medida de temperatura y no
+                  mejora la del potenciómetro.
+              o   Qué método elegirías para muestrear un micrófono a 8000 muestras por
+                  segundo, y por qué los otros dos no sirven.
+
+Entrega por Moovi en el plazo de la ficha. La práctica se defiende en el laboratorio: se te
+pedirá ejecutar los criterios de aceptación sobre tu propia placa y explicar cualquier parte
+del código.
+
+
+
+10. Uso de asistentes de inteligencia artificial
+
+Se permite el uso de asistentes de IA como herramienta de consulta y de depuración, con
+tres condiciones:
+
+   •    Declararlo en la memoria: qué asistente y para qué lo has usado.
+   •    Entender lo que entregas. En la defensa se te puede pedir que expliques cualquier
+        línea o que la modifiques en el momento. No saber explicar el propio código
+        equivale a no haberlo entregado.
+   •    No sustituir el trabajo de análisis. La comparación medida y las respuestas de la
+        memoria son tuyas.
+
+
+
+
+                                                                                          Página.-16
+       ARQUITECTUR A DE CO MPUTA DORES II                   P5 · CONVER SIÓN ANALÓGICA - DIGITAL (ADC)
+
+
+
+Anexo A. Configuración del ADC en CubeMX
+
+Los tres programas parten de la misma configuración básica. Lo que cambia entre ellos
+es el modo de lectura y el número de canales.
+
+
+A JUSTE                    VALOR                P OR Q UÉ
+
+
+                                                La máxima del F401. Menos bits, menos
+Resolution                 12 bits
+                                                precisión.
+
+
+                           Enabled con varios   Recorre los canales en secuencia. Con un solo
+Scan Conversion Mode
+                           canales              canal, deshabilitado.
+
+
+Continuous Conversion                           El conversor no para. Con consulta,
+                           Enabled en DMA
+Mode                                            deshabilitado.
+
+
+DMA Continuous
+                           Enabled en DMA       Sin esto el DMA transfiere una vez y se detiene.
+Requests
+
+
+                                                Reescribe el array indefinidamente. En modo
+DMA Mode                   Circular
+                                                Normal se para tras la primera vuelta.
+
+
+                           El más largo         Los canales internos son lentos: con tiempos
+Sampling Time
+                           disponible           cortos la lectura sale ruidosa.
+
+
+
+
+  El sensor de temperatura y la referencia interna hay que habilitarlos explícitamente
+  en CubeMX, en la sección del ADC. Si no aparecen como canales disponibles, es que
+  esa casilla está sin marcar.
+
+
+
+
+                                                                                             Página.-17
+      ARQUITECTUR A DE CO MPUTA DORES II                     P5 · CONVER SIÓN ANALÓGICA - DIGITAL (ADC)
+
+
+
+Anexo B. Conexionado
+
+Solo hay un componente que cablear: el potenciómetro. Los otros dos canales están
+dentro del chip.
+
+
+SEÑ AL                    P IN             N OTAS
+
+
+                                           Canal ADC1_IN1. Es el pin que usan los cuatro proyectos
+Potenciómetro, cursor     PA1
+                                           de referencia.
+
+
+Potenciómetro,
+                          3,3 V y GND      Nunca a 5 V: el pin no lo tolera.
+extremos
+
+
+TM1638 · STB              PA10             Igual que en las prácticas anteriores
+
+
+TM1638 · CLK              PB4              Igual que en las prácticas anteriores
+
+
+TM1638 · DIO              PB5              Igual que en las prácticas anteriores
+
+
+
+
+  Los pines del módulo son los mismos que en las prácticas 2 y 4. Si ya lo tienes
+  cableado de una sesión anterior no hay que cambiar nada: basta con añadir el
+  potenciómetro a PA1.
+
+
+
+
+                                                                                              Página.-18
+ARQUITECTUR A DE CO MPUTA DORES II                        P5 · CONVER SIÓN ANALÓGICA - DIGITAL (ADC)
+
+
+
+
+                    CONEXIÓN DEL POTENCIÓMETRO A L A NUCLEO-F401RE.
+
+
+
+
+                 PIN OUT DE LOS CON ECTORES MORPHO, PA R A LOCA LIZA R PA 1.
+
+
+
+
+                                                                                           Página.-19
+          ARQUITECTUR A DE CO MPUTA DORES II            P5 · CONVER SIÓN ANALÓGICA - DIGITAL (ADC)
+
+
+
+Anexo C. El sensor de temperatura interno
+
+El STM32F401 lleva dentro un sensor conectado a un canal del ADC. No sirve para medir la
+temperatura ambiente: mide la del propio silicio, que está siempre algo por encima
+porque el chip se calienta al trabajar.
+
+La conversión completa, con corrección por referencia interna, es la siguiente:
+
+T E M P E R AT U R A D E L C H I P, PA S O A PA S O
+
+
+  /* 1. Cuanto vale de verdad la referencia del conversor */
+  V_ref = 4095.0 * 1.21 / crudo[0];
+
+  /* 2. Tension que entrega el sensor */
+  V_sensor = crudo[1] * V_ref / 4095.0;
+
+  /* 3. De tension a grados, con las constantes del fabricante */
+  temperatura = (V_sensor - 0.76) * 1000.0 / 2.5 + 25.0;
+
+
+
+
+   La precisión de este sensor es de varios grados: sirve para detectar tendencias y
+   sobrecalentamientos, no para termometría. Las constantes V25 y Avg_Slope son
+   valores típicos, no calibrados unidad por unidad, y varían de un chip a otro. No esperes
+   que coincida con un termómetro.
+
+
+
+
+                                                                                         Página.-20
+

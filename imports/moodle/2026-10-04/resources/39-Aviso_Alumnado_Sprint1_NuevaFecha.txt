@@ -1,0 +1,102 @@
+ABP 2026-2027 · Aviso para el alumnado
+
+
+Sprint 1 — nueva fecha de entrega
+Qué tenéis que entregar y para cuándo
+
+
+
+Entregado en la sesión práctica del 28/09, 29/09 o 30/09 de 2026, según vuestro grupo · Ingeniería
+Informática, 4º curso
+Gerardo Rodríguez Martínez · Adrián Novoa Sousa — Prácticas ABP
+ ABP 2026-2027 · Aviso Sprint 1 · Alumnado
+
+
+
+
+Índice
+· Contexto
+· Qué debéis tener claro con este aviso
+· Qué debe contener el Sprint 1
+· Formato y fecha de entrega
+· Cuándo se corrige
+· Si tenéis dudas
+
+
+Contexto
+  • Para quién: todo el alumnado de los seis grupos de prácticas de ABP (ABP_1 a ABP_6), curso 2026-2027.
+  • Cuándo se entrega este aviso: en la sesión práctica de esta semana — 28/09 (lunes), 29/09 (martes) o 30/09
+    (miércoles) — la misma sesión en la que se explican en detalle los requisitos del Sprint 1.
+  • Motivo del cambio: la sesión de esta semana es la primera vez que se detallan con calma todos los requisitos del
+    Sprint 1. Entregarlo apenas dos o tres días después (02/10) no da tiempo material a completarlo bien. Por eso la
+    fecha límite se traslada una semana, al 09/10.
+  • Qué NO cambia: el contenido exigido en el Sprint 1 es el mismo que ya se había anunciado; solo cambia la fecha
+    límite. Tampoco cambia el peso en la nota (10%, escala 0-3).
+
+
+Qué debéis tener claro con este aviso
+  1. La nueva fecha límite del Sprint 1: 09/10 (23:59), en vez del 02/10 anunciado inicialmente.
+  2. Qué debe contener exactamente el documento que entreguéis.
+  3. En qué formato hay que entregarlo y dónde.
+  4. Que la revisión formal (con nota) de este Sprint 1 ya no se hace en la sesión del Taller 1 de la semana que viene,
+     sino en la sesión siguiente de vuestra franja.
+
+
+Qué debe contener el Sprint 1
+Un único documento técnico, con una estructura coherente, que incluya:
+     ☐ Dominio/temática elegida: un resumen breve de sobre qué trata vuestro proyecto (qué tipo de ítems gestiona:
+     películas, libros, productos, recetas, etc.) y por qué lo habéis elegido.
+     ☐ Dataset candidato: qué conjunto de datos vais a usar (o los que estáis valorando, si aún no está cerrado del
+     todo), de dónde sale y por qué encaja con vuestro dominio.
+     ☐ Marco de requisitos ampliado según vuestra temática: los requisitos generales del proyecto (CRUDs de
+     ítems, sistema de recomendación, sistema de valoración) particularizados a vuestro dominio concreto.
+     ☐ Artefactos de análisis (incluid los que apliquen a vuestro proyecto; no hace falta que estén cerrados al 100%,
+     pero sí encaminados):
+  • Historias de usuario o análisis textual de requisitos.
+  • Glosario de términos del dominio.
+  • Diagramas de casos de uso (pueden ser parciales).
+  • Diagrama de arquitectura del sistema.
+  • Descripción formal de cada caso de uso (workflow).
+  • DSS (diagrama de secuencia del sistema) de los flujos principales.
+     ☐ Opcional: diagrama de actividad u otros artefactos que consideréis útiles para explicar vuestro proyecto.
+No hace falta que todo esté perfecto ni cerrado al 100% — es un primer entregable, y el objetivo es que quede clara la
+dirección del proyecto y que podáis recibir feedback a tiempo para corregir el rumbo antes del Sprint 2.
+
+
+
+ABP 2026-2027 · Aviso Sprint 1 · Alumnado                                                             Página 2 de 3
+ ABP 2026-2027 · Aviso Sprint 1 · Alumnado
+
+
+
+Formato y fecha de entrega
+  • Formato: un único documento PDF, con título, vuestro nombre de equipo y el contenido del apartado anterior en
+    una estructura clara y ordenada.
+  • Fecha límite: 09/10, 23:59.
+  • Entrega: a través del canal que os indique vuestro profesor (Gerardo o Adrián, según vuestro grupo) — si tenéis
+    dudas sobre dónde entregarlo, preguntad en la propia sesión de esta semana.
+  • Evaluación: 10% de la nota final, en escala 0-3, sobre el equipo completo (la nota es única para todo el equipo, no
+    individual).
+
+
+Cuándo se corrige
+La revisión formal del Sprint 1, con la nota 0/1/2/3, ya no se hace en la sesión del Taller 1 de la semana que viene. Se
+traslada a la sesión siguiente de vuestra franja:
+  • ABP_4 y ABP_5 (lunes): sesión del 19 de octubre.
+  • ABP_3 y ABP_6 (martes): sesión del 13 de octubre.
+  • ABP_1 y ABP_2 (miércoles): sesión del 14 de octubre.
+En la sesión del Taller 1 (05/10, 06/10 o 07/10 según vuestro grupo) veréis igualmente la primera técnica obligatoria
+del proyecto (recomendación basada en contenidos), pero la corrección con nota del Sprint 1 llega en la sesión indicada
+arriba.
+
+
+Si tenéis dudas
+Si a fecha de hoy vuestro equipo todavía no está formado, o tenéis dudas sobre el dominio, el dataset o cualquier punto
+de este aviso, decídnoslo cuanto antes en la propia sesión de esta semana — es el mejor momento para resolverlo antes
+de que empiece a apretar el calendario.
+
+
+
+
+ABP 2026-2027 · Aviso Sprint 1 · Alumnado                                                             Página 3 de 3
+

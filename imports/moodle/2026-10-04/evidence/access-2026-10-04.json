@@ -1,0 +1,11 @@
+{
+  "consulted_at": "2026-10-04T10:47:01Z",
+  "method": "chrome-devtools MCP",
+  "homepage": "https://moovi.uvigo.gal/",
+  "homepage_accessible": true,
+  "session": "caducada; intento de login rechazado",
+  "error": "Invalid login, please try again",
+  "credentials_stored": false,
+  "academic_refresh_performed": false,
+  "note": "Hora de inicio de comprobación; no contiene formulario ni valores de credenciales."
+}

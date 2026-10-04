@@ -1,0 +1,552 @@
+ABP · INGENIERÍA INFORMÁTICA · UNIVERSIDAD DE VIGO
+
+
+
+Sesión 4
+
+Desarrollo de software en la era
+de la IA (I)
+De la programación tradicional al desarrollo basado en especificaciones
+
+
+4º curso · 30 de septiembre de 2026
+Prof. Gerardo Rodríguez Martínez
+
+
+
+Cuando la IA escribe el código, la especificación pasa a ser la fuente de verdad
+   Objetivos de hoy
+   Al terminar esta sesión deberíais poder responder a tres preguntas
+
+
+
+                    ¿Cómo ha cambiado el trabajo del programador?
+         1
+                    Del autocompletado al chat y de ahí a los agentes autónomos: qué cambia y qué sigue igual.
+
+
+
+
+                    ¿Qué es el «vibe coding» y qué riesgos tiene?
+         2
+                    Programar a base de prompts sueltos: cuándo sirve y dónde se rompe.
+
+
+
+
+                    ¿Qué es el desarrollo basado en especificaciones?
+         3
+                    Cómo se diseña una especificación clara y verificable, con un ejemplo completo de principio a fin.
+
+
+
+
+Gerardo Rodríguez Martínez · Introducción                                                                                Sesión 4 · 30 de septiembre de 2026
+   Del autocompletado a los agentes
+   En cinco años, la IA ha pasado de sugerir la siguiente línea a completar tareas enteras. Cada etapa cambia qué parte del
+   trabajo hace la máquina y qué parte sigue siendo nuestra.
+
+
+
+             2021 · Autocompletado                                                      2022-23 · Chat
+             Sugiere la línea o la función siguiente mientras escribes (p. ej. GitHub   Pides código en lenguaje natural y lo copias (p. ej. ChatGPT). Aparece
+             Copilot). Tú sigues escribiendo el código.                                 la tentación de pegar sin leer.
+
+
+
+
+             2024 · IA dentro del editor                                                2025-26 · Agentes autónomos
+             El asistente ve tu proyecto y edita varios ficheros a la vez desde el      Planifican, ejecutan comandos, lanzan tests y abren pull requests por
+             IDE.                                                                       su cuenta (p. ej. Claude Code, Codex, Copilot agent).
+
+
+
+
+Gerardo Rodríguez Martínez · Evolución                                                                                              Sesión 4 · 30 de septiembre de 2026
+   El nuevo papel del programador
+
+   La IA no elimina el trabajo de programar: lo desplaza. Menos
+   tiempo tecleando código y más tiempo decidiendo qué construir,        Lo que cambia
+   revisando y verificando.
+                                                                         – Escribir código a mano pasa a ser una parte menor del trabajo
+
+                                                                         – Crece el peso de especificar, revisar y probar
+
+   Cuanto más autónoma es la herramienta, más importa saber explicarle   – Se puede prototipar en minutos lo que antes llevaba días
+   qué queremos y comprobar que lo ha hecho bien.
+
+                                                                         Lo que no cambia
+
+                                                                            Entender el problema y el dominio sigue siendo cosa vuestra
+
+
+                                                                            El código que entregáis es vuestra responsabilidad, lo escriba quien
+                                                                            lo escriba
+
+                                                                            Sin pruebas, no sabéis si funciona — tampoco si lo escribió una IA
+
+
+
+
+Gerardo Rodríguez Martínez · Evolución                                                                                      Sesión 4 · 30 de septiembre de 2026
+   Tres formas de programar hoy
+   Ninguna es «la correcta» para todo: cambian la fuente de verdad y el tipo de riesgo
+
+
+
+
+            TR                                          VC                                          SDD
+
+
+        Tradicional                                   Vibe coding                                 Por especificación
+
+        La persona escribe el código (con o sin       Prompts sueltos, se acepta lo que           Se escribe primero una especificación
+        autocompletado). El código es la única        genera la IA y se itera «a ojo» hasta que   verificable (requisitos, criterios de
+        fuente de verdad. Control total, pero         parece funcionar. Rapidísimo para           aceptación, casos límite) y la IA la
+        lento.                                        empezar; frágil para mantener.              traduce en código.
+
+
+
+
+Gerardo Rodríguez Martínez · Enfoques                                                                                   Sesión 4 · 30 de septiembre de 2026
+   Vibe coding: qué es y cuándo tiene sentido
+
+   Término acuñado por Andrej Karpathy en febrero de 2025:
+   programar «dejándose llevar» por la IA, aceptando el código sin       Funciona bien para…
+   leerlo y pidiendo cambios hasta que funcione.
+                                                                         – Prototipos desechables y pruebas de concepto
+
+                                                                         – Explorar una librería o un dataset nuevo
+
+   No es un insulto ni algo prohibido: es una herramienta con un rango   – Scripts de un solo uso que nadie va a mantener
+   de uso concreto. El problema aparece cuando el prototipo se
+   convierte, sin querer, en el producto.
+                                                                         Se rompe cuando…
+
+                                                                            El código crece y nadie sabe por qué está hecho así
+
+
+                                                                            Otra persona del equipo tiene que modificarlo
+
+
+                                                                            Hay que demostrar que cumple unos requisitos (como en vuestros
+                                                                            sprints)
+
+
+
+
+Gerardo Rodríguez Martínez · Vibe coding                                                                                    Sesión 4 · 30 de septiembre de 2026
+   Percepción frente a realidad
+   Lo que dicen algunos estudios recientes sobre programar con IA
+
+
+
+
+         84 %                                             46 %                                                66 %
+         de los desarrolladores usan o                    desconfía de la exactitud de sus                    señala como principal frustración las
+         planean usar herramientas de IA                  respuestas (frente a un 33 % que                    soluciones de IA «casi correctas,
+                                                          confía)                                             pero no del todo»
+
+
+
+         Stack Overflow Developer Survey 2025             Stack Overflow Developer Survey 2025                Stack Overflow Developer Survey 2025
+
+
+
+
+   Percepción ≠ realidad: en 2025, METR midió a desarrolladores expertos un 19 % más lentos con IA mientras creían ir un 20 % más rápido. En 2026 estima que
+   las herramientas actuales ya les aceleran, pero reconoce que no puede medirlo con fiabilidad. Sin verificación objetiva, es fácil engañarse.
+
+
+
+Gerardo Rodríguez Martínez · Datos                                                                                                      Sesión 4 · 30 de septiembre de 2026
+   Los tres riesgos de programar sin especificación
+   Aparecen con cualquier asistente, pero se multiplican con el vibe coding
+
+
+
+
+             !                                           €                                          ?
+
+
+         Alucinaciones                                Deuda técnica oculta                       Falta de trazabilidad
+
+         Funciones o librerías que no existen,        Código duplicado, decisiones               No queda escrito por qué el código hace
+         parámetros inventados, código «casi          incoherentes entre ficheros y soluciones   lo que hace ni qué requisito cubre:
+         correcto» que falla en los casos que         que nadie del equipo entiende del todo.    imposible revisar o defender el diseño.
+         nadie probó.
+
+
+
+
+Gerardo Rodríguez Martínez · Riesgos                                                                                   Sesión 4 · 30 de septiembre de 2026
+   Desarrollo basado en especificaciones
+
+   Primero se escribe qué debe hacer el sistema, de forma clara y
+   verificable; después la IA genera el código a partir de esa                Una buena especificación incluye
+   especificación.
+                                                                              – Objetivo o historia de usuario, y entradas / salidas
+
+                                                                              – Requisitos funcionales numerados
+
+   La especificación pasa a ser la fuente de verdad: se revisa, se versiona   – Criterios de aceptación comprobables (Dado / Cuando / Entonces)
+   y se discute. El código se puede regenerar; la especificación, no.
+                                                                              – Casos límite, restricciones y lo que queda fuera
+
+
+
+                                                                              Por qué os importa hoy
+
+                                                                                 Vuestras historias de usuario y casos de uso del Sprint 1 ya son el
+                                                                                 embrión de una especificación
+
+                                                                                 Cada criterio de aceptación puede convertirse en un test
+                                                                                 automático
+
+
+
+
+Gerardo Rodríguez Martínez · Especificaciones                                                                                      Sesión 4 · 30 de septiembre de 2026
+   El flujo de trabajo
+   La persona decide y revisa en cada paso; la IA acelera la ejecución. En la sesión 5 lo aplicaréis de principio a fin.
+
+
+
+
+           1                                       2                         3                      4                              5
+
+       Especificación
+                                         ›      Plan técnico
+                                                                       ›   Tareas
+                                                                                              ›   Código
+                                                                                                                         ›     Verificación
+
+       Qué debe hacer y                         Arquitectura, datos,       Pasos pequeños y       Generado por la IA,          Tests y revisión
+       cómo se comprueba                        decisiones                 revisables             tarea a tarea                humana
+
+
+
+
+   Herramientas que siguen este flujo: GitHub Spec Kit (especificar → planificar → tareas → implementar → converger) o Kiro (requirements → design
+   → tasks). Pero el método funciona con cualquier asistente.
+
+
+
+
+Gerardo Rodríguez Martínez · Especificaciones                                                                                 Sesión 4 · 30 de septiembre de 2026
+   Comparativa de los tres enfoques
+   Elegid según el tipo de tarea, no por costumbre
+
+
+
+                                           Tradicional                         Vibe coding                           Basado en especificaciones
+
+
+     Fuente de verdad                      El código                           Ninguna (el chat)                     La especificación
+
+
+     Velocidad inicial                     Baja                                Muy alta                              Media
+
+
+     Mantenibilidad                        Alta si hay disciplina              Baja                                  Alta
+
+
+     Trazabilidad                          Media (commits, comentarios)        Casi nula                             Alta: requisito → test → código
+
+
+     Riesgo principal                      Lentitud                            Deuda técnica oculta, alucinaciones   Especificaciones ambiguas o incompletas
+
+
+     Encaja en…                            Piezas críticas o muy específicas   Prototipos y exploración              Funcionalidades del producto
+
+
+
+Gerardo Rodríguez Martínez · Comparativa                                                                                                  Sesión 4 · 30 de septiembre de 2026
+   Un ejemplo completo, paso a paso
+   Lo hacemos juntos en clase; después lo repetiréis por libre con otra funcionalidad
+
+
+
+       # Contexto: esto ya existe en el proyecto                                        El prompt suelto
+       # ranking_similares(item_id) -> [(id, score), ...]                           1
+       #   ranking COMPLETO, ordenado por similitud                                     Lo pedimos «a lo rápido» y miramos qué devuelve
+
+       def recomendar(item_id, n=10):
+           return [{"id": i, "titulo": ..., "score": s}                                 Diseñar la especificación
+                   for i, s in ranking_similares(item_id)[:n]]
+                                                                                    2
+                                                                                        Seis pasos y las preguntas que destapan los casos límite
+
+
+
+                                                                                        Generar código y tests
+                                                                                    3
+                                                                                        Conversación nueva, especificación completa
+
+
+   Encargo: «Añadir la posibilidad de filtrar las recomendaciones por
+                                                                                        Verificar y comparar
+   categoría.»                                                                      4
+                                                                                        Criterio a criterio: ¿qué versión cumple lo pedido?
+
+
+
+
+Gerardo Rodríguez Martínez · Ejemplo completo                                                                                Sesión 4 · 30 de septiembre de 2026
+   Paso 1 · El prompt suelto
+   «Añade un filtro por categoría a la función recomendar()» — respuesta típica de un asistente:
+
+
+
+       def recomendar(item_id, n=10, categoria=None):                                   Decisiones implícitas
+           recs = [{"id": i, "titulo": ..., "score": s}
+                   for i, s in ranking_similares(item_id)[:n]]
+                                                                                           Filtra después de truncar a n
+           if categoria:
+               recs = [r for r in recs                                                     Pides 10 comedias y devuelve 2 aunque haya 50
+                       if categoria in
+                       catalogo[r["id"]]["categorias"]]                                    Compara el texto exacto
+           return recs
+                                                                                           «Comedia» ≠ «comedia» ≠ «Comédia»
+
+                                                                                           Solo una categoría
+                                                                                           ¿«Terror o ciencia ficción»? Nadie lo decidió
+
+                                                                                           Cambia una función que ya se usa
+   Parece correcto y con un ejemplo sencillo funciona. Pero toma varias decisiones         Puede romper otras partes del código
+   que nadie ha tomado de forma consciente.
+                                                                                           Sin tests ni casos límite
+                                                                                           ¿Y si la categoría no existe? ¿Y si n = 0?
+
+
+
+
+Gerardo Rodríguez Martínez · Ejemplo completo                                                                                           Sesión 4 · 30 de septiembre de 2026
+   Paso 2 · Cómo se diseña una buena especificación
+   Seis pasos, cada uno con la pregunta que hay que responder
+
+
+
+           1       Objetivo                                   2      Entradas y salidas                            3      Requisitos
+
+       ¿Quién lo usa y para qué?                           ¿Qué recibe y qué devuelve exactamente?              ¿Qué debe hacer, sin decir cómo?
+
+       Historia de usuario: como usuario, quiero filtrar   recomendar_por_categoria(item_id, n, categorias)     RF1: filtrar sobre el ranking completo y truncar a n
+       por una o varias categorías…                        → lista de hasta n dicts                             después
+
+
+
+
+           4                                                  5                                                    6      Restricciones y fuera de
+                   Criterios de aceptación                           Casos límite
+                                                                                                                          alcance
+       ¿Cómo sabré que funciona?                           ¿Y si…?                                              ¿Qué no se puede tocar y qué no se hace?
+
+       Dado…, cuando…, entonces… con datos concretos       Categoría inexistente, menos de n resultados, ítem   No modificar recomendar(); sin dependencias
+                                                           inexistente, n ≤ 0                                   nuevas; sin UI
+
+
+
+
+Gerardo Rodríguez Martínez · Diseñar la especificación                                                                                       Sesión 4 · 30 de septiembre de 2026
+   Criterios de aceptación: de vago a comprobable
+   La regla: con datos concretos, cualquiera —persona o IA— debe poder decir «cumple» o «no cumple»
+
+
+
+     Vago                                                Comprobable (Dado / Cuando / Entonces)
+
+
+                                                         Dado un ranking donde el 2º ítem de ciencia ficción está en 4ª posición, cuando pido n=2 con «Ciencia ficción»,
+     Que filtre bien por categoría.
+                                                         entonces recibo esos 2 ítems, en orden.
+
+
+     Que no le afecten las mayúsculas.                   Dado un ítem con categoría «ciencia ficcion», cuando pido « CIENCIA FICCION», entonces el ítem aparece.
+
+
+                                                         Cuando pido [«Terror», «Comedia»], entonces recibo los ítems de cualquiera de las dos, en el orden del
+     Que se puedan elegir varias.
+                                                         ranking.
+
+
+     Que no falle.                                       Dado que no hay ningún «Western», cuando lo pido, entonces recibo una lista vacía y no un error.
+
+
+
+   Trucos: al menos un criterio por requisito · cada «¿y si…?» es un caso límite · si no sabéis el resultado esperado, la IA tampoco lo sabrá.
+
+
+
+Gerardo Rodríguez Martínez · Diseñar la especificación                                                                                          Sesión 4 · 30 de septiembre de 2026
+   La especificación del ejemplo
+   RF-07 · Filtro de recomendaciones por categoría (versión completa en la guía y en Sesion4_Demo)
+
+
+        Requisitos funcionales                                                           Criterio de aceptación (resumido)
+
+        RF1 Filtrar sobre el ranking completo; truncar a n después
+                                                                                   CA1   n=2, «Ciencia ficción» → los 2 de ciencia ficción aunque uno esté 4º
+        RF2 Conservar el orden por similitud
+
+                                                                                   CA2   [«Terror», «Comedia»] → ambos, en orden
+        RF3 Varias categorías: basta con tener una (O lógico)
+
+        RF4 Ignorar mayúsculas, tildes y espacios sobrantes                        CA3   « CIENCIA FICCION» encuentra «ciencia ficcion»
+
+
+        RF5 Sin categorías: mismo resultado que recomendar()
+                                                                                   CA4   Sin categorías → igual que recomendar()
+
+        Casos límite: categoría inexistente → lista vacía · menos de n → los que
+        haya · ítem inexistente → KeyError · n ≤ 0 → ValueError                    CA5   «Western» → lista vacía, sin error
+
+
+                                                                                   CA6   Ítem inexistente o n ≤ 0 → error claro
+
+
+
+Gerardo Rodríguez Martínez · Ejemplo completo                                                                                         Sesión 4 · 30 de septiembre de 2026
+   Paso 3 · Código y tests generados desde la especificación
+   Conversación nueva + especificación completa + «genera el código y un test por criterio»
+
+
+      recomendador.py                                                                         test_recomendador.py (uno por CA)
+
+
+       def recomendar_por_categoria(item_id, n=10,                                            def test_ca1_filtra_antes_de_truncar():
+                                    categorias=None):                                             # D es 4º en el ranking,
+           if not isinstance(n, int) or n <= 0:                                                   # pero debe aparecer con n=2
+               raise ValueError("n debe ser positivo")                                            res = recomendar_por_categoria(
+           if item_id not in catalogo:                                                                "A", 2, ["Ciencia ficción"])
+               raise KeyError(item_id)                                                            assert ids(res) == ["B", "D"]
+           buscadas = {_normalizar(c)
+                       for c in (categorias or [])}    # RF4                                  def test_ca5_categoria_inexistente():
+           resultado = []                                                                         res = recomendar_por_categoria(
+           for i, score in ranking_similares(item_id): # RF1                                          "A", 5, ["Western"])
+               cats = {_normalizar(c) for c in ...}                                               assert res == []
+               if buscadas and not (buscadas & cats):    # RF3
+                   continue
+               resultado.append({...})
+               if len(resultado) == n:                   # RF1
+                   break
+           return resultado                              # RF2
+
+
+
+
+   Trazabilidad: cada comentario remite al requisito que implementa y cada test lleva el nombre del criterio que comprueba.
+
+
+Gerardo Rodríguez Martínez · Ejemplo completo                                                                                     Sesión 4 · 30 de septiembre de 2026
+   Paso 4 · Verificación con los mismos 6 criterios
+   Resultado real al ejecutar los criterios de aceptación contra cada versión
+
+
+
+                                                                                                          Coste de cada versión
+
+        2/6                                              6/6                                                 Prompt suelto: 1 minuto… y los errores
+                                                                                                             quedan escondidos
+
+        Prompt suelto                                    Desde la especificación                             Especificación: ~15 minutos pensando el
+                                                                                                             problema
+        Solo cumple «sin filtro» (CA4) y «categoría      Cumple todos los criterios. Si alguno
+        inexistente» (CA5). Falla lo importante:         fallara, sabríamos exactamente cuál y por
+        CA1, CA2, CA3 y CA6.                             qué.                                                Ese tiempo no se «pierde»: hay que pensarlo
+                                                                                                             igualmente, antes o cuando falle en
+                                                                                                             producción
+
+
+
+
+   Mensaje: la IA no «se equivocó» en la versión 1: hizo exactamente lo que se le pidió. El problema era la petición. La especificación convierte lo que
+   teníamos en la cabeza en algo que se puede comprobar.
+
+
+
+
+Gerardo Rodríguez Martínez · Ejemplo completo                                                                                     Sesión 4 · 30 de septiembre de 2026
+   Checklist: ¿es buena vuestra especificación?
+   Pasadla antes de pegar la especificación en un asistente de IA
+
+
+
+
+         ✓        Dice qué debe hacer el sistema, no cómo programarlo           ✓   Los criterios usan datos concretos y resultado esperado
+
+
+
+
+                  Entradas y salidas definidas: nombres, tipos, formato del
+         ✓                                                                      ✓   Hay casos límite: vacío, inexistente, fuera de rango, empates
+                  resultado
+
+
+
+
+         ✓        Requisitos numerados, uno por idea                            ✓   Dice qué no se puede tocar y qué queda fuera de alcance
+
+
+
+
+         ✓        Cada requisito tiene al menos un criterio de aceptación       ✓   Otra persona del equipo la entiende sin preguntaros nada
+
+
+
+   La prueba de fuego: ¿podríais escribir un test a partir de cada requisito?
+
+Gerardo Rodríguez Martínez · Diseñar la especificación                                                                       Sesión 4 · 30 de septiembre de 2026
+   Ahora os toca: ejercicio por libre
+   En equipo, antes de la sesión 5 (07/10) · Sesion4_Ficha_Alumnado.docx
+
+
+   Repetid el ejemplo de hoy con otra funcionalidad. Tiempo orientativo: 45-60 minutos.
+
+
+
+              Elegid la funcionalidad
+              Opción A (recomendada): una historia «Must» de vuestro backlog. Opción B: filtrar recomendaciones por un rango numérico (año, precio, duración…).
+
+
+
+
+              Ronda 1 y ronda 2
+              Primero con prompts sueltos; después diseñad la especificación con los seis pasos y generad código y tests en una conversación nueva.
+
+
+
+
+              Comparad y anotadlo
+              Rellenad la tabla de comparación y la bitácora de la ficha. La sesión 5 empieza con una puesta en común de lo que os haya pasado.
+
+
+
+   No se evalúa, pero es el mejor entrenamiento para el taller de la sesión 5 y para vuestro Sprint 2.
+
+Gerardo Rodríguez Martínez · Ejercicio por libre                                                                                              Sesión 4 · 30 de septiembre de 2026
+   Antes de la próxima sesión
+
+
+                                              Acompañamiento del Sprint 1 (entrega 09/10): vuestras historias de usuario y casos de uso son la
+                        Práctica · 28-30/09
+                                              base de una buena especificación.
+
+
+
+
+                          Hasta el 07/10      Ejercicio por libre de la ficha: una funcionalidad, dos rondas, comparación y bitácora.
+
+
+
+
+                                              Sesión 5: desarrollo con IA (II) — flujo completo especificación → plan → tareas → código →
+                           Teoría · 07/10
+                                              verificación, agentes y buenas prácticas.
+
+
+
+
+   ¿Preguntas?
+Gerardo Rodríguez Martínez · Cierre                                                                                             Sesión 4 · 30 de septiembre de 2026
+

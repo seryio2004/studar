@@ -1,0 +1,132 @@
+Arquitectura de
+Computadoras II
+
+      ACII
+  Curso 2026/2027
+ACII 2627: Profesorado
+• Coordinador de Materia y Profesor y Responsable de Grupos
+  Grandes:
+   • Matías García Rivera, mgrivera@uvigo.es
+• Responsable de Grupos Reducidos:
+   • Eduardo Balvis Outeiriño, ebalvis@uvigo.gal
+• Profesores de Grupos Reducidos:
+   • Eduardo Balvis Outeiriño, ebalvis@uvigo.gal
+   • Ángela González Mariño, angela.gonzalez@uvigo.gal
+   • Rubén Veloso Trigo, ruben.veloso.trigo@uvigo.gal
+   • Profesor pendiente
+• Mails sobre docencia de un grupo en concreto
+  (ejercicios, dudas, …), al Profesor de ese grupo.
+• Mails sobre cualquier otro tema al Coordinador.
+ACII 2627: Guía Docente
+ACII 2627: Descripción General
+    ACI                  ACII
+ACII 2627: Descripción General
+              ACII
+ACII 2627: Contenidos
+ACII 2627: Prácticas
+• Placas de desarrollo STM32 de STMicroelectronics
+
+
+
+
+                                      STM32, STMicroelectronics
+
+
+
+
+                                            TM1638 LED & KEY
+ACII 2627: Prácticas
+• Montaje de un PC: última semana de Grupo
+  Reducido, NO EVALUABLE y NO OBLIGATORIA
+ACII 2627: Evaluación Continua
+
+
+
+GRP1+ GRP2
+
+
+
+
+GGP1+ GGP2
+ACII 2627: Evaluación Global
+
+
+                GGPG
+
+
+
+
+                GRPG
+ACII 2627: Evaluación Mixta
+ACII 2627: Evaluación
+ACII 2627: Evaluación
+ACII 2627: Evaluación
+ACII 2627: Horarios
+ACII 2627: Fechas Pruebas
+
+                            Grupo Reducido
+                            Primera Prueba
+
+
+                            Grupo Grande
+                            Primera Prueba
+
+
+                            Grupo Reducido
+                            Segunda Prueba
+
+
+
+                            Grupo Grande
+                            Segunda Prueba +
+                            Pruebas Globales
+                            (Grupo Grande y Reducido)
+ACII 2627: Fechas Grupo Reducido Primera Prueba
+ACII 2627: Fecha Grupo Grande Primera Prueba
+ACII 2627: Fechas Grupo Reducido Segunda Prueba
+ACII 2627: Fechas Grupo Grande Segunda Prueba
+              y Exámenes Globales
+
+
+                                 [EXAM] ACII [AUTOM]
+                                 PRUEBA GLOBAL DE
+                                 GRUPOS REDUCIDO.
+                                 Hay 3. Se usará moovi
+                                 para asignar el grupo
+                                 correspondiente
+[EXAM] ACII [Magna]
+ACII_A + ACII_B:
+SEGUNDA PRUEBA DE
+GRUPO GRANDE                   [EXAM] ACII [Magna]
+                               PRUEBA GLOBAL DE
+                               GRUPO GRANDE
+ACII 2627: Moovi
+ACII 2627: Cambio de Grupo Grande
+• Podéis libremente cambiar de Grupo Grande.
+• No es necesario solicitar el cambio.
+• Únicamente, antes de hacer la Primera Prueba de
+  Grupo Grande, en moovi hay que indicar en que
+  grupo se realizará el examen.
+ACII 2627: Cambio de Grupo Reducido
+• From: adrseara@uvigo.gal
+• Subject: Asignaciones provisionales de grupos reducidos …
+• Text:
+… Lo más importante en estos momentos es que, si el alumnado os
+consulta sobre cambios de grupo o incidencias relacionadas con las
+asignaciones, ….. Entre los días 7 y 11 de septiembre, ambos incluidos,
+estaré atendiendo presencialmente todas las solicitudes de cambios de
+grupo y cualquier otra duda relacionada, en horario de 17:00 a 19:00
+horas, aula B00.
+El 13 de septiembre os enviaré un nuevo Excel con las asignaciones
+actualizadas una vez incorporadas todas las matrículas. A partir de ese
+momento, cada profesor o profesora responsable podrá gestionar los
+grupos reducidos de su asignatura conforme considere oportuno.
+La guía para el alumnado está disponible en:
+https://esei.uvigo.es/docencia/grupos-reducidos/
+….
+ACII 2627: Cambio de Grupo Reducido
+
+• A partir del lunes 14 de septiembre, las solicitudes
+  se realizarán a través de moovi.
+ACII 2627: Dudas
+

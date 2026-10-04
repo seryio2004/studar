@@ -1,0 +1,281 @@
+{
+  "description": "Referencias de inicialización del proyecto para una comparación futura. No son propuestas, ni una exportación del estado actual del navegador, ni datos verificados en Moodle. Identificadores locales solo para este informe.",
+  "consulted_at": "2026-10-03T16:03:47.268Z",
+  "subjects": [
+    {
+      "id": "subject-abp",
+      "name": "ABP",
+      "color": "#397b68",
+      "difficulty": 1
+    },
+    {
+      "id": "subject-ssi",
+      "name": "SSI",
+      "color": "#4684b5",
+      "difficulty": 2,
+      "groupWork": true
+    },
+    {
+      "id": "subject-acii",
+      "name": "ACII",
+      "color": "#8b65ad",
+      "difficulty": 3
+    },
+    {
+      "id": "subject-est",
+      "name": "EST",
+      "color": "#bb8436",
+      "difficulty": 4
+    },
+    {
+      "id": "subject-lc",
+      "name": "LC",
+      "color": "#b55858",
+      "difficulty": 5
+    }
+  ],
+  "records": [
+    {
+      "reference_id": "local-1",
+      "kind": "task",
+      "subjectId": "subject-ssi",
+      "title": "FASE 1 · Creación de grupos/equipos",
+      "notes": "Hasta miércoles 30/9/2028 (fecha original; confirmar el año y el día de la semana). El documento de creación de grupos aparece tachado en el procedimiento original.",
+      "dateText": "30/9/2028 · por confirmar",
+      "links": [
+        {
+          "label": "Documento de creación de grupos (tachado en el original)",
+          "url": "https://docs.google.com/document/d/183oqoPGvzaxrdh36z4sBFXWJiHwEhhDP/edit?usp=sharing&ouid=105644562796697267046&rtpof=true&sd=true"
+        }
+      ],
+      "date": "",
+      "section": "group",
+      "priority": "Media",
+      "done": false,
+      "project": "Trabajos SSI 2026/27",
+      "subject": "SSI",
+      "source_path": "src/data.js",
+      "moodle_verified": false,
+      "live_studytracker_verified": false
+    },
+    {
+      "reference_id": "local-2",
+      "kind": "task",
+      "subjectId": "subject-ssi",
+      "title": "FASE 2 · Asignación aleatoria de tema",
+      "notes": "Consultar la descripción de los temas y las normas de entrega. Enlace de asignación original: http://xn--adolfo%20jos%20gonzlez%20morais-itc0x/ (parece inválido; pendiente de confirmar).",
+      "dateText": "Fecha pendiente",
+      "links": [
+        {
+          "label": "Temas y normas de entrega",
+          "url": "https://moovi.uvigo.gal/pluginfile.php/649702/mod_label/intro/trabajos_SSI2627_temas_y_enunciado.pdf?time=1790983756375"
+        }
+      ],
+      "date": "",
+      "section": "group",
+      "priority": "Media",
+      "done": false,
+      "project": "Trabajos SSI 2026/27",
+      "subject": "SSI",
+      "source_path": "src/data.js",
+      "moodle_verified": false,
+      "live_studytracker_verified": false
+    },
+    {
+      "reference_id": "local-3",
+      "kind": "task",
+      "subjectId": "subject-ssi",
+      "title": "Entrega del trabajo",
+      "notes": "Entregar en la tarea de tipo «taller» habilitada en Moovi.",
+      "dateText": "xx/11/2026",
+      "links": [],
+      "date": "",
+      "section": "group",
+      "priority": "Media",
+      "done": false,
+      "project": "Trabajos SSI 2026/27",
+      "subject": "SSI",
+      "source_path": "src/data.js",
+      "moodle_verified": false,
+      "live_studytracker_verified": false
+    },
+    {
+      "reference_id": "local-4",
+      "kind": "task",
+      "subjectId": "subject-ssi",
+      "title": "Presentación del trabajo",
+      "notes": "Presentación en los grupos de laboratorio. El año final figura como 206 en el original; pendiente de confirmar.",
+      "dateText": "Semana del xx/11/2026 al xx/11/206",
+      "links": [],
+      "date": "",
+      "section": "group",
+      "priority": "Media",
+      "done": false,
+      "project": "Trabajos SSI 2026/27",
+      "subject": "SSI",
+      "source_path": "src/data.js",
+      "moodle_verified": false,
+      "live_studytracker_verified": false
+    },
+    {
+      "reference_id": "local-5",
+      "kind": "task",
+      "subjectId": "subject-ssi",
+      "title": "Revisión del trabajo",
+      "notes": "Realizar la revisión en la tarea de tipo «taller» habilitada en Moovi.",
+      "dateText": "Del xx/11/2026 al xx/12/2026",
+      "links": [],
+      "date": "",
+      "section": "group",
+      "priority": "Media",
+      "done": false,
+      "project": "Trabajos SSI 2026/27",
+      "subject": "SSI",
+      "source_path": "src/data.js",
+      "moodle_verified": false,
+      "live_studytracker_verified": false
+    },
+    {
+      "reference_id": "local-6",
+      "kind": "task",
+      "subjectId": "subject-ssi",
+      "title": "Práctica 1. Uso del API de cifrado de Java",
+      "section": "practices",
+      "mode": "Individual",
+      "date": "",
+      "dateText": "Por determinar · aproximadamente finales de octubre",
+      "priority": "Media",
+      "done": false,
+      "notes": "Desarrollar herramientas en Java con JCA y Bouncy Castle para empaquetar, sellar y validar facturas electrónicas. Entregar memoria, código fuente y casos de prueba en un único archivo en Moovi. El enunciado permite trabajar individualmente o en parejas.",
+      "documentPath": "docs/ssi/practica-1-cifrado-java.md",
+      "links": [
+        {
+          "label": "Entrega de la práctica en Moovi",
+          "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=448586"
+        }
+      ],
+      "subject": "SSI",
+      "source_path": "src/data.js",
+      "moodle_verified": false,
+      "live_studytracker_verified": false
+    },
+    {
+      "reference_id": "local-7",
+      "kind": "exam",
+      "subjectId": "subject-acii",
+      "title": "Prueba 1 de prácticas · Grupo del lunes",
+      "date": "2026-10-26",
+      "duration": null,
+      "notes": "En la sesión de laboratorio del lunes. Temario: P1 a P3 (el entorno, el módulo LED&KEY, la máquina de estados, el antirrebote y la base de tiempo). Ese día se empieza la P4, pero las interrupciones no entran en la prueba. Hora y duración pendientes de confirmar. Calendario de prácticas actualizado y ficheros de importación disponibles en Moovi. Las fechas de entrega de las prácticas no cambian.",
+      "subject": "ACII",
+      "source_path": "src/data.js",
+      "moodle_verified": false,
+      "live_studytracker_verified": false
+    },
+    {
+      "reference_id": "local-8",
+      "kind": "exam",
+      "subjectId": "subject-acii",
+      "title": "Prueba 2 de prácticas · Grupo del lunes",
+      "date": "2026-12-07",
+      "duration": null,
+      "notes": "En la sesión de laboratorio del lunes. Temario: P4 a P7. Hora y duración pendientes de confirmar. Calendario de prácticas actualizado y ficheros de importación disponibles en Moovi. Las fechas de entrega de las prácticas no cambian.",
+      "subject": "ACII",
+      "source_path": "src/data.js",
+      "moodle_verified": false,
+      "live_studytracker_verified": false
+    },
+    {
+      "reference_id": "local-9",
+      "kind": "exam",
+      "subjectId": "subject-acii",
+      "title": "Prueba del grupo grande · Octubre",
+      "date": "2026-10-28",
+      "duration": null,
+      "notes": "Prueba del grupo grande. Temario pendiente de confirmar. Hora y duración pendientes de confirmar. Calendario de prácticas actualizado y ficheros de importación disponibles en Moovi. Las fechas de entrega de las prácticas no cambian.",
+      "subject": "ACII",
+      "source_path": "src/data.js",
+      "moodle_verified": false,
+      "live_studytracker_verified": false
+    },
+    {
+      "reference_id": "local-10",
+      "kind": "exam",
+      "subjectId": "subject-acii",
+      "title": "Prueba del grupo grande · Enero",
+      "date": "2027-01-18",
+      "duration": null,
+      "notes": "Prueba del grupo grande, junto con las pruebas globales. Temario pendiente de confirmar. Hora y duración pendientes de confirmar. Calendario de prácticas actualizado y ficheros de importación disponibles en Moovi. Las fechas de entrega de las prácticas no cambian.",
+      "subject": "ACII",
+      "source_path": "src/data.js",
+      "moodle_verified": false,
+      "live_studytracker_verified": false
+    },
+    {
+      "reference_id": "local-11",
+      "kind": "exam",
+      "subjectId": "subject-lc",
+      "title": "Examen · Grupo B",
+      "date": "2026-11-17T12:30",
+      "duration": 105,
+      "notes": "Lugar: Aula Magna. Horario del grupo B: 12:30–14:15. Contenidos: se comunicarán con antelación suficiente.",
+      "subject": "LC",
+      "source_path": "src/data.js",
+      "moodle_verified": false,
+      "live_studytracker_verified": false
+    },
+    {
+      "reference_id": "local-12",
+      "kind": "exam",
+      "subjectId": "subject-est",
+      "title": "Cálculo de Probabilidades · Grupo de mañana",
+      "date": "2026-10-16",
+      "duration": null,
+      "notes": "Viernes 16/10/2026, en horario de clase del grupo de mañana (Grupo Mañá). Sustituye la fecha anterior del 09/10/2026. Hora y duración pendientes de confirmar.",
+      "subject": "EST",
+      "source_path": "src/data.js",
+      "moodle_verified": false,
+      "live_studytracker_verified": false
+    },
+    {
+      "reference_id": "local-13",
+      "kind": "exam",
+      "subjectId": "subject-est",
+      "title": "Variables aleatorias e estatística descritiva · Grupo de mañana",
+      "date": "2026-11-23",
+      "endDate": "2026-11-27",
+      "duration": null,
+      "notes": "Semana del 23 al 27 de noviembre de 2026, en horario de grupos reducidos. Día concreto, hora y duración pendientes de confirmar.",
+      "subject": "EST",
+      "source_path": "src/data.js",
+      "moodle_verified": false,
+      "live_studytracker_verified": false
+    }
+  ],
+  "sources": [
+    {
+      "kind": "local_project_file",
+      "path": "src/data.js",
+      "snapshot": "evidence/src__data.js",
+      "sha256": "d7199a772079c108efa6c02e0029984a1ed0c37c7a58e9d38f6fae5ff76ab88a",
+      "consulted_at": "2026-10-03T16:03:47.268Z",
+      "moodle_verified": false
+    },
+    {
+      "kind": "local_project_file",
+      "path": "README.md",
+      "snapshot": "evidence/README.md",
+      "sha256": "caa9fd5d53b950a7b18b55d422a357542fe1e3cdff12230a7fb18093d5479cae",
+      "consulted_at": "2026-10-03T16:03:47.268Z",
+      "moodle_verified": false
+    },
+    {
+      "kind": "local_project_file",
+      "path": "docs/ssi/practica-1-cifrado-java.md",
+      "snapshot": "evidence/docs__ssi__practica-1-cifrado-java.md",
+      "sha256": "0a9a3093cb7824f129a77fefb824bf94277b81bb272eabc7806126e8759793ea",
+      "consulted_at": "2026-10-03T16:03:47.268Z",
+      "moodle_verified": false
+    }
+  ]
+}

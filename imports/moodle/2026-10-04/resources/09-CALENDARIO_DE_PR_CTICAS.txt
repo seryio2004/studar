@@ -1,0 +1,414 @@
+          ARQUITECTUR A DE COMPUTADORES II                                          CALENDARIO
+
+
+
+
+CALENDARIO DE PRÁCTICAS
+
+
+
+
+Curso 2026/2027 · Primer
+cuatrimestre
+D O C U M EN TO              A S I G N AT U R A     TITUL ACIÓN         CENTRO
+
+Del alumnado                 Arq. de Computadores   Grado en Ing.       ESEI · Universidade de
+                             II                     Informática · 2.º   Vigo
+
+
+
+
+                                                                                        Página.-1
+         ARQUITECTUR A DE COMPUTADORES II                                                                                        CALENDARIO
+
+
+
+Contenido
+1. Lo que hay que saber en una tabla ............................................................................................... 3
+
+2. Tu grupo, tu día y tu hora ............................................................................................................. 3
+
+3. Las fechas .................................................................................................................................. 4
+
+    3.1 Grupos de lunes: ACII_1, ACII_7, ACII_8, ACII_2 ..............................................................................4
+
+    3.2 Grupos de martes: ACII_5, ACII_4 ................................................................................................. 5
+
+    3.3 Grupos de jueves: ACII_6, ACII_3 .................................................................................................. 6
+
+4. Cómo están repartidas las prácticas ............................................................................................7
+
+5. Las dos pruebas y el montaje de PC ............................................................................................ 8
+
+6. Si pierdes una sesión .................................................................................................................. 9
+
+
+
+
+                                                                                                                                      Página.-2
+      ARQUITECTUR A DE COMPUTADORES II                                                  CALENDARIO
+
+
+
+1. Lo que hay que saber en una tabla
+
+CA MP O               VA L OR
+
+
+Cuatrimestre          Primero. Clases del 14 de septiembre al 18 de diciembre de 2026
+
+
+Festivos              12 de octubre, 11 de noviembre, 8 de diciembre
+
+
+Sesiones              13 por grupo, de 2 horas: diez de prácticas, dos pruebas y el montaje de PC
+
+
+Dónde                 Laboratorio de Automática
+
+
+Pruebas oficiales     Del 11 al 22 de enero de 2027
+
+
+
+
+ Busca tu grupo en el apartado 2 y luego mira la tabla de tu día. Los grupos que van el
+ mismo día de la semana comparten todas las fechas; solo cambia la hora.
+
+
+
+2. Tu grupo, tu día y tu hora
+
+GR UPO         D ÍA                   HOR A                        TA BL A
+
+
+ACII_1         Lunes                  08:30 a 10:30                Apartado 3.1
+
+
+ACII_7         Lunes                  10:30 a 12:30                Apartado 3.1
+
+
+ACII_8         Lunes                  12:30 a 14:30                Apartado 3.1
+
+
+ACII_2         Lunes                  16:00 a 18:00                Apartado 3.1
+
+
+ACII_5         Martes                 08:30 a 10:30                Apartado 3.2
+
+
+ACII_4         Martes                 12:30 a 14:30                Apartado 3.2
+
+
+
+
+                                                                                           Página.-3
+      ARQUITECTUR A DE COMPUTADORES II                                            CALENDARIO
+
+
+
+GR UPO          D ÍA                 HOR A                         TA BL A
+
+
+ACII_6          Jueves               08:30 a 10:30                 Apartado 3.3
+
+
+ACII_3          Jueves               12:30 a 14:30                 Apartado 3.3
+
+
+
+
+3. Las fechas
+
+3.1 Grupos de lunes: ACII_1, ACII_7, ACII_8, ACII_2
+
+Todos estos grupos siguen las mismas fechas. La hora de cada uno está en el apartado 2.
+
+
+SES I ÓN    FEC HA                           C ONT EN ID O
+
+
+1           lunes 14 de septiembre           P1 Primer proyecto
+
+
+2           lunes 21 de septiembre           P2 Puerta de garaje (1 de 2)
+
+
+3           lunes 28 de septiembre           P2 Puerta de garaje (2 de 2)
+
+
+4           lunes 5 de octubre               P3 Cronómetro
+
+
+5           lunes 19 de octubre              P4 Interrupciones (1 de 2)
+
+
+6           lunes 26 de octubre              PRUEBA 1
+
+
+7           lunes 2 de noviembre             P4 Interrupciones (2 de 2)
+
+
+8           lunes 9 de noviembre             P5 Conversión A-D
+
+
+9           lunes 16 de noviembre            P6 Ordenador de a bordo (1 de 2)
+
+
+10          lunes 23 de noviembre            P6 Ordenador de a bordo (2 de 2)
+
+
+11          lunes 30 de noviembre            P7 Semáforo de salida
+
+
+
+
+                                                                                     Página.-4
+      ARQUITECTUR A DE COMPUTADORES II                                        CALENDARIO
+
+
+
+SES I ÓN    FEC HA                       C ONT EN ID O
+
+
+12          lunes 7 de diciembre         PRUEBA 2
+
+
+13          lunes 14 de diciembre        Montaje de PC
+
+
+
+
+3.2 Grupos de martes: ACII_5, ACII_4
+
+Todos estos grupos siguen las mismas fechas. La hora de cada uno está en el apartado 2.
+
+
+SES I ÓN    FEC HA                       C ONT EN ID O
+
+
+1           martes 15 de septiembre      P1 Primer proyecto
+
+
+2           martes 22 de septiembre      P2 Puerta de garaje (1 de 2)
+
+
+3           martes 29 de septiembre      P2 Puerta de garaje (2 de 2)
+
+
+4           martes 6 de octubre          P3 Cronómetro
+
+
+5           martes 13 de octubre         P4 Interrupciones (1 de 2)
+
+
+6           martes 20 de octubre         PRUEBA 1
+
+
+7           martes 27 de octubre         P4 Interrupciones (2 de 2)
+
+
+8           martes 3 de noviembre        P5 Conversión A-D
+
+
+9           martes 10 de noviembre       P6 Ordenador de a bordo (1 de 2)
+
+
+10          martes 17 de noviembre       P6 Ordenador de a bordo (2 de 2)
+
+
+11          martes 24 de noviembre       P7 Semáforo de salida
+
+
+12          martes 1 de diciembre        PRUEBA 2
+
+
+13          martes 15 de diciembre       Montaje de PC
+
+
+
+
+                                                                                 Página.-5
+      ARQUITECTUR A DE COMPUTADORES II                                        CALENDARIO
+
+
+
+
+3.3 Grupos de jueves: ACII_6, ACII_3
+
+Todos estos grupos siguen las mismas fechas. La hora de cada uno está en el apartado 2.
+
+
+SES I ÓN    FEC HA                       C ONT EN ID O
+
+
+1           jueves 17 de septiembre      P1 Primer proyecto
+
+
+2           jueves 24 de septiembre      P2 Puerta de garaje (1 de 2)
+
+
+3           jueves 1 de octubre          P2 Puerta de garaje (2 de 2)
+
+
+4           jueves 8 de octubre          P3 Cronómetro
+
+
+5           jueves 15 de octubre         P4 Interrupciones (1 de 2)
+
+
+6           jueves 22 de octubre         PRUEBA 1
+
+
+7           jueves 29 de octubre         P4 Interrupciones (2 de 2)
+
+
+8           jueves 5 de noviembre        P5 Conversión A-D
+
+
+9           jueves 12 de noviembre       P6 Ordenador de a bordo (1 de 2)
+
+
+10          jueves 19 de noviembre       P6 Ordenador de a bordo (2 de 2)
+
+
+11          jueves 26 de noviembre       P7 Semáforo de salida
+
+
+12          jueves 3 de diciembre        PRUEBA 2
+
+
+13          jueves 10 de diciembre       Montaje de PC
+
+
+—           jueves 17 de diciembre       Reserva
+
+
+
+
+                                                                                 Página.-6
+       ARQUITECTUR A DE COMPUTADORES II                                                 CALENDARIO
+
+
+
+  Las fechas marcadas como «Reserva» no tienen contenido asignado. Están porque
+  el cuatrimestre da alguna sesión más de las trece planificadas; se usan si hay que
+  recuperar alguna.
+
+
+
+4. Cómo están repartidas las prácticas
+
+Siete prácticas en diez sesiones. Tres de ellas llevan dos sesiones porque son las que más
+cuestan:
+
+
+PR ÁC T IC A                  SES I ON ES   POR Q UÉ
+
+
+                                            El programa es corto; el tiempo se va en entender de
+P1 Primer proyecto            1
+                                            dónde sale el resto
+
+
+                                            Es la primera con el módulo, con máquina de estados
+P2 Puerta de garaje           2
+                                            y con antirrebote: tres cosas nuevas a la vez
+
+
+P3 Cronómetro                 1             Poco código
+
+
+P4 Interrupciones             2             Tres mecanismos distintos: EXTI, SysTick y TIM2
+
+
+                                            El conversor es sencillo; comparar los tres modos es
+P5 Conversión A-D             1
+                                            lo que lleva tiempo
+
+
+P6 Ordenador de a bordo       2             El programa más grande del curso
+
+
+P7 Semáforo de salida         1             Corta, y se apoya entera en P4
+
+
+
+
+  Cada práctica se entrega una semana después de su última sesión, por Moovi. Las de
+  dos sesiones cuentan desde la segunda.
+
+
+
+
+                                                                                            Página.-7
+       ARQUITECTUR A DE COMPUTADORES II                                                    CALENDARIO
+
+
+
+5. Las dos pruebas y el montaje de PC
+
+SES I ÓN     Q UÉ E S             SO BR E Q UÉ
+
+
+                                  P1, P2 y P3: el entorno, el módulo, la máquina de estados, el
+6            Prueba 1
+                                  antirrebote y la base de tiempo
+
+
+12           Prueba 2             P4 a P7: interrupciones, conversor y el proyecto final
+
+
+13           Montaje de PC        No es obligatoria y no depende del resto de la asignatura
+
+
+
+
+    La prueba 1 llega pronto a propósito. Cae en la sexta de trece, así que quedan siete
+    sesiones por delante para corregir lo que no haya salido. No es un examen adelantado:
+    es para que te enteres a tiempo.
+
+
+Las fechas las fija el centro, y son estas:
+
+
+PRUE BA                 L UN ES                     M ART E S                 J UEV E S
+
+
+Prueba 1                26 de octubre               20 de octubre             22 de octubre
+
+
+Prueba 2                7 de diciembre              1 de diciembre            3 de diciembre
+
+
+
+
+    La prueba 1 cae entre las dos sesiones de P4, y aun así pregunta de P1 a P3. Que ese
+    día toque empezar interrupciones no significa que entren en la prueba.
+
+
+El grupo grande tiene sus propias pruebas, que no son sesiones de laboratorio: la primera
+el miércoles 28 de octubre y la segunda el lunes 18 de enero, junto con las pruebas
+globales de grupo grande y reducido.
+
+
+
+
+                                                                                               Página.-8
+      ARQUITECTUR A DE COMPUTADORES II                                           CALENDARIO
+
+
+
+6. Si pierdes una sesión
+
+  •    Los enunciados están en Moovi desde el principio: una sesión perdida se puede
+       seguir por tu cuenta, y el plazo de entrega no cambia.
+  •    El simulador permite hacer casi todo sin la placa, en tu ordenador. Sirve para
+       llegar a la sesión siguiente con el programa medio hecho.
+  •    Lo que no se recupera solo es P2: es la base de todo lo demás. Si faltas, avisa.
+
+
+
+
+                                                                                    Página.-9
+

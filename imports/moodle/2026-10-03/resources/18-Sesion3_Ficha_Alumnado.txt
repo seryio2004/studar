@@ -1,0 +1,84 @@
+ABP 2026-2027 · Sesión 3
+
+
+Actividad de hoy
+Product backlog inicial y simulación de sprint planning
+
+
+
+Trabajo en equipo (o individual) · 23 de septiembre de 2026
+Profesor: Gerardo Rodríguez Martínez
+Índice
+1. Product backlog inicial..........................................................................................................3
+
+2. Simulación de sprint planning..............................................................................................4
+
+3. Notas propias....................................................................................................................... 4
+
+
+
+
+ABP 2026-2027 · Actividad: backlog y sprint planning                                                                      Página 2 de 5
+Antes de la próxima sesión práctica, esta ficha os guía por dos ejercicios cortos: construir el backlog inicial
+de vuestro proyecto de recomendación y simular la planificación de vuestro primer sprint. Esta reflexión es
+de partida — el backlog y el sprint goal de hoy se revisarán y crecerán sprint a sprint durante las 13
+sesiones prácticas que quedan.
+
+
+1. Product backlog inicial
+Trabajad en vuestro equipo de proyecto (o en solitario, si es vuestro caso). Si el dominio de vuestro
+recomendador todavía no está cerrado —el plazo formal es el 25/09—, usad uno provisional: lo importante
+hoy es practicar la mecánica del backlog.
+Dominio de vuestro recomendador: ________________________________
+
+Listad y priorizad vuestras historias de usuario con el formato «como [usuario], quiero [funcionalidad],
+para [beneficio]». Marcad la prioridad con MoSCoW (Must/Should/Could/Won't) y estimad un tamaño
+relativo (S/M/L):
+
+ Historia de usuario                                            Prioridad (MoSCoW)     Tamaño (S/M/L)
+
+
+
+
+ABP 2026-2027 · Actividad: backlog y sprint planning                                          Página 3 de 5
+2. Simulación de sprint planning
+Con el backlog ya priorizado, simulad la primera reunión de planificación de sprint de vuestro proyecto:
+cuánto va a durar, qué querréis poder enseñar al final y con qué historias os comprometéis.
+Duración de vuestro primer sprint: ________________________________
+
+Sprint goal — una frase que resuma qué querréis poder enseñar al final del sprint:
+
+
+
+
+Historias comprometidas para este sprint (mínimo 3, máximo 5):
+
+ Historia comprometida                   Responsable(s)
+
+ 1.
+
+ 2.
+
+ 3.
+
+ 4.
+
+ 5.
+
+
+
+
+3. Notas propias
+
+
+
+
+ABP 2026-2027 · Actividad: backlog y sprint planning                                       Página 4 de 5
+Recordad: este backlog inicial y este sprint goal son el punto de partida — se revisarán y crecerán sprint a sprint
+durante las 13 sesiones prácticas que quedan.
+
+
+
+
+ABP 2026-2027 · Actividad: backlog y sprint planning                                                   Página 5 de 5
+

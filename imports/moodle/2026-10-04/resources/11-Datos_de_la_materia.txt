@@ -1,0 +1,127 @@
+                             Lógica para la computación
+                                  Datos de la materia
+
+
+                                 Manuel Vilares Ferro
+                                David Candal Ventureira
+
+
+                                   Curso 2026/2027
+
+
+
+
+Lógica para la computación            Datos de la materia   2026/2027   1/8
+1.1. Equipo docente
+
+Teoría
+    Manuel Vilares Ferro (coordinador) – vilares@uvigo.es
+    David Candal Ventureira – dcandal@uvigo.es
+
+
+Prácticas
+    David Candal Ventureira (coordinador de prácticas)
+    Juan Otero Pombo – juan.otero.pombo@uvigo.es
+    José Otero Iglesias – jose.otero.iglesias@uvigo.es
+    Erik Figueiral Alonso – erik.figueiral.alonso@uvigo.es
+    Mabel Frías Domínguez – mabel.frias@uvigo.gal
+    José Antonio Ferro González
+
+     Lógica para la computación       Datos de la materia    2026/2027   2/8
+1.2. Prácticas de laboratorio y grupos
+Organización de grupos:
+    Asignación inicial realizada por la ESEI.
+    Cambios de grupo: Plazo abierto hasta el 27/09/2026. Solicitudes por email a
+    dcandal@uvigo.es con justificante documental (laboral, matrícula, etc.).
+    Ver mensaje de bienvenida en el foro de la materia en Moovi.
+Dinámica de laboratorio:
+    Resolución de casos prácticos propuestos por el profesor.
+    No habrá clases prácticas en la semana del 07/09.
+
+Alumnos repetidores
+Podrán conservar la nota de prácticas de cursos anteriores si entregaron TODAS las prácticas.
+Si desean repetir, deben avisarlo y renunciar a la nota previa. Quienes no estuvieran
+matriculados el curso pasado, pero sí tengan las prácticas de un curso anterior, deben
+comunicarlo a dcandal@uvigo.es.
+      Lógica para la computación         Datos de la materia              2026/2027        3/8
+1.3. Evaluación continua
+
+Para aprobar es necesario: alcanzar ≥ 5/10 en el global, sumar ≥ 3/6 pts. en teoría, y
+entregar y defender las prácticas en plazo.
+
+
+  Prueba                               Descripción                                                        Peso
+
+  1. Teoría (parcial)                  Prueba escrita de desarrollo sobre conocimientos teóricos.         25 %
+  2. Prácticas laboratorio             Examen(es) sobre los contenidos de las prácticas desarrolladas     40 %
+                                       en las sesiones de laboratorio.
+  3. Teoría (final)                    Prueba escrita final sobre los conocimientos adquiridos.           35 %
+
+
+* Importante: Si alguna práctica no se entrega y defiende en plazo, la nota de la asignatura será un 0,
+independientemente de la nota de teoría.
+NOTA: Se considerará que todo alumno se adscribe al sistema de evaluación continua, salvo que solicite el
+cambio al sistema global en tiempo y forma.
+
+       Lógica para la computación                Datos de la materia                      2026/2027              4/8
+1.4. Evaluación global y extraordinaria
+
+
+Solicitud de evaluación global
+Debe notificarse mediante un escrito firmado digitalmente y enviado por email al
+coordinador (vilares@uvigo.es) en el primer mes de clases (08/10/2026).
+
+Sistema de calificación (global y extraordinaria):
+     Teoría (60 %): Examen de preguntas de desarrollo. Requisito: Obtener al menos un 3
+     sobre 6.
+     Prácticas (40 %): Se entregará y defenderá una única práctica de mayor complejidad en
+     la fecha indicada.
+* Al igual que en continua, es imprescindible aprobar la teoría y entregar la práctica obligatoria para superar la
+materia.
+
+
+
+       Lógica para la computación                 Datos de la materia                       2026/2027            5/8
+1.5. Normativa estricta de la materia
+
+
+En cumplimiento con el artículo 13.2.d) del Estatuto del Estudiante Universitario y las
+directrices de la materia:
+
+    Dispositivos móviles: Queda totalmente prohibido el uso de teléfonos móviles en
+    ejercicios, prácticas de laboratorio y exámenes.
+
+    Inteligencia artificial: El uso de herramientas de IA está estrictamente prohibido en
+    todas las actividades docentes y pruebas de evaluación (continuas o globales).
+
+    Plagio y copia: La detección de copia, plagio o uso de herramientas no permitidas
+    supondrá automáticamente la calificación de SUSPENSO (0) en el acta y será
+    notificado a la Dirección de la ESEI.
+
+
+
+      Lógica para la computación         Datos de la materia                2026/2027       6/8
+1.6. Bibliografía de referencia
+
+
+Básica:
+    Vilares, M., Alonso, M. A., y Valderruten, A. (1996). Programación Lógica. Galaxia.
+    Lalément, R. (1993). Computation as Logic. Prentice-Hall.
+
+Complementaria:
+    Maier, D. y Warren, D. S. (1988). Computing with Logic. Logic Programming with
+    Prolog.
+    Sterling, L. S. y Shapiro, E. Y. (1994). The Art of Prolog. MIT Press.
+    Ben-Ari, M. (2012). Mathematical Logic for Computer Science. Springer.
+
+
+
+
+     Lógica para la computación         Datos de la materia                  2026/2027    7/8
+                             ¿Preguntas?
+
+
+
+
+Lógica para la computación      Datos de la materia   2026/2027   8/8
+

@@ -1,0 +1,206 @@
+ABP 2026-2027 · Documento para el alumnado
+
+
+Definición del Proyecto
+Sistema de recomendación basado en contenidos
+
+
+
+Entregado en la Sesión 1 · 9 de septiembre de 2026
+Ingeniería Informática, 4º curso — Escuela Superior de Enxeñaría Informática
+Profesor: Gerardo Rodríguez Martínez
+ABP 2026-2027 · Definición del Proyecto
+
+
+
+
+Índice
+Fechas clave — para ir organizándoos desde hoy ......................................................................................................... 3
+1. Introducción .................................................................................................................................................................. 3
+2. Descripción general del proyecto y requisitos base ................................................................................................... 3
+   Objetivo ......................................................................................................................................................................... 3
+   Características del sistema de recomendación ........................................................................................................... 3
+3. Documentación y software base a entregar ................................................................................................................ 4
+   Entregables finales base ............................................................................................................................................... 4
+4. Composición de grupos y validación de la propuesta de trabajo ............................................................................. 4
+   Restricciones sobre los grupos de trabajo .................................................................................................................. 4
+   ¿Cómo proponer un proyecto una vez el grupo está conformado?.......................................................................... 4
+   ¿Cómo se valida la propuesta de trabajo? ................................................................................................................. 5
+5. Proceso de desarrollo ................................................................................................................................................... 5
+
+
+
+
+ABP 2026-2027 · Definición del Proyecto                                                                                                                    Página 2 de 5
+ABP 2026-2027 · Definición del Proyecto
+
+
+
+Fechas clave — para ir organizándoos desde hoy
+Guardad este resumen: marcad en vuestro calendario de equipo cada una de estas fechas en cuanto os organicéis.
+
+  Fecha                                   Qué ocurre
+
+  25 de septiembre                        Fecha límite para formar el equipo y publicar la propuesta de proyecto en el foro
+
+  Semana del 02/10                        Entrega Sprint 1 — documentación inicial y requisitos (10%)
+
+  Semana del 16/10                        Sprint 2 — solo feedback, no evaluable
+
+  Semana del 30/10                        Entrega Sprint 3 — documentación completa (10%)
+
+  Semana del 13/11                        Sprint 4 — solo feedback, no evaluable
+
+  Semana del 27/11                        Sprint 5 — solo feedback, no evaluable
+
+  23/11 (23:59)                           Envío del material de la presentación comercial
+
+  25/11, 02/12, 09/12, 16/12              Presentaciones comerciales en clase de teoría (10%)
+
+  13 de enero de 2027                     Entrega de la memoria final del proyecto (70%)
+
+
+1. Introducción
+Los sistemas de recomendación de contenidos se han hecho muy populares en los últimos años. Entre los ámbitos más
+extendidos se encuentran las recomendaciones de productos en tiendas online, películas, vídeos, música, libros,
+productos o recomendaciones de perfiles a los que seguir en redes sociales.
+Los sistemas de recomendación, por tanto, intentan personalizar al máximo lo que ofrecerán a cada usuario. Esto se
+debe a la gran cantidad de información individual que podemos recabar de las personas, dándonos la posibilidad de
+obtener una mayor tasa de aciertos, y mejorando la experiencia del usuario sin ofrecer "recomendaciones a ciegas".
+Desde un punto de vista más técnico, el sistema analiza y procesa información de los usuarios (edad, compras previas,
+calificaciones…), de los contenidos (marcas, modelos, precios, contenidos similares…) y la transforma en
+conocimiento accionable, es decir, predice qué output puede ser interesante para el usuario y para la empresa.
+Las estrategias más usadas para crear sistemas de recomendación son las siguientes:
+ • Popularity: recomienda en base a la "popularidad" de los productos. Por ejemplo, "los más vendidos"
+   globalmente, se ofrecerán a todos los usuarios por igual sin aprovechar la personalización. Es fácil de implementar
+   y en algunos casos es efectiva.
+ • Content-based: a partir de productos visitados por el usuario, se intenta "adivinar" qué busca el usuario y ofrecer
+   mercancías similares en base a las características de los propios productos.
+ • Collaborative: utiliza la información de "masas" para identificar perfiles similares entre usuarios y aprender de los
+   datos para recomendar productos de manera individual.
+
+
+2. Descripción general del proyecto y requisitos base
+
+Objetivo
+El proyecto consistirá en definir y desarrollar una aplicación que contenga un sistema de recomendación basado en
+contenido.
+Cada grupo podrá escoger la temática, siempre teniendo en mente que la finalidad es construir el sistema de
+recomendación, siendo importante disponer de una buena base de conocimiento (datos).
+
+Características del sistema de recomendación
+
+
+
+ABP 2026-2027 · Definición del Proyecto                                                               Página 3 de 5
+ABP 2026-2027 · Definición del Proyecto
+
+
+El sistema recomendador base realizará las recomendaciones basándose en un ítem de input. Dado dicho ítem, deberán
+recomendarse ítems similares en base a sus características.
+Además, se deberán tener en cuenta los siguientes requisitos para el desarrollo del prototipo:
+ • Los ítems a recomendar deben tener, como mínimo, un campo textual de descripción.
+ • El sistema de recomendación se basará en una medida de similitud entre ítems que debe tener como base el texto
+   del campo descripción. Para ello, se hará uso de algoritmos relacionados con minería de textos para calcular
+   distancias entre dos documentos. Además del campo descripción, cada grupo deberá usar otros campos a mayores
+   y crearse su propia "fórmula" para calcular distancias entre ítems.
+ • Los algoritmos de minería de textos dependen del idioma en el que se encuentren los textos. Para el desarrollo de
+   esta funcionalidad de recomendación se trabajará con textos en inglés.
+
+
+3. Documentación y software base a entregar
+Cada grupo propondrá el desarrollo de una "aplicación" completa (véase aplicación web, aplicación móvil, servicio
+web, API…) que contendrá como mínimo alguna funcionalidad relacionada con el sistema de recomendación.
+NO SERÁ NECESARIO LLEVAR A CABO LA IMPLEMENTACIÓN DE LA APLICACIÓN.
+Únicamente se exige llevar a cabo el desarrollo del prototipo del sistema de recomendación en un cuaderno de
+programación Python. La documentación, sin embargo, se realizará como si fuese a construirse el sistema al completo.
+
+Entregables finales base
+ • (Documentación) Definición de la arquitectura del sistema.
+ • (Documentación) Definición de los requisitos funcionales y no funcionales del sistema. Diagramas de casos de
+   uso, diagramas de secuencia de sistema, descripciones formales…
+ • (Software) Notebook Python que contendrá:
+      ◦ Descripción del conjunto/conjuntos de datos empleados en el sistema de recomendación (se aportará
+        información acerca del origen de los datos y del posible preprocesado que haya sido necesario incorporar).
+      ◦ Desarrollo del prototipo del sistema de recomendación en el que pueda observarse la batería de pruebas
+        realizada con los datos. Como mínimo, deberá existir una demostración de cómo el sistema de recomendación
+        ofrece ítems similares a uno dado. Deberán realizarse pruebas con distintos tipos de medidas de distancia (al
+        menos 2).
+Nota: se valorará muy positivamente el empleo de las celdas de texto en el cuaderno para exponer descripciones de
+todo el preprocesado y los algoritmos propuestos.
+
+
+4. Composición de grupos y validación de la propuesta de trabajo
+
+Restricciones sobre los grupos de trabajo
+ • Se elaborarán grupos de un máximo de 4 personas, permitiéndose desarrollar el trabajo también de forma
+   individual.
+ • Únicamente se podrán crear grupos de trabajo dentro del mismo grupo de prácticas.
+ • Fecha límite: 25/09.
+
+¿Cómo proponer un proyecto una vez el grupo está conformado?
+ • Decidir quién será el coordinador del grupo.
+ • Reflexionar sobre la propuesta de proyecto.
+ • Elaborar una pequeña descripción y proponer un título.
+ • Identificar vuestro grupo de prácticas.
+ • El coordinador deberá rellenar la siguiente plantilla y crear una entrada en el foro "Propuesta de Proyecto":
+      ◦ Nombre del grupo
+      ◦ Grupo de prácticas
+      ◦ Título del proyecto
+
+
+ABP 2026-2027 · Definición del Proyecto                                                               Página 4 de 5
+ABP 2026-2027 · Definición del Proyecto
+
+
+      ◦ Descripción breve de la propuesta
+
+¿Cómo se valida la propuesta de trabajo?
+Para que la propuesta de trabajo sea validada, deberá recibir el visto bueno del profesor de prácticas. Esto se llevará a
+cabo mediante réplica positiva del profesor en el foro.
+
+
+5. Proceso de desarrollo
+El proyecto se desarrolla en sprints de aproximadamente dos semanas. La tabla resume qué se entrega en cada uno, la
+fecha límite y su peso en la nota:
+
+  Hito                 Qué se entrega                                            Fecha límite                 Peso / calificación
+
+                       Documentación inicial del proyecto: marco y                                            10% (calificado 0–
+  Sprint 1                                                                       Semana del 02/10
+                       requisitos de trabajo                                                                  3)
+
+                                                                                                              No evaluable
+  Sprint 2             Documentación asociada al sprint 2                        Semana del 16/10
+                                                                                                              (feedback)
+
+                                                                                                              10% (calificado 0–
+  Sprint 3             Documentación asociada al sprint 3                        Semana del 30/10
+                                                                                                              3)
+
+                                                                                                              No evaluable
+  Sprint 4             Documentación asociada al sprint 4                        Semana del 13/11
+                                                                                                              (feedback)
+
+                                                                                                              No evaluable
+  Sprint 5             Documentación asociada al sprint 5                        Semana del 27/11
+                                                                                                              (feedback)
+
+                       Presentación comercial del proyecto (derivada del
+                       sprint 3). Envío del material: 23/11 a las 23:59.                                      10% (calificado 0–
+  Presentación                                                                   23/11 – 16/12
+                       Presentación: en las clases de teoría del 25/11, 02/12,                                3)
+                       09/12 y 16/12.
+
+                       Entrega de la documentación final completa del            Hasta el 13/01/2027          70% (calificado 0–
+  Entrega final
+                       proyecto                                                  (incluido)                   10)
+
+Importante: la evaluación individual de cada integrante del grupo será dirimida a partir de la calificación colectiva, es
+decir, todos los miembros del equipo obtendrán la misma nota.
+
+
+
+
+ABP 2026-2027 · Definición del Proyecto                                                                  Página 5 de 5
+

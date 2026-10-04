@@ -1,0 +1,191 @@
+ACII. Curso 2026 2027
+1. Memoria
+Objetivos
+Objetivos
+                Objetivos
+1. Ki, Mi, Gi, Ti, Pi, Ei, Zi, Yi
+2. Non-ECC, ECC
+3. Un-Buffered, Registered
+4. Single, Dual, Triple, Quad Channel
+5. DIP, SIPP, SIMM, DIMM, SODIMM
+6. SDD, DDR, DDR2, DDR3, DDR4, DDR5
+7. SPD, XMP, Hyper DIMM
+                Objetivos
+1. Prefijos para múltiplos binarios
+2. Detección y corrección de errores
+3. Un-buffered o registered memory
+4. Memoria multicanal
+5. Módulos de memoria
+6. Memoria síncrona SDRAM
+7. Identificación del módulo de memoria
+Organización de la Memoria Principal
+
+
+
+
+                        https://course.ece.cmu.edu/~ece
+                        447/s15/doku.php?id=schedule
+                       Cell
+• Una celda almacena un 1 bit de información
+
+
+
+
+                  Bit a              Bit
+                  escribir           leído
+                           Cell
+• DRAM:
+  – Una celda DRAM es un condensador y un
+    transistor.
+  – Rapidez ↓, capacidad ↑, coste ↓
+  – El condensador se descarga y es necesario
+    refresco. Además, la lectura es destructiva.
+  – Memoria principal.
+• SRAM:
+  – Una celda SRAM es un biestable.
+  – Rapidez ↑, capacidad ↓, coste ↑
+  – Registros CPU, Memoria Caché.
+      https://compas.cs.stonybrook.edu/cse502-v4
+
+                      Cell
+
+
+                           SRAM y DRAM son volátiles
+
+                                   El condensador se descarga
+
+
+                    T = transistor
+
+
+
+
+SRAM sobre 10 veces más rápida que la DRAM
+Cell
+Cell
+
+
+Guarda la sesión
+Cell
+                    Cell
+• Comercialmente, se venden memorias en
+  formatos resultado de agrupar un número
+  enorme de celdas.
+
+                                   Chip, módulo, ….
+Memoria desde el punto de vista del
+  programador y del procesador
+
+                        1023
+   posiciones
+                        1022
+
+                        1021
+Memoria desde el punto de vista del
+  programador y del procesador
+
+                           1023
+   posiciones
+                           1022
+
+                           1021
+
+
+
+
+                     https://stackoverrun.com/es/q/587550
+Memoria desde el punto de vista del
+  programador y del procesador
+
+                             1023
+   posiciones
+                             1022
+
+                             1021
+
+
+
+
+                DATO
+
+
+
+
+                       https://stackoverrun.com/es/q/587550
+ Memoria desde el punto de vista del
+   programador y del procesador
+• Representa una memoria de 1024 posiciones de 1
+  Byte cada una (decimal, binario y hexadecimal).
+• Almacena el valor 5 como uint8 en la posición 2.
+• Almacena el valor -5 como int8 en la posición 3.
+• Almacena el valor -5 como int16 en la posición 4.
+• Almacena los caracteres a, A y 5 a partir de la    ASCII
+                                                     30h: 0
+  posición 6, https://ascii.cl/es/.                  41h: A
+                                                     61h: a
+• Almacena el valor 5.0 como float en la posición 8,
+  http://www.binaryconvert.com/convert_float.html.
+EJEMPLO
+
+                 Row/Column
+CONTRUIR
+MEMORIA DE
+1Mi x 1 bit
+
+  • PROBLEMA: El Decodificador de una memoria
+    de 1 Mi Posiciones de 1 bit, sería ….
+                                         Address:
+                                         20 bits
+
+
+
+
+                                              Decoder:
+                                              220 lines
+               Row/Column
+• PROBLEMA: El Decodificador de una memoria
+  de 1 Mi Posiciones de 1 bit, sería ….
+                                       Address:
+                                       20 bits
+
+
+
+
+                                            Decoder:
+                                            220 lines
+                    Row/Column
+• SOLUCIÓN: la memoria se organiza como una
+  matriz, o array de 2D, formada por filas y
+  columnas:               10 MS bits
+                                RAS
+                    20 bits                           bit-cell array
+                                      n       2n
+                                                     2n row x 2m-col
+
+                                                   (nm to minimize
+                                                    overall latency)
+
+                                          m                  2m
+n=m=10 bits para                                   sense amp and mux
+                                                             1
+1 Mi posiciones de 1 bit
+MS: Most Significant            CAS
+LS: Least Significant         10 LS bits
+                   Row/Column
+• PROBLEMAS con Row/Column: Lectura
+  destructiva + refresco + mejora velocidad
+  (acceso a más información)
+                    10 MS bits
+                      RAS                bit-cell array
+         20 bits
+                         n       2n     2n row x 2m-col
+
+                                      (nm to minimize
+                                       overall latency)
+                             m                  2m
+                                      sense amp and mux
+                                                1
+
+                     CAS
+                    10 LS bits
+

@@ -1,0 +1,561 @@
+ACII. Curso 2022 2023
+ Discos Duros
+                  Bibliografía
+• Stallings, William. Organización y arquitectura
+  de computadores. 7ª ed. 978-84-8966-082-3,
+  https://www.perseo.biblioteca.uvigo.es/record=b1290735
+  http://home.ustc.edu.cn/~louwenqi/reference_books_tool
+  s/Computer%20Organization%20and%20Architecture%
+  2010th%20-%20William%20Stallings.pdf
+
+
+
+
+                                                       3
+         Discos Duros, HDD
+• “A día de hoy” es la tecnología dominante para
+  almacenar grandes cantidades de información:
+  – ¿Por capacidad? Sí
+  – ¿Por coste? Sí
+  – ¿Por velocidad? No
+• Las Unidades de Estado Sólido (SSD, Solid
+  State Drives) están sustituyendo a las Unidades
+  de Disco Duro (HDD, Hard Disk Drives)
+• Pero a día de hoy, los HDDs siguen ofreciendo
+  mejor coste por Gigabyte
+
+
+                                                    4
+              Discos Duros, HDD
+• Según el informe publicado por Trendfocus, durante el
+  año 2020 se han vendido más de 333 millones de
+  unidades de SSD, superando finalmente a las ventas de
+  discos duros que han sido de 260 millones de unidades.
+  En términos de capacidad total, sin embargo, los discos
+  duros siguen por delante, ya que de media los SSD
+  tienen una capacidad inferior a los discos duros: los 333
+  millones de SSD sumaron 207 Exabytes (EB) de
+  capacidad, mientras que la totalidad de discos duros
+  superaron el Zettabyte (ZB).
+•   https://hardzone.es/noticias/componentes/ventas-ssd-discos-duros/
+• Publicado el 17 de febrero, 2021
+                                                                        6
+                      Discos Duros, HDD
+• Total HDD shipments in CQ2 2022 were down
+  15.5% compared with CQ1 2022 (44.6M versus
+  52.8M).
+• Total exabytes shipped in CQ2 2022 were up by
+  23% from CQ1 2022, driven by higher nearline
+  HDD capacities.
+https://www.forbes.com/sites/tomcoughlin/2022/08/21/c2q-2022-hdd-industry-update/?sh=777e754c7ff0
+
+
+• ¿Futuro? ¿Aumento
+  de capacidad?
+
+
+
+           https://www.adslzone.net/noticias/tecnologia/seagate-discos-duros-120-tb-2030/      7
+                      Origen
+• En 1956 IBM desarrolló el
+  RAMAC 305 (Random
+  Access Method of
+  Accounting and Control)
+• 50 platos de 24 pulgadas
+  (60,96 cm) de diámetro
+  que giraban a 3.600 rpm
+• Esta máquina permitía el
+  almacenamiento de cinco
+  millones de caracteres
+
+
+                               8
+                                  Origen
+
+
+
+
+http://news.softpedia.com/news/HDD-Turns-50-Years-Today-The-Chronicles-35461.shtml    10
+        https://tigerscroll.com/these-unexplored-historical-photos-are-remarkable/66/
+Evolución
+
+
+
+
+            Pulgadas
+                       13
+          Memoria no volátil
+• Memoria no volátil: mantiene la información
+  cuando no se alimenta (5v y 12v)
+• Dispositivo magnético, mecánico y electrónico
+  – Magnético: propiedades magnéticas de ciertos
+    materiales para almacenar información
+  – Mecánico: partes móviles como motores, ejes, …
+  – Electrónico: lógica de control de la unidad
+
+
+
+
+                                                     15
+Estructura
+
+
+
+
+             16
+Estructura
+
+
+
+
+             17
+Estructura
+
+
+
+
+             19
+Estructura
+         Eje único, todos los
+         brazos se mueven
+         solidariamente, es
+         decir, todos se
+         desplazan de igual
+         forma, y así definen
+         un cilindro
+
+
+         Únicamente una
+         cabeza lee o escribe
+         al mismo tiempo
+                                20
+                   Estructura
+• Plato: Cada uno de los discos
+• Cara: Cada superficie de un plato
+• Cabeza: Unidad de lectura y escritura
+• Pista: Anillo que recorre la cabeza
+  cuando no se mueve y el plato sí. Pista
+  0 en el exterior.
+• Cilindro: Conjunto de pistas recorridas
+  por las cabezas cuando no se mueven
+  y el plato sí. Están alineadas
+  verticalmente
+• Sector de una pista: Cada una de las
+  divisiones de una pista, unidad mínima
+  que se lee o escribe
+                                            22
+                Estructura
+• A es una pista del
+  disco (roja)
+• B es un sector de
+  una pista
+• Para un sistema de
+  archivos, C es un
+  cluser, conjunto de
+  varios sectores
+  consecutivos (verde)
+
+                             23
+Estructura
+
+             geométrico
+
+
+
+
+                    24
+             Estructura
+GEOMÉTRICO
+
+
+
+
+                  Cilindro 13 = Pista13.Disco1.Sup + Pista13.Disco1.Inf
+                              + Pista13.Disco2.Sup + Pista13.Disco2.Inf
+                                                                25
+                              + Pista13.Disco3.Sup + Pista13.Disco3.Inf
+                              + Pista13.Disco4.Sup + Pista13.Disco4.Inf
+                  Sector
+• La unidad mínima de lectura y escritura en
+  un HDD es el sector (512 o 4096 Bytes)
+• Cada sector tiene un identificador único de
+  n bits: LBA (0 a 2n-1) o CHS (cilindro +
+  cabeza + sector: obsoleto)
+• La electrónica del HDD asigna a cada
+  sector LBA un cilindro, una cabeza/cara y
+  un sector
+
+                                           28
+                            Sector
+• 28-bit LBA in ATA-1: 228 * 512 = ~137 GB
+• 48-bit LBA in ATA-6: 248 * 512 = ~144 PB
+• MBR uses 32-bit sector numbers, so limits
+  to 232 * 512 = ~2.1TB
+• GPT uses 64-bit sector numbers => 264 *
+  512 ~9.4 ZB
+
+
+
+                                                                        29
+    https://stevens.netmeister.org/615/02-physical-disk-structure.pdf
+Rendimiento
+
+
+
+
+              30
+                 Rendimiento
+• Seek Time, Tiempo de Búsqueda: tiempo que tarda
+  la cabeza en moverse a la pista donde está el
+  sector a leer
+• Rotational Latency, Latencia Rotacional: cuando la
+  cabeza está en la pista deseada, tiempo que tarda
+  la cabeza en situarse al principio del sector a leer.
+• Access Time, Tiempo de Acceso: suma de tiempo
+  de búsqueda (ir a la pista) y latencia rotacional (ir al
+  sector)
+• Tiempo de Transferencia: tiempo que tarda todo el
+  sector en pasar por debajo de la cabeza
+                                                         31
+Rendimiento
+
+
+
+
+              32
+                Rendimiento
+• El fabricante indica un tiempo de búsqueda
+  medio, Average Seek Time
+• La Average Rotational Latency dada por el
+  fabricante, es la latencia rotacional media, la
+  mitad del tiempo de una rotación completa del disco
+• Además suele especificar un Track-to-Track
+  (entre pistas adyacentes) y también un Full-
+  Stroke (desde la pista interior a la exterior)
+
+
+
+
+                                                    33
+               Rendimiento
+• Velocidad de Rotación: la velocidad de giro
+  constante de los platos. Se mide en RPM
+• A mayor velocidad de rotación, menor latencia
+  media y menor tiempo de transferencia
+• No afecta al tiempo de búsqueda
+• Desde 4200 hasta 15000 RPM
+
+
+
+
+                                                  34
+                                            Rendimiento
+                          • Tasa de transferencia, Transfer Rate: Velocidad en
+                            Byte/s a la que el HDD puede transferir la información.
+                             – Velocidad sostenida (Sustained Transfer Rate):
+
+
+
+
+http://archive.is/KY4Aq
+                               velocidad con la que se transfieren los datos en la
+                               superficie del disco una vez que la cabeza está en la
+                               pista y sector correcto, y medida durante una
+                               transferencia continua en sectores consecutivos.
+                             – Velocidad de externa o de ráfaga (External or Burst
+                               Transfer Rate): velocidad con la que se envían los
+                               datos. Depende de la interfaz, ATA/133 133 MB/s,
+                               SATA I 150MB/s, SATA II 300MB/s, SATA III
+                               600MB/s
+
+                                                                                   35
+Rendimiento
+
+
+
+
+              Fragmentación
+
+                         36
+Ejemplo
+
+
+
+
+          37
+      Mejoras de Rendimiento
+• Todas las pistas
+  tienen el mismo
+  número de
+  sectores
+• La velocidad de
+  transferencia es
+  igual en todas
+  las pistas
+• ¿Problema?
+
+                               38
+      Mejoras de Rendimiento
+• Zone Bit
+  Recording: Número
+  de sectores por
+  pista no constante
+• Las pistas
+  exteriores tienen
+  más sectores
+• La velocidad de
+  transferencia es
+  mayor para las
+  pistas exteriores
+
+       Máxima Velocidad de      39
+      Transferencia Sostenida
+             Mejoras de Rendimiento
+
+
+
+
+                                                                              7200 rpm
+
+
+                                                                                             40
+(From Deskstar 40GV and 75GXP Product Manual, © 2000 International Business Machines Corporation.)
+      Mejoras de Rendimiento
+• Cache de disco:
+  – All modern hard disks contain an integrated cache,
+    also often called a buffer. The function of cache is to
+    act as a buffer between a relatively fast device and a
+    relatively slow one. For hard disks, the cache is used
+    to hold the results of recent reads from the disk, and
+    also to "pre-fetch" information that is likely to be
+    requested in the near future, for example, the sector
+    or sectors immediately after the one just requested.
+
+
+
+                                                          43
+     Mejoras de Rendimiento
+• Cache de disco:
+  – The use of cache improves performance of
+    any hard disk, by reducing the number of
+    physical accesses to the disk on repeated
+    reads and allowing data to stream from the
+    disk uninterrupted when the bus is busy. Most
+    modern hard disks have between 8MB and
+    64MB of internal cache memory.
+
+
+                                                44
+   Formato Disco Bajo Nivel
+• LOS DISCOS TIENEN SECTORES CON
+  512 BYTES O 4096 BYTES DE DATOS.
+• AUNQUE NECESITAN MAS ESPACIO
+  PARA ALMACENAR PREAMBULO Y
+  CODIGOS DE CORRECCIÓN
+
+
+
+
+                                     46
+    Formato Disco Bajo Nivel
+• Hecho por el fabricante (en este caso,
+  tamaño de sector 512 bytes de datos, 600
+  BYTES EN TOTAL)
+
+
+
+
+                                         47
+Formato Disco Bajo Nivel
+
+
+
+
+                           48
+      Advanced Format de 4KB
+
+
+
+
+                         https://www.anandtech.com/show/2888                                 49
+https://www.seagate.com/es/es/tech-insights/advanced-format-4k-sector-hard-drives-master-ti/
+       Advanced Format de 4KB
+• ¿Por qué 4K?
+
+
+
+• Mantener compatibilidad con 512 Bytes
+
+
+
+
+                          https://www.anandtech.com/show/2888                                 50
+ https://www.seagate.com/es/es/tech-insights/advanced-format-4k-sector-hard-drives-master-ti/
+S.M.A.R.T.
+
+
+
+
+             53
+                   S.M.A.R.T.
+• S.M.A.R.T.: Self Monitoring
+  Analysis and Reporting
+  Technology
+• La detección de errores con
+  anticipación permite al usuario
+  el poder realizar una copia o
+  un reemplazo del disco, antes
+  de que se produzca una
+  pérdida de datos irrecuperable.
+• Combinación de BIOS y disco
+  duro
+
+                                    54
+                S.M.A.R.T.
+• Tipos de Fallos
+  – Impredecibles: suelen estar producidos por
+    sobrevoltajes, altas temperaturas de trabajo,
+    mal funcionamiento de algún circuito
+    integrado o por una mala conexión.
+  – Predecibles: ocurren gradualmente en el
+    tiempo, por ejemplo, el desgaste de las partes
+    mecánicas del disco y la degradación de la
+    superficie del disco. Son el 60 % de los fallos.
+
+                                                  56
+                                                                     S.M.A.R.T.
+                                           • Monitoriza varios parámetros del disco:
+                                                – Contador de sectores reasignados: muchos sectores
+
+
+
+
+https://en.wikipedia.org/wiki/S.M.A.R.T.
+                                                  reasignados puede significar que la unidad va a fallar
+                                                  definitivamente
+                                                – Temperatura: el aumento de la temperatura del disco
+                                                  a menudo es señal de problemas de motor del disco.
+                                                – Tiempo de arranque (spin-up): cambios en el tiempo
+                                                  de arranque pueden reflejar fallos en el motor
+                                                – Tiempo de búsqueda
+                                                – Altura de vuelo del cabezal: su disminución a menudo
+                                                  es previa a un accidente del cabezal
+                                                – Drive Life Protection Status: estadística basada en el
+                                                  Service Life
+                                                                                                      57
+                                           https://www.ntfs.com/disk-monitor-smart-attributes.htm
+                 S.M.A.R.T.
+• Rangos de los parámetros monitorizados:
+  – Valor de 1 a 253;
+  – donde 1 es el peor valor;
+  – valores normales entre 100 y 200;
+  – Se guardan en el disco.
+• Si la BIOS detecta un valor anómalo, avisa al
+  usuario, éste toma decisión: seguir, copiar o
+  sustituir el disco.
+• Algunos programas pueden acceder a estos
+  valores: DiskCheckup
+
+                                                  58
+S.M.A.R.T.
+
+
+
+
+             59
+                                                                       Vida útil de un HDD
+
+
+
+
+https://www.backblaze.com/blog/how-long-do-disk-drives-last/
+                                                               • MTTF (Mean Time To Failure)
+                                                                 – Valor típico: 2.000.000 horas → ¡228
+                                                                   años!
+                                                               • Service Life: tiempo hasta que la
+                                                                 probabilidad de fallo aumenta
+                                                                 considerablemente por el desgaste
+                                                                 – Valor típico: 5 años
+
+                                                                                                          60
+                         https://www.open-
+e.com/site_media/download/documents/Toshiba_OpenE_Blogpost_July20
+                             22_final.pdf
+
+
+
+
+                                                      Vida útil de un HDD
+
+
+
+  61
+                              Self-Encrypting Drive
+   • Seagate estimates that 50,000 drives are retired from
+     data centers daily. Corporate and personal data resides
+     on such drives, and when they do leave the data center,
+     the data they contain is still readable. One lost drive
+     could cost a company millions of dollars in remedies for
+     the breached data.
+   • The drawbacks of today’s drive retirement practices are
+     both numerous and far-reaching:
+            – Overwriting drive data is expensive
+            – Degaussing or physically shredding a drive is costly.
+            – Storing them indefinitely in warehouses
+            – Hiring professional disposal services
+                                                                                                                                                        63
+https://www.seagate.com/files/www-content/solutions-content/security-and-encryption/en-us/docs/seagate-instant-secure-erase-deployment-options-tp627-2-1502us.pdf
+Self-Encrypting Drive
+
+
+
+
+                        64
+             Self-Encrypting Drive
+•   Los HDD con autocifrado mantienen los datos seguros, aunque los
+    HDD pasen a manos no fiables o sean robados.
+•   El borrado seguro instantáneo convierte en ilegibles todos los datos
+    de la unidad de disco duro en menos de un segundo mediante un
+    borrado de la clave de cifrado de los datos. Por tanto, podrá
+    devolver, reutilizar o desechar la unidad de manera segura.
+•   El bloqueo automático borra la clave de cifrado de los datos en el
+    momento en que se apaga o retira. Cuando se enciende se debe
+    proporcionar la clave de cifrado.
+•   https://www.seagate.com/es/es/tech-insights/how-to-ise-your-drive-
+    master-ti/
+
+
+
+
+                                                                      65
+                   Borrado Seguro
+• El borrado es una acción que borra
+  completamente todos los documentos
+  guardados.
+• Hay tres formas de borrar un disco
+  – Utiliza un software de borrado de disco
+  – Utilizar dispositivos de borrado por hardware
+  – Rompe físicamente el dispositivo.
+
+
+    https://es.easeus.com/partition-manager-tips/borrado-seguro-disco-duro.html   67
+                Borrado Seguro
+• SW:
+        https://www.incibe.es/ciudadania/herramientas/eraser
+
+
+
+
+• Degaussing
+
+• Destructora de discos duros
+
+                                                                  68
+                            https://www.youtube.com/watch?v=VKsxZKj86bs
+Borrado Seguro
+
+
+
+
+                 69
+

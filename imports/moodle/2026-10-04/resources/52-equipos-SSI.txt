@@ -1,0 +1,801 @@
+￼SSI - Trabajos y presentaciones - 2026/27
+Instrucciones
+* Los equipos de trabajo tendrán 4 o 5 personas. Se permiten equipos mixtos con miembros de distintos grupos de laboratorio (todos los miembros se comprometen a presentar el grupo de laboratorio indicado).
+* Fase 1 (alumnado): apuntaos en la primera fila libre de la tabla 1.1. Escribid vuestro nombre y, entre paréntesis, vuestro grupo de laboratorio de origen, por ejemplo: «Ana Blanco Carrera (SSI4)».
+   * Indicad el grupo de laboratorio donde queréis presentar (preferente) y uno alternativo donde, de ser necesario, también podríais hacerlo. Usad el formato SSI1, SSI2, SSI6.
+   * Quien no tenga equipo se apunta en la tabla 1.2. El profesorado completará los equipos incompletos.
+   * Editad únicamente vuestra fila. No insertéis, borréis ni reordenéis filas. Las tablas de las fases 2 y 3 las rellena solo el profesorado.
+* Fecha límite de la fase 1: miércoles, 30 de septiembre de 2026
+* Objetivo: que cada grupo de laboratorio vea todos los temas. El profesorado asignará los temas al azar y ajustará el grupo de presentación según las preferencias indicadas.
+Fase 1. Formación de equipos (alumnado)
+1.1 Equipos de trabajo
+Equipos
+	Miembro 1 (Grupo)
+	Miembro 2 (Grupo)
+	
+
+	Miembro 3 (Grupo)
+	Miembro 4 (Grupo)
+	Miembro 5 (opcional)
+	Grupo de Laboratorio preferente
+	Grupo de Laboratorio alternativo
+	E01
+	ALBERTO A. FAUBLAK ÁLVAREZ (SSI4)
+	YERAI FERNÁNDEZ RODRÍGUEZ  (SSI4)
+	
+
+	VINCENZO GAGLIANO  (SSI4)
+	FRANCISCO J. VARGAS VALVERDE  (SSI4)
+	HUGO FORMOSO FERNÁNDEZ (SSI3)
+	SSI4
+	SSI5
+	E02
+	MARTIÑO SÁNCHEZ PÉREZ(SSI6)
+	PABLO ÁLVAREZ CAÑEDO(SSI6)
+	
+
+	IAGO ROUCO BABARRO(SSI6)
+	
+
+	
+
+	SSI6
+	
+
+	E03
+	NEREA VARELA VILA(SSI2)
+	GUILLERMO IGLESIAS FERREIRA(SSI2)
+	
+
+	JORGE FERNÁNDEZ PIÑEIRO(SSI2)
+	ANDREA IGLESIAS VILARIÑO(SSI5)
+	JORGE SANTOS GONZÁLEZ(SSI5)
+	SSI2
+	SSI6
+	E04
+	XIÁN GONZALEZ PAVÓN (SSI5)
+	CRISTIAN GIL VIDAL (SSI6)
+	
+
+	IAGO CAMPELOS OTERO (SSI6)
+	JUAN CARLOS BARROS LAMOSA (SSI6)
+	
+
+	SSI5
+	SSI1
+	E05
+	ANA ÁLVAREZ LÓPEZ (SSI4)
+	EVA FREIRE SUÁREZ (SSI4)
+	
+
+	NOELIA CARBALLEIRA ÁLVAREZ (SSI1)
+	MANUEL CORTIÑAS PÉREZ (SSI5)
+	
+
+	SSI4
+	SSI2
+	E06
+	YERAY LOZANO VÁZQUEZ (SSI4)
+	XOEL MARRA RODRÍGUEZ 
+(SSI4)
+	
+
+	XIAN PAZ BLANCO (SSI4)
+	HUGO LUIS LAGE VÁZQUEZ (SSI4)
+	
+
+	SSI4
+	SSI5
+	E07
+	MIGUEL CASTRO MARTÍNEZ (SSI3)
+	MIGUEL ANXO RODRÍGUEZ LÓPEZ  (SSI1)
+	
+
+	ENRIQUE PIÑEIRO LÓPEZ (SSI1)
+	LUCAS FÉLIX CASAL (SSI1)
+	IAGO CERNADAS FERREIRA (SSI1)
+	SSI1
+	SSI3
+	E08
+	MIGUEL VÁZQUEZ TOUBES
+(SSI4)
+	JAVIER TOMBO NIETO
+(SSI5)
+	
+
+	ROBERTO RODRÍGUEZ GONZÁLEZ
+(SSI2)
+	
+
+	
+
+	SSI4
+	SSI1
+	E09
+	RAÚL AMOEDO OJEA (SSI5)
+	CRISTIAN PÁRAMOS LÓPEZ (SSI4)
+	
+
+	NICOLÁS LÓPEZ UCHA (SSI5)
+	ÓSCAR PRIETO GARCÍA (SSI3)
+	PABLO RENDO CASTRO (SSI3)
+	SSI5
+	SSI4
+	E10
+	NICOLÁS FERNÁNDEZ DE CÓRDOBA  GONZÁLEZ (SSI6)
+	RAÚL PIÑEIRO COUSO (SSI3)
+	
+
+	DAVID PRADO BARRIO (SSI6)
+	ANDRÉ RALUY GONZÁLEZ (SSI3)
+	ALEJANDRO RODRÍGUEZ DEL RÍO (SSI3)
+	SSI3
+	SSI1
+	E11
+	ALEX CONDE RODRÍGUEZ (SSI4)
+	JAIME LÓPEZ ARIAS (SS4)
+	
+
+	HUGO CID SEARA (SSI5)
+	GABRIEL CARPINTERO MEIJIDE (SSI5)
+	LUCAS GONZÁLEZ LAMAS (SSI5)
+	SSI4
+	SSI5
+	E12
+	LUCAS NÚÑEZ TRABA 
+(SSI5)
+	PAULA NEIRA GONZÁLEZ 
+(SSI5)
+	
+
+	ANA CAROLINA MEISTER
+(SSI6)
+	
+
+	
+
+	SSI4
+	SSI5
+	E13
+	MARÍA AMALIA GONZÁLEZ VÁZQUEZ (SSI5)
+	JOEL CAMBÓN FACAL (SSI3)
+	
+
+	SARA CALVO SOBRINO (SSI1)
+	BRAIS CAJIDE GONZÁLEZ (SSI5)
+	CARLA GONZÁLEZ GONZÁLEZ (SSI5)
+	SSI5
+	SSI3
+	E14
+	ALEXIS GARCÍA GÓMEZ
+(SSI2)
+	ISMAEL GARCÍA RUIBAL
+(SSI2)
+	
+
+	NEREA FIGUEROA GÓMEZ
+(SSI3)
+	CARLA GARCÍA ALONSO
+(SSI5)
+	
+
+	SSI3
+	SSI1
+	E15
+	PATRICIA GONZÁLEZ GALÁN (SSI1)
+	SERGIO RODRÍGUEZ MARTÍNEZ (SSI6)
+	
+
+	JUAN RODRÍGUEZ GARCÍA (SSI2)
+	SANDRA FERNÁNDEZ ARIAS (SSI4) 
+	
+
+	SSI5
+	SSI1
+	E16
+	WEIKAI YU (SSI2)
+	JOSE MANUEL DELGADO CHAPELA (SSI_6)
+	
+
+	DANIEL ORGE PEÓN (SSI1)
+	
+
+	
+
+	SSI4
+	SSI3
+	E17
+	CARLA GIRÁLDEZ FANDIÑO (SSI5)
+	MATEO GONZÁLEZ MIGUÉLEZ (SSI5)
+	
+
+	IVÁN DOMINGUEZ RODRIGUEZ (SSI5)
+	MARTÍN VAQUERO PALLARES (SSI3)
+	MARCOS RODRÍGUEZ LAMELO (SSI3)
+	SSI5
+	SSI1
+	E18
+	SEBASTIÁN QUERO PRIETO (SSI3)
+	PABLO ALEJANDRO PUENTE PRIETO (SSI5)
+	
+
+	IAN PAUL PÉREZ TABLANTE (SSI2)
+	
+
+	
+
+	SSI2
+	SSI3
+	E19
+	RAMÓN GARROTE VALENTÍN (SSI2)
+	DIEGO BONOME GARRIDO (SSI4)
+	
+
+	XOÁN XESÚS GARCÍA SANTOS (SSI4)
+	
+
+	
+
+	SSI4
+	SSI1
+	E20
+	PALOMA GONZÁLEZ VILLAR (SSI5)
+	NEREA HERMIDA LAMAS (SSI5)
+	
+
+	ANDRES DAVID PEREZ ALMUÑEZ (SSI4)
+	
+
+	
+
+	SSI5
+	SSI3
+	E21
+	ENMA ROMERO DIZ (SSI4)
+	ISMAEL CONDE CONDE (SSI4)
+	
+
+	CELSA ALMUIÑA DAFONTE (SSI5)
+	ÁNGEL ARAGUNDI FIGUEIRA (SSI5)
+	
+
+	SSI4
+	
+
+	E22
+	Paula Mosquera del Río 
+	David Mariño Rey
+	
+
+	Oscar Porto Muñoz
+	
+
+	
+
+	SSI3 (propuesta)
+	
+
+	E23
+	Xabier Barreiro Alberte
+	Adolfo José González Morais
+	
+
+	
+
+	
+
+	
+
+	SSI5 (propuesta)
+	
+
+	E24
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	E25
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	E26
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	E27
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	E28
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	(añadir filas si es necesario)
+________________
+1.2 Alumnado sin equipo
+Nombre y apellidos
+	Grupo de Laboratorio de origen
+	Grupo de Laboratorio preferente
+	Grupo de Laboratorio alternativo
+	Correo o comentario
+	
+
+	
+
+	
+
+	
+
+	
+
+	Paula Mosquera del Río 
+	SSI3
+	SSI5
+	SSI3
+	mosqueradelriopaula@gmail.com
+	David Mariño Rey
+	SSI3
+	SSI3
+	SSI4
+	davidmarinore@gmail.com
+	Oscar Porto Muñoz
+	SSI3
+	SSI3
+	SSI4
+	opc21176@gmail.com
+	
+
+	
+
+	
+
+	
+
+	
+
+	Nikita Markov Panarin (Ev. global)
+	SSI1 
+	SSI1 
+	SSI5 
+	nikitamarkov900@gmail.com
+	Xabier Barreiro Alberte
+	SSI5
+	SSI5
+	SSI6
+	xabitic1@gmail.com
+	Adolfo José González Morais
+	SSI5
+	SSI5
+	SSI4
+	fitothelol@gmail.com
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	(añadir filas si es necesario)
+________________
+Fase 2. Asignación de temas y grupos de laboratorio (solo profesorado)
+Tema sorteado al azar. Grupo de laboratorio final de la presentación en primera opción y, si hace falta cubrir huecos, de segunda opción.
+Grupo
+	Tema asignado
+	Grupo de Lab. 1.ª opción
+	Grupo de Lab. 2.ª opción (si procede)
+	Observaciones
+	E01
+	Tema A. Pentesting autónomo con agentes de IA
+	SSI4
+	
+
+	
+
+	E02
+	Tema A. Pentesting autónomo con agentes de IA
+	SSI6
+	
+
+	
+
+	E03
+	Tema C. Malware moderno y uso de IA/ML: ataque y detección
+	SSI2
+	
+
+	
+
+	E04
+	Tema E. Seguridad en la nube, contenedores y Kubernetes
+	SSI1
+	
+
+	
+
+	E05
+	Tema B. Automatización de la respuesta a incidentes: SOAR, XDR, agentes SOC
+	SSI2
+	
+
+	
+
+	E06
+	Tema D. Seguridad de los sistemas IA: ataques a LLMs y modelos de ML
+	SSI4
+	
+
+	
+
+	E07
+	Tema A. Pentesting autónomo con agentes de IA
+	SSI1
+	
+
+	
+
+	E08
+	Tema B. Automatización de la respuesta a incidentes: SOAR, XDR, agentes SOC
+	SSI4
+	
+
+	
+
+	E09
+	Tema B. Automatización de la respuesta a incidentes: SOAR, XDR, agentes SOC
+	SSI5
+	
+
+	
+
+	E10
+	Tema D. Seguridad de los sistemas IA: ataques a LLMs y modelos de ML
+	SSI3
+	
+
+	
+
+	E11
+	Tema C. Malware moderno y uso de IA/ML: ataque y detección
+	SSI4
+	
+
+	
+
+	E12
+	Tema E. Seguridad en la nube, contenedores y Kubernetes
+	SSI5
+	
+
+	
+
+	E13
+	Tema C. Malware moderno y uso de IA/ML: ataque y detección
+	SSI5
+	
+
+	
+
+	E14
+	Tema A. Pentesting autónomo con agentes de IA
+	SSI3
+	
+
+	
+
+	E15
+	Tema B. Automatización de la respuesta a incidentes: SOAR, XDR, agentes SOC
+	SSI1
+	
+
+	
+
+	E16
+	Tema C. Malware moderno y uso de IA/ML: ataque y detección
+	SSI3
+	
+
+	
+
+	E17
+	Tema C. Malware moderno y uso de IA/ML: ataque y detección
+	SSI1
+	
+
+	
+
+	E18
+	Tema A. Pentesting autónomo con agentes de IA
+	SSI2
+	
+
+	
+
+	E19
+	Tema D. Seguridad de los sistemas IA: ataques a LLMs y modelos de ML
+	SSI1
+	
+
+	
+
+	E20
+	Tema A. Pentesting autónomo con agentes de IA
+	SSI5
+	
+
+	
+
+	E21
+	Tema E. Seguridad en la nube, contenedores y Kubernetes
+	SSI4
+	
+
+	
+
+	E22
+	Tema B. Automatización de la respuesta a incidentes: SOAR, XDR, agentes SOC
+	SSI3
+	
+
+	Propuesta de equipo para alumnos sin asignar
+	E23
+	Tema D. Seguridad de los sistemas IA: ataques a LLMs y modelos de ML
+	SSI5
+	
+
+	Propuesta de equipo para alumnos sin asignar
+	E24
+	
+
+	
+
+	
+
+	
+
+	E25
+	
+
+	
+
+	
+
+	
+
+	E26
+	
+
+	
+
+	
+
+	
+
+	E27
+	
+
+	
+
+	
+
+	
+
+	E28
+	
+
+	
+
+	
+
+	
+
+	________________
+
+
+Fase 3. Matriz de cobertura (solo profesorado)
+Tema
+	SSI1
+	SSI2
+	SSI3
+	SSI4
+	SSI5
+	SSI6
+	Tema A
+	E07
+	E18
+	E14
+	E01
+	E20
+	E02
+	Tema B
+	E15
+	E05
+	E22
+	E08
+	E09
+	
+
+	Tema C
+	E17
+	E03
+	E16
+	E11
+	E12
+	
+
+	Tema D
+	E19
+	
+
+	E10
+	E06
+	E23
+	
+
+	Tema E
+	E04
+	
+
+	
+
+	E21
+	E12
+	
+
+	Tema F

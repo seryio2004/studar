@@ -1,0 +1,1744 @@
+{
+  "review_date": "2026-10-04",
+  "timezone": "Europe/Madrid",
+  "dates": [
+    {
+      "identity": "assign-401909",
+      "course": "ACII",
+      "title": "P1 — Primer proyecto",
+      "date": "2026-09-24T23:59",
+      "date_text": null,
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "Moodle fija este plazo común; el PDF indica una semana desde el final de la sesión (segunda sesión cuando procede). Puede variar por grupo; no se calcula un nuevo plazo.",
+        "Plazo vencido; Moodle aún mostraba Engadir entrega y ninguna entrega. Confirmar si sigue admitiéndose."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=401909",
+          "label": "2627-11394-20456-101AC: P1 — Primer proyecto | Moovi"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/626868/mod_folder/content/0/P1%20PRIMER%20PROYECTO.pdf?forcedownload=1",
+          "label": "P1 PRIMER PROYECTO.pdf"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/598562/mod_resource/content/18/GUIA%20GENERAL%20DE%20PRACTICAS.pdf",
+          "label": "Guía general de prácticas (enlace directo comprobado)"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=428498",
+          "label": "Calendario de prácticas Ficheiro"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=401909",
+          "consulted_at": "2026-10-04T11:26:42.342Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "assign-401910",
+      "course": "ACII",
+      "title": "P2 — Puerta de garaje",
+      "date": "2026-10-08T23:59",
+      "date_text": null,
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "Moodle fija este plazo común; el PDF indica una semana desde el final de la sesión (segunda sesión cuando procede). Puede variar por grupo; no se calcula un nuevo plazo."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=401910",
+          "label": "2627-11394-20456-101AC: P2 — Puerta de garaje | Moovi"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/626868/mod_folder/content/0/P2%20PUERTA.pdf?forcedownload=1",
+          "label": "P2 PUERTA.pdf"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/598562/mod_resource/content/18/GUIA%20GENERAL%20DE%20PRACTICAS.pdf",
+          "label": "Guía general de prácticas (enlace directo comprobado)"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=428498",
+          "label": "Calendario de prácticas Ficheiro"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=401910",
+          "consulted_at": "2026-10-04T11:26:42.652Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "assign-401911",
+      "course": "ACII",
+      "title": "P3 — Cronómetro",
+      "date": "2026-10-15T23:59",
+      "date_text": null,
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "Moodle fija este plazo común; el PDF indica una semana desde el final de la sesión (segunda sesión cuando procede). Puede variar por grupo; no se calcula un nuevo plazo."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=401911",
+          "label": "2627-11394-20456-101AC: P3 — Cronómetro | Moovi"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/626868/mod_folder/content/0/P3%20RELOJ.pdf?forcedownload=1",
+          "label": "P3 RELOJ.pdf"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/598562/mod_resource/content/18/GUIA%20GENERAL%20DE%20PRACTICAS.pdf",
+          "label": "Guía general de prácticas (enlace directo comprobado)"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=428498",
+          "label": "Calendario de prácticas Ficheiro"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=401911",
+          "consulted_at": "2026-10-04T11:26:42.672Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "assign-401912",
+      "course": "ACII",
+      "title": "P4 — Interrupciones",
+      "date": "2026-11-09T23:59",
+      "date_text": null,
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "Moodle fija este plazo común; el PDF indica una semana desde el final de la sesión (segunda sesión cuando procede). Puede variar por grupo; no se calcula un nuevo plazo."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=401912",
+          "label": "2627-11394-20456-101AC: P4 — Interrupciones | Moovi"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/626868/mod_folder/content/0/P4%20INTERRUPCIONES.pdf?forcedownload=1",
+          "label": "P4 INTERRUPCIONES.pdf"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/598562/mod_resource/content/18/GUIA%20GENERAL%20DE%20PRACTICAS.pdf",
+          "label": "Guía general de prácticas (enlace directo comprobado)"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=428498",
+          "label": "Calendario de prácticas Ficheiro"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=401912",
+          "consulted_at": "2026-10-04T11:26:42.641Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "assign-401913",
+      "course": "ACII",
+      "title": "P5 — Conversión A-D",
+      "date": "2026-11-16T23:59",
+      "date_text": null,
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "Moodle fija este plazo común; el PDF indica una semana desde el final de la sesión (segunda sesión cuando procede). Puede variar por grupo; no se calcula un nuevo plazo."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=401913",
+          "label": "2627-11394-20456-101AC: P5 — Conversión A-D | Moovi"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/626868/mod_folder/content/0/P5%20AD.pdf?forcedownload=1",
+          "label": "P5 AD.pdf"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/598562/mod_resource/content/18/GUIA%20GENERAL%20DE%20PRACTICAS.pdf",
+          "label": "Guía general de prácticas (enlace directo comprobado)"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=428498",
+          "label": "Calendario de prácticas Ficheiro"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=401913",
+          "consulted_at": "2026-10-04T11:26:42.678Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "assign-401914",
+      "course": "ACII",
+      "title": "P6 — Ordenador de a bordo",
+      "date": "2026-11-30T23:59",
+      "date_text": null,
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "Moodle fija este plazo común; el PDF indica una semana desde el final de la sesión (segunda sesión cuando procede). Puede variar por grupo; no se calcula un nuevo plazo."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=401914",
+          "label": "2627-11394-20456-101AC: P6 — Ordenador de a bordo | Moovi"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/626868/mod_folder/content/0/P6%20BORDO.pdf?forcedownload=1",
+          "label": "P6 BORDO.pdf"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/598562/mod_resource/content/18/GUIA%20GENERAL%20DE%20PRACTICAS.pdf",
+          "label": "Guía general de prácticas (enlace directo comprobado)"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=428498",
+          "label": "Calendario de prácticas Ficheiro"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=401914",
+          "consulted_at": "2026-10-04T11:26:42.662Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "assign-401915",
+      "course": "ACII",
+      "title": "P7 — Semáforo de salida",
+      "date": "2026-12-07T23:59",
+      "date_text": null,
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "Moodle fija este plazo común; el PDF indica una semana desde el final de la sesión (segunda sesión cuando procede). Puede variar por grupo; no se calcula un nuevo plazo."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=401915",
+          "label": "2627-11394-20456-101AC: P7 — Semáforo de salida | Moovi"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/626868/mod_folder/content/0/P7%20SEMAFORO.pdf?forcedownload=1",
+          "label": "P7 SEMAFORO.pdf"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/598562/mod_resource/content/18/GUIA%20GENERAL%20DE%20PRACTICAS.pdf",
+          "label": "Guía general de prácticas (enlace directo comprobado)"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=428498",
+          "label": "Calendario de prácticas Ficheiro"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=401915",
+          "consulted_at": "2026-10-04T11:26:42.645Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "acii-test-1-lunes",
+      "course": "ACII",
+      "title": "Prueba 1 de prácticas · lunes",
+      "date": "2026-10-26",
+      "date_text": null,
+      "duration_minutes": null,
+      "location": "Laboratorio de Automática",
+      "condition": null,
+      "uncertainties": [
+        "Grupo del usuario y duración del examen por confirmar; no se equipara a las dos horas de laboratorio.",
+        "Calendario sitúa primera sesión P4 del lunes el 19/10; anuncio dice inicio P4 el día de la prueba 26/10."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=428498",
+          "label": "Calendario de prácticas Ficheiro"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=53314",
+          "label": "ACII · anuncio de pruebas 28/09"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=53314",
+          "consulted_at": "2026-10-04T11:27:23.237Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "acii-test-1-martes",
+      "course": "ACII",
+      "title": "Prueba 1 de prácticas · martes",
+      "date": "2026-10-20",
+      "date_text": null,
+      "duration_minutes": null,
+      "location": "Laboratorio de Automática",
+      "condition": null,
+      "uncertainties": [
+        "Grupo del usuario y duración del examen por confirmar; no se equipara a las dos horas de laboratorio.",
+        "Calendario sitúa primera sesión P4 del lunes el 19/10; anuncio dice inicio P4 el día de la prueba 26/10."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=428498",
+          "label": "Calendario de prácticas Ficheiro"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=53314",
+          "label": "ACII · anuncio de pruebas 28/09"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=53314",
+          "consulted_at": "2026-10-04T11:27:23.237Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "acii-test-1-jueves",
+      "course": "ACII",
+      "title": "Prueba 1 de prácticas · jueves",
+      "date": "2026-10-22",
+      "date_text": null,
+      "duration_minutes": null,
+      "location": "Laboratorio de Automática",
+      "condition": null,
+      "uncertainties": [
+        "Grupo del usuario y duración del examen por confirmar; no se equipara a las dos horas de laboratorio.",
+        "Calendario sitúa primera sesión P4 del lunes el 19/10; anuncio dice inicio P4 el día de la prueba 26/10."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=428498",
+          "label": "Calendario de prácticas Ficheiro"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=53314",
+          "label": "ACII · anuncio de pruebas 28/09"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=53314",
+          "consulted_at": "2026-10-04T11:27:23.237Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "acii-test-2-lunes",
+      "course": "ACII",
+      "title": "Prueba 2 de prácticas · lunes",
+      "date": "2026-12-07",
+      "date_text": null,
+      "duration_minutes": null,
+      "location": "Laboratorio de Automática",
+      "condition": null,
+      "uncertainties": [
+        "Grupo del usuario y duración del examen por confirmar; no se equipara a las dos horas de laboratorio."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=428498",
+          "label": "Calendario de prácticas Ficheiro"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=53314",
+          "label": "ACII · anuncio de pruebas 28/09"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=53314",
+          "consulted_at": "2026-10-04T11:27:23.237Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "acii-test-2-martes",
+      "course": "ACII",
+      "title": "Prueba 2 de prácticas · martes",
+      "date": "2026-12-01",
+      "date_text": null,
+      "duration_minutes": null,
+      "location": "Laboratorio de Automática",
+      "condition": null,
+      "uncertainties": [
+        "Grupo del usuario y duración del examen por confirmar; no se equipara a las dos horas de laboratorio."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=428498",
+          "label": "Calendario de prácticas Ficheiro"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=53314",
+          "label": "ACII · anuncio de pruebas 28/09"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=53314",
+          "consulted_at": "2026-10-04T11:27:23.237Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "acii-test-2-jueves",
+      "course": "ACII",
+      "title": "Prueba 2 de prácticas · jueves",
+      "date": "2026-12-03",
+      "date_text": null,
+      "duration_minutes": null,
+      "location": "Laboratorio de Automática",
+      "condition": null,
+      "uncertainties": [
+        "Grupo del usuario y duración del examen por confirmar; no se equipara a las dos horas de laboratorio."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=428498",
+          "label": "Calendario de prácticas Ficheiro"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=53314",
+          "label": "ACII · anuncio de pruebas 28/09"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=53314",
+          "consulted_at": "2026-10-04T11:27:23.237Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "acii-gg-2026-10-28",
+      "course": "ACII",
+      "title": "Prueba del grupo grande · Octubre",
+      "date": "2026-10-28",
+      "date_text": null,
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "Hora, duración y temario no indicados."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=53314",
+          "label": "ACII · anuncio de pruebas 28/09"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=53314",
+          "consulted_at": "2026-10-04T11:27:23.237Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "acii-gg-2027-01-18",
+      "course": "ACII",
+      "title": "Prueba del grupo grande · Enero",
+      "date": "2027-01-18T16:00",
+      "date_text": null,
+      "duration_minutes": 120,
+      "location": "Aula Magna",
+      "condition": null,
+      "uncertainties": [
+        "El horario de prueba GG se toma del calendario oficial; grupo de laboratorio y franja práctica por confirmar."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=53314",
+          "label": "ACII · anuncio de pruebas 28/09"
+        },
+        {
+          "label": "ESEI: exámenes primer cuatrimestre GREI 2026/27",
+          "url": "https://esei.uvigo.es/documentos/grao-exames-1-cuatrimestre/"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=53314",
+          "consulted_at": "2026-10-04T11:27:23.237Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "abp-sprint1",
+      "course": "ABP",
+      "title": "Sprint 1 · Análisis de requisitos",
+      "date": "2026-10-09T23:59",
+      "date_text": null,
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "El aviso reemplaza expresamente la fecha antigua 02/10. Confirmar el canal indicado por Gerardo/Adrián; Moodle tiene tarea."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=448713",
+          "label": "2627-11394-20473-101AC: Sprint 1: análisis de requisitos (Fecha Límite: Semana del 09/10) [10% nota total] | Moovi"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/649892/mod_assign/introattachment/0/Aviso_Alumnado_Sprint1_NuevaFecha.pdf?forcedownload=1",
+          "label": "Aviso_Alumnado_Sprint1_NuevaFecha.pdf"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=448770",
+          "label": "Definición del Proyecto Ficheiro"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=479350",
+          "label": "Sesión 3 Ficha Alumno Ficheiro"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=448713",
+          "consulted_at": "2026-10-04T11:26:43.151Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "abp-sprint2",
+      "course": "ABP",
+      "title": "Sprint 2",
+      "date": null,
+      "date_text": "Semana del 16/10; diapositivas: 16/10/2026",
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "Conservar semana sin convertirla en día exacto."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=448770",
+          "label": "Definición del Proyecto Ficheiro"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=476908",
+          "label": "Presentación Alumnos Ficheiro"
+        }
+      ],
+      "last_checks": []
+    },
+    {
+      "identity": "abp-sprint3",
+      "course": "ABP",
+      "title": "Sprint 3",
+      "date": null,
+      "date_text": "Semana del 30/10; diapositivas: 30/10/2026",
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "Conservar semana sin convertirla en día exacto.",
+        "Las fuentes describen de forma diferente el entregable del Sprint 3; consultar ambas."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=448770",
+          "label": "Definición del Proyecto Ficheiro"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=476908",
+          "label": "Presentación Alumnos Ficheiro"
+        }
+      ],
+      "last_checks": []
+    },
+    {
+      "identity": "abp-sprint4",
+      "course": "ABP",
+      "title": "Sprint 4",
+      "date": null,
+      "date_text": "Semana del 13/11; diapositivas: 13/11/2026",
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "Conservar semana sin convertirla en día exacto."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=448770",
+          "label": "Definición del Proyecto Ficheiro"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=476908",
+          "label": "Presentación Alumnos Ficheiro"
+        }
+      ],
+      "last_checks": []
+    },
+    {
+      "identity": "abp-sprint5",
+      "course": "ABP",
+      "title": "Sprint 5",
+      "date": null,
+      "date_text": "Semana del 27/11 (Definición del Proyecto) / 11/12/2026 (presentación de prácticas)",
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "Conservar semana sin convertirla en día exacto.",
+        "Fecha contradictoria entre los dos documentos."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=448770",
+          "label": "Definición del Proyecto Ficheiro"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=476908",
+          "label": "Presentación Alumnos Ficheiro"
+        }
+      ],
+      "last_checks": []
+    },
+    {
+      "identity": "abp-material-comercial",
+      "course": "ABP",
+      "title": "Enviar material de presentación comercial",
+      "date": "2026-11-23T23:59",
+      "date_text": null,
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "Canal y formato exacto no concretados en las fuentes."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=448770",
+          "label": "Definición del Proyecto Ficheiro"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=476908",
+          "label": "Presentación Alumnos Ficheiro"
+        }
+      ],
+      "last_checks": []
+    },
+    {
+      "identity": "abp-presentacion",
+      "course": "ABP",
+      "title": "Presentación comercial del proyecto",
+      "date": null,
+      "date_text": "25/11, 02/12, 09/12 o 16/12 de 2026",
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "Día concreto, hora y duración del equipo pendientes."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=448770",
+          "label": "Definición del Proyecto Ficheiro"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=476908",
+          "label": "Presentación Alumnos Ficheiro"
+        }
+      ],
+      "last_checks": []
+    },
+    {
+      "identity": "abp-memoria",
+      "course": "ABP",
+      "title": "Memoria final del proyecto",
+      "date": null,
+      "date_text": "13/01/2027 incluido (Definición y presentación inicial) / 08/01/2027 (presentación de prácticas)",
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "Dos fechas de entrega contradictorias; no se elige una sin confirmación."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=448770",
+          "label": "Definición del Proyecto Ficheiro"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=448775",
+          "label": "Sesion1 Presentacion Ficheiro"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=476908",
+          "label": "Presentación Alumnos Ficheiro"
+        }
+      ],
+      "last_checks": []
+    },
+    {
+      "identity": "abp-correccion-sprint1",
+      "course": "ABP",
+      "title": "Revisión formal de Sprint 1",
+      "date": null,
+      "date_text": "ABP4/5: 19/10; ABP3/6: 13/10; ABP1/2: 14/10 de 2026",
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "Grupo de prácticas del usuario por confirmar."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/649892/mod_assign/introattachment/0/Aviso_Alumnado_Sprint1_NuevaFecha.pdf?forcedownload=1",
+          "label": "Aviso_Alumnado_Sprint1_NuevaFecha.pdf"
+        }
+      ],
+      "last_checks": []
+    },
+    {
+      "identity": "abp-taller1",
+      "course": "ABP",
+      "title": "Taller 1 · Recomendación basada en contenidos",
+      "date": null,
+      "date_text": "05/10, 06/10 o 07/10 de 2026 según grupo",
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "Grupo, hora y materiales específicos del taller por confirmar."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/649892/mod_assign/introattachment/0/Aviso_Alumnado_Sprint1_NuevaFecha.pdf?forcedownload=1",
+          "label": "Aviso_Alumnado_Sprint1_NuevaFecha.pdf"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=476908",
+          "label": "Presentación Alumnos Ficheiro"
+        }
+      ],
+      "last_checks": []
+    },
+    {
+      "identity": "abp-sesion4-ejercicio",
+      "course": "ABP",
+      "title": "Preparar sesión 5 · Prompts frente a especificación",
+      "date": "2026-10-07",
+      "date_text": "Antes de la sesión 5 del 07/10/2026; hora no indicada",
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "45–60 minutos es esfuerzo orientativo, no duración de examen."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=486817",
+          "label": "Sesión 4- Ficha Alumno Ficheiro"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=479350",
+          "label": "Sesión 3 Ficha Alumno Ficheiro"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=486816",
+          "label": "Sesión 4- Presentación Ficheiro"
+        }
+      ],
+      "last_checks": []
+    },
+    {
+      "identity": "ssi-choice-448580",
+      "course": "SSI",
+      "title": "Seleccionar modalidad de evaluación",
+      "date": "2026-10-15T23:50",
+      "date_text": null,
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "Título dice hasta 19/10/2025; cierre real y anuncio indican 15/10/2026.",
+        "La encuesta exige mínimo 4 en cada parte; guía oficial no exige mínimo en trabajo/presentación."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/choice/view.php?id=448580",
+          "label": "SELECCIÓN MODALIDAD DE EVALUACIÓN (hasta 19/10/2025) | Moovi"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/520883/course/section/54246/SSI_presentacion.pdf?time=1789020184004",
+          "label": "Presentación curso 2026/27"
+        },
+        {
+          "label": "Guía docente SSI 2026/27: evaluación",
+          "url": "https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/index.php?centre=106&ensenyament=O06G151V01&assignatura=O06G151V01401&fitxa_apartat=7"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/choice/view.php?id=448580",
+          "consulted_at": "2026-10-04T11:26:42.924Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "ssi-examen-enero",
+      "course": "SSI",
+      "title": "Examen SSI · enero",
+      "date": "2027-01-19T09:00",
+      "date_text": null,
+      "duration_minutes": 150,
+      "location": "Aula Magna",
+      "condition": null,
+      "uncertainties": [
+        "Confirmar modalidad personal y posibles avisos posteriores a este calendario oficial."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/520883/course/section/54246/SSI_presentacion.pdf?time=1789020184004",
+          "label": "Presentación curso 2026/27"
+        },
+        {
+          "label": "ESEI: exámenes primer cuatrimestre GREI 2026/27",
+          "url": "https://esei.uvigo.es/documentos/grao-exames-1-cuatrimestre/"
+        }
+      ],
+      "last_checks": []
+    },
+    {
+      "identity": "ssi-examen-julio",
+      "course": "SSI",
+      "title": "Examen SSI · julio",
+      "date": "2027-07-06T10:00",
+      "date_text": null,
+      "duration_minutes": 120,
+      "location": "Aula Magna",
+      "condition": "Convocatoria extraordinaria si corresponde",
+      "uncertainties": [
+        "Confirmar modalidad personal y posibles avisos posteriores a este calendario oficial."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/520883/course/section/54246/SSI_presentacion.pdf?time=1789020184004",
+          "label": "Presentación curso 2026/27"
+        },
+        {
+          "label": "ESEI: convocatoria extraordinaria junio/julio GREI 2026/27",
+          "url": "https://esei.uvigo.es/documentos/grao-exames-xullo/"
+        }
+      ],
+      "last_checks": []
+    },
+    {
+      "identity": "lc-global",
+      "course": "LC",
+      "title": "Solicitud de evaluación global (si procede)",
+      "date": "2026-10-08",
+      "date_text": null,
+      "duration_minutes": null,
+      "location": null,
+      "condition": "Solo si deseas cambiar a evaluación global",
+      "uncertainties": [
+        "No se indica hora límite. No se ha enviado ninguna solicitud."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=452344",
+          "label": "Datos de la materia Ficheiro"
+        }
+      ],
+      "last_checks": []
+    },
+    {
+      "identity": "lc-practica-451667",
+      "course": "LC",
+      "title": "Práctica · Segunda convocatoria",
+      "date": "2027-06-05T23:59",
+      "date_text": null,
+      "duration_minutes": null,
+      "location": null,
+      "condition": "Segunda convocatoria si corresponde",
+      "uncertainties": [
+        "No se afirma un lenguaje que no aparezca en el enunciado accesible."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=451667",
+          "label": "2627-11394-20462-101AC: Práctica | Moovi"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=451667",
+          "consulted_at": "2026-10-04T11:26:42.910Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "lc-defensa-451668",
+      "course": "LC",
+      "title": "Reservar y realizar defensa · Segunda convocatoria",
+      "date": null,
+      "date_text": "26 de junio a partir de las 10:00; año no explícito en el enunciado",
+      "duration_minutes": null,
+      "location": "Laboratorio de CCIA, enfrente del despacho 304",
+      "condition": "Segunda convocatoria si corresponde",
+      "uncertainties": [
+        "El año de la defensa no aparece explícito; fechas de apertura/entrega son de 2027. Confirmar posible texto reutilizado.",
+        "Sin intervalos disponibles en la consulta.",
+        "Calendario GREI fija examen LC extraordinario 25/06/2027 16:00–18:00; la defensa del enunciado dice 26 de junio, sin año. Son actividades distintas, no se sustituyen entre sí."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/scheduler/view.php?id=451668",
+          "label": "2627-11394-20462-101AC: Cita para la defensa | Moovi"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=451667",
+          "label": "2627-11394-20462-101AC: Práctica | Moovi"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/scheduler/view.php?id=451668",
+          "consulted_at": "2026-10-04T11:26:42.894Z",
+          "file": "evidence/date-review-modules.json"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=451667",
+          "consulted_at": "2026-10-04T11:26:42.910Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "est-simulacion",
+      "course": "EST",
+      "title": "Práctica I · Simulación de probabilidades con R-Commander",
+      "date": null,
+      "date_text": null,
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "Sin fecha de entrega, canal, calificación ni estado de entrega en el recurso."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=405667",
+          "label": "Practica I - Simulación de probabilidades con R-Commander Ficheiro"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/602478/mod_folder/intro/RCommander-Arquivos.pdf",
+          "label": "Instalación e manexo de R e RCommander.pdf"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/602478/mod_folder/content/0/tarefas.txt?forcedownload=1",
+          "label": "tarefas.txt"
+        }
+      ],
+      "last_checks": []
+    },
+    {
+      "identity": "reference-local-1",
+      "course": "SSI",
+      "title": "FASE 1 · Creación de grupos/equipos",
+      "date": null,
+      "date_text": "30/9/2028 · por confirmar",
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "Identidad del equipo, grupo y modalidad personal pendientes de confirmar.",
+        "No se han sobrescrito notas ni correcciones."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/649702/mod_label/intro/trabajos_SSI2627_temas_y_enunciado.pdf?time=1790983756375",
+          "label": "Descripción de los temas y normas de entrega"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/520883/course/section/54246/SSI_presentacion.pdf?time=1789020184004",
+          "label": "Presentación curso 2026/27"
+        },
+        {
+          "url": "https://docs.google.com/document/d/183oqoPGvzaxrdh36z4sBFXWJiHwEhhDP/export?format=txt",
+          "label": "Equipos SSI: documento publicado"
+        },
+        {
+          "label": "2627-11394-20472-101AC: [GREI-SSI] Trabajos (asignación de temas + detalles de entregables) | Moovi",
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=54060"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=54060",
+          "consulted_at": "2026-10-04T11:27:23.650Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "reference-local-2",
+      "course": "SSI",
+      "title": "FASE 2 · Asignación aleatoria de tema",
+      "date": null,
+      "date_text": "Fecha pendiente",
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "Identidad del equipo, grupo y modalidad personal pendientes de confirmar.",
+        "No se han sobrescrito notas ni correcciones."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/649702/mod_label/intro/trabajos_SSI2627_temas_y_enunciado.pdf?time=1790983756375",
+          "label": "Descripción de los temas y normas de entrega"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/520883/course/section/54246/SSI_presentacion.pdf?time=1789020184004",
+          "label": "Presentación curso 2026/27"
+        },
+        {
+          "url": "https://docs.google.com/document/d/183oqoPGvzaxrdh36z4sBFXWJiHwEhhDP/export?format=txt",
+          "label": "Equipos SSI: documento publicado"
+        },
+        {
+          "label": "2627-11394-20472-101AC: [GREI-SSI] Trabajos (asignación de temas + detalles de entregables) | Moovi",
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=54060"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=54060",
+          "consulted_at": "2026-10-04T11:27:23.650Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "reference-local-3",
+      "course": "SSI",
+      "title": "Entrega del trabajo",
+      "date": null,
+      "date_text": "xx/11/2026",
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "Identidad del equipo, grupo y modalidad personal pendientes de confirmar.",
+        "No se han sobrescrito notas ni correcciones."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/649702/mod_label/intro/trabajos_SSI2627_temas_y_enunciado.pdf?time=1790983756375",
+          "label": "Descripción de los temas y normas de entrega"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/520883/course/section/54246/SSI_presentacion.pdf?time=1789020184004",
+          "label": "Presentación curso 2026/27"
+        },
+        {
+          "url": "https://docs.google.com/document/d/183oqoPGvzaxrdh36z4sBFXWJiHwEhhDP/export?format=txt",
+          "label": "Equipos SSI: documento publicado"
+        },
+        {
+          "label": "2627-11394-20472-101AC: [GREI-SSI] Trabajos (asignación de temas + detalles de entregables) | Moovi",
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=54060"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=54060",
+          "consulted_at": "2026-10-04T11:27:23.650Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "reference-local-4",
+      "course": "SSI",
+      "title": "Presentación del trabajo",
+      "date": null,
+      "date_text": "Semana del xx/11/2026 al xx/11/206",
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "Identidad del equipo, grupo y modalidad personal pendientes de confirmar.",
+        "No se han sobrescrito notas ni correcciones."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/649702/mod_label/intro/trabajos_SSI2627_temas_y_enunciado.pdf?time=1790983756375",
+          "label": "Descripción de los temas y normas de entrega"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/520883/course/section/54246/SSI_presentacion.pdf?time=1789020184004",
+          "label": "Presentación curso 2026/27"
+        },
+        {
+          "url": "https://docs.google.com/document/d/183oqoPGvzaxrdh36z4sBFXWJiHwEhhDP/export?format=txt",
+          "label": "Equipos SSI: documento publicado"
+        },
+        {
+          "label": "2627-11394-20472-101AC: [GREI-SSI] Trabajos (asignación de temas + detalles de entregables) | Moovi",
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=54060"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=54060",
+          "consulted_at": "2026-10-04T11:27:23.650Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "reference-local-5",
+      "course": "SSI",
+      "title": "Revisión del trabajo",
+      "date": null,
+      "date_text": "Del xx/11/2026 al xx/12/2026",
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "Identidad del equipo, grupo y modalidad personal pendientes de confirmar.",
+        "No se han sobrescrito notas ni correcciones."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/649702/mod_label/intro/trabajos_SSI2627_temas_y_enunciado.pdf?time=1790983756375",
+          "label": "Descripción de los temas y normas de entrega"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/520883/course/section/54246/SSI_presentacion.pdf?time=1789020184004",
+          "label": "Presentación curso 2026/27"
+        },
+        {
+          "url": "https://docs.google.com/document/d/183oqoPGvzaxrdh36z4sBFXWJiHwEhhDP/export?format=txt",
+          "label": "Equipos SSI: documento publicado"
+        },
+        {
+          "label": "2627-11394-20472-101AC: [GREI-SSI] Trabajos (asignación de temas + detalles de entregables) | Moovi",
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=54060"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=54060",
+          "consulted_at": "2026-10-04T11:27:23.650Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "reference-local-6",
+      "course": "SSI",
+      "title": "Práctica 1. Uso del API de cifrado de Java",
+      "date": null,
+      "date_text": "Por determinar · aproximadamente finales de octubre",
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "Identidad del equipo, grupo y modalidad personal pendientes de confirmar.",
+        "No se han sobrescrito notas ni correcciones."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=448586",
+          "label": "2627-11394-20472-101AC: Práctica 1. Uso del API de cifrado de Java | Moovi"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/649707/mod_assign/intro/P1.cifrado-java.pdf?time=1790158783252",
+          "label": "pdf"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/649707/mod_assign/intro/P1.esquemas.pdf",
+          "label": "Esquemas Práctica 1"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=448586",
+          "consulted_at": "2026-10-04T11:26:43.146Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "reference-local-11",
+      "course": "LC",
+      "title": "Examen · Grupo B",
+      "date": "2026-11-17T12:30",
+      "date_text": null,
+      "duration_minutes": 105,
+      "location": "Aula Magna",
+      "condition": null,
+      "uncertainties": [
+        "Grupo A: 08:45–10:30; B: 12:30–14:15. Temario aún no publicado."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=452344",
+          "label": "Datos de la materia Ficheiro"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=52182",
+          "label": "LC: examen 17/11"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=52182",
+          "consulted_at": "2026-10-04T11:27:23.451Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "reference-local-12",
+      "course": "EST",
+      "title": "Cálculo de Probabilidades · Grupo de mañana",
+      "date": "2026-10-16",
+      "date_text": null,
+      "duration_minutes": 120,
+      "location": "Aula Magna",
+      "condition": null,
+      "uncertainties": [
+        "EST-2 es una coincidencia de nombre, no confirmación de identidad."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/page/view.php?id=405659",
+          "label": "2627-11394-20452-101AC: Info da materia, probas, titorías, ... | Moovi"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=52811",
+          "label": "Cambio de fecha de probabilidades"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/page/view.php?id=405659",
+          "consulted_at": "2026-10-04T11:26:41.982Z",
+          "file": "evidence/date-review-modules.json"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=52811",
+          "consulted_at": "2026-10-04T11:27:23.216Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "reference-local-13",
+      "course": "EST",
+      "title": "Variables aleatorias e estatística descritiva · Grupo de mañana",
+      "date": "2026-11-23",
+      "date_text": null,
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "EST-2 es una coincidencia de nombre, no confirmación de identidad."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/page/view.php?id=405659",
+          "label": "2627-11394-20452-101AC: Info da materia, probas, titorías, ... | Moovi"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=52811",
+          "label": "Cambio de fecha de probabilidades"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/page/view.php?id=405659",
+          "consulted_at": "2026-10-04T11:26:41.982Z",
+          "file": "evidence/date-review-modules.json"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=52811",
+          "consulted_at": "2026-10-04T11:27:23.216Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "est-enero",
+      "course": "EST",
+      "title": "Prueba oficial EST · Enero",
+      "date": "2027-01-12T09:00",
+      "date_text": null,
+      "duration_minutes": 180,
+      "location": "SO2–SO6",
+      "condition": null,
+      "uncertainties": [],
+      "sources": [
+        {
+          "label": "ESEI: exámenes primer cuatrimestre GREI 2026/27",
+          "url": "https://esei.uvigo.es/documentos/grao-exames-1-cuatrimestre/"
+        },
+        {
+          "label": "ESEI: página de exámenes curso 2026/27",
+          "url": "https://esei.uvigo.es/docencia/exames/"
+        }
+      ],
+      "last_checks": [
+        "2026-10-04T11:32:38.108Z"
+      ]
+    },
+    {
+      "identity": "ssi-redes-plan",
+      "course": "SSI",
+      "title": "Prácticas guiadas de seguridad en redes",
+      "date": null,
+      "date_text": null,
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [
+        "Plan de la materia; faltan enunciados y módulos específicos. No se crean cinco entregas hipotéticas."
+      ],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/520883/course/section/54246/SSI_presentacion.pdf?time=1789020184004",
+          "label": "Presentación curso 2026/27"
+        }
+      ],
+      "last_checks": []
+    },
+    {
+      "identity": "acii-cambio-grupo",
+      "course": "ACII",
+      "title": "Solicitud de cambio de grupo reducido",
+      "date": "2026-09-18T00:00",
+      "date_text": null,
+      "duration_minutes": null,
+      "location": null,
+      "condition": null,
+      "uncertainties": [],
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=430401",
+          "label": "2627-11394-20456-101AC: Solicitud de Cambio de Grupo Reducido | Moovi"
+        }
+      ],
+      "last_checks": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=430401",
+          "consulted_at": "2026-10-04T11:26:42.349Z",
+          "file": "evidence/date-review-modules.json"
+        }
+      ]
+    },
+    {
+      "identity": "est-extraordinaria",
+      "course": "EST",
+      "title": "Examen EST · Extraordinaria",
+      "date": "2027-06-17T09:00",
+      "date_text": null,
+      "duration_minutes": 180,
+      "location": "SO4–SO6",
+      "condition": "Solo si corresponde convocatoria extraordinaria",
+      "uncertainties": [
+        "Solo si corresponde convocatoria extraordinaria"
+      ],
+      "sources": [
+        {
+          "label": "ESEI: convocatoria extraordinaria junio/julio GREI 2026/27",
+          "url": "https://esei.uvigo.es/documentos/grao-exames-xullo/"
+        },
+        {
+          "label": "ESEI: página de exámenes curso 2026/27",
+          "url": "https://esei.uvigo.es/docencia/exames/"
+        }
+      ],
+      "last_checks": [
+        "2026-10-04T11:32:46.597Z"
+      ]
+    },
+    {
+      "identity": "lc-final-enero",
+      "course": "LC",
+      "title": "Examen final LC · Enero",
+      "date": "2027-01-13T09:00",
+      "date_text": null,
+      "duration_minutes": 180,
+      "location": "Aula Magna",
+      "condition": null,
+      "uncertainties": [],
+      "sources": [
+        {
+          "label": "ESEI: exámenes primer cuatrimestre GREI 2026/27",
+          "url": "https://esei.uvigo.es/documentos/grao-exames-1-cuatrimestre/"
+        },
+        {
+          "label": "ESEI: página de exámenes curso 2026/27",
+          "url": "https://esei.uvigo.es/docencia/exames/"
+        }
+      ],
+      "last_checks": [
+        "2026-10-04T11:32:38.108Z"
+      ]
+    },
+    {
+      "identity": "lc-extraordinaria",
+      "course": "LC",
+      "title": "Examen LC · Extraordinaria",
+      "date": "2027-06-25T16:00",
+      "date_text": null,
+      "duration_minutes": 120,
+      "location": "Aula Magna",
+      "condition": "Solo si corresponde convocatoria extraordinaria",
+      "uncertainties": [
+        "Solo si corresponde convocatoria extraordinaria"
+      ],
+      "sources": [
+        {
+          "label": "ESEI: convocatoria extraordinaria junio/julio GREI 2026/27",
+          "url": "https://esei.uvigo.es/documentos/grao-exames-xullo/"
+        },
+        {
+          "label": "ESEI: página de exámenes curso 2026/27",
+          "url": "https://esei.uvigo.es/docencia/exames/"
+        }
+      ],
+      "last_checks": [
+        "2026-10-04T11:32:46.597Z"
+      ]
+    },
+    {
+      "identity": "abp-convocatoria-enero",
+      "course": "ABP",
+      "title": "Convocatoria oficial ABP · Enero",
+      "date": "2027-01-14T11:30",
+      "date_text": null,
+      "duration_minutes": 180,
+      "location": "Aula Magna",
+      "condition": "Confirmar si esta convocatoria requiere actuación en tu modalidad; el curso tiene evaluación por proyecto",
+      "uncertainties": [
+        "Confirmar si esta convocatoria requiere actuación en tu modalidad; el curso tiene evaluación por proyecto"
+      ],
+      "sources": [
+        {
+          "label": "ESEI: exámenes primer cuatrimestre GREI 2026/27",
+          "url": "https://esei.uvigo.es/documentos/grao-exames-1-cuatrimestre/"
+        },
+        {
+          "label": "ESEI: página de exámenes curso 2026/27",
+          "url": "https://esei.uvigo.es/docencia/exames/"
+        }
+      ],
+      "last_checks": [
+        "2026-10-04T11:32:38.108Z"
+      ]
+    },
+    {
+      "identity": "abp-extraordinaria",
+      "course": "ABP",
+      "title": "Convocatoria oficial ABP · Extraordinaria",
+      "date": "2027-06-22T12:00",
+      "date_text": null,
+      "duration_minutes": 120,
+      "location": "SO6",
+      "condition": "Solo si corresponde convocatoria extraordinaria; confirmar actividad requerida por el profesor",
+      "uncertainties": [
+        "Solo si corresponde convocatoria extraordinaria; confirmar actividad requerida por el profesor"
+      ],
+      "sources": [
+        {
+          "label": "ESEI: convocatoria extraordinaria junio/julio GREI 2026/27",
+          "url": "https://esei.uvigo.es/documentos/grao-exames-xullo/"
+        },
+        {
+          "label": "ESEI: página de exámenes curso 2026/27",
+          "url": "https://esei.uvigo.es/docencia/exames/"
+        }
+      ],
+      "last_checks": [
+        "2026-10-04T11:32:46.597Z"
+      ]
+    },
+    {
+      "identity": "acii-extraordinaria-teoria",
+      "course": "ACII",
+      "title": "Prueba teórica ACII · Extraordinaria",
+      "date": "2027-06-14T15:00",
+      "date_text": null,
+      "duration_minutes": 120,
+      "location": "Aula Magna",
+      "condition": "Solo si corresponde convocatoria extraordinaria",
+      "uncertainties": [
+        "Solo si corresponde convocatoria extraordinaria"
+      ],
+      "sources": [
+        {
+          "label": "ESEI: convocatoria extraordinaria junio/julio GREI 2026/27",
+          "url": "https://esei.uvigo.es/documentos/grao-exames-xullo/"
+        },
+        {
+          "label": "ESEI: página de exámenes curso 2026/27",
+          "url": "https://esei.uvigo.es/docencia/exames/"
+        }
+      ],
+      "last_checks": [
+        "2026-10-04T11:32:46.597Z"
+      ]
+    }
+  ],
+  "detected_changes": [
+    {
+      "identity": "reference-local-1",
+      "reference_id": "local-1",
+      "title": "FASE 1 · Creación de grupos/equipos",
+      "new_evidence": "Documento de equipos fija miércoles 30/09/2026 frente al año 2028 de la etiqueta y referencia local.",
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/649702/mod_label/intro/trabajos_SSI2627_temas_y_enunciado.pdf?time=1790983756375",
+          "label": "Descripción de los temas y normas de entrega"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/520883/course/section/54246/SSI_presentacion.pdf?time=1789020184004",
+          "label": "Presentación curso 2026/27"
+        },
+        {
+          "url": "https://docs.google.com/document/d/183oqoPGvzaxrdh36z4sBFXWJiHwEhhDP/export?format=txt",
+          "label": "Equipos SSI: documento publicado"
+        },
+        {
+          "label": "2627-11394-20472-101AC: [GREI-SSI] Trabajos (asignación de temas + detalles de entregables) | Moovi",
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=54060"
+        }
+      ],
+      "status": "pendiente de vincular al registro actual",
+      "targetId": null,
+      "base": null
+    },
+    {
+      "identity": "reference-local-2",
+      "reference_id": "local-2",
+      "title": "FASE 2 · Asignación aleatoria de tema",
+      "new_evidence": "Documento de equipos contiene asignación: homónimo en E15, tema B (SOAR/XDR/agentes SOC), presentación SSI1; enlace de asignación de la etiqueta inválido.",
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/649702/mod_label/intro/trabajos_SSI2627_temas_y_enunciado.pdf?time=1790983756375",
+          "label": "Descripción de los temas y normas de entrega"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/520883/course/section/54246/SSI_presentacion.pdf?time=1789020184004",
+          "label": "Presentación curso 2026/27"
+        },
+        {
+          "url": "https://docs.google.com/document/d/183oqoPGvzaxrdh36z4sBFXWJiHwEhhDP/export?format=txt",
+          "label": "Equipos SSI: documento publicado"
+        },
+        {
+          "label": "2627-11394-20472-101AC: [GREI-SSI] Trabajos (asignación de temas + detalles de entregables) | Moovi",
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=54060"
+        }
+      ],
+      "status": "pendiente de vincular al registro actual",
+      "targetId": null,
+      "base": null
+    },
+    {
+      "identity": "reference-local-3",
+      "reference_id": "local-3",
+      "title": "Entrega del trabajo",
+      "new_evidence": "Memoria 15–20 páginas, contribuciones equilibradas, bibliografía y declaración de uso o no uso de IA; rúbrica y fecha pendiente.",
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/649702/mod_label/intro/trabajos_SSI2627_temas_y_enunciado.pdf?time=1790983756375",
+          "label": "Descripción de los temas y normas de entrega"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/520883/course/section/54246/SSI_presentacion.pdf?time=1789020184004",
+          "label": "Presentación curso 2026/27"
+        },
+        {
+          "url": "https://docs.google.com/document/d/183oqoPGvzaxrdh36z4sBFXWJiHwEhhDP/export?format=txt",
+          "label": "Equipos SSI: documento publicado"
+        },
+        {
+          "label": "2627-11394-20472-101AC: [GREI-SSI] Trabajos (asignación de temas + detalles de entregables) | Moovi",
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=54060"
+        }
+      ],
+      "status": "pendiente de vincular al registro actual",
+      "targetId": null,
+      "base": null
+    },
+    {
+      "identity": "reference-local-4",
+      "reference_id": "local-4",
+      "title": "Presentación del trabajo",
+      "new_evidence": "Presentación 20–25 minutos y test de 10–12 preguntas con soluciones justificadas. Fechas continúan con xx; tamaños de grupo varían según fuente (3–4 / 4–5 / 3–5).",
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/649702/mod_label/intro/trabajos_SSI2627_temas_y_enunciado.pdf?time=1790983756375",
+          "label": "Descripción de los temas y normas de entrega"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/520883/course/section/54246/SSI_presentacion.pdf?time=1789020184004",
+          "label": "Presentación curso 2026/27"
+        },
+        {
+          "url": "https://docs.google.com/document/d/183oqoPGvzaxrdh36z4sBFXWJiHwEhhDP/export?format=txt",
+          "label": "Equipos SSI: documento publicado"
+        },
+        {
+          "label": "2627-11394-20472-101AC: [GREI-SSI] Trabajos (asignación de temas + detalles de entregables) | Moovi",
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=54060"
+        }
+      ],
+      "status": "pendiente de vincular al registro actual",
+      "targetId": null,
+      "base": null
+    },
+    {
+      "identity": "reference-local-5",
+      "reference_id": "local-5",
+      "title": "Revisión del trabajo",
+      "new_evidence": "Cada estudiante revisa dos grupos ajenos (anuncio 02/10); fechas xx aún sin concretar.",
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/649702/mod_label/intro/trabajos_SSI2627_temas_y_enunciado.pdf?time=1790983756375",
+          "label": "Descripción de los temas y normas de entrega"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/520883/course/section/54246/SSI_presentacion.pdf?time=1789020184004",
+          "label": "Presentación curso 2026/27"
+        },
+        {
+          "url": "https://docs.google.com/document/d/183oqoPGvzaxrdh36z4sBFXWJiHwEhhDP/export?format=txt",
+          "label": "Equipos SSI: documento publicado"
+        },
+        {
+          "label": "2627-11394-20472-101AC: [GREI-SSI] Trabajos (asignación de temas + detalles de entregables) | Moovi",
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=54060"
+        }
+      ],
+      "status": "pendiente de vincular al registro actual",
+      "targetId": null,
+      "base": null
+    },
+    {
+      "identity": "reference-local-6",
+      "reference_id": "local-6",
+      "title": "Práctica 1. Uso del API de cifrado de Java",
+      "new_evidence": "Apertura 12/10/2026 16:26; entrega hasta domingo xx/10/2026 23:50; aproximadamente finales de octubre. Individual o parejas; global exclusivamente individual.",
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=448586",
+          "label": "2627-11394-20472-101AC: Práctica 1. Uso del API de cifrado de Java | Moovi"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/649707/mod_assign/intro/P1.cifrado-java.pdf?time=1790158783252",
+          "label": "pdf"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/pluginfile.php/649707/mod_assign/intro/P1.esquemas.pdf",
+          "label": "Esquemas Práctica 1"
+        }
+      ],
+      "status": "pendiente de vincular al registro actual",
+      "targetId": null,
+      "base": null
+    },
+    {
+      "identity": "reference-local-12",
+      "reference_id": "local-12",
+      "title": "Cálculo de Probabilidades · Grupo de mañana",
+      "suggested_fields": {
+        "date": "2026-10-16T10:30",
+        "duration": 120
+      },
+      "new_evidence": "Grupo Mañá 10:30–12:30, Aula Magna; Grupo Tarde 08:30–10:30. Anuncio 25/09.",
+      "sources": [
+        {
+          "url": "https://moovi.uvigo.gal/mod/page/view.php?id=405659",
+          "label": "2627-11394-20452-101AC: Info da materia, probas, titorías, ... | Moovi"
+        },
+        {
+          "url": "https://moovi.uvigo.gal/mod/forum/discuss.php?d=52811",
+          "label": "Cambio de fecha de probabilidades"
+        }
+      ],
+      "status": "pendiente de grupo y registro actual",
+      "targetId": null,
+      "base": null
+    },
+    {
+      "identity": "acii-gg-2027-01-18",
+      "reference_id": "local-10",
+      "title": "Prueba del grupo grande · Enero",
+      "suggested_fields": {
+        "date": "2027-01-18T16:00",
+        "duration": 120
+      },
+      "new_evidence": "Calendario oficial: 18/01/2027, 16:00–18:00, Aula Magna. También publica tres franjas de laboratorio: 08:30–10:30, 10:30–12:30 y 12:30–14:30 en Automática; no asignar sin conocer grupo.",
+      "sources": [
+        {
+          "label": "ESEI: exámenes primer cuatrimestre GREI 2026/27",
+          "url": "https://esei.uvigo.es/documentos/grao-exames-1-cuatrimestre/"
+        }
+      ],
+      "status": "pendiente de vincular al registro actual",
+      "targetId": null,
+      "base": null
+    }
+  ]
+}

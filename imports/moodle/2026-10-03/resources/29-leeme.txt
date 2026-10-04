@@ -1,0 +1,26 @@
+Descrición de arquivos:
+
+Nesta páxina tedes os seguintes arquivos:
+
+- Vídeos de instalación de R, RCommander e o plugin tanto para Windows coma para Linux/Mac 
+	- Vídeo "Descarga_R_desde_Cran.mp4" para descargar e instalar o programa R con acceso á rede.
+	- Vídeo "Instalacion_paquete_Rcmdr.mp4" para a instalación e execución do paquete R-Commander con acceso á rede.
+	- Vídeo "Instalacion_plugin_Rcmdr.mp4" para a instalación do plugin de R-Commander "RcmdrPlugin.TeachStat"
+	- Vídeo "Instalacion_R_local.mp4" para a instalación de R, R-Commander e o plugin "RcmdrPlugin.TeachStat" de forma local e usando o "Portable"
+
+
+- Plugin de Windows e Linux/Mac
+
+    "RcmdrPlugin.TeachStat_1.1.1.zip"
+    "RcmdrPlugin.TeachStat_1.1.1.tar.gz"
+
+- Portable para Windows
+    "Portable_R_TeachStat_1.1.1.zip"
+    Este arquivo conten o R, o R-Commander e o Plugin. Polo tanto ao executarse abre R e R-Commander co Plugin instalado.
+	Instrucción de execución do Portable:
+	   1.- Descomprimir o arquivo .zip
+	   2.- Executar o arquivo "R_TeachStat.exe"
+
+- No arquivo "Instalacion e manexo de R e RCommander.pdf" tedes a info para instalar o software.
+
+NOTA: Os videos están realizados cando o paquete chamábase "RcmdrPlugin.InferenciaEstadistica"

@@ -1,0 +1,319 @@
+Seguridad en Sistemas Informáticos
+4o Grado en Ingeniería Informática
+ESEI
+
+
+
+Seguridad en Sistemas Informáticos
+Curso 2026/27
+Septiembre 2026
+Contenido
+
+
+
+
+  Profesores
+
+
+  Contenidos de Teoría
+
+
+  Practicas de laboratorio y Trabajos
+
+
+  Evaluación
+
+
+
+
+                                        1
+Profesores
+
+
+
+  Francisco José Ribadas Pena [Teoria, SSI3, SSI-4]
+      • Despacho 303
+      • e-mail: ribadas@uvigo.es
+                           (
+                                       Horario Fijo: Martes, 9:30-12:30
+      • Tutorías (1er cuatrimestre):
+                                       Concertadas (presencial, online)
+
+      • Campus Remoto: Sala 2140 - Prof. Francisco José Ribadas Pena
+           • Contraseña (como alumno): Despacho303
+
+
+  ]
+  Iván Rodríguez Miranda [SSI-1, SSI-2, SSI-5, SSI-6]
+
+
+                                                                          2
+Contenidos de teoría i
+
+
+   Tema 1. Introducción
+
+    1. Conceptos y terminología
+          • Confidencialidad, integridad, disponibilidad
+          • Activos, amenazas, vulnerabilidades, riegos, contramedidas
+
+    2. Niveles de la seguridad (tipos de controles)
+          • seguridad física
+          • seguridad lógica
+          • seguridad organizativa
+
+    3. Normas, recomendaciones y estándares
+          • Familia de normas ISO 27000
+          • Metodología de gestión de riesgos: MARGERIT
+          • NIST cibersecurity framework
+
+
+
+
+                                                                         3
+Contenidos de teoría ii
+
+
+   Tema 2. Criptografía
+
+    1. Fundamentos y evolución
+          • Conceptos básicos
+          • Tipología
+          • Criptografía clásica
+
+    2. Cifrado simétrico
+          • Fundamentos del cifrado simétrico
+          • Algoritmo DES
+            - Fundamentos: Redes Feistel
+            - Componentes y arquitectura DES
+            - Variantes y mejoras
+          • Otros algoritmos simétricos: AES
+
+
+
+
+                                                4
+Contenidos de teoría iii
+
+
+    3. Cifrado asimétrico
+          • Fundamentos del cifrado asimétrico
+          • Algoritmo RSA
+            - Fundamentos matemáticos
+            - Usos, debilidades y ataques
+          • Usos: firma digital
+            - Funciones HASH criptográficas
+          • Usos: distribución de claves. Algoritmo de Diffie-Hellman
+
+    4. Infraestructuras criptográficas
+          • Certificados digitales. Formato de Certificados X.509
+          • Autoridades de certificación
+          • Infraestructura de clave pública(PKI)
+
+
+
+
+                                                                        5
+Contenidos de teoría iv
+
+
+   Tema 3. Seguridad en el desarrollo de aplicaciones
+
+    1. Tipos de vulnerabilidades y amenazas del software
+          • Desbordamiento de buffer
+          • Vulnerabilidades WEB: OWASP top ten
+          • Inyección de código
+                • SQL injection
+                • Cross Site Scripting (XSS)
+    2. Explotación de vulnerabilidades
+          • Tareas y fases típicas
+
+    3. Programación segura
+          • Recomendaciones generales
+          • Guías OWASP para desarrollo web
+
+
+
+
+                                                           6
+Contenidos de teoría v
+
+
+  Tema 4. Administración segura de SS.OO.
+
+    1. Mecanismos de autenticación
+          • Autenticación en Unix, GNU/Linux: Módulos PAM y LDAP
+          • Autenticación en MS Windows: Active Directory
+
+    2. Herramientas de monitorización
+          • Logs en Unix, GNU/Linux
+          • Logs en Windows
+          • Monitorización centralizada: SIEM
+
+    3. Vulnerabilidades típicas
+          • Vulnerabilidades y problemas de configuración en Unix, GNU/Linux
+          • Vulnerabilidades y problemas de configuración en MS Windows
+
+    4. Respuesta ante incidentes
+
+
+
+                                                                               7
+Contenidos de teoría vi
+
+   Tema 5. Seguridad en redes: protocolos seguros
+
+    1. Vulnerabilidades en redes TCP/IP
+    2. Seguridad en nivel de red: IPSec
+          • Protocolos AH y ESP
+          • Modo tunel vs. modo transporte
+          • VPNs IPSec
+
+    3. Seguridad en nivel de transporte:SSL/TLS
+          • Servicios de seguridad
+          • Arquitectura
+          • Protocolo de negociación
+
+    4. Seguridad en nivel de aplicación: SSH
+          • Arquitectura y funconamiento
+          • Redirección de puertos (túneles SSH)
+
+
+
+                                                    8
+Contenidos de teoría vii
+   Tema 6. Seguridad en Redes: protección perimetral
+    1. Firewalls/cortafuegos
+          • Tipos de cortafuegos
+                • Filtros de paquetes
+                • Inspección de estados
+                • Proxies de aplicación
+          • Topologías típicas: Zonas desmilitarizadas (DMZ)
+    2. Redes privadas virtuales
+          • Ejemplos: OpenVPN
+    3. Detección de intrusos
+          • Funcionamiento de los sistemas IDS
+          • Tipos y ejemplos: SNORT/Suricata
+          • Honeypots
+          • Soluciones SIEM y EDR/XDR
+    4. Análisis de seguridad en redes
+          • Auditorias y test de intrusión
+
+                                                               9
+Practicas de laboratorio y Trabajos i
+
+   Proyecto de Programación con algoritmos criptográficos
+     • Uso del API de cifrado de Java (JCE/JCA)
+     • Individual o en parejas
+     • Entrega: <por determinar>
+
+
+   Seguridad en redes
+     • Ejercicios guiados sobre seguridad en redes y GNU/Linux
+          1. Tests de intrusión (pentest): ejemplo con Metasploit framework
+          2. Vulnerabilidades en aplicaciones web. Prevención y detección
+          3. Uso de sniffers (Bettercap y Wireshark) y escáneres de puertos (nmap)
+          4. Firewall ”complejo” con iptables (DMZ)
+          5. Detección de intrusiones (Suricata) y análisis de logs
+     • Individuales o en parejas
+     • Entrega: informe/memoria de la práctica + cuestionario Moovi
+
+
+
+                                                                                     10
+Practicas de laboratorio y Trabajos ii
+
+
+
+
+   Trabajos de investigación
+     • Exclusivamente en grupo: 3-4 personas
+     • Lista de temas cerrada
+     • Presentación en clase (grupos de prácticas)
+         • 20-25 minutos
+         • Presencia y participación de todos los miembros
+
+     • Entrega: <por determinar>
+
+
+
+
+                                                             11
+Evaluación (ver detalles en guía docente) i
+
+   Evaluación CONTINUA
+     • Examen tipo test: 40 % (hasta 4 puntos)
+          • En la fecha oficial (19/1/2027 ó 6/7/2027)
+
+     • Prácticas: 45 % (hasta 4,5 puntos)
+          • Proyecto ”Cifrado en Java”: hasta 1 punto
+          • Prácticas ”Seguridad en Redes”: hasta 3,5 puntos
+                • Entrega memoria (70 %) + Cuestionario (30 %)
+
+     • Trabajo: 15 % (hasta 1,5 puntos)
+          • Memoria: hasta 1 punto
+          • Presentación: hasta 0,5 puntos
+
+     • Requisitos
+          • Se exige un mínimo del 40 % de la nota máxima prevista en ”Prácticas”
+          • Se exige un mínimo del 40 % de la nota máxima prevista en ”Examen’
+          • Se exige un mínimo de 5 puntos para aprobar la materia
+
+
+
+                                                                                    12
+Evaluación (ver detalles en guía docente) ii
+
+
+   Evaluación GLOBAL
+     • Examen tipo test: 55 % (hasta 5,5 puntos)
+          • En la fecha oficial (19/1/2027 ó 6/7/2027)
+
+     • Prácticas 45 % (hasta 4,5 puntos)
+       → Exclusivamente individuales
+       → Entregas en la fecha oficial (19/1/2027 ó 6/7/2027)
+          • Práctica ”Cifrado en Java”: 10 % (hasta 1 punto)
+          • Prácticas ”Seguridad en Redes”: 35 % (hasta 3,5 puntos)
+                • Entrega memoria (70 %) + Cuestionario (30 %)
+     • Se exige un mínimo del 50 % de la nota máxima de cada uno de
+       los 2 apartados y sumar al menos 5 puntos para aprobar
+
+
+
+
+                                                                      13
+Evaluación (ver detalles en guía docente) iii
+
+   Elección de la modalidad de Evaluación
+      • Por defecto se asume que todos los alumnos seguirá la
+        modalidad evaluación continua
+      • Se habilitará en Moovi un mecanismo para cambiar la modalidad
+        de evaluación, disponible durante la primera mitad de octubre.
+      • A partir de finales de octubre no será posible cambiar la
+        modalidad de evaluación, salvo por causas de fuerza mayor.
+
+   En caso de constatar un comportamiento no ético (copia, plagio) en alguna de las
+   entregas realizadas (total o parcial), se anulará la totalidad de la contribución del
+   correspondiente elemento de evaluación (”Examen”, ”Trabajo” ó ”Prácticas”)
+
+
+                      Detalles: Guía docente Curso 26/27
+
+                                                                                           14
+Bibliografía
+
+   Web de la materia
+     • http://moovi.uvigo.gal/
+     • http://ccia.esei.uvigo.es/docencia/SSI/2526
+
+   Libros
+     • W. Stallings, Cryptography and Network Security:
+       Principles and Practice, 5th edition, Prentice Hall, 2011
+     • W. Stallings, L. Brown, Computer Security: Principles and
+       Practice, 2nd edition, Prentice Hall, 2012,
+     • J. L. García Rambla, Ataques en redes de datos IPv4 e
+       IPv6, 2da edición, 0xWORD, 2014,
+     • Libros electrónicos en la web de la materia
+
+                                                                   15
+

@@ -1,0 +1,11 @@
+{
+  "name": "study-tracker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "python3 scripts/dev.py",
+    "test": "node --test && python3 -m unittest discover -s tests -p 'test_*.py'",
+    "check": "node --check src/app.js && node --check src/data.js && node --check src/markdown.js && node --check src/moodle.js"
+  }
+}

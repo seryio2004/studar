@@ -1,0 +1,299 @@
+ABP · INGENIERÍA INFORMÁTICA · UNIVERSIDAD DE VIGO
+
+
+
+Sesión 1
+
+Presentación de la asignatura,
+el ABP y el proyecto de curso
+
+4º curso · 9 de septiembre de 2026
+Prof. Gerardo Rodríguez Martínez
+
+
+
+Del aprendizaje basado en proyectos a un sistema de recomendación real
+   Objetivos de hoy
+   Al terminar esta sesión deberíais poder responder a tres preguntas
+
+
+
+                   ¿Qué es el ABP?
+        1
+                   En qué se diferencia de una asignatura tradicional y por qué esta asignatura se organiza así.
+
+
+
+
+                   ¿Qué vamos a construir?
+        2
+                   Qué es un sistema de recomendación basado en contenidos y por qué es el hilo conductor del curso.
+
+
+
+
+                   ¿Cómo se evalúa y cuándo pasa qué?
+        3
+                   Calendario completo de las 14 sesiones teóricas y 13 prácticas, hitos y criterios de evaluación.
+
+
+
+
+Gerardo Rodríguez Martínez · Introducción                                                                              Sesión 1 · 9 de septiembre de 2026
+   ¿Qué es el Aprendizaje Basado en Proyectos?
+
+                                                                          Asignatura tradicional
+   En el ABP no aprendéis primero la teoría "por si acaso" y luego la
+   aplicáis: aprendéis construyendo un proyecto real, y la teoría         – Teoría primero, ejercicios sueltos después
+   llega justo cuando el proyecto la necesita.
+                                                                          – Evaluación final concentrada en un examen
+
+
+                                                                          – El profesor es la única fuente de retroalimentación
+
+   Todo lo que veréis —gestión de proyectos, desarrollo con IA, modelo
+   de negocio, costes, rentabilidad, pitch a inversores— aterriza en el
+   mismo proyecto: vuestro sistema de recomendación.                      Esta asignatura (ABP)
+
+                                                                             Un único proyecto de equipo que crece sesión a sesión
+
+
+                                                                             Entregas por sprints, con feedback continuo
+
+
+                                                                             Presentación final ante "inversores", como en la empresa real
+
+
+Gerardo Rodríguez Martínez · Introducción                                                                                   Sesión 1 · 9 de septiembre de 2026
+   Dos hilos, un mismo proyecto
+   14 sesiones teóricas + 13 sesiones prácticas, en paralelo durante todo el curso
+
+
+
+
+         TEORÍA                                                                  PRÁCTICA
+
+         Los miércoles, 14 sesiones                                              13 sesiones, en grupos de hasta 4
+
+         Conceptos de empresa y de oficio: gestión de proyectos clásica          Construís vuestro sistema de recomendación en sprints:
+         y ágil, desarrollo con IA, modelo de negocio, costes,                   datasets, arquitectura, requisitos y el notebook Python con el
+         rentabilidad y cómo presentar a inversores.                             prototipo funcionando.
+
+
+
+
+         Las 4 últimas sesiones son las presentaciones comerciales finales de    Cada quincena se revisa el avance de cada equipo, con talleres
+         cada equipo.                                                            técnicos concretos.
+
+
+
+
+Gerardo Rodríguez Martínez · Introducción                                                                                           Sesión 1 · 9 de septiembre de 2026
+   De la idea a la presentación ante inversores
+   Así se organizan las 10 primeras sesiones teóricas — cada bloque aterriza en vuestro proyecto
+
+
+
+
+               1                            2-3             4-5                  6                  7              8-9                        10
+
+
+                                      Gestión de        Desarrollo           Modelo de        Preparar el       Costes y                    Pitch a
+        Presentación
+                                      proyectos          con IA               negocio          proyecto       rentabilidad                inversores
+
+
+
+
+        ABP + proyecto                Clásica y ágil   Spec-driven dev.      Lean Canvas       Storytelling   ROI, break-even              Pitch deck
+
+
+
+
+   → Sesiones 11-14: presentación comercial final de cada equipo ante el resto de la clase
+
+
+
+
+Gerardo Rodríguez Martínez · Introducción                                                                                       Sesión 1 · 9 de septiembre de 2026
+   El caso de estudio: sistemas de recomendación
+                                                                                   Ámbitos habituales
+
+
+   Analizan datos de usuarios y de contenidos y los convierten en                   Tiendas online      Películas y vídeo
+   conocimiento accionable: predicen qué le puede interesar a cada
+   usuario, personalizando la experiencia sin ofrecer "recomendaciones a
+   ciegas".
+                                                                                    Música              Libros
+
+
+
+   Se han vuelto omnipresentes porque hoy disponemos de muchísima
+   información individual de cada persona: sus compras, sus valoraciones, lo que
+                                                                                    Redes sociales      Restaurantes
+   ve o escucha.
+
+
+
+
+Gerardo Rodríguez Martínez · El caso de estudio                                                             Sesión 1 · 9 de septiembre de 2026
+   Tres estrategias para recomendar
+   Vuestro proyecto se centrará en la segunda: recomendación basada en contenidos
+
+
+
+
+                                                             VUESTRO PROYECT O
+             P                                                                                      C
+                                                      C
+         Popularity                                                                              Collaborative
+                                                   Content-based
+         Recomienda lo más "popular"                                                             Usa el comportamiento de "masas":
+         globalmente (más vendido, más visto).                                                   identifica perfiles de usuarios similares
+                                                   A partir de lo que un usuario ha visto,
+         Igual para todos los usuarios: fácil de                                                 entre sí para recomendar lo que les
+                                                   recomienda ítems similares según las
+         implementar, pero no personaliza.                                                       gustó a otros parecidos.
+                                                   características del propio ítem. Es la base
+                                                   de vuestro proyecto.
+
+
+
+
+Gerardo Rodríguez Martínez · El caso de estudio                                                                             Sesión 1 · 9 de septiembre de 2026
+   Vuestro proyecto: recomendación basada en contenidos
+
+
+   Dado un ítem de entrada, el sistema debe recomendar ítems similares según sus características. Cada equipo elige su propio
+   dominio (películas, libros, cursos, productos, música, restaurantes…), siempre que pueda apoyarse en una buena base de datos.
+
+
+
+             Campo de descripción                                                 Similitud basada en texto
+             Cada ítem debe tener, como mínimo, un campo textual de descripción   La medida de similitud entre ítems parte de ese texto, usando minería
+             (en inglés).                                                         de textos.
+
+
+
+             Vuestra propia fórmula                                               No hace falta la app completa
+             Además del texto, cada equipo añade otros campos y crea su propia    Solo el prototipo del recomendador en un notebook Python — la
+             forma de medir distancia.                                            documentación sí es completa.
+
+
+
+
+Gerardo Rodríguez Martínez · El caso de estudio                                                                                     Sesión 1 · 9 de septiembre de 2026
+   Tres técnicas que combinaréis en el proyecto
+   Se enseñan con código en las sesiones prácticas, en talleres específicos a lo largo del curso
+
+
+
+
+        01                                             02                                           03
+        Recomendación por contenido                    Análisis de sentimientos                     Visión artificial
+
+
+
+        Similitud de texto: preprocesado, TF-IDF,      Convertir la opinión/polaridad de un texto   Similitud entre imágenes con embeddings
+        distancias (coseno, Jaccard...). La técnica    en una característica numérica que           de modelos preentrenados, combinada
+        base y obligatoria.                            enriquece la recomendación.                  con las técnicas anteriores.
+
+
+
+
+Gerardo Rodríguez Martínez · El caso de estudio                                                                               Sesión 1 · 9 de septiembre de 2026
+   Organización de los equipos
+
+
+
+                              4                                            25/09                                                             1
+                 personas máx. por equipo                                   fecha límite para formar                                   grupo de prácticas:
+           (también se permite trabajo individual)                             y validar el grupo                                no se mezclan grupos distintos
+
+
+
+   Pasos para proponer vuestro proyecto
+
+      1                                          2                                            3                                         4
+
+
+
+                                              Pensad título y descripción breve de la     El coordinador la publica en el foro       El profesor de prácticas da el visto bueno
+  Elegid coordinador/a de equipo
+                                              propuesta                                   "Propuesta de Proyecto"                    respondiendo en el foro
+
+
+
+
+Gerardo Rodríguez Martínez · Organización                                                                                                            Sesión 1 · 9 de septiembre de 2026
+   Calendario y evaluación
+   La nota práctica se reparte en cuatro hitos a lo largo del curso; la nota es única por equipo
+
+
+                              Peso de cada hito en la nota                      Sprint 1 — marco y requisitos
+                                                                                Semana del 02/10 · calificado 0-3
+
+                                                                                Sprint 2
+                                         10%                                    Semana del 16/10 · solo feedback
+
+                            10%                                                 Sprint 3 — documentación completa
+                                                                                Semana del 30/10 · calificado 0-3
+
+                        10%                                                     Sprint 4 y 5
+                                                                                13/11 y 27/11 · solo feedback
+
+                                                                70%             Presentación comercial
+                                                                                Envío 23/11 · presentación 25/11–16/12
+
+                                                                                Memoria final
+                                                                                13/01/2027 · calificada 0-10
+                      Memoria final (13/01)        Sprint 1 (02/10)
+                      Sprint 3 (30/10)             Presentación (25/11–16/12)
+
+Gerardo Rodríguez Martínez · Calendario y evaluación                                                                     Sesión 1 · 9 de septiembre de 2026
+   Actividad de hoy
+   Lluvia de ideas: dominios de aplicación para vuestro recomendador
+
+   Antes de formar equipos, pensad individualmente en qué dominio os gustaría construir un sistema de recomendación. No hace falta decidir
+   nada hoy — es punto de partida para la conversación en grupos.
+
+
+
+       Películas y series                                 Libros                                    Cursos online
+
+
+
+
+       Productos / e-commerce                             Música                                    Restaurantes
+
+
+
+
+       Videojuegos                                        Viajes y alojamiento                      Recetas de cocina
+
+
+
+   ¿Cuál elegiríais vosotros — y por qué tendría suficientes datos para recomendar bien?
+
+Gerardo Rodríguez Martínez · Actividad                                                                                     Sesión 1 · 9 de septiembre de 2026
+   Antes de la próxima sesión
+
+
+                    Teoría · 16/09      Sesión 2: ciclo de vida clásico de gestión de proyectos.
+
+
+
+
+               Práctica · esta semana   Primera sesión práctica: explorar datasets y casos de uso reales de recomendación.
+
+
+
+
+                   Antes del 25/09      Formar equipo (máx. 4) y publicar la propuesta de proyecto en el foro.
+
+
+
+
+   ¿Preguntas?
+Gerardo Rodríguez Martínez · Cierre                                                                                          Sesión 1 · 9 de septiembre de 2026
+

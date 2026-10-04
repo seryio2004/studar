@@ -1,0 +1,945 @@
+      ARQUITECTUR A DE COMPUTADORES II                                             SIMUL ADOR
+
+
+
+
+El simulador de la placa
+
+Esta carpeta trae todo lo necesario para ejecutar y depurar las prácticas sin la placa, en
+tu propio ordenador. El mismo binario que grabarías en el microcontrolador, el mismo
+entorno y el mismo depurador.
+
+Depurar como se ha contado hasta aquí necesita una placa conectada. Hay una forma de
+no necesitarla: un emulador que ejecuta el mismo binario que grabarías en el
+microcontrolador, con el mismo depurador y los mismos puntos de ruptura. Sirve para
+trabajar en casa entre sesiones de laboratorio, o cuando alguien está usando la placa.
+
+El emulador se llama Renode, es libre, y ejecuta el .elf que produce STM32CubeIDE sin
+
+cambiarle nada: no hay una versión del programa «para simulador» y otra «para placa».
+Por delante hay un panel que dibuja el módulo LED&KEY —los ocho dígitos, los ocho LED y
+los ocho pulsadores—, el pulsador azul de la placa y su LED verde, para que haya algo que
+mirar y algo que pulsar.
+
+El panel es lo único que hay que abrir. Él arranca el emulador, le prepara lo que necesita y
+se conecta solo; no hace falta consola ni escribir ninguna orden. Y deja siempre listo el
+servidor al que se conecta el depurador, así que no hay dos modos de arranque ni nada
+que recordar activar.
+
+
+
+
+                                                                                      Página.-1
+         ARQUITECTUR A DE COMPUTADORES II                                                                                                    SIMUL ADOR
+
+
+
+
+E L P A N E L C O N L A P R Á C T I C A 2 E N M A R C H A . J U N TO A B 1 E S T Á L D 2 , E L L E D V E R D E D E L A P L A C A . L A S O C H O T E C L A S
+                            Y B 1 TAM B IÉ N R E SP O N DE N AL TEC L ADO : 1 A 8, Y L A BAR R A E SPACIADO R A
+
+
+De la placa está simulado lo que usan las prácticas:
+
+
+Q UÉ                                     CÓMO
+
+
+                                         STM32F401RE a 84 MHz, el mismo reloj que configuran los proyectos.
+El microcontrolador
+                                         HAL_Delay(1000) tarda 1000 ms de tiempo simulado
+
+
+                                         Entradas y salidas con sus resistencias de pull-up, para que un
+Los puertos GPIO
+                                         pulsador sin pulsar se lea como en la placa
+
+
+                                         Los ocho dígitos, los ocho LED y los ocho pulsadores, por los tres pines
+El módulo LED&KEY
+                                         de siempre
+
+
+El pulsador azul                         En PC13, con la misma lógica invertida que en la placa
+
+
+El LED verde, LD2                        En PA5. Es el que hace parpadear la Práctica 1
+
+
+El potenciómetro                         Como entrada del conversor A/D, de 0 a 4095
+
+
+
+
+                                                                                                                                                 Página.-2
+       ARQUITECTUR A DE COMPUTADORES II                                                   SIMUL ADOR
+
+
+
+Q UÉ                       CÓMO
+
+
+Los temporizadores         TIM2 y SysTick, con sus interrupciones
+
+
+Las interrupciones de      EXTI: B1 y las teclas avisan al programa en vez de tener que
+
+pin                        preguntarles. Es lo que se usa en la Práctica 4
+
+
+
+
+Lo que hay que instalar
+
+El simulador funciona en Windows, Linux y macOS. Lo que sigue cuenta primero el
+camino de Windows, que es el del laboratorio; si trabajas en Linux o en Mac, salta al
+apartado que lleva su nombre, unas páginas más abajo.
+
+
+Q UÉ                   D E D Ó ND E                  NO TA
+
+
+Renode, el             En Windows, ya viene          En Linux y macOS se instala aparte, y tiene
+emulador               dentro                        que ser la 1.16.1
+
+
+STM32CubeIDE           Ya lo tienes                  Es el que compila y el que depura
+
+
+Python 3 con                                         En Windows no hace falta: allí el panel viene
+                       Solo en Linux y macOS
+Tkinter                                              compilado
+
+
+
+En Windows no hay que instalar nada aparte: el simulador trae su propio Renode, la
+versión 1.16.1, que es con la que está probado todo. Da igual que tengas otro instalado; el
+panel usa el suyo.
+
+
+  La versión de Renode importa. Con otra distinta de la 1.16.1 el emulador puede
+  quedarse parado al arrancar, sin más explicación que «no ha abierto el puerto a
+  tiempo». Por eso en Windows va dentro, y en Linux y macOS el panel avisa si la que
+  encuentra es otra.
+
+
+
+
+                                                                                             Página.-3
+       ARQUITECTUR A DE COMPUTADORES II                                                      SIMUL ADOR
+
+
+
+Dos formas de tener el simulador
+
+Las dos traen lo mismo y funcionan igual; es cuestión de gusto:
+
+
+CÓMO                                      Q UÉ H AC E
+
+
+                                          Solo Windows. Lo instala para tu usuario, sin pedir
+
+El instalador,                            permisos de administrador, y deja accesos directos al
+ACII_Simulador_v<versión>.exe             panel y a esta guía en el menú Inicio. Se quita desde
+                                          «Aplicaciones» como cualquier otro programa
+
+
+                                          Se descomprime donde quieras y se abre el panel. No
+
+La carpeta comprimida,                    instala nada, así que vale para llevarlo en un pendrive. El
+
+ACII_Simulador.zip o                      .tar.gz es el que hay que coger en Linux y en Mac,
+
+ACII_Simulador.tar.gz                     porque conserva los permisos de ejecución que el .zip
+
+                                          pierde
+
+
+
+
+  El instalador y el ZIP pesan unos 100 MB, y el .tar.gz apenas 2. La diferencia es
+
+  Renode: en Windows va dentro y en Linux y Mac no, porque allí se instala el del propio
+  sistema.
+
+
+En Linux y en macOS
+
+Es el mismo simulador: la misma placa, los mismos periféricos y el mismo panel, con el
+mismo aspecto. Lo único que cambia es que allí el panel está escrito en Python en vez de
+compilado, y por eso hace falta un Python que traiga Tkinter.
+
+Primero, Renode, y la versión 1.16.1, no la última. Está en
+github.com/renode/renode/releases/tag/v1.16.1. En Linux baja el .deb e instálalo:
+
+
+RENODE EN DEBIAN O UBUNTU
+
+
+ sudo apt install ./renode_1.16.1_amd64.deb
+
+
+
+
+                                                                                                Página.-4
+        ARQUITECTUR A DE COMPUTADORES II                                                  SIMUL ADOR
+
+
+En Mac baja renode-1.16.1-dotnet.osx-arm64-portable.dmg si tu Mac es de Apple
+
+Silicon —M1 o posterior—, ábrelo y arrastra Renode.app a la carpeta Aplicaciones.
+
+Después, Python. Y aquí hay una trampa que conviene conocer:
+
+
+SI ST E MA           Q UÉ H AC E R
+
+
+                     Tkinter va en un paquete aparte y no suele estar puesto: sudo apt install
+Linux
+                     python3-tk en Debian o Ubuntu, python3-tkinter en Fedora, tk en Arch
+
+
+                     El python3 que trae el sistema lleva Tk 8.5, que Apple dejó de mantener y da
+
+macOS                problemas de dibujo. Hace falta otro: brew install python-tk, o el
+
+                     instalador de python.org
+
+
+
+
+Y ya, el simulador. Descomprime el .tar.gz donde quieras y ejecuta el instalador que
+
+trae dentro, que no pide contraseña ni toca el sistema:
+
+LOS DOS ÚNICOS COMANDOS
+
+ tar xzf ACII_Simulador.tar.gz
+ ./ACII_Simulador/Panel_py/instalar.sh
+
+
+
+Ese guion comprueba que todo esté en su sitio y te dice qué falta si falta algo. Cuando
+termina, deja el simulador a mano:
+
+
+                     LI NU X                                M AC OS
+
+
+                     Aparece como «Simulador ACII» en el Deja un «Simulador ACII.command»
+Cómo se abre
+                     menú de aplicaciones                   en el escritorio, se abre con doble clic
+
+
+Tipografías          Las copia a ~/.local/share/fonts       Las copia a ~/Library/Fonts
+
+
+
+
+También se puede lanzar a mano, sin instalar nada, con
+ACII_Simulador/Panel_py/simulador-acii.sh.
+
+
+
+
+                                                                                            Página.-5
+        ARQUITECTUR A DE COMPUTADORES II                                            SIMUL ADOR
+
+
+
+  Descomprime la carpeta donde vaya a quedarse. El lanzador que crea el instalador
+  apunta a esa carpeta, no copia nada: si luego la mueves o la borras, deja de funcionar.
+  Si la cambias de sitio, vuelve a ejecutar instalar.sh y se arregla.
+
+  Si el panel se ve con otra tipografía, es que no encontró las suyas. No es grave —
+  funciona igual— pero se arregla ejecutando el instalador, que las deja puestas para
+  toda la sesión de escritorio.
+
+
+Dónde poner la carpeta
+
+Esta carpeta, donde quieras. La que sí tiene requisitos es la de tus proyectos de
+CubeIDE: su ruta no debe llevar espacios ni tildes. El emulador no sabe abrir ficheros
+cuya ruta los tenga, y falla de una forma difícil de reconocer: arranca y se queda parado
+sin decir nada.
+
+
+RU TA                                                 ¿VA L E?
+
+
+C:\ACII\workspace                                     Sí
+
+
+D:\Estudios\ACII_2026                                 Sí
+
+
+/home/juan/acii                                       Sí
+
+
+C:\Mis Prácticas                                      No: lleva espacio y tilde
+
+
+C:\Users\Juan\OneDrive\Mis documentos\ACII            No: lleva espacios
+
+
+/Users/juan/Mis prácticas                             No: lleva espacio y tilde
+
+
+
+El panel se encarga del resto: copia lo que el emulador tiene que leer —la descripción de la
+placa, los cuatro modelos y tu .elf— a una ruta limpia, y trabaja desde ahí. En Windows es
+
+C:\ACII_sim; en Linux y en Mac, ~/.acii_sim. Esa carpeta la crea él; no hay que preparar
+
+nada.
+
+
+
+
+                                                                                       Página.-6
+      ARQUITECTUR A DE COMPUTADORES II                                                   SIMUL ADOR
+
+
+
+  Este problema no es del simulador. make, CubeMX y el propio depurador se atragantan
+
+  también con las tildes en la ruta. Es la misma razón por la que el enunciado de la P1
+  pide guardar los proyectos en una carpeta corta y sin acentos.
+
+
+Qué hay en esta carpeta
+
+Si lo instalaste con el instalador en vez de descomprimir la carpeta, esto mismo está en
+%LOCALAPPDATA%\Programs\Simulador ACII, y al panel llegas por el menú Inicio.
+
+
+FIC H ER O O C ARP E TA   Q UÉ E S
+
+
+                          Lo único que hay que abrir. El módulo LED&KEY, el pulsador de la
+Panel\PanelACII.exe
+                          placa, y el botón que arranca el emulador
+
+
+                          La descripción de la placa y los cuatro periféricos que el emulador no
+plataforma/
+                          trae de serie. No hay que tocar nada de aquí
+
+
+                          Un programa ya compilado, para probar que todo funciona antes de
+ejemplo/Garaje.elf
+                          compilar nada tuyo
+
+
+Panel/fuentes/            El código del panel, en Delphi, por si quieres mirarlo
+
+
+GUIA DEL
+                          Esto que estás leyendo
+SIMULADOR.pdf
+
+
+
+
+Lo primero: comprobar que funciona
+
+Antes de configurar nada en CubeIDE, conviene ver el simulador andando. Abre
+Panel\PanelACII.exe: te propone el programa de ejemplo, que ya viene compilado. Dale
+
+a Arrancar.
+
+El display debe enseñar cErrAdA. Al pulsar B1 (azul), la puerta empieza a abrirse y la
+
+barra de LED avanza. Si eso pasa, el simulador está bien instalado, y lo que falte será la
+configuración del depurador.
+
+
+
+                                                                                            Página.-7
+      ARQUITECTUR A DE COMPUTADORES II                                                     SIMUL ADOR
+
+
+
+  La primera vez tarda unos segundos más de lo normal en arrancar: el emulador
+  compila los modelos de los periféricos. Las siguientes va directo.
+
+
+El panel, control por control
+
+La ventana tiene dos mitades. Arriba, la placa: es lo que tu programa escribe y lo que tú
+pulsas. Abajo, el mando del simulador: qué programa se ejecuta y cómo.
+
+
+C ONT R OL                      Q UÉ E S
+
+
+Los ocho dígitos y los ocho     El módulo LED&KEY, tal como lo escribe tu programa. Si tu
+LED                             programa no escribe, se quedan apagados
+
+
+                                Los ocho pulsadores del módulo, de izquierda a derecha. Se pulsan
+S1 a S8
+                                con el ratón o con las teclas 1 a 8
+
+
+                                El pulsador azul de la placa, en PC13. No es del módulo: va directo
+B1
+                                al microcontrolador. Con el ratón, o con la barra espaciadora
+
+
+                                El LED verde de la placa, en PA5. Tampoco es del módulo, y por eso
+LD2                             va al lado de B1 y no con los rojos. Se enciende cuando tu programa
+
+                                pone ese pin a 1
+
+
+                                La entrada del conversor A/D. La barra va de 0 a 4095, y al lado se
+Potenciómetro
+                                ve también en voltios
+
+
+Simular rebotes del             Manda una ráfaga de pulsos al pulsar, como hace un pulsador de
+pulsador                        verdad, en vez de una transición limpia
+
+
+Programa que se va a            El .elf que se cargará. Se escribe a mano o se elige con
+ejecutar                        Examinar…
+
+
+Arrancar / Parar                Levanta el emulador con ese programa, o lo mata
+
+
+
+
+                                                                                              Página.-8
+      ARQUITECTUR A DE COMPUTADORES II                                                  SIMUL ADOR
+
+
+
+C ONT R OL                   Q UÉ E S
+
+
+                             Las dos cosas seguidas: para el que hay y levanta otro. Es lo que
+Reiniciar
+                             hay que darle después de recompilar
+
+
+                             Arranca con el procesador congelado antes de la primera
+Esperar al depurador
+                             instrucción, para poder depurar desde main
+
+
+
+
+  La casilla de rebotes merece la pena. En la placa, un pulsador no se cierra de golpe:
+  rebota unos milisegundos. Un programa sin antirrebote parecerá correcto con una
+  pulsación limpia y contará varias en el laboratorio. Con la casilla marcada, el simulador
+  te enseña ese problema en casa en vez de escondértelo.
+
+
+El teclado. Mientras el simulador está en marcha, las teclas 1 a 8 son S1 a S8 y la barra
+
+espaciadora es B1; también valen las del teclado numérico. Se mantienen pulsadas
+
+mientras mantengas la tecla, así que se puede probar una pulsación larga. Si escribes en
+el campo del programa, los atajos se desactivan mientras el foco esté ahí —si no, no
+podrías teclear una ruta, que lleva dígitos y espacios—; para recuperarlos, Intro o un clic
+
+en la placa.
+
+La línea de estado, abajo a la derecha, dice en qué punto está:
+
+
+LO Q UE PO NE                    Q UÉ SIG NI FIC A
+
+
+                                 No hay emulador; el panel está esperando a que le des a
+sin conexión
+                                 Arrancar
+
+
+                                 Renode está levantando la máquina. La primera vez tarda:
+arrancando el emulador…
+                                 compila los modelos
+
+
+conectado al simulador           Todo en marcha. Al lado dice el puerto del servidor GDB
+
+
+
+
+                                                                                           Página.-9
+         ARQUITECTUR A DE COMPUTADORES II                                                SIMUL ADOR
+
+
+
+LO Q UE PO NE                       Q UÉ SIG NI FIC A
+
+
+                                    Con la casilla marcada: el procesador está congelado y no
+esperando al depurador…
+                                    ejecutará nada hasta que se conecte CubeIDE
+
+
+el simulador ha cerrado             El emulador se ha muerto o lo han matado. El módulo se apaga
+la conexión                         para no enseñar un fotograma viejo
+
+
+
+
+Ejecutar un programa
+
+Sin depurador, solo para ver si el programa hace lo que debe:
+
+    1.    Compila en CubeIDE como siempre, Project → Build Project. Mira en la
+
+          consola que acaba con 0 errors.
+
+    2. Localiza el .elf. Está en la carpeta Debug del proyecto y se llama como el
+
+          proyecto: si tu proyecto es P3_Reloj, el fichero es
+
+          ...\P3_Reloj\Debug\P3_Reloj.elf. En el Project Explorer aparece bajo
+
+          Binaries.
+
+    3. Abre el panel —en Windows Panel\PanelACII.exe; en Linux y en Mac, el lanzador
+
+          que dejó el instalador— y elige ese .elf con Examinar….
+
+    4. Dale a Arrancar. El panel copia lo que hace falta, lanza el emulador y se conecta
+
+          solo. Cuando la línea de estado ponga conectado al simulador, el programa ya
+
+          está corriendo.
+
+A partir de ahí el panel es la placa: los dígitos y los LED enseñan lo que escribe el
+programa, y S1..S8, B1 y el potenciómetro le llegan como si los pulsaras. Para terminar,
+
+Parar.
+
+
+
+  La primera vez tarda más. El emulador compila al vuelo los cuatro modelos de los
+  periféricos, y eso son unos segundos. Las siguientes va directo. Si pasa un minuto sin
+  arrancar, algo va mal: mira el apartado de problemas.
+
+
+
+
+                                                                                           Página.-10
+      ARQUITECTUR A DE COMPUTADORES II                                               SIMUL ADOR
+
+
+  Al recompilar hay que volver a arrancar. El emulador carga el binario una vez, al
+  empezar. Después de recompilar en CubeIDE, Reiniciar —que para el emulador y
+
+  levanta otro con el binario nuevo—, o seguirás viendo el programa anterior, que es la
+  forma más tonta de perder una tarde.
+
+
+Con el simulador en marcha, el campo del programa y Examinar… quedan cerrados: el que
+
+se está ejecutando es el que se cargó al arrancar, y para cambiarlo hay que parar.
+
+
+Depurar desde STM32CubeIDE
+
+Se puede poner un punto de ruptura en CubeIDE y que se cumpla dentro del emulador, con
+su código fuente, sus variables y su pila de llamadas. Es el depurador de siempre; lo único
+que cambia es a qué se conecta.
+
+El emulador siempre abre un servidor GDB en el puerto 3333, estés depurando o no, así
+que puedes conectarte en cualquier momento. La configuración del lado de CubeIDE se
+hace una vez por proyecto, y te la deja hecha el propio panel.
+
+Paso 1. Arranca el simulador. Elige el .elf y dale a Arrancar, igual que antes. Déjalo
+
+corriendo: el depurador se va a conectar a él.
+
+Si lo que quieres es parar dentro de main, antes de que se ejecute nada, marca la casilla
+
+Esperar al depurador antes de darle a Arrancar. El emulador queda entonces con el
+
+procesador congelado en la primera instrucción y no arranca hasta que el depurador se lo
+diga. El display se queda apagado y el estado pone esperando al depurador…: es lo que
+
+tiene que pasar.
+
+Paso 2. La configuración de depuración. Al arrancar, el panel mira el proyecto al que
+pertenece el .elf, y si todavía no tiene configuración de depuración para el emulador se
+
+la deja hecha. Te lo dice con un aviso. Aparece en CubeIDE en Run → Debug
+
+Configurations…, bajo GDB Hardware Debugging, con el nombre Simulador ACII -
+
+<proyecto>. Lleva el nombre del proyecto porque ahí se listan las de todos los que tengas
+
+abiertos, y si se llamaran igual no se distinguirían.
+
+
+
+
+                                                                                       Página.-11
+      ARQUITECTUR A DE COMPUTADORES II                                                   SIMUL ADOR
+
+
+
+  Si el proyecto ya estaba abierto en CubeIDE, refréscalo con F5 —selecciona el
+
+  proyecto en el Project Explorer y pulsa F5— para que vea el fichero nuevo. Si aun así no
+
+  aparece, cierra y vuelve a abrir CubeIDE.
+
+
+Viene marcada como favorita, así que también la tienes en la flecha de al lado del botón
+de depurar, arriba del todo y por delante del historial.
+
+
+  El botón de depurar a secas, sin desplegar, no sirve la primera vez. Relanza siempre
+  lo último que se lanzó, que será la configuración de la placa. Hay que desplegar la
+  flecha de al lado y elegir la del simulador; a partir de ahí el botón ya repite esa.
+
+  No es la misma que la de la placa. La de siempre, STM32 C/C++ Application, habla
+
+  con el ST-LINK y sigue donde estaba, para cuando depures en la placa. Son dos
+  configuraciones distintas del mismo proyecto y no se estorban.
+
+
+Paso 3. Pon los puntos de ruptura y dale a Debug. Al conectarse, el depurador te lleva a la
+
+perspectiva de depuración. Lo que ves depende de cómo hayas arrancado:
+
+
+C Ó M O A RR ANC AST E           D ÓN D E SE D ET I EN E
+
+
+                                 Donde estuviera el programa, que casi siempre es dentro de la
+Sin Esperar al depurador         biblioteca del módulo: Suspended : Signal : SIGINT. La
+
+                                 inicialización ya pasó
+
+
+                                 En la primera línea de main, con nada ejecutado. Desde ahí se
+
+Con Esperar al depurador         puede recorrer SystemClock_Config y los MX_..._Init paso
+
+                                 a paso
+
+
+
+A partir de ahí es el depurador de siempre: F5 para entrar, F6 para pasar por encima, F8
+
+para continuar, la vista de variables, la de registros y la pila de llamadas.
+
+
+
+
+                                                                                          Página.-12
+        ARQUITECTUR A DE COMPUTADORES II                                                                                                        SIMUL ADOR
+
+
+
+
+ E L P R O G R A M A D E T E N I D O D E N T R O D E L A B I B L I O T E C A D E L M Ó D U L O , C O N L A P I L A D E L L A M A D A S Q U E H A L L E VA D O
+                                                                        H ASTA AH Í
+
+
+Para volver a depurar desde el principio, el botón Reiniciar del panel. Parar el programa
+
+en CubeIDE, o pedirle que lo relance, no sirve: al procesador solo se le puede coger antes
+de la primera instrucción con un emulador recién arrancado, y eso es lo que hace ese
+botón. Después, Debug otra vez.
+
+Y el ciclo completo mientras trabajas —cambias el código, quieres volver a probarlo— es
+este:
+
+    5. En CubeIDE, Terminate para soltar el depurador.
+
+    6. Project → Build Project para recompilar.
+
+    7. En el panel, Reiniciar.
+
+    8. Debug otra vez, eligiendo Simulador ACII - <proyecto> en la flecha.
+
+
+Lo que lleva dentro la configuración
+
+No hay que tocarlo: el panel lo escribe. Se cuenta porque es lo que habría que poner a
+mano en un proyecto que no haya pasado por el panel, y porque aclara por qué el
+depurador y el emulador se entienden.
+
+En la pestaña Main, el proyecto y su binario: Debug\<nombre>.elf.
+
+En la pestaña Debugger, a dónde conectarse:
+
+
+
+
+                                                                                                                                                   Página.-13
+       ARQUITECTUR A DE COMPUTADORES II                                                                              SIMUL ADOR
+
+
+
+
+ L A P E STAÑ A DE B UGGE R : E L DE PUR ADO R H AB L A C O N E L E MU L ADO R P O R UN PUER TO, E N L UGAR DE CO N L A S O N DA
+
+
+
+CA MP O                           Q UÉ P ON E R
+
+
+GDB Command                       arm-none-eabi-gdb, el mismo que usa el entorno para la placa
+
+
+Use remote target                 Marcado. Es lo que habilita el resto
+
+
+Debug server                      Generic TCP/IP
+
+
+Protocol                          remote
+
+
+Connection                        localhost:3333
+
+
+
+
+Y en la pestaña Startup, que es donde se tuerce si se deja como viene sola:
+
+
+
+
+                                                                                                                       Página.-14
+        ARQUITECTUR A DE COMPUTADORES II                                                                             SIMUL ADOR
+
+
+
+
+L A P E STAÑ A STAR TUP TAL C O MO TIE N E Q UE Q UE DAR : DE L AS C IN C O C AS IL L AS, SO LO « LOAD SYM B OLS » Y « R ES U M E»
+       M AR C ADAS ; ABAJO, E L P UN TO DE R UP TUR A E N M AIN Y L AS DO S Ó R DE N ES Q UE ARR AN C AN EL E M U L ADO R
+
+
+
+ CASI L L A                     CÓMO                         POR Q UÉ
+
+
+                                                             Es una orden de la sonda física. El emulador no la
+ Reset and Delay                Desmarcada
+                                                             tiene
+
+
+ Halt                           Desmarcada                   Lo mismo. Además el procesador ya llega retenido
+
+
+ Órdenes de
+                                Vacío                        No hay nada que inicializar
+ inicialización
+
+
+ Load image                     Desmarcada                   El programa ya lo ha cargado el emulador
+
+
+                                                             Es lo que da código fuente, variables y pila de
+ Load symbols                   Marcada
+                                                             llamadas
+
+
+ Set breakpoint at              main                         Con la casilla del panel marcada, este sí se cumple
+
+
+
+
+                                                                                                                       Página.-15
+      ARQUITECTUR A DE COMPUTADORES II                                               SIMUL ADOR
+
+
+
+CASI L L A             CÓMO                POR Q UÉ
+
+
+                       Las dos órdenes     Arrancan el tiempo del emulador y sueltan el
+Run Commands
+                       de abajo            procesador
+
+
+Resume                 Marcada             Que eche a andar al conectarse
+
+
+
+En la caja Run Commands, la de abajo del todo, van estas dos líneas:
+
+ monitor start
+ monitor sysbus.cpu IsHalted false
+
+
+
+La primera arranca el reloj del emulador y la segunda suelta el procesador. Van ahí y no en
+las órdenes de inicialización porque esa caja se ejecuta después de poner los puntos de
+ruptura: si se arrancara antes, el programa pasaría por main sin que hubiera nada que lo
+
+detuviera.
+
+
+  continue no arranca el emulador por sí solo. El tiempo de la emulación es cosa de
+
+  Renode, no del programa, y hay que pedírselo con monitor start. Sin esas dos líneas,
+
+  con la casilla marcada, el depurador se conecta y se queda esperando para siempre.
+
+  Si al lanzar sale «Reset command not defined for debug server 'Generic TCP/IP'», es
+  que Reset and Delay sigue marcada. Desmárcala, y desmarca también Halt o darás
+
+  con el mismo mensaje cambiando la primera palabra. Son órdenes que solo entiende
+  una sonda de verdad.
+
+
+Lo que el simulador no puede enseñar
+
+El tiempo no es el de la placa. El emulador va del orden de dos veces más lento, y ese
+factor depende del ordenador. Sirve para ver qué hace el programa; para saber cuánto
+tarda, la placa.
+
+
+
+
+                                                                                          Página.-16
+      ARQUITECTUR A DE COMPUTADORES II                                                     SIMUL ADOR
+
+
+
+E STO SÍ                                            E STO N O
+
+
+Si el programa llega donde debe y con qué
+                                                    Cuánto tarda una rutina
+valores
+
+
+Si la máquina de estados hace las transiciones
+                                                    Calibrar un bucle de espera
+correctas
+
+
+Qué escribe en el display y qué LED enciende        El brillo real del display
+
+
+Si una tecla se detecta y si el antirrebote
+                                                    Un contacto sucio o un cable flojo
+funciona
+
+
+
+
+  El simulador no sustituye al laboratorio, lo complementa. Un programa que funciona
+  en el simulador puede fallar en la placa, y eso no es un defecto del simulador: es que el
+  hardware tiene comportamientos que ningún modelo recoge. La entrega se
+  comprueba en la placa.
+
+
+Si algo no va
+
+LO Q UE V E S                      Q UÉ PAS A Y Q UÉ H AC E R
+
+
+                                   En Windows, falta la carpeta Renode junto a la del panel: vuelve
+
+«No encuentro Renode»              a instalar, o a descomprimir el ZIP entero. En Linux y Mac, no
+                                   está instalado
+
+
+                                   Solo en Linux y Mac. Tienes una distinta de la 1.16.1. Puedes
+«Otra versión de Renode»
+                                   seguir, pero si no arranca, es lo primero que hay que cambiar
+
+
+«El emulador se ha cerrado         El panel enseña lo último que dijo el emulador. Casi siempre es
+nada más arrancar»                 que la ruta del proyecto lleva espacios o tildes
+
+
+
+
+                                                                                             Página.-17
+      ARQUITECTUR A DE COMPUTADORES II                                                      SIMUL ADOR
+
+
+
+LO Q UE V E S                      Q UÉ PAS A Y Q UÉ H AC E R
+
+
+«Ya hay un simulador               Quedó uno de antes, de otra ventana del panel. Ciérrala y vuelve
+
+corriendo»                         a darle a Arrancar
+
+
+«El emulador no ha abierto el      Ha tardado más de dos minutos y medio. Mira el registro: casi
+
+puerto a tiempo»                   siempre es una pieza que falta en la carpeta plataforma
+
+
+El panel arranca pero el display   El programa no escribe en el módulo. Es un fallo del programa,
+no cambia                          no del simulador: pon un punto de ruptura donde escribe
+
+
+El display se queda apagado y      Si marcaste Esperar al depurador, es lo esperado: no
+
+no reacciona                       ejecutará nada hasta que conectes CubeIDE
+
+
+Simulador ACII - ... no            Refresca el proyecto con F5. Si sigue sin salir, cierra y abre
+
+aparece en CubeIDE                 CubeIDE
+
+
+El depurador se conecta y se
+                                   Faltan las dos líneas de Run Commands. Ver el apartado anterior
+queda colgado
+
+
+Al depurar, un punto de ruptura
+                                   Arrancaste sin Esperar al depurador: cuando te conectas
+en la inicialización no se
+                                   ya había pasado. Parar, marcar la casilla y Arrancar
+cumple
+
+
+                                   El foco está en el campo del programa. Intro, o un clic en la
+Las teclas 1..8 no hacen nada
+                                   placa
+
+
+
+Dónde mirar cuando nada de lo anterior encaja. El emulador deja todo lo que va diciendo
+en un registro, y el panel deja ahí también el guion con el que lo ha lanzado. La carpeta de
+trabajo es C:\ACII_sim en Windows y ~/.acii_sim en Linux y en Mac:
+
+
+
+
+                                                                                              Página.-18
+      ARQUITECTUR A DE COMPUTADORES II                                                  SIMUL ADOR
+
+
+
+FIC H ER O                       Q UÉ E S
+
+
+<carpeta de                      Todo lo que ha dicho el emulador, incluido por qué se ha
+trabajo>/renode.log              cerrado
+
+
+<carpeta de                      Las órdenes con las que se ha lanzado: qué placa, qué modelos
+trabajo>/simula.resc             y qué .elf
+
+
+<carpeta de                      La copia del programa que se está ejecutando. Si la fecha no es
+trabajo>/*.elf                   la de tu última compilación, no le diste a Reiniciar
+
+
+
+
+                                                                                            Página.-19
+

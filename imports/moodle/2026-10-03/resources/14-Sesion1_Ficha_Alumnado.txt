@@ -1,0 +1,90 @@
+ABP 2026-2027 · Sesión 1
+
+
+Actividad de arranque
+Pensando vuestro recomendador
+
+
+
+Lluvia de ideas individual · 9 de septiembre de 2026
+Profesor: Gerardo Rodríguez Martínez
+ABP 2026-2027 · Actividad de arranque
+
+
+
+
+Índice
+1. ¿Qué es un sistema de recomendación basado en contenidos? ................................................................................. 3
+2. Marca o rodea los dominios que más te llamen la atención ...................................................................................... 3
+3. Para tu(s) dominio(s) favorito(s), reflexiona .............................................................................................................. 3
+4. Notas propias ................................................................................................................................................................ 3
+
+
+
+
+ABP 2026-2027 · Actividad de arranque                                                                                                                   Página 2 de 4
+ABP 2026-2027 · Actividad de arranque
+
+
+
+Antes de formar equipos, pensad individualmente en qué dominio os gustaría construir un sistema de
+recomendación basado en contenidos. No hace falta decidir nada hoy: esta ficha es solo el punto de partida para la
+conversación en grupos y para la propuesta de proyecto que presentaréis antes del 25 de septiembre.
+
+
+1. ¿Qué es un sistema de recomendación basado en contenidos?
+Dado un ítem de entrada (por ejemplo, una película que os ha gustado), el sistema recomienda otros ítems
+similares a partir de sus características — principalmente un campo de descripción textual, más otros campos que
+vosotros decidáis.
+
+
+2. Marca o rodea los dominios que más te llamen la atención
+
+
+  Películas / series                                         Libros
+
+
+
+  Cursos online                                              Productos / e-commerce
+
+
+
+  Música                                                     Restaurantes
+
+
+
+  Videojuegos                                                Viajes y alojamiento
+
+
+
+  Recetas de cocina                                          Otro: ______________
+
+
+
+3. Para tu(s) dominio(s) favorito(s), reflexiona
+ • ¿Qué tipo de dataset (conjunto de datos) necesitarías? ¿Existe ya o habría que construirlo?
+ • ¿Qué campo de descripción textual tendría cada ítem de forma natural (sinopsis, reseña, ficha técnica...)?
+ • ¿Qué otras características de los ítems podrían ayudar a calcular similitud (género, autor, precio, duración,
+   valoraciones...)?
+ • ¿Tendría sentido combinarlo con análisis de sentimientos (opiniones/reseñas) o con imágenes (carteles, fotos de
+   producto)?
+
+
+4. Notas propias
+
+
+
+
+ABP 2026-2027 · Actividad de arranque                                                                  Página 3 de 4
+ABP 2026-2027 · Actividad de arranque
+
+
+Recordad: la formación de equipos (máximo 4 personas, también se admite trabajo individual) se hace dentro de vuestro
+grupo de prácticas, con fecha límite el 25 de septiembre. La propuesta se publica en el foro "Propuesta de Proyecto" y debe
+recibir el visto bueno del profesor de prácticas.
+
+
+
+
+ABP 2026-2027 · Actividad de arranque                                                                     Página 4 de 4
+

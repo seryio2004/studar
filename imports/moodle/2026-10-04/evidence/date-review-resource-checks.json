@@ -1,0 +1,112 @@
+[
+  {
+    "url": "https://moovi.uvigo.gal/pluginfile.php/626802/mod_resource/content/12/CALENDARIO%20DE%20PR%C3%81CTICAS.pdf",
+    "path": "imports/moodle/2026-10-04/resources/09-CALENDARIO_DE_PR_CTICAS.pdf",
+    "expected_sha256": "aa4917c6cde165a353b8b338335edb9799568ec6b1ec28c8a2c6848c6f108c2f",
+    "status": 200,
+    "bytes": 172455,
+    "sha256": "aa4917c6cde165a353b8b338335edb9799568ec6b1ec28c8a2c6848c6f108c2f",
+    "unchanged": true,
+    "consulted_at": "2026-10-04T11:29:30.064Z"
+  },
+  {
+    "url": "https://moovi.uvigo.gal/pluginfile.php/654456/mod_resource/content/0/Datos%20de%20la%20materia.pdf",
+    "path": "imports/moodle/2026-10-04/resources/11-Datos_de_la_materia.pdf",
+    "expected_sha256": "5ea7c3c198c28a9ae4b6f7ffc867ca4125da9b21813f7c51251adc00c64b4270",
+    "status": 200,
+    "bytes": 56431,
+    "sha256": "5ea7c3c198c28a9ae4b6f7ffc867ca4125da9b21813f7c51251adc00c64b4270",
+    "unchanged": true,
+    "consulted_at": "2026-10-04T11:29:30.070Z"
+  },
+  {
+    "url": "https://moovi.uvigo.gal/pluginfile.php/649999/mod_resource/content/1/Sesion1_Presentacion_ABP.pdf",
+    "path": "imports/moodle/2026-10-04/resources/12-Sesion1_Presentacion_ABP.pdf",
+    "expected_sha256": "d542e03bcbe61a1f9813c38feee7e869613b7584ecd01e0d0f3c8a2cb3395da1",
+    "status": 200,
+    "bytes": 863482,
+    "sha256": "d542e03bcbe61a1f9813c38feee7e869613b7584ecd01e0d0f3c8a2cb3395da1",
+    "unchanged": true,
+    "consulted_at": "2026-10-04T11:29:30.066Z"
+  },
+  {
+    "url": "https://moovi.uvigo.gal/pluginfile.php/649991/mod_resource/content/1/Definicion_Proyecto_Alumnado.pdf",
+    "path": "imports/moodle/2026-10-04/resources/13-Definicion_Proyecto_Alumnado.pdf",
+    "expected_sha256": "5d037e822328a8b8d50e34add4da26f6b0f45d1a70fff7cd806a11e65ed07762",
+    "status": 200,
+    "bytes": 459574,
+    "sha256": "5d037e822328a8b8d50e34add4da26f6b0f45d1a70fff7cd806a11e65ed07762",
+    "unchanged": true,
+    "consulted_at": "2026-10-04T11:29:30.298Z"
+  },
+  {
+    "url": "https://moovi.uvigo.gal/pluginfile.php/702816/mod_resource/content/2/Sesion4_Ficha_Alumnado.pdf",
+    "path": "imports/moodle/2026-10-04/resources/20-Sesion4_Ficha_Alumnado.pdf",
+    "expected_sha256": "ad270df091be0e6d40965c6be5cca81c5d5a479fceb1665a7bab77108ee70afe",
+    "status": 200,
+    "bytes": 173072,
+    "sha256": "ad270df091be0e6d40965c6be5cca81c5d5a479fceb1665a7bab77108ee70afe",
+    "unchanged": true,
+    "consulted_at": "2026-10-04T11:29:30.298Z"
+  },
+  {
+    "url": "https://moovi.uvigo.gal/pluginfile.php/688339/mod_resource/content/1/Practica1_Alumnos_Presentacion.pdf",
+    "path": "imports/moodle/2026-10-04/resources/22-Practica1_Alumnos_Presentacion.pdf",
+    "expected_sha256": "9c8708a277c6956e4cf98c11f2cad35a8f92c46386e366129fa1abd83b93e316",
+    "status": 200,
+    "bytes": 178984,
+    "sha256": "9c8708a277c6956e4cf98c11f2cad35a8f92c46386e366129fa1abd83b93e316",
+    "unchanged": true,
+    "consulted_at": "2026-10-04T11:29:30.292Z"
+  },
+  {
+    "url": "https://moovi.uvigo.gal/pluginfile.php/520883/course/section/54246/SSI_presentacion.pdf?time=1789020184004",
+    "path": "imports/moodle/2026-10-04/resources/23-SSI_presentacion.pdf",
+    "expected_sha256": "25531c8395d97e2f1dc6d4d2d412f1e0a8f3833b68bfc7608587f9150c13638a",
+    "status": 200,
+    "bytes": 80926,
+    "sha256": "25531c8395d97e2f1dc6d4d2d412f1e0a8f3833b68bfc7608587f9150c13638a",
+    "unchanged": true,
+    "consulted_at": "2026-10-04T11:29:30.561Z"
+  },
+  {
+    "url": "https://moovi.uvigo.gal/pluginfile.php/649702/mod_label/intro/trabajos_SSI2627_temas_y_enunciado.pdf?time=1790983756375",
+    "path": "imports/moodle/2026-10-04/resources/24-trabajos_SSI2627_temas_y_enunciado.pdf",
+    "expected_sha256": "91479fe0cdd3d5377524f4f875a460d58d38016375892c14c90e63c137c91460",
+    "status": 200,
+    "bytes": 128076,
+    "sha256": "91479fe0cdd3d5377524f4f875a460d58d38016375892c14c90e63c137c91460",
+    "unchanged": true,
+    "consulted_at": "2026-10-04T11:29:30.590Z"
+  },
+  {
+    "url": "https://moovi.uvigo.gal/pluginfile.php/649707/mod_assign/intro/P1.cifrado-java.pdf?time=1790158783252",
+    "path": "imports/moodle/2026-10-04/resources/26-P1.cifrado-java.pdf",
+    "expected_sha256": "1cd7682fb53aa50d4b87fdec5aa02c9c471be03f8b4c898eae3f6358eec3a62b",
+    "status": 200,
+    "bytes": 206713,
+    "sha256": "1cd7682fb53aa50d4b87fdec5aa02c9c471be03f8b4c898eae3f6358eec3a62b",
+    "unchanged": true,
+    "consulted_at": "2026-10-04T11:29:30.591Z"
+  },
+  {
+    "url": "https://moovi.uvigo.gal/pluginfile.php/649892/mod_assign/introattachment/0/Aviso_Alumnado_Sprint1_NuevaFecha.pdf?forcedownload=1",
+    "path": "imports/moodle/2026-10-04/resources/39-Aviso_Alumnado_Sprint1_NuevaFecha.pdf",
+    "expected_sha256": "8aeb6200e13cfcb5eb3e15f7eefaee6a6a737c888c2ee2308b7628a1cd97a122",
+    "status": 200,
+    "bytes": 116714,
+    "sha256": "8aeb6200e13cfcb5eb3e15f7eefaee6a6a737c888c2ee2308b7628a1cd97a122",
+    "unchanged": true,
+    "consulted_at": "2026-10-04T11:29:30.867Z"
+  },
+  {
+    "url": "https://moovi.uvigo.gal/pluginfile.php/598562/mod_resource/content/18/GUIA%20GENERAL%20DE%20PRACTICAS.pdf",
+    "path": "imports/moodle/2026-10-04/resources/46-GUIA_GENERAL_DE_PRACTICAS.pdf",
+    "expected_sha256": "4100dbbbf2b1e591694c4bc0c6158c22b5c01fb31a66cd40a233b235095a3e95",
+    "status": 200,
+    "bytes": 265749,
+    "sha256": "4100dbbbf2b1e591694c4bc0c6158c22b5c01fb31a66cd40a233b235095a3e95",
+    "unchanged": true,
+    "consulted_at": "2026-10-04T11:29:30.822Z"
+  }
+]

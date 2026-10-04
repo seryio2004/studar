@@ -1,0 +1,397 @@
+[
+  {
+    "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=401953",
+    "final_url": "https://moovi.uvigo.gal/pluginfile.php/598562/mod_resource/content/18/GUIA%20GENERAL%20DE%20PRACTICAS.pdf",
+    "status": 200,
+    "title": "",
+    "text": "Recurso PDF: bytes originales disponibles mediante el enlace final. No se interpreta contenido binario como HTML.",
+    "links": [],
+    "dates": [],
+    "consulted_at": "2026-10-03T18:06:09.332Z"
+  },
+  {
+    "url": "https://moovi.uvigo.gal/mod/resource/view.php?id=428498",
+    "final_url": "https://moovi.uvigo.gal/pluginfile.php/626802/mod_resource/content/12/CALENDARIO%20DE%20PR%C3%81CTICAS.pdf",
+    "status": 200,
+    "title": "",
+    "text": "Recurso PDF: bytes originales disponibles mediante el enlace final. No se interpreta contenido binario como HTML.",
+    "links": [],
+    "dates": [],
+    "consulted_at": "2026-10-03T18:06:09.109Z"
+  },
+  {
+    "url": "https://moovi.uvigo.gal/pluginfile.php/649707/mod_assign/intro/P1.cifrado-java.html?time=1790158768434",
+    "final_url": "https://moovi.uvigo.gal/pluginfile.php/649707/mod_assign/intro/P1.cifrado-java.html?time=1790158768434",
+    "status": 200,
+    "title": "cifrado-java",
+    "text": "Práctica1. Uso del API de cifrado de JavaPráctica1. Uso del API de cifrado de Java1. Objetivos2. Descripción2.1 Simplificaciones 2.2 Requisitos3. Desarrollo3.1 Actores3.2 Programas/módulos a desarrollar 4. Entrega5. Herramientas a utilizarCódigo de partida1. ObjetivosPoner en práctica los conocimientos adquiridos respecto a algoritmos criptográficosConocer y utilizar un API estándar para el desarrollo de aplicaciones criptográficas de complejidad mediaEn este caso se hará uso del API Java Cryptography Architecture (JCA) y del provider (implementación de JCA) BouncyCastle.2. DescripciónSe trata de desarrollar una colección de herramientas para el empaquetado y distribución de Facturas Electrónicas que sea fiable y segura y garantice las restricciones de entrega en los plazos estipulados por Hacienda.Para implementar estas restriciciones de entrega se contará con una especie de Autoridad de sellado de tiempo simplificada (ver TSA, Autoridad de Sellado de Tiempo)Las Empresas podrán generar su Factura Empaquetada a partir de una de sus Facturas. Esta Factura Empaquetada será remitida a la Autoridad de sellado, que verificará la identidad de la Empresa que ha remitido la Factura Empaquetada y le vinculará el timestamp (sello de tiempo) que permita verificar la fecha de entrega. Finalmente, el personal de Hacienda podrá validar esta Factura Empaquetada para verificar que procede de la Empresa correspondiente, extraer la Factura original remitida por la Empresa y validar la autenticidad del ”sello de tiempo” emitido por la Autoridad de sellado.2.1 Simplificaciones Dado que se trata de una aplicación ”de juguete” se asumirán una serie de simplificaciones.Cada uno de los participantes (Empresa, Autoridad de sellado, Hacienda) podrá generar sus propios pares de claves privada y pública, que se almacenarán en ficheros simples (no se consideran mecanismos adicionales de protección del fichero con la clave privada, como sí ocurriría en una aplicación real)No se contemplan los mecanismos de distribución fiable de claves públicas. Se asumirá que todas las claves públicas necesarias estarán en poder del usuario que las necesite (Empresa, Autoridad de sellado, Hacienda) de forma confiable (en una aplicación real se haría uso de Certificados Digitales y de una Autoridad Certificadora común)La Empresa dispondrá de un fichero con la clave pública de Hacienda , utilizada para generar la Factura EmpaquetadaLa Autoridad de sellado dispondrá del fichero con la clave pública de la Empresa que le ha envida su Factura Empaquetada para ser selladaHacienda contará con la clave pública (almacenada en su respectivo fichero) de la Autoridad de sellado, así como con la clave pública de todas las Empresas para las cuales se vaya a realizar la validación de sus Facturas Empaquetadas.La Factura original de la Empresa estará almacenada inicialmente en un fichero JSON (no es relevante para este entregable el formato de la factura, ni será necesario procesarla) Dado que se trata de un ejemplo, las distintas piezas de información que aporte cada participante (Empresa o Autoridad de sellado) a la Factura Empaquetada tendrán (antes del cifrado/firma y después del descifrado) la forma de Strings con codificación UTF8.La Factura Empaquetada se materializará físicamente en un fichero o ”paquete” que contendrá toda las piezas de información que le vayan incorporando los distintos participantes implicados: la Empresa que la generó y la Autoridad de sellado que da fé de la entrega de la Factura en el instante concreto en ésta que tuvo lugar.Nota:Se aporta código para la gestión de ”Paquetes” con múltiples partes codificadas en bloques de caracteres imprimibles empleando codificación Base64 (ver Codificacion BASE64)NECESARIAMENTE se deberá emplear el código proporcionado o proporcionar una implementación propia equivalente en el caso de desarrollar la prácticas en otros lenguajes diferentes a Java.No se contempla un almacenamiento ”físico” realista de la Factura Empaquetada, sólo se trata de implementar los programas para generar, sellar y validar la Factura Empaquetada conforme a las especificaciones descritas en este documento. En una aplicación real este tipo de datos cifrados y firmados se encapsularían en un formato criptográfico estándar como PKCS7Al validar la Factura Empaquetada, si todas las comprobaciones de autenticidad respecto a Empresa y Autoridad de sellado son correctas, se mostrará al personal de Hacienda la Factura real remitida por la Empresa (el fichero JSON inicial) y los datos (timestamp) incorporados por la Autoridad de sellado que haya procesado dicho Factura Empaquetada. En caso contrario se indicarán las comprobaciones que no hayan sido satisfactorias.2.2 RequisitosRequisitos básicos a cumplir por el esquema criptográfico propuesto:R1. Asegurar la confidencialidad del contenido incluido en la Factura Empaquetada por parte del Empresa Sólo el personal de Hacienda podrá tener acceso a estos contenidosR2. Garantizar que tanto el personal de Hacienda como cualquier otro participante tenga la posibilidad de verificar que la Factura Empaquetada fue realmente presentado por la Empresa correspondiente.R3. Asegurar que el contenido del ”paquete” con la Factura Empaquetada (datos de la Empresa y sello de la Autoridad de sellado) que se ha recibido no haya sido modificado (es decir, que de darse ese caso, se pueda detectar la realización de modificaciones)R4. Asegurar que ni la Empresa ni la Autoridad de sellado podrán repudiar el contenido incluido por ellos en la Factura EmpaquetadaR5. Asegurar que el personal de Hacienda no podrá realizar cambios en el contenido de la Factura Empaquetada recibida (es decir, que de darse ese caso, se pueda detectar la realización de modificaciones)R6. Contar con un mecanismo mediante el cuál una \"Autoridad Externa\" confiable por todos los participantes (en este caso, la Autoridad de sellado de tiempo) pueda garantizar la fecha en que fue presentada la Factura Empaquetada generada por una determinada Empresa.Se pretende que esta vinculación entre Factura Empaquetada y su ”sello de tiempo” pueda ser validada por Hacienda o por un tercero y que no pueda ser falsificada ni por la Empresa, ni por la Autoridad de sellado, ni por la propia HaciendaNota: En este caso esta Autoridad de sellado funcionarán de un modo parecido (aunque simplificado) a las autoridades de sellado de tiempo de las infraestructuras de clave pública (ver más en TSA, Autoridad de Sellado de Tiempo).R7. La Autoridad de sellado debe poder verificar que la Factura Empaquetada que va a sellar procede realmente de la Empresa que la presenta.R8. Asegurar un coste computacional reducido en la creación, sellado y validación de la Factura Empaquetada , minimizando el uso de criptografía asimétrica3. DesarrolloEn primer lugar se deberán de analizar los requisitos anteriores, para determinar qué estrategias seguir para conseguir cada uno de ellos.Se debe decidir qué acciones realizar en el origen (Empresa), qué tareas realizará la Autoridad de sellado y qué comprobaciones se llevarán a cabo en el destino (Hacienda), además de decidir qué algoritmos concretos se emplearán. 3.1 ActoresEmpresas: podrán generar sus propios pares de claves (pública y privada) y serán las responsables de generar la Factura Empaquetada a partir del fichero JSON con la Factura en claro original.Autoridad de Sellado: podrá generar su propio par de claves (pública y privada) y será responsable de sellar la Factura Empaquetada de una Empresa dada, habiendo verificado previamente que esa Factura Empaquetada efectivamente fue creada por la Empresa emisora .Hacienda: podrá generar su propio par de claves (pública y privada) y será responsable de extraer los datos aportados por la Empresa en la Factura Empaquetada que le haya enviado, después de haber validado la autenticidad de la autoria de dicha Factura Empaquetada y validar la información incluida en la Factura Empaquetada por la Autoridad de sellado3.2 Programas/módulos a desarrollar  Una vez decidido cómo garantizar los requisitos exigidos, el resultado final será obligatoriamente el desarrollo de 4 ejecutables:java -cp [...] GenerarClaves <identificador> (ya está implementado) Usado para generar los pares de claves de los participantes: Empresa, Autoridad de sellado y HaciendaSe le pasa como argumento de línea de comando un identificador que se usará para componer los nombre de los archivos que se generaránGenera dos ficheros: ”identificador.publica” e ”identificador.privada”, conteniendo, respectivamente, las claves pública y privada de ese usuariojava -cp [...] EmpaquetarFactura <fichero JSON factura> <nombre paquete> <ficheros con las claves necesarias>  Usado por la EmpresaSe le pasa en línea de comandos un fichero JSON con el contenido de la Factura en claro a empaquetar, el nombre del paquete resultante y el path de los ficheros con las claves necesarias para el empaquetado (el número y tipo exacto de los ficheros de claves dependerá de que estrategia se haya decidido seguir).Genera el fichero <nombre paquete> (por ejemplo factura.paquete) con el resultado de ”empaquetar” los datos de entrada y que conforma la Factura Empaquetada.java -cp [...] SellarFactura <nombre paquete> <ficheros con las claves necesarias>  Usado por la Autoridad de selladoSe le pasa en línea de comandos el fichero con el ”paquete” a sellar y el path de los ficheros con las clave/s criptográficas necesaria/s.Al ”paquete” recibido como argumento le vincula (añade) los bloques que correspondan para incorporar los datos aportados por la Autoridad de sellado (fecha y hora de entrega) y para garantizar la autenticidad de los datos de ”sellado”.El resultado será el mismo fichero del ”paquete” pasado como parámetro con los nuevos datos incorporados en forma de nuevos bloques.En caso de comprobar que la Empresa que presenta el Factura Empaquetada no se corresponde con la que realmente ha creado dicho paquete (no fue creado con la clave privada de la Empresa o fue modificado posteriormente), se informará por pantalla y no se generarán los bloques de sellado.java -cp [...] DesempaquetarFactura <nombre paquete> <fichero JSON factura> <ficheros con las claves necesarias>  Usado por los empleados de HaciendaSe le pasa en línea de comandos el fichero con el ”paquete” que representa la Factura Empaquetada (donde se incluyen los datos [contenido del fichero JSON] aportados por la Empresa y los datos de la Autoridad de sellado), el nombre del fichero JSON donde se almacenará la Factura en claro y el path de los ficheros con las claves que sean necesarias para desempaquetar y verificar la información que contiene el mencionado ”paquete”.Al usuario (Hacienda) se le indicará por pantalla el resultado de las diferentes comprobaciones que se hayan realizado sobre la Factura Empaquetada y se almacenará un copia en claro de la Factura enviada.se indicará si los datos incluidos por la Empresa o por la Autoridad de sellado han sufrido modificaciones o nose indicará si el ”sello” de la Autoridad de sellado es válido/auténtico y, de ser así, se mostrará la fecha de sellado.una vez verificado que la Empresa que generó el ”paquete” es quien realmente corresponde, se descifrará la Factura enviada y se almacenará en el fichero indicado el texto JSON en claro incluido originalmente por la Empresa en su Factura Empaquetada4. EntregaPráctica individual o en parejasDocumentación a entregar:MemoriaContendrá al menos los siguiente puntosDescripción breve de la prácticaDescripción y justificación de las estrategias criptográficas empleadas para asegurar los requisitos básicos exigidos, junto con los pasos que se siguen en el empaquetado, sellado y desempaquetado de la Factura. [Importante]Descripción del formato/estructura del ”paquete” resultanteDescripción breve de la implementación: clases y métodos más importantes.Instrucciones de compilación y ejemplos de uso. \nDebe incluir un ejemplo de ejecución (comandos + salida obtenida) de los siguientes casos de prueba: [Importante]Recepción de una Factura Empaquetada correctaRecepción de una Factura Empaquetada con los contenidos aportados por la Empresa alteradosRecepción de una Factura Empaquetada con un sello de tiempo alteradoUso por parte de Hacienda de una clave pública de Empresa incorrectaExplicación de las simplificaciones realizadas (las descritas en apartado \"2.1 Simplificaciones\" y otras adicionales), junto con sus consecuencias en una aplicación real. [Importante] Resultados obtenidos y conclusionesCódigo fuente + ficheros para los casos de prueba indicados en el punto 5. Aviso importante:  Salvo razones debidamente justificadas en la documentación (uso de otros lenguajes de programación o similares), los ejecutables desarrollados deben de seguir las restricciones respecto a nombre, parámetros de línea de comandos y orden de los mismos especificadas en la sección \"3.1 Programas a desarrollar\" Del mismo modo, los datos aportados por Empresa y Autoridad de sellado han de al almacenarse en el ”Paquete” creado.Fecha de entrega: por determinar (~ finales de octubre)Entrega en MOOVI (un único archivo con documentación, código, etc) [evitar incluir el .JAR de BouncyCastle y ficheros .class]Defensa: esta previsto que alrededor de un 10%-15% de las prácticas entregadas en tiempo y forma serán seleccionadas para una pequeña defensa (5-10 min.) ante el profesorfundamentalmente serán prácticas con dudas de funcionamiento o implementación, aquellas que presentes dudas en cuanto a su autoría o entregas elegidas al azarla defensa se realizará bien en horario de laboratorio o en horario de tutorias (se acordará con cada grupo)Evaluación:Documentación correcta + empaquetado básico (Factura de la Empresa) y validación/descifrado por Hacienda: hasta 70%Adición de la generación y validación de los ”sellos de tiempo” de la Autoridad sellado: hasta 100%5. Herramientas a utilizarLa práctica se implementará en Java utilizando el API de criptografía JCA y el provider Bouncy Castle. Se podrá realizar tanto en Windows como en Linux.API Java Cryptography Architecture (JCA) [antes JCE (Java Cryptography Extension)]Paquete de criptografia Bouncy Castle (JCA provider)Tutorial del API JCA (Java Cryptography Architecture) Código de partidaGenerarClaves.java: genera un par de claves RSA de 512 bits Implementación del primer ejecutable descrito en la subsección 3.1 Programas a desarrollarPaquete.java : encapsula un paquete formado por varios bloques. Cada boque tiene un nombre (de tipo String) y un contenido (de tipo byte[]). La clase provee de métodos para añadir, listar y eliminar los bloques que conforman el paquete y recuperar su contenido (byte[]).Métodos a utilizar: getContenidoBloque(), anadirBloque(), actualizarBloque(),  eliminarBloque(), getNombresBloque()También provee métodos para las operaciones de lectura y escritura de paquetes empleando un formato similar al PGP ASCII armor (ver ) que usa la codificación Base64 para representar datos binarios mediante caracteres imprimibles.Métodos: leerPaquete(String nombreFichero), escribirPaquete(String nombreFichero) y constructor de conveniencia Paquete(String nombreFichero)En el método main() se proporciona un ejemplo de creación, acceso, escritura y lectura de Paquetes.factura2203.json: Ejemplo de factura en formato JSON",
+    "links": [
+      {
+        "label": "Práctica1. Uso del API de cifrado de Java",
+        "url": "https://moovi.uvigo.gal/pluginfile.php/649707/mod_assign/intro/P1.cifrado-java.html?time=1790158768434#pr%C3%A1ctica1-uso-del-api-de-cifrado-de-java"
+      },
+      {
+        "label": "1. Objetivos",
+        "url": "https://moovi.uvigo.gal/pluginfile.php/649707/mod_assign/intro/P1.cifrado-java.html?time=1790158768434#1-objetivos"
+      },
+      {
+        "label": "2. Descripción",
+        "url": "https://moovi.uvigo.gal/pluginfile.php/649707/mod_assign/intro/P1.cifrado-java.html?time=1790158768434#2-descripci%C3%B3n"
+      },
+      {
+        "label": "2.1 Simplificaciones",
+        "url": "https://moovi.uvigo.gal/pluginfile.php/649707/mod_assign/intro/P1.cifrado-java.html?time=1790158768434#21-simplificaciones-secsimplificaciones"
+      },
+      {
+        "label": "2.2 Requisitos",
+        "url": "https://moovi.uvigo.gal/pluginfile.php/649707/mod_assign/intro/P1.cifrado-java.html?time=1790158768434#22-requisitos"
+      },
+      {
+        "label": "3. Desarrollo",
+        "url": "https://moovi.uvigo.gal/pluginfile.php/649707/mod_assign/intro/P1.cifrado-java.html?time=1790158768434#3-desarrollo"
+      },
+      {
+        "label": "3.1 Actores",
+        "url": "https://moovi.uvigo.gal/pluginfile.php/649707/mod_assign/intro/P1.cifrado-java.html?time=1790158768434#31-actores"
+      },
+      {
+        "label": "3.2 Programas/módulos a desarrollar",
+        "url": "https://moovi.uvigo.gal/pluginfile.php/649707/mod_assign/intro/P1.cifrado-java.html?time=1790158768434#32-programasm%C3%B3dulos-a-desarrollar--secejecutables"
+      },
+      {
+        "label": "4. Entrega",
+        "url": "https://moovi.uvigo.gal/pluginfile.php/649707/mod_assign/intro/P1.cifrado-java.html?time=1790158768434#4-entrega"
+      },
+      {
+        "label": "5. Herramientas a utilizar",
+        "url": "https://moovi.uvigo.gal/pluginfile.php/649707/mod_assign/intro/P1.cifrado-java.html?time=1790158768434#5-herramientas-a-utilizar"
+      },
+      {
+        "label": "Código de partida",
+        "url": "https://moovi.uvigo.gal/pluginfile.php/649707/mod_assign/intro/P1.cifrado-java.html?time=1790158768434#c%C3%B3digo-de-partida"
+      },
+      {
+        "label": "TSA, Autoridad de Sellado de Tiempo",
+        "url": "https://en.wikipedia.org/wiki/Trusted_timestamping"
+      },
+      {
+        "label": "",
+        "url": "https://moovi.uvigo.gal/pluginfile.php/649707/mod_assign/intro/P1.cifrado-java.html?time=1790158768434#sec:simplificaciones"
+      },
+      {
+        "label": "Certificados Digitales",
+        "url": "https://es.wikipedia.org/wiki/Certificado_digital"
+      },
+      {
+        "label": "Autoridad Certificadora",
+        "url": "https://es.wikipedia.org/wiki/Autoridad_de_certificaci%C3%B3n"
+      },
+      {
+        "label": "Codificacion BASE64",
+        "url": "https://en.wikipedia.org/wiki/Base64"
+      },
+      {
+        "label": "TSA, Autoridad de Sellado de Tiempo",
+        "url": "https://en.wikipedia.org/wiki/Trusted_timestamping"
+      },
+      {
+        "label": "",
+        "url": "https://moovi.uvigo.gal/pluginfile.php/649707/mod_assign/intro/P1.cifrado-java.html?time=1790158768434#sec:ejecutables"
+      },
+      {
+        "label": "\"2.1 Simplificaciones\"",
+        "url": "https://moovi.uvigo.gal/pluginfile.php/649707/mod_assign/intro/P1.cifrado-java.html?time=1790158768434#sec:simplificaciones"
+      },
+      {
+        "label": "\"3.1 Programas a desarrollar\"",
+        "url": "https://moovi.uvigo.gal/pluginfile.php/649707/mod_assign/intro/P1.cifrado-java.html?time=1790158768434#sec:ejecutables"
+      },
+      {
+        "label": "API Java Cryptography Architecture (JCA) [antes JCE (Java Cryptography Extension)]",
+        "url": "https://docs.oracle.com/en/java/javase/18/security/java-cryptography-architecture-jca-reference-guide.html"
+      },
+      {
+        "label": "Paquete de criptografia Bouncy Castle (JCA provider)",
+        "url": "http://www.bouncycastle.org/java.html"
+      },
+      {
+        "label": "Tutorial del API JCA (Java Cryptography Architecture)",
+        "url": "https://ccia.esei.uvigo.es/docencia/SSI/2627/practicas/tutorial-jca.nuevo.pdf"
+      },
+      {
+        "label": "GenerarClaves.java",
+        "url": "http://ccia.esei.uvigo.es/docencia/SSI/2627/practicas/GenerarClaves.java"
+      },
+      {
+        "label": "3.1 Programas a desarrollar",
+        "url": "https://moovi.uvigo.gal/pluginfile.php/649707/mod_assign/intro/P1.cifrado-java.html?time=1790158768434#sec:ejecutables"
+      },
+      {
+        "label": "Paquete.java",
+        "url": "http://ccia.esei.uvigo.es/docencia/SSI/2627/practicas/Paquete.java"
+      },
+      {
+        "label": "factura2203.json",
+        "url": "http://ccia.esei.uvigo.es/docencia/SSI/2627/practicas/factura2203.json"
+      }
+    ],
+    "dates": [],
+    "consulted_at": "2026-10-03T18:06:08.862Z"
+  },
+  {
+    "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1790812800",
+    "final_url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1790812800",
+    "status": 200,
+    "title": "Moovi: Calendario: Vista mensual detallada: Outubro 2026 | Moovi",
+    "text": "Mes\nMes\nDía\nPróximos eventos\nLista de cursosTodos os cursosMatemáticas: EstatísticaSistemas operativos IRedes de computadoras IBases de datos IRedes de computadoras IIBases de datos IIInterfaces de usuarioCentros de datosConcorrencia e distribuciónSistemas intelixentesHardware de aplicación específicaMatemáticas: EstatísticaArquitectura de Computadoras IILóxica para a computaciónSeguridade en sistemas informáticosAprendizaxe baseado en proxectos\nNovo evento\n◄\nSetembro\n| \nOutubro 2026\n| \nNovembro\n►\nluns\nlun\nmartes\nmar\nmércores\nmér\nxoves\nxov\nvenres\nven\nsábado\nsáb\ndomingo\ndom\nNon hai eventos, xoves, 1 de outubro\n1\nNon hai eventos, xoves, 1 de outubro\n1\nNon hai eventos, venres, 2 de outubro\n2\nNon hai eventos, venres, 2 de outubro\n2\nNon hai eventos, sábado, 3 de outubro\n3\nNon hai eventos, sábado, 3 de outubro\n3\nNon hai eventos, domingo, 4 de outubro\n4\nNon hai eventos, domingo, 4 de outubro\n4\nNon hai eventos, luns, 5 de outubro\n5\nNon hai eventos, luns, 5 de outubro\n5\nNon hai eventos, martes, 6 de outubro\n6\nNon hai eventos, martes, 6 de outubro\n6\nNon hai eventos, mércores, 7 de outubro\n7\nNon hai eventos, mércores, 7 de outubro\n7\n1 evento, xoves, 8 de outubro\n8\nP2 — Puerta de garaje pendente de entrega\n{} máis\nP2 — Puerta de garaje pendente de entrega\n1 evento, xoves, 8 de outubro\n8\n1 evento, venres, 9 de outubro\n9\nSprint 1: análisis de requisitos (Fecha Límite: Semana del 09/10) [10% nota total] pendente de entrega\n{} máis\nSprint 1: análisis de requisitos (Fecha Límite: Semana del 09/10) [10% nota total] pendente de entrega\n1 evento, venres, 9 de outubro\n9\nNon hai eventos, sábado, 10 de outubro\n10\nNon hai eventos, sábado, 10 de outubro\n10\nNon hai eventos, domingo, 11 de outubro\n11\nNon hai eventos, domingo, 11 de outubro\n11\nNon hai eventos, luns, 12 de outubro\n12\nNon hai eventos, luns, 12 de outubro\n12\nNon hai eventos, martes, 13 de outubro\n13\nNon hai eventos, martes, 13 de outubro\n13\nNon hai eventos, mércores, 14 de outubro\n14\nNon hai eventos, mércores, 14 de outubro\n14\n2 eventos, xoves, 15 de outubro\n15\nSELECCIÓN MODALIDAD DE EVALUACIÓN (hasta 19/10/2025) pechan\nP3 — Cronómetro pendente de entrega\n{} máis\nSELECCIÓN MODALIDAD DE EVALUACIÓN (hasta 19/10/2025) pechan\nP3 — Cronómetro pendente de entrega\n2 eventos, xoves, 15 de outubro\n15\nNon hai eventos, venres, 16 de outubro\n16\nNon hai eventos, venres, 16 de outubro\n16\nNon hai eventos, sábado, 17 de outubro\n17\nNon hai eventos, sábado, 17 de outubro\n17\nNon hai eventos, domingo, 18 de outubro\n18\nNon hai eventos, domingo, 18 de outubro\n18\nNon hai eventos, luns, 19 de outubro\n19\nNon hai eventos, luns, 19 de outubro\n19\nNon hai eventos, martes, 20 de outubro\n20\nNon hai eventos, martes, 20 de outubro\n20\nNon hai eventos, mércores, 21 de outubro\n21\nNon hai eventos, mércores, 21 de outubro\n21\nNon hai eventos, xoves, 22 de outubro\n22\nNon hai eventos, xoves, 22 de outubro\n22\nNon hai eventos, venres, 23 de outubro\n23\nNon hai eventos, venres, 23 de outubro\n23\nNon hai eventos, sábado, 24 de outubro\n24\nNon hai eventos, sábado, 24 de outubro\n24\nNon hai eventos, domingo, 25 de outubro\n25\nNon hai eventos, domingo, 25 de outubro\n25\nNon hai eventos, luns, 26 de outubro\n26\nNon hai eventos, luns, 26 de outubro\n26\nNon hai eventos, martes, 27 de outubro\n27\nNon hai eventos, martes, 27 de outubro\n27\nNon hai eventos, mércores, 28 de outubro\n28\nNon hai eventos, mércores, 28 de outubro\n28\nNon hai eventos, xoves, 29 de outubro\n29\nNon hai eventos, xoves, 29 de outubro\n29\nNon hai eventos, venres, 30 de outubro\n30\nNon hai eventos, venres, 30 de outubro\n30\nNon hai eventos, sábado, 31 de outubro\n31\nNon hai eventos, sábado, 31 de outubro\n31\nImportar ou exportar calendarios",
+    "links": [
+      {
+        "label": "Mes",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1790812800#"
+      },
+      {
+        "label": "Día",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1790812800#"
+      },
+      {
+        "label": "Próximos eventos",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1790812800#"
+      },
+      {
+        "label": "◄ Setembro",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1788213600"
+      },
+      {
+        "label": "Novembro ►",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1793487600"
+      },
+      {
+        "label": "8",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1790812800#"
+      },
+      {
+        "label": "P2 — Puerta de garaje pendente de entrega",
+        "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=401910"
+      },
+      {
+        "label": "{} máis",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1790812800#"
+      },
+      {
+        "label": "8",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1790812800#"
+      },
+      {
+        "label": "9",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1790812800#"
+      },
+      {
+        "label": "Sprint 1: análisis de requisitos (Fecha Límite: Semana del 09/10) [10% nota total] pendente de entrega",
+        "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=448713"
+      },
+      {
+        "label": "{} máis",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1790812800#"
+      },
+      {
+        "label": "9",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1790812800#"
+      },
+      {
+        "label": "15",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1790812800#"
+      },
+      {
+        "label": "SELECCIÓN MODALIDAD DE EVALUACIÓN (hasta 19/10/2025) pechan",
+        "url": "https://moovi.uvigo.gal/mod/choice/view.php?id=448580"
+      },
+      {
+        "label": "P3 — Cronómetro pendente de entrega",
+        "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=401911"
+      },
+      {
+        "label": "{} máis",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1790812800#"
+      },
+      {
+        "label": "15",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1790812800#"
+      },
+      {
+        "label": "Importar ou exportar calendarios",
+        "url": "https://moovi.uvigo.gal/calendar/managesubscriptions.php?course=1"
+      }
+    ],
+    "dates": [],
+    "consulted_at": "2026-10-03T18:06:09.508Z"
+  },
+  {
+    "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1793494800",
+    "final_url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1793494800",
+    "status": 200,
+    "title": "Moovi: Calendario: Vista mensual detallada: Novembro 2026 | Moovi",
+    "text": "Mes\nMes\nDía\nPróximos eventos\nLista de cursosTodos os cursosMatemáticas: EstatísticaSistemas operativos IRedes de computadoras IBases de datos IRedes de computadoras IIBases de datos IIInterfaces de usuarioCentros de datosConcorrencia e distribuciónSistemas intelixentesHardware de aplicación específicaMatemáticas: EstatísticaArquitectura de Computadoras IILóxica para a computaciónSeguridade en sistemas informáticosAprendizaxe baseado en proxectos\nNovo evento\n◄\nOutubro\n| \nNovembro 2026\n| \nDecembro\n►\nluns\nlun\nmartes\nmar\nmércores\nmér\nxoves\nxov\nvenres\nven\nsábado\nsáb\ndomingo\ndom\nNon hai eventos, domingo, 1 de novembro\n1\nNon hai eventos, domingo, 1 de novembro\n1\nNon hai eventos, luns, 2 de novembro\n2\nNon hai eventos, luns, 2 de novembro\n2\nNon hai eventos, martes, 3 de novembro\n3\nNon hai eventos, martes, 3 de novembro\n3\nNon hai eventos, mércores, 4 de novembro\n4\nNon hai eventos, mércores, 4 de novembro\n4\nNon hai eventos, xoves, 5 de novembro\n5\nNon hai eventos, xoves, 5 de novembro\n5\nNon hai eventos, venres, 6 de novembro\n6\nNon hai eventos, venres, 6 de novembro\n6\nNon hai eventos, sábado, 7 de novembro\n7\nNon hai eventos, sábado, 7 de novembro\n7\nNon hai eventos, domingo, 8 de novembro\n8\nNon hai eventos, domingo, 8 de novembro\n8\n1 evento, luns, 9 de novembro\n9\nP4 — Interrupciones pendente de entrega\n{} máis\nP4 — Interrupciones pendente de entrega\n1 evento, luns, 9 de novembro\n9\nNon hai eventos, martes, 10 de novembro\n10\nNon hai eventos, martes, 10 de novembro\n10\nNon hai eventos, mércores, 11 de novembro\n11\nNon hai eventos, mércores, 11 de novembro\n11\nNon hai eventos, xoves, 12 de novembro\n12\nNon hai eventos, xoves, 12 de novembro\n12\nNon hai eventos, venres, 13 de novembro\n13\nNon hai eventos, venres, 13 de novembro\n13\nNon hai eventos, sábado, 14 de novembro\n14\nNon hai eventos, sábado, 14 de novembro\n14\nNon hai eventos, domingo, 15 de novembro\n15\nNon hai eventos, domingo, 15 de novembro\n15\n1 evento, luns, 16 de novembro\n16\nP5 — Conversión A-D pendente de entrega\n{} máis\nP5 — Conversión A-D pendente de entrega\n1 evento, luns, 16 de novembro\n16\nNon hai eventos, martes, 17 de novembro\n17\nNon hai eventos, martes, 17 de novembro\n17\nNon hai eventos, mércores, 18 de novembro\n18\nNon hai eventos, mércores, 18 de novembro\n18\nNon hai eventos, xoves, 19 de novembro\n19\nNon hai eventos, xoves, 19 de novembro\n19\nNon hai eventos, venres, 20 de novembro\n20\nNon hai eventos, venres, 20 de novembro\n20\nNon hai eventos, sábado, 21 de novembro\n21\nNon hai eventos, sábado, 21 de novembro\n21\nNon hai eventos, domingo, 22 de novembro\n22\nNon hai eventos, domingo, 22 de novembro\n22\nNon hai eventos, luns, 23 de novembro\n23\nNon hai eventos, luns, 23 de novembro\n23\nNon hai eventos, martes, 24 de novembro\n24\nNon hai eventos, martes, 24 de novembro\n24\nNon hai eventos, mércores, 25 de novembro\n25\nNon hai eventos, mércores, 25 de novembro\n25\nNon hai eventos, xoves, 26 de novembro\n26\nNon hai eventos, xoves, 26 de novembro\n26\nNon hai eventos, venres, 27 de novembro\n27\nNon hai eventos, venres, 27 de novembro\n27\nNon hai eventos, sábado, 28 de novembro\n28\nNon hai eventos, sábado, 28 de novembro\n28\nNon hai eventos, domingo, 29 de novembro\n29\nNon hai eventos, domingo, 29 de novembro\n29\n1 evento, luns, 30 de novembro\n30\nP6 — Ordenador de a bordo pendente de entrega\n{} máis\nP6 — Ordenador de a bordo pendente de entrega\n1 evento, luns, 30 de novembro\n30\nImportar ou exportar calendarios",
+    "links": [
+      {
+        "label": "Mes",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1793494800#"
+      },
+      {
+        "label": "Día",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1793494800#"
+      },
+      {
+        "label": "Próximos eventos",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1793494800#"
+      },
+      {
+        "label": "◄ Outubro",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1790805600"
+      },
+      {
+        "label": "Decembro ►",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1796079600"
+      },
+      {
+        "label": "9",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1793494800#"
+      },
+      {
+        "label": "P4 — Interrupciones pendente de entrega",
+        "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=401912"
+      },
+      {
+        "label": "{} máis",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1793494800#"
+      },
+      {
+        "label": "9",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1793494800#"
+      },
+      {
+        "label": "16",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1793494800#"
+      },
+      {
+        "label": "P5 — Conversión A-D pendente de entrega",
+        "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=401913"
+      },
+      {
+        "label": "{} máis",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1793494800#"
+      },
+      {
+        "label": "16",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1793494800#"
+      },
+      {
+        "label": "30",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1793494800#"
+      },
+      {
+        "label": "P6 — Ordenador de a bordo pendente de entrega",
+        "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=401914"
+      },
+      {
+        "label": "{} máis",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1793494800#"
+      },
+      {
+        "label": "30",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1793494800#"
+      },
+      {
+        "label": "Importar ou exportar calendarios",
+        "url": "https://moovi.uvigo.gal/calendar/managesubscriptions.php?course=1"
+      }
+    ],
+    "dates": [],
+    "consulted_at": "2026-10-03T18:06:09.484Z"
+  },
+  {
+    "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1796086800",
+    "final_url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1796086800",
+    "status": 200,
+    "title": "Moovi: Calendario: Vista mensual detallada: Decembro 2026 | Moovi",
+    "text": "Mes\nMes\nDía\nPróximos eventos\nLista de cursosTodos os cursosMatemáticas: EstatísticaSistemas operativos IRedes de computadoras IBases de datos IRedes de computadoras IIBases de datos IIInterfaces de usuarioCentros de datosConcorrencia e distribuciónSistemas intelixentesHardware de aplicación específicaMatemáticas: EstatísticaArquitectura de Computadoras IILóxica para a computaciónSeguridade en sistemas informáticosAprendizaxe baseado en proxectos\nNovo evento\n◄\nNovembro\n| \nDecembro 2026\n| \nXaneiro\n►\nluns\nlun\nmartes\nmar\nmércores\nmér\nxoves\nxov\nvenres\nven\nsábado\nsáb\ndomingo\ndom\nNon hai eventos, martes, 1 de decembro\n1\nNon hai eventos, martes, 1 de decembro\n1\nNon hai eventos, mércores, 2 de decembro\n2\nNon hai eventos, mércores, 2 de decembro\n2\nNon hai eventos, xoves, 3 de decembro\n3\nNon hai eventos, xoves, 3 de decembro\n3\nNon hai eventos, venres, 4 de decembro\n4\nNon hai eventos, venres, 4 de decembro\n4\nNon hai eventos, sábado, 5 de decembro\n5\nNon hai eventos, sábado, 5 de decembro\n5\nNon hai eventos, domingo, 6 de decembro\n6\nNon hai eventos, domingo, 6 de decembro\n6\n1 evento, luns, 7 de decembro\n7\nP7 — Semáforo de salida pendente de entrega\n{} máis\nP7 — Semáforo de salida pendente de entrega\n1 evento, luns, 7 de decembro\n7\nNon hai eventos, martes, 8 de decembro\n8\nNon hai eventos, martes, 8 de decembro\n8\nNon hai eventos, mércores, 9 de decembro\n9\nNon hai eventos, mércores, 9 de decembro\n9\nNon hai eventos, xoves, 10 de decembro\n10\nNon hai eventos, xoves, 10 de decembro\n10\nNon hai eventos, venres, 11 de decembro\n11\nNon hai eventos, venres, 11 de decembro\n11\nNon hai eventos, sábado, 12 de decembro\n12\nNon hai eventos, sábado, 12 de decembro\n12\nNon hai eventos, domingo, 13 de decembro\n13\nNon hai eventos, domingo, 13 de decembro\n13\nNon hai eventos, luns, 14 de decembro\n14\nNon hai eventos, luns, 14 de decembro\n14\nNon hai eventos, martes, 15 de decembro\n15\nNon hai eventos, martes, 15 de decembro\n15\nNon hai eventos, mércores, 16 de decembro\n16\nNon hai eventos, mércores, 16 de decembro\n16\nNon hai eventos, xoves, 17 de decembro\n17\nNon hai eventos, xoves, 17 de decembro\n17\nNon hai eventos, venres, 18 de decembro\n18\nNon hai eventos, venres, 18 de decembro\n18\nNon hai eventos, sábado, 19 de decembro\n19\nNon hai eventos, sábado, 19 de decembro\n19\nNon hai eventos, domingo, 20 de decembro\n20\nNon hai eventos, domingo, 20 de decembro\n20\nNon hai eventos, luns, 21 de decembro\n21\nNon hai eventos, luns, 21 de decembro\n21\nNon hai eventos, martes, 22 de decembro\n22\nNon hai eventos, martes, 22 de decembro\n22\nNon hai eventos, mércores, 23 de decembro\n23\nNon hai eventos, mércores, 23 de decembro\n23\nNon hai eventos, xoves, 24 de decembro\n24\nNon hai eventos, xoves, 24 de decembro\n24\nNon hai eventos, venres, 25 de decembro\n25\nNon hai eventos, venres, 25 de decembro\n25\nNon hai eventos, sábado, 26 de decembro\n26\nNon hai eventos, sábado, 26 de decembro\n26\nNon hai eventos, domingo, 27 de decembro\n27\nNon hai eventos, domingo, 27 de decembro\n27\nNon hai eventos, luns, 28 de decembro\n28\nNon hai eventos, luns, 28 de decembro\n28\nNon hai eventos, martes, 29 de decembro\n29\nNon hai eventos, martes, 29 de decembro\n29\nNon hai eventos, mércores, 30 de decembro\n30\nNon hai eventos, mércores, 30 de decembro\n30\nNon hai eventos, xoves, 31 de decembro\n31\nNon hai eventos, xoves, 31 de decembro\n31\nImportar ou exportar calendarios",
+    "links": [
+      {
+        "label": "Mes",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1796086800#"
+      },
+      {
+        "label": "Día",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1796086800#"
+      },
+      {
+        "label": "Próximos eventos",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1796086800#"
+      },
+      {
+        "label": "◄ Novembro",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1793487600"
+      },
+      {
+        "label": "Xaneiro ►",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1798758000"
+      },
+      {
+        "label": "7",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1796086800#"
+      },
+      {
+        "label": "P7 — Semáforo de salida pendente de entrega",
+        "url": "https://moovi.uvigo.gal/mod/assign/view.php?id=401915"
+      },
+      {
+        "label": "{} máis",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1796086800#"
+      },
+      {
+        "label": "7",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1796086800#"
+      },
+      {
+        "label": "Importar ou exportar calendarios",
+        "url": "https://moovi.uvigo.gal/calendar/managesubscriptions.php?course=1"
+      }
+    ],
+    "dates": [],
+    "consulted_at": "2026-10-03T18:06:09.465Z"
+  },
+  {
+    "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1798765200",
+    "final_url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1798765200",
+    "status": 200,
+    "title": "Moovi: Calendario: Vista mensual detallada: Xaneiro 2027 | Moovi",
+    "text": "Mes\nMes\nDía\nPróximos eventos\nLista de cursosTodos os cursosMatemáticas: EstatísticaSistemas operativos IRedes de computadoras IBases de datos IRedes de computadoras IIBases de datos IIInterfaces de usuarioCentros de datosConcorrencia e distribuciónSistemas intelixentesHardware de aplicación específicaMatemáticas: EstatísticaArquitectura de Computadoras IILóxica para a computaciónSeguridade en sistemas informáticosAprendizaxe baseado en proxectos\nNovo evento\n◄\nDecembro\n| \nXaneiro 2027\n| \nFebreiro\n►\nluns\nlun\nmartes\nmar\nmércores\nmér\nxoves\nxov\nvenres\nven\nsábado\nsáb\ndomingo\ndom\nNon hai eventos, venres, 1 de xaneiro\n1\nNon hai eventos, venres, 1 de xaneiro\n1\nNon hai eventos, sábado, 2 de xaneiro\n2\nNon hai eventos, sábado, 2 de xaneiro\n2\nNon hai eventos, domingo, 3 de xaneiro\n3\nNon hai eventos, domingo, 3 de xaneiro\n3\nNon hai eventos, luns, 4 de xaneiro\n4\nNon hai eventos, luns, 4 de xaneiro\n4\nNon hai eventos, martes, 5 de xaneiro\n5\nNon hai eventos, martes, 5 de xaneiro\n5\nNon hai eventos, mércores, 6 de xaneiro\n6\nNon hai eventos, mércores, 6 de xaneiro\n6\nNon hai eventos, xoves, 7 de xaneiro\n7\nNon hai eventos, xoves, 7 de xaneiro\n7\nNon hai eventos, venres, 8 de xaneiro\n8\nNon hai eventos, venres, 8 de xaneiro\n8\nNon hai eventos, sábado, 9 de xaneiro\n9\nNon hai eventos, sábado, 9 de xaneiro\n9\nNon hai eventos, domingo, 10 de xaneiro\n10\nNon hai eventos, domingo, 10 de xaneiro\n10\nNon hai eventos, luns, 11 de xaneiro\n11\nNon hai eventos, luns, 11 de xaneiro\n11\nNon hai eventos, martes, 12 de xaneiro\n12\nNon hai eventos, martes, 12 de xaneiro\n12\nNon hai eventos, mércores, 13 de xaneiro\n13\nNon hai eventos, mércores, 13 de xaneiro\n13\nNon hai eventos, xoves, 14 de xaneiro\n14\nNon hai eventos, xoves, 14 de xaneiro\n14\nNon hai eventos, venres, 15 de xaneiro\n15\nNon hai eventos, venres, 15 de xaneiro\n15\nNon hai eventos, sábado, 16 de xaneiro\n16\nNon hai eventos, sábado, 16 de xaneiro\n16\nNon hai eventos, domingo, 17 de xaneiro\n17\nNon hai eventos, domingo, 17 de xaneiro\n17\nNon hai eventos, luns, 18 de xaneiro\n18\nNon hai eventos, luns, 18 de xaneiro\n18\nNon hai eventos, martes, 19 de xaneiro\n19\nNon hai eventos, martes, 19 de xaneiro\n19\nNon hai eventos, mércores, 20 de xaneiro\n20\nNon hai eventos, mércores, 20 de xaneiro\n20\nNon hai eventos, xoves, 21 de xaneiro\n21\nNon hai eventos, xoves, 21 de xaneiro\n21\nNon hai eventos, venres, 22 de xaneiro\n22\nNon hai eventos, venres, 22 de xaneiro\n22\nNon hai eventos, sábado, 23 de xaneiro\n23\nNon hai eventos, sábado, 23 de xaneiro\n23\nNon hai eventos, domingo, 24 de xaneiro\n24\nNon hai eventos, domingo, 24 de xaneiro\n24\nNon hai eventos, luns, 25 de xaneiro\n25\nNon hai eventos, luns, 25 de xaneiro\n25\nNon hai eventos, martes, 26 de xaneiro\n26\nNon hai eventos, martes, 26 de xaneiro\n26\nNon hai eventos, mércores, 27 de xaneiro\n27\nNon hai eventos, mércores, 27 de xaneiro\n27\nNon hai eventos, xoves, 28 de xaneiro\n28\nNon hai eventos, xoves, 28 de xaneiro\n28\nNon hai eventos, venres, 29 de xaneiro\n29\nNon hai eventos, venres, 29 de xaneiro\n29\nNon hai eventos, sábado, 30 de xaneiro\n30\nNon hai eventos, sábado, 30 de xaneiro\n30\nNon hai eventos, domingo, 31 de xaneiro\n31\nNon hai eventos, domingo, 31 de xaneiro\n31\nImportar ou exportar calendarios",
+    "links": [
+      {
+        "label": "Mes",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1798765200#"
+      },
+      {
+        "label": "Día",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1798765200#"
+      },
+      {
+        "label": "Próximos eventos",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1798765200#"
+      },
+      {
+        "label": "◄ Decembro",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1796079600"
+      },
+      {
+        "label": "Febreiro ►",
+        "url": "https://moovi.uvigo.gal/calendar/view.php?view=month&time=1801436400"
+      },
+      {
+        "label": "Importar ou exportar calendarios",
+        "url": "https://moovi.uvigo.gal/calendar/managesubscriptions.php?course=1"
+      }
+    ],
+    "dates": [],
+    "consulted_at": "2026-10-03T18:06:09.454Z"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://esei.uvigo.es/documentos/grao-exames-1-cuatrimestre/",
+    "final_url": "https://esei.uvigo.es/documentos/grao-exames-1-cuatrimestre/",
+    "status": 200,
+    "type": "application/pdf",
+    "pdf": true,
+    "consulted_at": "2026-10-04T11:32:38.108Z",
+    "bytes": 168430,
+    "path": "imports/moodle/2026-10-04/resources/53-examenes-primer-cuatrimestre.pdf"
+  },
+  {
+    "url": "https://esei.uvigo.es/documentos/grao-exames-2-cuatrimestre/",
+    "final_url": "https://esei.uvigo.es/documentos/grao-exames-2-cuatrimestre/",
+    "status": 200,
+    "type": "application/pdf",
+    "pdf": true,
+    "consulted_at": "2026-10-04T11:32:42.509Z",
+    "bytes": 232925,
+    "path": "imports/moodle/2026-10-04/resources/54-examenes-segundo-cuatrimestre.pdf"
+  },
+  {
+    "url": "https://esei.uvigo.es/documentos/grao-exames-xullo/",
+    "final_url": "https://esei.uvigo.es/documentos/grao-exames-xullo/",
+    "status": 200,
+    "type": "application/pdf",
+    "pdf": true,
+    "consulted_at": "2026-10-04T11:32:46.597Z",
+    "bytes": 453835,
+    "path": "imports/moodle/2026-10-04/resources/55-examenes-julio.pdf"
+  }
+]

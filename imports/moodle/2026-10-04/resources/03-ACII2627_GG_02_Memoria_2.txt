@@ -1,0 +1,264 @@
+                   Row/Column
+• PROBLEMAS con Row/Column: Lectura
+  destructiva + refresco + memoria lenta
+
+                    10 MS bits
+                      RAS                bit-cell array
+         20 bits
+                         n       2n     2n row x 2m-col
+
+                                      (nm to minimize
+                                       overall latency)
+                             m                  2m
+                                      sense amp and mux
+                                                1
+
+                     CAS
+                    10 LS bits
+                                  Bank
+
+   • SOLUCIÓN: Bank o array 2D con fila/columna
+     de varios bits y con un buffer de filas SRAM:
+                             10 MS bits
+                 20 bits
+                                                        8 bits   Fila/Columna
+
+                                                                 En una
+                                                                 (fila,columna)
+                                                                 se encuentran
+Por el Principio de Localidad                                    1, 2, 4, 8, 16, …
+                                                                 bits
+de Referencia, muchos                      SRAM Row Buffer
+accesos seguidos dentro de                        Mux
+la misma fila                 10 LS bits           8 bits
+                                     Bank
+
+
+                                                    Lectura Destructiva
+                                                                  Regenerar fila
+
+
+
+Cuantas más veces se lea el buffer de filas mejor
+¿Cómo es el refresco en un Bank?    Bank
+                                                 A DRAM Controller must
+                                                 periodically read all rows
+                            Usando un contador   within the allowed refresh
+                                                 time
+                   Bank
+
+• Ejemplo de Bank de 16 MiBytes, entrega 1
+  Byte por acceso
+                               Bank
+• RESUMEN:
+  – Un Bank es un array 2D de filas x columnas, más un buffer de filas
+  – Cada dirección de memoria es un par <fila, columna>
+  – Una (fila, columna) está formada por varios bits
+
+
+
+
+                                                 16 Ki x 2Ki x 1Byte
+                           Bank
+• El tamaño del buffer de filas es igual al tamaño de una fila.
+• Una fila está cerrada o idle cuando no está en el buffer.
+• Una fila está abierta o activa cuando sí está en el buffer.
+• Únicamente puede haber una fila abierta por bank.
+• Únicamente se puede acceder (leer o escribir) a una dirección
+  de memoria, si esa dirección está en una fila abierta.
+• Como la lectura es destructiva cuando se abre una fila
+  entonces ….                    ….. pero ……
+• Como la lectura es destructiva cuando se quiere abrir una
+  nueva fila entonces ….
+                            Bank
+                                                       Estados de una fila:
+• Estados:                                             Idle o Active
+                                                       Cerrada o Abierta
+                                                       Solo una fila abierta
+                                                       por Bank
+• Comandos:
+
+
+
+
+       http://www.es.ele.tue.nl/premadona/files/akesson01.pdf
+                            Bank
+• Acceso a una fila cerrada o idle
+   – Comando Activate: copia la fila seleccionada en el buffer
+     de filas (memoria SRAM); la fila está ahora abierta
+   – Comando Read/Write: lee/escribe la columna seleccionada
+     desde/a el buffer de filas. Se escribe en el buffer de filas
+• Acceso a una fila abierta o activa
+   – No es necesario el comando Activate
+   – Comando Read/Write
+• Cierre de una fila
+   – Comando Precharge cierra la fila abierta y prepara el bank
+     para activar una fila distinta. Actualiza las escrituras en la
+     fila y además regenera la fila por lectura destructiva
+                                     Bank
+                                     ACII2017_Memoria_Documentacion_Adicional_1.pps
+ Access Address:
+(Row 0, Column 0)                     Columns
+(Row 0, Column 1)                                          Row 0
+(Row 0, Column 85)
+                                                           Row 1
+
+
+
+                       Row decoder
+(Row 1, Column 0)
+
+                                                    Rows
+   Row address 0
+               1
+
+ACT 0
+READ 0
+READ 1
+….
+READ 85
+                                        Row
+                                        Row 01
+                                        Empty       Row Buffer HIT
+                                                               CONFLICT !
+PRECHARGE
+ACT1
+READ 0    Column address 0
+                         85
+                         1           Column mux
+…..
+                                        Data
+        Chip
+
+ CHIP
+
+
+
+
+MODULO
+                     Chip
+• PROBLEMA: abrir y cerrar filas es lento, si hay
+  un único Bank, entonces una única fila abierta
+• SOLUCIÓN: Chips con varios Banks, una fila
+  abierta por Bank
+
+
+
+                                          Multiplexor,
+                                          solo un Bank
+                                          puede enviar o
+                                          recibir datos a
+                                          la vez
+                     Chip
+
+
+
+
+http://www.es.ele.tue.nl/premadona/files/akesson01.pdf
+                     Chip
+
+
+
+
+http://www.es.ele.tue.nl/premadona/files/akesson01.pdf
+                       Chip
+• Un chip tiene varios banks
+    Memoria síncrona SDRAM SIMM
+• ADRAM: memoria asíncrona
+• SDRAM: memoria síncrona
+ – SDR SDRAM
+ – DDR SDRAM
+ – DDR2 SDRAM         DIMM
+
+ – DDR3 SDRAM
+ – DDR4 SDRAM
+     Memoria síncrona SDRAM
+• Memoria síncrona implica un Reloj
+      Memoria síncrona SDRAM
+• Sincroniza todas las operaciones de la
+  computadora
+
+
+
+
+• Unidad básica: f=1/T; f=1Hz→T=1/f=1s, múltiplos
+  comunes: f=1MHz→T=1μs, f=1GHz→T=1ns
+      Memoria síncrona SDRAM
+• Si una señal de reloj es de 2 GHz, ¿cuál es su
+  período?
+
+
+• Si una señal de reloj se repite cada
+  microsegundo, ¿cuál es su frecuencia?
+Timings: tCL, tRCD, tRP y tRAS
+Timings: tCL, tRCD, tRP y tRAS
+Timings: tCL, tRCD, tRP y tRAS
+    Timings: tCL, tRCD, tRP y tRAS
+1. Activar fila de un Bank (ACT bank, fila)
+2. Leer columna de la fila activa
+   de un Bank (READ bank, col)
+3. Ir a 2 o a 4. ¿Tiene sentido?
+  – Ir a 2 si leemos columna de la misma fila y Bank
+  – Ir a 4 si leemos columna de distinta fila y mismo bank
+4. Desactivar fila del Bank (PRE bank)
+5. Volver a 1.
+     Timings: tCL, tRCD, tRP y tRAS
+• tCL: CAS latency es un sinónimo para "read latency". Número
+  de ciclos de reloj entre el envío de un comando de lectura (+
+  flanco de subida del reloj) y la disponibilidad de los datos en
+  el bus
+• tRCD (RAS to CAS delay): ciclos desde la orden de activación
+  de una fila (RAS) y el envío de una orden de acceso (READ o
+  WRITE) a columna (CAS)
+• tRP (Row Precharge): ciclos necesarios para desactivar una
+  determinada fila
+• tRAS (Row Active Time): Después de que el comando Active
+  (activar fila) sea ejecutado, un comando Precharge no puede
+  ser iniciado hasta que el tiempo tRAS haya transcurrido.
+• (JESD100-B, 12/99)
+CAS Latency (CL / tCL / tCAS)
+
+
+
+  tCAS o
+
+
+           tCAS o
+       RAS to CAS Delay (tRCD )
+
+
+
+
+Fila         Columna
+                     RAS Precharge (tRP)
+
+
+
+
+http://www.youbioit.com/es/article/shared-information/8714/como-funciona-la-memoria-de-una-computadora
+                tRAS = Row Active Time
+
+
+
+
+“The minimum number of clock cycles required between issuing the precharge
+command and opening the next row.
+
+
+
+
+http://www.youbioit.com/es/article/shared-information/8714/como-funciona-la-memoria-de-una-computadora
+                          Rank
+  • PROBLEMA: Acceder a 8 bits sigue siendo poca
+    cantidad de información.
+  • SOLUCIÓN: Un Rank es un grupo de chips que operan
+    juntos para aumentar los bits accedidos hasta 64 bits.
+
+
+Si cada chip
+entrega 8 bits,
+entonces un
+Rank de 8
+chips entrega
+64 bits
+

@@ -1,0 +1,382 @@
+ABP · INGENIERÍA INFORMÁTICA · UNIVERSIDAD DE VIGO
+
+
+Sesión 2
+
+Ciclo de vida clásico
+de gestión de proyectos software
+
+4º curso · 16 de septiembre de 2026
+Prof. Gerardo Rodríguez Martínez
+
+
+Antes de programar nada: cómo planificar, documentar y controlar un proyecto software
+   Objetivos de hoy
+   Al terminar esta sesión deberíais poder responder a tres preguntas
+
+
+
+                   ¿Qué fases tiene un proyecto?
+        1
+                   Iniciación, planificación, ejecución, seguimiento y control, y cierre — y qué se hace en cada una.
+
+
+
+
+                   ¿Qué modelos clásicos existen?
+        2
+                   Cascada, modelo en V e incremental, y cuándo cada uno sigue siendo la opción adecuada.
+
+
+
+
+                   ¿Qué documentos hay que producir?
+        3
+                   Alcance, EDT/WBS, cronograma y gestión de riesgos: la base de la planificación predictiva.
+
+
+
+
+Gerardo Rodríguez Martínez · Introducción                                                                               Sesión 2 · 16 de septiembre de 2026
+   ¿Qué es (y por qué gestionar) un proyecto?
+   Un proyecto es un esfuerzo temporal con un objetivo concreto:
+   tiene fecha de inicio y de fin, y produce algo único.                    Toda gestión de proyectos responde a 3 preguntas
+
+                                                                            – ¿Qué hay que entregar y qué no? (alcance)
+
+                                                                            – ¿En qué orden y en cuánto tiempo? (planificación)
+
+   Gestionar un proyecto es decidir, antes de empezar a construir, qué se   – ¿Qué puede salir mal y cómo se controla? (riesgos)
+   va a hacer, en qué orden, con qué recursos y qué se hará si algo sale
+   mal — para no improvisarlo sobre la marcha.
+                                                                            Por qué os importa hoy
+                                                                               Cada equipo va a planificar su propio proyecto de recomendación
+
+
+                                                                               Las fases y documentos de hoy son los mismos que usaréis, a escala
+                                                                               de equipo pequeño
+                                                                               El curso avanza en sprints ágiles: entender lo clásico ayuda a ver
+                                                                               qué sustituye el ágil
+
+
+
+
+Gerardo Rodríguez Martínez · Gestión clásica                                                                                   Sesión 2 · 16 de septiembre de 2026
+   Las cinco fases de todo proyecto
+   Todo proyecto predictivo pasa por estas fases, en este orden
+
+
+
+                     1                                      2                              3                                4                                5
+
+                Iniciación                            Planificación                   Ejecución                      Seguimiento                          Cierre
+                                                                                                                       y control
+
+
+
+
+    Se define el problema y el objetivo        Alcance, cronograma y riesgos   Se construye lo planificado   Avance real frente a lo previsto   Entrega, balance y lecciones
+
+
+
+
+   → La sesión 3 (23/09) presenta el enfoque alterna vo: ágil, con iteraciones cortas en vez de fases secuenciales
+
+
+
+
+Gerardo Rodríguez Martínez · Gestión clásica                                                                                                      Sesión 2 · 16 de septiembre de 2026
+   Tres modelos clásicos de ciclo de vida
+   Formas distintas de encadenar las fases anteriores
+
+
+
+
+             C                                             V                                          I
+
+         Cascada                                        Modelo en V                                Incremental
+         Las fases se ejecutan una vez, en orden        Cada fase de desarrollo tiene su fase de   El producto se entrega en bloques
+         estricto: no se empieza la siguiente hasta     verificación equivalente (diseño           funcionales sucesivos, cada uno con su
+         cerrar la anterior. Simple de gestionar,       pruebas de integración, requisitos         propio mini-ciclo en cascada. Reduce el
+         pero rígido ante cambios de requisitos.        pruebas de aceptación). Refuerza la        riesgo de esperar al final para ver
+                                                        calidad, pero hereda la rigidez de la      resultados.
+                                                        cascada.
+
+
+
+
+Gerardo Rodríguez Martínez · Gestión clásica                                                                              Sesión 2 · 16 de septiembre de 2026
+   Documentos clave de la planificación
+
+   Antes de escribir una sola línea de código, la gestión clásica exige dejar por escrito estas cuatro piezas. Son la base de cualquier
+   memoria de proyecto — también la vuestra.
+
+
+
+
+             Alcance                                                                EDT / WBS
+             Qué incluye el proyecto y, tan importante como eso, qué queda fuera.   Estructura de Descomposición del Trabajo: el proyecto partido en
+                                                                                    tareas manejables.
+
+
+
+             Cronograma                                                             Gestión de riesgos
+             Cuándo se hace cada tarea y de qué depende cada una.                   Qué puede fallar, cómo de grave sería y qué hacer si ocurre.
+
+
+
+
+Gerardo Rodríguez Martínez · Gestión clásica                                                                                          Sesión 2 · 16 de septiembre de 2026
+   Cascada frente a ágil: cuándo conviene cada uno
+
+   Los modelos predictivos asumen que los requisitos son estables y
+   conocidos desde el principio — y siguen siendo la opción adecuada       Sigue siendo buena opción cuando…
+   en muchos contextos reales.
+                                                                           – Los requisitos están bien definidos y son estables (obra civil, sistemas
+                                                                           regulados, contratos con la administración)
+
+                                                                           – Hay que fijar alcance y presupuesto por contrato antes de empezar
+
+   La semana que viene veréis el enfoque contrario: metodologías ágiles,
+   pensadas para cuando los requisitos cambian sobre la marcha.            – El equipo o el cliente no tienen experiencia trabajando de forma iterativa
+
+
+
+
+                                                                           Sus inconvenientes de siempre
+                                                                               Un cambio de requisitos a mitad de proyecto es costoso de absorber
+
+                                                                               El cliente no ve nada funcionando hasta el final
+
+                                                                               El riesgo se descubre tarde, cuando ya es caro corregirlo
+
+
+
+
+Gerardo Rodríguez Martínez · Gestión clásica                                                                                      Sesión 2 · 16 de septiembre de 2026
+   Actividad de hoy
+   Caso real en grupos + ejercicio de descomposición · 40 min
+
+   Antes de que vuestro equipo planifique su propio proyecto, practicamos con dos ejercicios cortos.
+
+
+
+
+             1 · Caso real en grupos — 30 min
+         En grupos de 3-4, cada uno analiza un caso real distinto (siguientes diapositivas): ¿qué se decidió al principio? ¿se cumplió el plan? ¿qué llevó al éxito —
+         o al fracaso — de ese proyecto?
+
+
+
+
+             2 · Descomponed un proyecto ficticio — 10 min
+         En los mismos grupos, coged un proyecto de ejemplo (p. ej. una app de turnos para una clínica veterinaria) y descomponedlo en fases y entregables
+         concretos, con una EDT breve.
+
+
+
+
+   Guardad vuestras notas: en la próxima sesión práctica empezaréis a esbozar el alcance de vuestro propio proyecto — qué incluye y qué no.
+
+
+
+Gerardo Rodríguez Martínez · Actividad                                                                                                           Sesión 2 · 16 de septiembre de 2026
+   Cuatro casos reales
+   Proyectos software reales gestionados en cascada — desarrollados en Sesion2_Casos_Reales.docx
+
+
+
+
+                 Denver — equipajes del aeropuerto                                              Londres — despacho de ambulancias
+          1                                                                              2
+                 Aviación · 1992-1995 · FRACASO                                                 Sanidad pública · 1992 · FRACASO
+
+
+        Integración probada solo al final, cuando ya no había margen para rediseñar.   Despliegue “big bang” en un único día, sin plan de contingencia.
+
+
+
+
+                 HealthCare.gov                                                                 Software de vuelo del Transbordador
+          3                                                                              4
+                 Admin. pública (EE. UU.) · 2013 · FRACASO INICIAL, RECUPERADO                  Aeroespacial · 1980-2011 · ÉXITO
+
+
+        Integración de muchas piezas concentrada al final, con fecha inamovible.       Rigidez deliberada, justificada por requisitos estables y coste de fallo altísimo.
+
+
+
+
+Gerardo Rodríguez Martínez · Actividad                                                                                                                Sesión 2 · 16 de septiembre de 2026
+   Caso 1 — Sistema de equipajes del aeropuerto de Denver
+   Aviación · EE. UU. · 1992-1995
+   RESULTADO: FRACASO
+
+       Organización
+       Ciudad y condado de Denver / BAE Automated Systems (contratista).
+
+       Objetivo
+       Sistema totalmente automatizado de clasificación y transporte de equipajes para todo el aeropuerto, con carritos guiados por láser.
+
+       Enfoque
+       Especificación cerrada al inicio del contrato; sistema integrado “todo o nada”, sin despliegue por fases; fecha de apertura fijada de antemano.
+
+
+       Qué ocurrió
+       El sistema era ~10 veces más complejo que cualquier otro instalado antes; los carritos se salían de las vías y dañaban maletas; las pruebas de integración solo pudieron hacerse al final,
+       cuando ya no había margen para rediseñar.
+
+
+       Consecuencia
+       La apertura del aeropuerto se retrasó unos 16 meses; el coste adicional se cita habitualmente en varios cientos de millones de dólares.
+
+
+
+
+Gerardo Rodríguez Martínez · Actividad                                                                                                                                  Sesión 2 · 16 de septiembre de 2026
+   Caso 2 — Despacho de ambulancias de Londres (LASCAD)
+   Sanidad pública · Reino Unido · 1992
+   RESULTADO: FRACASO
+
+       Organización
+       London Ambulance Service (LAS), servicio público de ambulancias de Londres.
+
+       Objetivo
+       Sustituir el despacho manual de ambulancias por un sistema informático (CAD) que asignara la ambulancia más cercana a cada llamada.
+
+       Enfoque
+       Contrato de precio y plazo cerrados; puesta en marcha “big bang” en un único día, sin plan de contingencia robusto ni formación suficiente.
+
+
+       Qué ocurrió
+       El día del lanzamiento el sistema se saturó, perdió la localización de las ambulancias y generó llamadas duplicadas; los tiempos de respuesta se dispararon durante horas.
+
+
+
+       Consecuencia
+       El sistema se retiró en menos de 24 horas; una investigación pública posterior documentó los fallos y señaló retrasos que pudieron contribuir a la pérdida de vidas.
+
+
+
+
+Gerardo Rodríguez Martínez · Actividad                                                                                                                                 Sesión 2 · 16 de septiembre de 2026
+   Caso 3 — HealthCare.gov
+   Administración pública (EE. UU.) · 2013
+   RESULTADO: FRACASO INICIAL, RECUPERADO
+
+       Organización
+       Gobierno federal de EE. UU. (Centers for Medicare & Medicaid Services), con decenas de contratistas privados.
+
+       Objetivo
+       Portal único de inscripción a seguros médicos (Affordable Care Act), con fecha de lanzamiento fijada por ley: 1 de octubre de 2013.
+
+       Enfoque
+       Requisitos definidos con antelación; decenas de contratistas trabajando cada uno en su pieza; integración de todo concentrada en las últimas semanas.
+
+
+       Qué ocurrió
+       El portal colapsó el día del lanzamiento con una fracción del tráfico esperado; el registro y la verificación de identidad fallaban de forma masiva.
+
+
+
+       Consecuencia
+       Un equipo de emergencia (“tech surge”) adoptó prácticas iterativas y estabilizó el sitio en unas ocho semanas; las inscripciones se recuperaron con fuerza después.
+
+
+
+
+Gerardo Rodríguez Martínez · Actividad                                                                                                                                Sesión 2 · 16 de septiembre de 2026
+   Caso 4 — Software de vuelo del Transbordador Espacial
+   Aeroespacial (NASA) · años 1980-2011
+   RESULTADO: ÉXITO
+
+       Organización
+       NASA, con el software desarrollado principalmente por IBM Federal Systems Division.
+
+       Objetivo
+       Software de vuelo que controla en tiempo real los sistemas críticos del Transbordador durante el lanzamiento, la órbita y el aterrizaje.
+
+       Enfoque
+       Especificación extremadamente estable desde el principio; control de cambios muy riguroso; documentación completa; verificación independiente en varias capas.
+
+
+       Qué ocurrió
+       Un proceso deliberadamente lento y “burocrático” para los estándares habituales de la industria se mantuvo durante décadas con un equipo estable y muy experimentado.
+
+
+
+       Consecuencia
+       Citado con frecuencia como uno de los software con menor tasa de errores jamás producido para un programa de su tamaño y complejidad.
+
+
+
+
+Gerardo Rodríguez Martínez · Actividad                                                                                                                           Sesión 2 · 16 de septiembre de 2026
+   Actividad 1 · Caso real en grupos
+   Cómo repartimos los próximos 30 minutos
+
+
+                   3 min                 Formar 4 grupos de 3-4 personas y repartir un caso distinto a cada uno.
+
+
+
+
+                   8 min                 Leer el caso y discutirlo con las 4 preguntas guía de la ficha + la pregunta de cierre del caso.
+
+
+
+
+                  14 min                 Puesta en común: cada grupo cuenta su caso en 2-3 minutos ante el resto de la clase.
+
+
+
+
+                   5 min                 Cierre: conectar los cuatro casos con las ideas clave de la sesión.
+
+
+
+
+Gerardo Rodríguez Martínez · Actividad                                                                                                      Sesión 2 · 16 de septiembre de 2026
+   Actividad 2 · Ejercicio de descomposición
+   10 minutos, en los mismos grupos
+
+
+
+         Vuestro proyecto: app de turnos para una clínica veterinaria
+         Los clientes piden cita online y el personal gestiona el calendario del día (si vuestro grupo tiene otro proyecto asignado, usad el enunciado de vuestra ficha).
+
+         Tarea: descomponedlo en las cinco fases de hoy y anotad 1-2 entregables concretos por fase.
+
+
+
+
+                     1                                2                                  3                                  4                                    5
+
+                Iniciación                       Planificación                       Ejecución                         Seguimiento                            Cierre
+                                                                                                                         y control
+
+
+
+
+Gerardo Rodríguez Martínez · Actividad                                                                                                                Sesión 2 · 16 de septiembre de 2026
+   Antes de la próxima sesión
+
+
+                       Teoría · 23/09        Sesión 3: metodologías ágiles, Scrum y Kanban.
+
+
+
+
+               Práctica · semana del 21/09   Primera sesión práctica: explorar datasets y casos de uso reales de recomendación.
+
+
+
+
+                      Antes del 25/09        Formar equipo (máx. 4) y publicar la propuesta de proyecto en el foro.
+
+
+
+
+   ¿Preguntas?
+Gerardo Rodríguez Martínez · Cierre                                                                                          Sesión 2 · 16 de septiembre de 2026
+

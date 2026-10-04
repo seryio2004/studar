@@ -1,0 +1,72 @@
+[
+  {
+    "path": "evidence/README.md",
+    "sha256": "caa9fd5d53b950a7b18b55d422a357542fe1e3cdff12230a7fb18093d5479cae",
+    "bytes": 4339
+  },
+  {
+    "path": "evidence/access-2026-10-04.json",
+    "sha256": "b5b9a623f29eff939a523b60a0bfc3a67786055f4ab46c8fcc4c14ecca223082",
+    "bytes": 419
+  },
+  {
+    "path": "evidence/announcements.json",
+    "sha256": "89a1d036c01c1a6a12d8dfdd5465de0e3afcff88bfd22b4bd87721bee261c5e3",
+    "bytes": 70592
+  },
+  {
+    "path": "evidence/calendar-and-older-courses.json",
+    "sha256": "0e5ec0833bea123dd591c3e9b4ac7ae03e56cff8b2b49d43344a235a4615bd7d",
+    "bytes": 316536
+  },
+  {
+    "path": "evidence/calendar-spring-2027.json",
+    "sha256": "aaa7279611a35ac04bbf211beaa818f59093954e64eb6c53c5fb49969553c006",
+    "bytes": 4113
+  },
+  {
+    "path": "evidence/current-courses.json",
+    "sha256": "bef26699fc5368258bc9fd1116f743d182926b5f67d6773fd240157fa8b18a16",
+    "bytes": 37668
+  },
+  {
+    "path": "evidence/docs__ssi__practica-1-cifrado-java.md",
+    "sha256": "0a9a3093cb7824f129a77fefb824bf94277b81bb272eabc7806126e8759793ea",
+    "bytes": 17561
+  },
+  {
+    "path": "evidence/extra-pages.json",
+    "sha256": "8b616f66625158f24ed5d9d4d7642c550ab2ed790114ff4275b7da030b99d67a",
+    "bytes": 44952
+  },
+  {
+    "path": "evidence/modules-0.json",
+    "sha256": "2867a6acf094ce79a471db1cab8d1c71d75f68ad5e13ab9603839fa9103a7d69",
+    "bytes": 32925
+  },
+  {
+    "path": "evidence/modules-1.json",
+    "sha256": "1873bfa40235fa21e68899e9d5e3d200935f7c10da4795f231603593a9cab913",
+    "bytes": 79129
+  },
+  {
+    "path": "evidence/project-forum.json",
+    "sha256": "967b325ac5b98c5cbd27e8845a8ac16a51c72cd30953d162e561e9074a5ebdf5",
+    "bytes": 101065
+  },
+  {
+    "path": "evidence/src__data.js",
+    "sha256": "d7199a772079c108efa6c02e0029984a1ed0c37c7a58e9d38f6fae5ff76ab88a",
+    "bytes": 13482
+  },
+  {
+    "path": "evidence/ssi-equipos-drive.json",
+    "sha256": "d8493911cb2b9e4aaed3355e106e967d12954a010e1c3be6b96b76b4a2e6255f",
+    "bytes": 11441
+  },
+  {
+    "path": "evidence/teaching-guides.json",
+    "sha256": "72bfce1f701b0cf9744f1c2e0ab19b8dc1ffa324cb1aa8ecaf4af6ba9d7c1f95",
+    "bytes": 57672
+  }
+]

@@ -1,0 +1,505 @@
+     Historia Módulos de Memoria
+• DIP: Dual In-line Package
+
+• SIPP: Single In-line Pin Package
+
+• SIMM (Single In-line Memory Module):
+  de 30 contactos, 8 bits
+
+• SIMM de72 contactos,
+  32 bits
+
+• DIMM, Dual In-line Memory Module
+  64-bit, 168 contactos, SDR SDRAM
+
+• DIMM 184 contactos, DDR SDRAM
+
+
+• DIMM 240 contactos, DDR2 SDRAM
+Módulos de Memoria
+
+
+
+
+            DDR4 y DDR5 ligeramente
+            curvada: mejor inserción y
+            menos estrés en PBC
+            https://www.kingston.com/en/memory/ddr4-overview
+ Denominación Módulos de Memoria
+• Even though the term DDRx-yyy is really just
+  for individual DDR chips and the term PCx-zzzz
+  is for DDR sticks, this tradition of two names
+  for every speed of RAM is a bit of a challenge
+  because you’ll often hear both terms used
+  interchangeably
+  – DDRx-yyy: x versión, yyy MTransferencias/s
+  – PCx-zzzz: : x versión, zzzz MBytes/s
+  – Una transferencia DIMM son 64 bits de datos.
+
+     Página 184: http://www.houstonisd.org/cms/lib2/tx01001591/centricity/domain/10450/chap6.pdf
+    http://www.hardwaresecrets.com/everything-you-need-to-know-about-ddr-ddr2-and-ddr3-memories/
+Memoria SDRAM
+                  Memoria SDRAM
+                                                                               En cada tipo de
+                                                                               memoria hay 2
+                                                                               frecuencias y 1 tasa
+                                                                               de transferencia
+
+
+
+
+ Página 184: http://www.houstonisd.org/cms/lib2/tx01001591/centricity/domain/10450/chap6.pdf
+http://www.hardwaresecrets.com/everything-you-need-to-know-about-ddr-ddr2-and-ddr3-memories/
+             Memoria SDRAM
+• Clock Speed, Core RAM Clock Speed: frecuencia
+  del reloj interno de la matriz SDRAM, celdas y
+  circuitos internos de la SDRAM trabajan tomando
+  como referencia ese reloj.
+• DDRx I/O Speed: Es la frecuencia de la interfaz de
+  entrada/salida entre el chip de memoria y el
+  controlador de memoria. tCL, tRCD, tRP y tRAS se
+  refieren a esta frecuencia.
+• DDRx I/O Rating: indica tasa de transferencias,
+  como es DDR, en cada ciclo 2 transferencias.
+           Memoria SDRAM
+• SDR SDRAM: Single Data Rate SDRAM
+• Transfiere 1 dato por ciclo de reloj
+            Chip SDR
+
+                       8
+
+65536x1024x8
+
+                              100MHz
+                 8   100MHz
+                              100MT/s
+
+
+
+Buffer Filas
+
+     1024
+                       8
+            Memoria SDRAM
+• DDR SDRAM: Doble Data Rate SDRAM
+• Transfiere 2 datos por ciclo de reloj
+       Chip DDR
+                               2x
+
+
+                     16
+
+65536x512x16
+
+                             100MHz
+               16   100MHz
+                             200MT/s
+
+
+
+
+                              2x
+     512
+                     16
+              Memoria SDRAM
+• La DDR2 duplica la frecuencia del reloj del bus
+• Transfiere 4 datos por ciclo de reloj
+
+
+
+
+                              https://es.wikipedia.org/wiki/DDR2_SDRAM
+               DDR2
+
+                                  4x
+
+                         32
+
+65536x256x32
+
+                                200MHz
+                  32   100MHz
+                                400MT/s
+
+
+
+Buffer Filas
+
+       256
+                                 4x
+                        32
+            Memoria SDRAM
+• La DDR3 duplica la frecuencia de la DDR2
+• Transfiere 8 datos por ciclo de reloj
+
+
+
+
+           https://es.wikipedia.org/wiki/DDR3_SDRAM
+https://www.programmersought.com/article/59963608748/
+
+
+               Chip DDR3
+https://www.programmersought.com/article/59963608748/
+
+
+                 Chip DDR3
+
+                                                 8x
+
+
+
+
+                                               400MHz
+                                 100MHz
+                                               800MT/s
+
+
+
+         Buffer Filas                          8x
+     Memoria síncrona SDRAM
+• DDR4: 16 datos cada T
+     Memoria síncrona SDRAM
+• DDR5 memoria más reciente: 32 datos cada T
+   Memoria síncrona SDRAM
+ SDR
+
+
+
+
+https://www.investorvillage.com/dialogs/Print.asp?msgid=11084230
+Memoria SDRAM
+                    Módulos de memoria
+                                                                                    184 contactos
+
+
+
+
+DIMM
+                                                                                    240 contactos
+
+
+
+
+                                                                                    240 contactos
+
+
+
+                                                                                    288 contactos
+
+
+
+ https://linustechtips.com/main/topic/785604-difference-between-ddr1-ddr2-ddr3-ddr4-ram-in-
+ desktop-and-laptop/                                                                          notch
+                                                                          Módulos de memoria
+
+
+
+
+https://hardzone.es/tutoriales/componentes/diferencias-memoria-ram-ddr/
+   Módulos de memoria
+
+
+
+
+E12577_PRIME_X370-PRO_UM_v2_web_only_20170712.pdf
+¿Qué memoria es más rápida?
+   =DDR 400
+
+
+
+
+        http://www.anandtech.com/show/1491/6
+         Identificación del módulo
+--------MODULO---------- ---------------------------------------------CHIP----------------------------------------------
+Identificación del módulo
+         Identificación del módulo
+• Estándar para acceder a las características de
+  un módulo de memoria
+• http://www.simmtester.com/page/news/showpubnews.asp?num=153
+• https://en.wikipedia.org/wiki/Serial_presence_detect
+         Identificación del módulo
+• Serial presence detect (SPD): Pequeña memoria de 256 Bytes que
+  describe el módulo de memoria.
+• Standardized way to automatically access information about
+  a computer memory module. When an ordinary modern computer
+  is turned on, it starts by doing a power-onself-test (POST). Since
+  about the mid-1990s, this process includes automatically
+  configuring the hardware currently present. SPD is a memory
+  hardware feature that makes it possible for the computer to know
+  what memory is present, and what timings to use to access the
+  memory.
+• Some computers adapt to hardware changes completely
+  automatically. In most cases, there is a special optional procedure
+  for accessing BIOS parameters, to view and potentially make
+  changes in settings. It may be possible to control how the computer
+  uses the memory SPD data—to choose which settings to use, to
+  selectively modify the memory timings, or possibly to completely
+  over-ride the SPD data
+      Identificación del módulo
+• ® Extreme Memory Profile
+• Los datos en la SPD son muy conservadores,
+  para así garantizar funcionamiento correcto en
+  todos los sistemas
+• XMP (Extreme Memory Profile) añade 2
+  perfiles:
+  – XMP profile 1, ‘Enthusiast / Certified’ settings
+  – XMP profile 2 ‘Extreme’ settings
+• Usa los bytes 176–255 de la SPD
+                https://www.intel.com/content/www/us/en/g
+                aming/extreme-memory-profile-xmp.html
+                 Identificación del módulo
+
+
+
+
+https://www.intel.com/content/dam/doc/white-paper/extreme-memory-profile-ddr3-technology-paper.pdf
+                 Identificación del módulo
+
+
+
+
+https://www.intel.com/content/dam/doc/white-paper/extreme-memory-profile-ddr3-technology-paper.pdf
+                 Channel
+• Un canal transmite 64 bits, está formado por
+  uno o más DIMMS. Sólo se accede a un DIMM
+  a la vez.
+                 Channel
+• Una computadora puede tener varios canales
+                    Channel
+• Single Channel: Todos los módulos de memoria
+  intercambian información a través de un único canal,
+  64 bits, para ello sólo es necesario colocar los
+  módulos DIMM en los conectores de ese canal.
+• Dual Channel: Existen 2 canales de memoria, 64 + 64
+  bits, cada canal puede tener varios conectores
+  DIMM. Se reparten los módulos de memoria entre
+  los 2 canales. Pueden intercambiarse datos a través
+  de 2 canales simultáneamente.
+                   Channel
+• Código de colores en los conectores DIMM de la
+  placa base.
+• Los conectores de igual color están todos en
+  diferente canal.
+• Los módulos que se instalen deben montarse y
+  completar los conectores del mismo color.
+                        Channel
+• Placa Dual Channel trabajando en modo Dual
+  Channel
+
+
+
+
+                                   DIMM 0
+                         Canal A
+                                   DIMM 1
+                                   DIMM 0
+                         Canal B   DIMM 1
+
+Canal dual con 2 DIMM                       Canal dual con 4 DIMM
+                            Channel
+• To achieve dual channel mode, following conditions must be met:
+   – Matched DIMM configuration in each channel
+   – Same density (128 MB, 256 MB, 512 MB, etc.)
+   – Matched in both Channel A and Channel B memory channels
+   – Populate symmetrical memory slots (Slot 0 or Slot 1)
+   – Configurations that do not match the above conditions revert to Single
+     Channel mode.
+• The following conditions do not need to be met:
+   – Same brand
+   – Same timing specifications
+   – Same DDR speed
+   – Memory channel speed is decided by the slowest DIMM module
+     populated in the system.
+
+
+
+  http://www.intel.com/support/motherboards/desktop/sb/cs-011965.htm
+                                   Channel
+    • Una placa Dual Channel trabaja en modo
+      Single Channel cuando la configuración no es
+      correcta.
+
+
+
+                                            DIMM 0
+                                  Canal A
+                                            DIMM 1
+                                            DIMM 0
+                                  Canal B   DIMM 1
+
+
+
+
+https://www.intel.es/content/www/es/es/support/articles/000005657/boards-and-kits.html
+                      Channel
+• Al arrancar, se detecta la configuración de la
+  memoria y es posible este mensaje de alerta:
+   – Alerta: el máximo rendimiento de memoria se
+     consigue con la misma cantidad de memoria instalada
+     en cada canal. Pulse cualquier tecla para continuar..
+• Con los módulos DIMM actualmente instalados,
+  el equipo está configurado en modo Single
+  Channel, pero puede ajustarse al modo Dual
+  Channel. Si apaga y reorganiza correctamente los
+  DIMM, puede establecer el modo de canal dual.
+                                  Channel
+      Con Dual Channel no tenemos una mejora
+       global de rendimiento del 100%.
+      La memoria principal DIMM sólo es una parte
+
+       del sistema de memoria de una computadora.
+      La memoria caché también es parte de ese
+
+       sistema.
+      Pizarra: 90% accesos a caché y 10% accesos a
+
+       MP. Mejora con Dual Channel
+http://www.utiltecnico.com/modos-de-doble-canal-en-memorias-ram-dual-channel-flex-mode-
+y-single-channel/
+http://www.ilsistemista.net/index.php/hardware-analysis/3-the-phenom-phenomii-memory-controller-and-the-ganged-vs-unganged-question.html?start=1
+                                                                                                                                                                                Channel
+
+                                                                                                                                                   “1 Canal”                              Canales
+                                                                                                                                                                                          independientes
+                                                                                                                                                                                                                          Actual
+
+
+
+
+                                                                                                                                                   Se leen 128 bytes consecutivos a partir Se leen 64 bytes consecutivos en una dirección
+                                                                                                                                                   de una dirección de memoria             + 64 Bytes consecutivos de otra dirección
+                        Channel
+• Ganged Mode (modo agrupado)
+  – Los dos canales forman un canal lógico de 128 bits
+  – El controlador accede a ambos módulos al mismo tiempo como
+    si fueran uno solo.
+  – Ideal para cargas de trabajo de un solo hilo que requieren
+    acceso ancho y secuencial a memoria.
+  – Más ancho de banda, pero menos concurrencia.
+• Unganged Mode (modo desagrupado)
+  – Los dos canales son independientes, 64 bits cada uno.
+  – Permite accesos independientes y concurrentes desde múltiples
+    hilos o núcleos del procesador.
+  – Ideal para cargas multihilo y sistemas multitarea.
+  – Puede mejorar el rendimiento general en escenarios modernos.
+                   Channel
+• Triple Channel: 3 canales de
+  dan varios modos posibles:
+  – El Triple Channel se activa
+    cuando se instalan módulos
+    idénticos en cada uno de los
+    tres conectores azules.
+  – Si sólo dos de los conectores
+    azules tienen módulos
+    DIMMs, se activa Dual
+    Channel.
+  – Con un módulo o 2 en el canal
+    A tenemos Single Channel
+                             Channel
+ • Quad Channel: cuando existen 4 canales y 4 módulos DIMM (o múltiplo de
+   4) idénticos en capacidad y velocidad instalados convenientemente.
+   Cuando se instalan 2 módulos, el sistema funciona en modo dual. Cuando
+   se instalan 3 módulos, el sistema funciona en modo triple.
+
+                                     Canal 1
+                                     Canal 2
+Quad-Channel con 4 módulos DIMMs               Quad-Channel con 8 módulos DIMMs
+
+                             Azul: primer DIMM
+                                de cada canal
+                               Negro: segundo
+                             DIMM de cada canal
+
+
+                                     Canal 3
+
+                                     Canal 4
+                        Channel
+• Modo FLEX: Single Channel y Dual Channel flexible
+   – El DIMM de 2 GiB en la ranura 1 y los 2 GiB inferiores del
+     DIMM en la ranura 2 funcionan juntos en el modo dual.
+   – El resto (superior) de los 2 GiB de la DIMM en la ranura 2
+     funciona en modo single.
+                          Channel
+• Modo FLEX
+  – En canal 1, un módulo de 4 Gi
+  – En canal 2, dos módulos de 2 Gi
+
+
+
+
+                 DIMM 0             4Gi
+       Canal 1 DIMM 1
+                 DIMM 0             2Gi
+       Canal 2
+                 DIMM 1             2Gi
+Channel
+
+          MODO FLEX
+                   CPU-Z
+• Herramienta gratuita de diagnóstico que
+  muestra información del PC
+CPU-Z
+Memorias Comerciales
+Memorias Comerciales
+                                                   Prefijos para múltiplos binarios
+
+
+
+
+https://physics.nist.gov/cuu/Units/binary.html
+                                                 • Prefixes for Binary Multiples: In December
+                                                   1998 the International Electrotechnical
+                                                   Commission (IEC), the leading international
+                                                   organization for worldwide standardization in
+                                                   electrotechnology, approved as an IEC
+                                                   International Standard names and symbols for
+                                                   prefixes for binary multiples for use in the
+                                                   fields of data processing and data
+                                                   transmission. The prefixes are as follows:
+                                                 Prefijos para múltiplos binarios
+
+
+
+
+https://physics.nist.gov/cuu/Units/binary.html
+                                                 Ki, Mi,
+                                                 Gi, Ti,
+                                                 Pi, Ei,
+                                                 Zi, Yi
+   Prefijos para Múltiplos Binarios
+• ROBIBYTE Y QUEBIBYTE: para la gran cantidad
+  de datos digitales que se esperan en un futuro
+
+
+
+
+Computer Organization and Design RISC-V Edition: The Hardware Software Interface
+https://www.seagate.com/es/es/support/kb/storage-capacity-measurement-standards-002046en/
+
+
+
+
+                                   En este caso
+                                       GB
+                                   debería ser
+                                       GiB
+                                  (binary value)
+                                                                                            Prefijos para múltiplos binarios
+https://www.seagate.com/es/es/support/kb/storage-capacity-measurement-standards-002046en/
+
+
+
+
+                                                                                            Prefijos para múltiplos binarios
+  Prefijos para múltiplos binarios
+
+32 MiByte = _________________ Byte
+
+ 8 PiByte = _________________ Byte
+
+ 1 TiByte = _________________ MiByte
+
+ 1 MHz    = _________________ Hz
+

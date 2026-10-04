@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://moovi.uvigo.gal/pluginfile.php/602483/mod_resource/content/4/Simulacion-Probabilidades-RCommander.pdf",
+    "path": "imports/moodle/2026-10-04/resources/00-Simulacion-Probabilidades-RCommander.pdf",
+    "expected_sha256": "015558b43305796dc4fe3a6fd644bec617b2c04fee4c495428603c0e75230a63",
+    "status": 200,
+    "sha256": "015558b43305796dc4fe3a6fd644bec617b2c04fee4c495428603c0e75230a63",
+    "unchanged": true,
+    "consulted_at": "2026-10-04T11:42:47.807Z"
+  },
+  {
+    "url": "https://moovi.uvigo.gal/pluginfile.php/626868/mod_folder/content/0/P1%20PRIMER%20PROYECTO.pdf?forcedownload=1",
+    "path": "imports/moodle/2026-10-04/resources/31-P1_PRIMER_PROYECTO.pdf",
+    "expected_sha256": "235e3a175c41a04283ff336a67a1ec12167c20ac7200cee6ddf85c7267d4fb4d",
+    "status": 200,
+    "sha256": "235e3a175c41a04283ff336a67a1ec12167c20ac7200cee6ddf85c7267d4fb4d",
+    "unchanged": true,
+    "consulted_at": "2026-10-04T11:42:47.806Z"
+  },
+  {
+    "url": "https://moovi.uvigo.gal/pluginfile.php/626868/mod_folder/content/0/P2%20PUERTA.pdf?forcedownload=1",
+    "path": "imports/moodle/2026-10-04/resources/32-P2_PUERTA.pdf",
+    "expected_sha256": "df7a6493ca3644a9ce5564474c12353f7d116dc49a733b9d2afc33ceb96844a0",
+    "status": 200,
+    "sha256": "df7a6493ca3644a9ce5564474c12353f7d116dc49a733b9d2afc33ceb96844a0",
+    "unchanged": true,
+    "consulted_at": "2026-10-04T11:42:47.807Z"
+  },
+  {
+    "url": "https://moovi.uvigo.gal/pluginfile.php/626868/mod_folder/content/0/P3%20RELOJ.pdf?forcedownload=1",
+    "path": "imports/moodle/2026-10-04/resources/33-P3_RELOJ.pdf",
+    "expected_sha256": "6d8f8549b67f920da6f12d52ce0eeb9f106aecd71dd25258b868ca64e5656a45",
+    "status": 200,
+    "sha256": "6d8f8549b67f920da6f12d52ce0eeb9f106aecd71dd25258b868ca64e5656a45",
+    "unchanged": true,
+    "consulted_at": "2026-10-04T11:42:47.888Z"
+  },
+  {
+    "url": "https://moovi.uvigo.gal/pluginfile.php/626868/mod_folder/content/0/P4%20INTERRUPCIONES.pdf?forcedownload=1",
+    "path": "imports/moodle/2026-10-04/resources/34-P4_INTERRUPCIONES.pdf",
+    "expected_sha256": "9f0b4a7c06128c702426643c7ebe7fed9d0e30eea3433f43c9f169bd2435d2bd",
+    "status": 200,
+    "sha256": "9f0b4a7c06128c702426643c7ebe7fed9d0e30eea3433f43c9f169bd2435d2bd",
+    "unchanged": true,
+    "consulted_at": "2026-10-04T11:42:47.888Z"
+  },
+  {
+    "url": "https://moovi.uvigo.gal/pluginfile.php/626868/mod_folder/content/0/P5%20AD.pdf?forcedownload=1",
+    "path": "imports/moodle/2026-10-04/resources/35-P5_AD.pdf",
+    "expected_sha256": "e0cdc334c8b8e1101003e259089e237bf429ccb471fdfd714d3e083c59d603e2",
+    "status": 200,
+    "sha256": "e0cdc334c8b8e1101003e259089e237bf429ccb471fdfd714d3e083c59d603e2",
+    "unchanged": true,
+    "consulted_at": "2026-10-04T11:42:47.889Z"
+  },
+  {
+    "url": "https://moovi.uvigo.gal/pluginfile.php/626868/mod_folder/content/0/P6%20BORDO.pdf?forcedownload=1",
+    "path": "imports/moodle/2026-10-04/resources/36-P6_BORDO.pdf",
+    "expected_sha256": "ae1cec16ae0e28f2545fc28e7e90950789732d24f1ed321e0673d87ae749c9ba",
+    "status": 200,
+    "sha256": "ae1cec16ae0e28f2545fc28e7e90950789732d24f1ed321e0673d87ae749c9ba",
+    "unchanged": true,
+    "consulted_at": "2026-10-04T11:42:47.968Z"
+  },
+  {
+    "url": "https://moovi.uvigo.gal/pluginfile.php/626868/mod_folder/content/0/P7%20SEMAFORO.pdf?forcedownload=1",
+    "path": "imports/moodle/2026-10-04/resources/37-P7_SEMAFORO.pdf",
+    "expected_sha256": "f2bd40f6d2eb9f73a3acf6242a45015fdf31d9d3ca91689697a2bf25bf6d7a18",
+    "status": 200,
+    "sha256": "f2bd40f6d2eb9f73a3acf6242a45015fdf31d9d3ca91689697a2bf25bf6d7a18",
+    "unchanged": true,
+    "consulted_at": "2026-10-04T11:42:47.966Z"
+  }
+]

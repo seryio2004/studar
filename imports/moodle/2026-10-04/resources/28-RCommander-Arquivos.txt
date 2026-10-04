@@ -1,0 +1,901 @@
+                        Manejo de RCommander: Archivos
+
+
+Índice
+Material                                                                                                                1
+
+1   ¿Qué es R y RCommander?                                                                                             2
+
+2   ¿Cómo instalar R y RCommander?                                                                                      2
+    2.1 Forma genérica para cualquier sistema operativo . . . . . . . . . . . . . . . . . . . . . . . . . .             2
+    2.2 Forma sencilla . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      4
+
+3   Breve introducción a R                                                                                              5
+    3.1 Entorno gráfico (GUI) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       5
+    3.2 Librerías o paquetes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      7
+    3.3 Obtención de ayuda . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .        8
+
+4   Actividades                                                                                                         8
+
+5   Sistema de ventanas con RCommander.                                                                                 9
+
+6   Tipos de archivo en RCommander                                                                                      9
+    6.1 Crear, cargar, importar y guardar conjuntos de datos . . . . . . . . . . . . . . . . . . . . . . . .           10
+    6.2 Archivos de instrucciones . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .        14
+    6.3 Archivos de resultados . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       15
+
+7   Operaciones sobre los conjuntos de datos                                                                           15
+    7.1 Cambiar tipo de variable. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .        16
+    7.2 Ordenar niveles de factor. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       16
+    7.3 Ordenar datos. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     17
+    7.4 Filtrar datos. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   18
+    7.5 Eliminar niveles de factor sin uso . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       18
+    7.6 Recodificar una variable . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       19
+    7.7 Segmentar una variable numérica . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .          20
+    7.8 Calcular una nueva variable. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .         21
+
+8   Actividades                                                                                                        22
+
+
+Material
+Descargar los siguientes archivos:
+    • RcmdrPlugin.TeachStat_1.1.0.zip (solo para Windows y Mac)
+    • RcmdrPlugin.TeachStat_1.1.0.tar.gz (solo para Linux)
+    • Portable_R_TeachStat_1.1.0.zip
+
+
+
+
+                                                            1
+1     ¿Qué es R y RCommander?
+R es un lenguaje de programación, totalmente gratuito y accesible, cuya potencia de análisis estadístico supera
+a la de cualquier otro programa estadístico. RCommander es una interfaz gráfica (GUI) de R que permite
+un aprendizaje más cómodo del programa R. Ambos programas funcionan en los Sistemas Operativos más
+populares (Windows, Linux, MacOS) además de ser software libre. Su página web es:
+                                          http://www.r-project.org
+
+
+
+
+R está disponible en una serie de repositorios (mirrors, espejos, . . . ) distribuidos en muchas universidades
+del mundo, de las cuales se puede descargar gratuitamente. Varias universidades han desarrollado cursos
+de estadística basados en R y en RCommander, por ejemplo la Universidad de Cádiz:
+                                        http://knuth.uca.es/moodle/
+Aquí encontraréis un manual bastante completo de Estadística con R y RCommander.
+
+
+2     ¿Cómo instalar R y RCommander?
+Hay varias formas de instalar estos programas, se verá primero la forma genérica de instalación y posterior-
+mente se indicará un método abreviado.
+
+2.1    Forma genérica para cualquier sistema operativo
+Seguir los siguientes pasos:
+    1. Instalar el software R: ir a la página http://www.r-project.org y en el menú de la izquierda acceder al
+       apartado Download y pinchar en CRAN. De esa forma aparece una página web con distintos links de
+       diferentes países donde tienen repositorio de este software.
+
+
+
+
+                                                      2
+   2. Se busca aquel repositorio que nos interese o nos quede más cercano, en España tenemos dos:
+
+
+
+
+   3. Debemos elegir el sistema operativo de nuestro ordenador y descargar el archivo para proceder a la
+      instalación:
+
+
+
+
+   4. En el caso de tener un sistema operativo Windows, descargaremos el archivo base:
+
+
+
+
+   5. Una vez instalado el R, debemos ejecutarlo y aparece la llamada consola de R. La forma de ejecutarlo
+      es distinta según el Sistema Operativo del que se disponga. En Windows, aparecerá un menú nuevo en
+      el botón de Inicio.
+
+
+
+
+   6. Instalar el RCommander y el “plugin” RcmdrPlugin.TeachStat:1
+         • Windows: ir al menú: Paquetes/Instalar paquete(s)
+         • Linux: ejecutar en la consola de R: install.packages().
+         • Mac OS: http://socserv.socsci.mcmaster.ca/jfox/Misc/Rcmdr/installation-notes.html.
+   7. A continuación sale un desplegable (sólo una vez por sesión) donde tenemos que elegir el repositorio
+      (CRAN) de donde vamos a bajar el paquete.
+   1 Para empezar a usar el RCommander solo sería necesario instalar el paquete Rcmdr. El “plugin” RcmdrPlugin.TeachStat es un
+
+añadido que facilita un poco la tarea de realizar un estdio estadístico básico.
+
+
+
+
+                                                              3
+  8. Finalmente aparece una lista de los paquetes de donde tenemos que elegir el correspondiente a
+     RCommander, que es el Rcmdr y el correspondiente al plugin, que es el RcmdrPlugin.TeachStat.
+
+
+
+
+  9. Para ejecutar el RCommander: escribir en la consola de R: library(Rcmdr).
+ 10. Para cargar el plugin: ir al menú de RCommander: Herramientas/Cargar Plugin(s) de Rcmdr y seleccionar
+     RCmdrPlugin.TeachStat. Por defecto os indica que debe reiniciar el RCommander, aceptáis y ya estará
+     cargado el paquete.
+Notas:
+   • Si el plugin ha sido cargado correctamente, aparecerá un nuevo menú llamado Estadística Básica.
+   • El software R distingue entre mayúsculas y minúsculas y por tanto, los nombres “datos” y “Datos”
+     son distintos.
+
+2.2   Forma sencilla
+Utilizar un archivo comprimido (.zip) que ya tienen todo lo necesario para ejecutar el programa sin necesidad
+de instalarlo:
+  2. Descargar el archivo comprimido (.zip) Portable_R_TeachStat_?.zip (? hace referencia a un número
+     de versión, por ejemplo 1.1.0),
+  3. DESCOMPRIMIRLO en cualquier carpeta del ordenador. Acceder a esta carpeta y
+  4. Ejecutar el programa
+         1. Windows: Hacer doble clic en el archivo de nombre R_TeachStat.exe, que está en la carpeta
+            descomprimida.
+         2. Linux y Mac OS: es necesario instalar previamente el programa WINE (https://wiki.winehq.or
+            g/Download) que permite ejecutar programas de Windows en sistemas operativos Linux o Mac.
+            Una vez hecho, para ejecutar el programa hay que abrir un terminal en la carpeta donde se haya
+            descomprimido el programa y hacer doble click en el fichero R_TeachStat.exe o escribir: wine
+            R_TeachStat.exe.
+
+
+                                                     4
+De esta forma se podrá utilizar el RCommander y el plugin, sin necesidad de instalarlo en el ordenador
+previamente.
+
+
+3     Breve introducción a R
+R es software libre se trata de un lenguaje de programación enfocado en realizar y facilitar el cálculo
+estadístico y gráfico. Por ese motivo tiene implementadas una gran variadad de técnicas y procedimientos
+estadísticos y gráficos. Además, al tratarse de software libre, cualquier persona con unos conocimientos
+mínimos de programación puede aportar nuevos procedimeintos o mejorar los ya existentes y ponerlos a
+disposición de toda la comunidad y de ahí viene su potencia (aunque a veces uno se pierde en la cantidad de
+aportaciones que tiene). Paar obtener más infomación consultar https://www.r-project.org/about.html.
+
+3.1   Entorno gráfico (GUI)
+Su entorno gráfico es muy austero pero permite realizar y ejecutar todo lo necesario:
+
+
+
+
+Se puede utilizar como simple calculadora, por ejemplo:
+2+2
+
+## [1] 4
+(sqrt(2))ˆ4
+
+## [1] 4
+También se puede hacer asignación de variables:
+(x <- exp(5))
+
+## [1] 148.4132
+log(x)
+
+## [1] 5
+O realizar técnicas estadísticas más complejas:
+
+
+
+
+                                                     5
+datos <- rnorm(100,mean=50,sd=5)
+head(datos)
+
+## [1] 51.34378 62.34599 53.17058 46.46646 53.12288 45.91829
+t.test(datos,mu=50,conf.level=0.99)
+
+##
+## One Sample t-test
+##
+## data: datos
+## t = 0.13564, df = 99, p-value = 0.8924
+## alternative hypothesis: true mean is not equal to 50
+## 99 percent confidence interval:
+## 48.49894 51.66455
+## sample estimates:
+## mean of x
+## 50.08174
+Y dibujar multitud de gráficos:
+opar <- par(mfrow=c(1,2))
+hist(datos)
+boxplot(datos,col="red")
+
+
+                                                       Histogram of datos
+
+
+
+
+                                  10 15 20 25 30 35
+                                                                                      65
+
+                                                                                      60
+
+                                                                                      55
+
+
+                      Frequency
+                                                                                      50
+
+                                                                                      45
+
+                                                                                      40
+                                  5
+
+                                  0                                                   35
+
+                                                      30   40    50     60   70
+
+                                                                datos
+
+
+par <- opar
+
+Hay que tener cuidado porque R es sensible a mayúsculas y minúsculas, es decir, los nombres datos y Datos
+representan distintos objetos de R:
+Datos <- 10
+datos <- "hola"
+Datos
+
+## [1] 10
+datos
+
+## [1] "hola"
+Como vemos anteriormente R tiene los clásicos tipos de valores, numéricos, cadenas de texto y lógicos.
+Además, permite gestionar otros tipos de valores especiales (y operar con ellos):
+
+
+                                                                                  6
+   • NaN (Not a Number): es resultado de una indeterminación.
+   • Inf: R representa valores no finitos (−∞, +∞) como Inf y -Inf.
+   • NA (Not Available): valor no disponible.
+x <- 1/0; x
+
+## [1] Inf
+x+Inf; x-Inf; log(x)+sqrt(x)
+
+## [1] Inf
+## [1] NaN
+## [1] Inf
+y <- NA; y
+
+## [1] NA
+y+0; y+x; is.na(y)
+
+## [1] NA
+## [1] NA
+## [1] TRUE
+
+3.2   Librerías o paquetes
+La forma de aportar a R nuevas técnicas es a través de los llamados paquetes (durante la instalación ya
+hemos trabajado con alguno). Las técnicas estadísticas más habituales ya vienen instaladas por defecto en R
+(paquete base y stats), pero a veces necesitamos herramientas no tan comunes y lo primero que tenemos
+que hacer es buscar si algún paquete ya la tiene implementada. La mejor forma de buscar es utilizando
+Internet con las palabaras clave R ( o CRAN, o R-project) y el nombre de la herramienta y como resultado
+obtendremos (si existe) el nombre del paquete que realiza esa técnica. Para instalarlo en R tendremos que ir
+al menú Paquetes/Instalar paquete(s). . . (en Windows), seleccionar el espejo de donde descargarlo (si no se ha
+hecho ya) y seleccionar el paquete desde la (larga) lista mostrada (está ordenada alfabéticamente):
+
+
+
+
+Los paquete pueden depender a su vez de otros paquetes (dependencies) lo cual hará necesario que se insta-
+len previamente. Al realizar la instalación utilizando el procedimeinto anterior, por defecto ya se instalarán
+todas las dependecias. En caso de que no fuese así habría que utilizar el parámetro dependencies=TRUE en
+la llamada a la función install.packages.
+Se puede dar el caso de que un determinado paquete no esté disponible en el repositorio de R (CRAN) pero
+del que dispongamos su archivo de instalación. En este caso, el archivo debería de tener la extensión .zip o
+
+
+
+                                                      7
+.tar.gz y para instalarlo utilizariamos el menú Paquetes/Install package(s) from local file. . . (Windows). Si el
+paquete tuviese dependencias, sería necesario instalarlas previamente.
+Que se tenga instalado el paquete no quiere decir que ya se pueda utilizar directamente. Para ello será
+necesario cargar el paquete utilizando la orden library("nombre_paquete") o ir al menú Paquetes/Cargar
+Paquete. . . (en Windows). La siguiente instrucción nos dará un listado de todos los paquetes instalados en el
+ordenador:
+library()
+
+##      Package
+## [1,] "abind"
+## [2,] "actuar"
+## [3,] "ade4"
+## [4,] "AeRobiology"
+## [5,] "afex"
+## [6,] "AID"
+##      Title
+## [1,] "Combine Multidimensional Arrays"
+## [2,] "Actuarial Functions and Heavy Tailed Distributions"
+## [3,] "Analysis of Ecological Data: Exploratory and Euclidean Methods\nin Environmental Sciences"
+## [4,] "A Computational Tool for Aerobiological Data"
+## [5,] "Analysis of Factorial Experiments"
+## [6,] "Box-Cox Power Transformation"
+NOTA: salvo los paquetes básicos, el resto de paquetes es necesario cargarlos en cada sesión de R (los cuales
+deberían estar instalados previamente).
+
+3.3    Obtención de ayuda
+Para obtener ayuda sobre una determinada función lo más comodo es escribir:
+?install.packages
+
+o
+help("install.packages")
+
+En caso de desconocer el nombre de la función, se puede realizar una búsqueda utilizando una cadena de
+caracteres:
+help.search("install packages")
+
+
+4     Actividades
+    1. El paquete MASS contiene funciones y conjuntos de datos utilizados en el libro “Modern Applied Statistics
+       with S” de B. Venables y B. Ripley:
+         a) Buscar información sobre el paquete relativa a su instalación.
+        b) Instalar el paquete y sus dependencias (si las hubiese).
+         c) Cargar el paquete y buscar ayuda de la función area.
+        d) Con la función del apartado anterior calcular el área encerrada por la función sin(x) entre 0 y π.
+         e) Ejecutar el siguiente comando en la consola de R: plot(sin,xlim=c(0,pi))
+
+
+
+
+                                                       8
+5     Sistema de ventanas con RCommander.
+La ventana del RCommander tiene el siguiente aspecto y se divide en 4 partes:
+
+                                                                         Barra de elementos activos:
+                                                                         conjunto de datos y modelos.
+
+                                                                         Panel de instrucciones (R script):
+                                                                         Parte donde escribir/aparece el
+                                                                         código R generado en los menús
+                                                                         superiores.
+                                                                         Panel de “Marcado” (R Mark-
+                                                                         down): Parte donde es-
+                                                                         cribir/aparece el código para
+                                                                         generar los informes HTML.
+
+                                                                         Panel de salidas numéricas:
+                                                                         Los gráficos aparecen en una
+                                                                         nueva ventana emergente. Sólo es
+                                                                         posible tener una ventana gráfica
+                                                                         emergente por lo que al generar
+                                                                         varias, se van “machacando” las
+                                                                         anteriores (ver Notas).
+
+                                                                         Área de mensajes.
+
+
+
+6     Tipos de archivo en RCommander
+    1. Archivos de conjuntos de datos (con extensiones .RData, .RDat, .rds).
+    2. Archivos de instrucciones, es un fichero de texto que se puede abrir con un editor simple de texto. Son
+       archivos con extensión .R (Menús Fichero/Abrir Fichero/Guardar archivo de instrucciones)
+    3. Archivos de resultados, se pueden considerar varios tipos de resultados en función de la salida:
+      3.1 Resultados en texto que aparecen en la ventana de salida del RCommander. No guarda las gráficas.
+      Es un fichero .txt (Menús Fichero/Abrir Fichero/Guardar resultados).
+      3.2 Resultados de gráficos cuando aparecen las ventanas gráficas. En el menú Archivo/Guardar como. . .
+      se pueden guardar los gráficos en formatos Metafile/bmp/jpeg/png/tiff/pdf.
+      3.3 Resultados de texto y gráficos creando archivos RMarkdown. Es un fichero con extensión .Rmd que
+      puede ser compilado y generar un html con los resultados de la sesión. Aquí sí que genera las gráficas
+      del archivo. Al lado de la pestaña de R Script, aparece otra pestaña con R Markdown. Ahí podemos ver
+      y modificar el archivo RMarkdown. Para ver el fichero html resultante sólo tenemos que pinchar en el
+      botón de Generar Informe situado entre las dos ventanas del RCommander.
+Una guía simple sobre el manejo de RCommander puede encontrarse en el menú Ayuda/Introducción a R
+Commander. Se trata de la traducción al castellano de uno de los manuales sobre “Iniciación a R Commander”
+de John Fox. Son especialmente relevantes las secciones de “3. Input data” y “6. Odds and Ends” (distribuido
+con el paquete Rcmdr y accessible via el menú de ayuda -> Introduction to the R Commander menu). Con
+respecto a esta última sección es muy importante que guardéis el fichero de instrucciones y los conjuntos de
+datos, pues será lo necesario para poder reproducir los resultados o continuar con el análisis.
+Notas:
+
+
+
+
+                                                       9
+   • Para que al generar gráficos no se machaquen todos en la misma ventana y sólo se pueda acceder al
+     último realizado, para el primer gráfico que realicéis tenéis que ir al menú Herramientas de la ventana
+     gráfica y marcar la opción “Grabando” y la opción “Agregar”.
+   • Para importar un conjunto de datos desde Excel es mejor convertir el fichero de Excel en un fichero de
+     texto con valores separados por comas (.csv) y después importarlo en RCommander como un fichero
+     de texto. La opción de importarlo directamente de Excel (o de cualquier otro programa) no siempre
+     funciona bien.
+
+6.1     Crear, cargar, importar y guardar conjuntos de datos
+De forma general la primera tarea que se realiza con R y RCommander es cargar un conjunto de datos sobre
+los cuales vamos se va a ejecutar los distintos procedimientos estadísticos/gráficos.
+
+6.1.1   Crear un conjunto de datos nuevo.
+RCommander dispone de un editor de datos en el menú Datos/Nuevo conjunto de datos . . . (Imagen superior
+izquierda), en donde inicialmente debemos introducir un nombre (Imagen inferior izquierda - este debe
+seguir unas determinadas reglas, sin espacios, sin carácteres especiales, . . . ). Posteriormente aparece el
+Editor de datos (Imagen derecha) en el cual usando los botones Añadir fila, Añadir columna podemos
+incrementar el número de datos/variables.
+
+
+
+
+Hay que tener en cuenta que los datos se almacenan en R (y en todo el software estadístico) con una
+estructura matricial, por ejemplo, si se disponen de datos de sexo, peso y altura de 5 chicos y 5 chicas en
+edades de 1 a 5 años, se almacenan en una matriz 10 x 4. Destacar que las variabes se inicializan con NA, es
+decir el valor indicador de dato missing.
+Como actividad se propone crear el conjunto de datos se muestra en la siguiente tabla.
+
+
+
+
+                                                    10
+Nota: El separador decimal en R es el punto decimal.
+Se recomienda no usar la columna rowname la cual se genera automáticamente.
+
+6.1.2   Cargar un conjunto de datos.
+Si se dispone de un conjunto de datos en formato de R (extensión .RData o .Rdat) podemos abrirlo desde el
+menú Datos/Cargar conjunto de datos. . . . Por ejemplo, el conjunto de datos en formato de R del gráfico anterior
+está disponble como archivo altura-peso.RData.
+Adicionalmente R dispone de conjunto de datos que están incluídos en los paquetes que se instalan. Para
+acceder a ellos vamos al menú Datos/Conjunto de datos en paquetes/Leer conjunto de datos desde paquete adjunto
+. . . . Por ejemplo, el archivo de datos cars93 del paquete RcmdrPlugin.TeachStat, para ello una vez cargado
+el paquete RcmdrPlugin.TeachStat
+
+
+
+
+Para manejar el conjunto de datos disponemos de:
+   • Editar Conjunto de datos: se puede modificar los datos de las variables del archivo.
+   • Visualizar conjunto de datos: se puede ver, pero no modificar, los datos del archivo.
+
+6.1.3   Importar conjunto de datos desde archivo
+R y RCommander pueden importar archivos de muy distintos tipos: csv, txt, excel, spss, etc. En el menú de
+Datos/Importar datos o alternativamente Estadística Básica/Datos/Importar datos, podemos ver varias opciones
+para importar datos.
+Veremos como realizar esta importación con un ejemplo. Vamos a importar el fichero de texto, CPU.txt
+(disponible en Datos.zip). Datos extraidos del repositorio UCI - machine learning repository. Las in-
+formación viene dada por:
+
+
+                                                       11
+   • vendor name: 30
+   • Model Name: many unique symbols
+   • MYCT: machine cycle time in nanoseconds
+   • MMIN: minimum main memory in kilobytes
+   • MMAX: maximum main memory in kilobytes
+   • CACH: cache memory in kilobytes
+   • CHMIN: minimum channels in units
+   • CHMAX: maximum channels in units
+   • PRP: published relative performance
+   • ERP: estimated relative performance from the original article
+Para ello seguiremos los siguientes pasos:
+  1. Abrimos el fichero con un editor de texto plano (Bloc de Notas, Notepad++, . . . ) para ver su estructura.
+
+
+
+
+  2. Vamos al menú Estadística Básica/Datos/Importar datos desde archivo de texto...
+  3. Completamos la ventana con el nombre al archivo y chequeamos las opciones que aparecen: ubicación
+     del fichero, el separador de campos, el carácter decimal, . . . .
+
+
+
+
+                                                      12
+NOTA: Los nombres válidos en R comienzan con una letra mayúscula o minúscula, o un punto (.) y están
+compuestos íntegramente por letras, puntos, subrayados (_), y dígitos (es decir, 0–9); en particular no incluye
+blancos dentro del nombre del conjunto de datos.
+
+6.1.4   Guardar Archivo de Datos
+Una vez abierto, el archivo no está guardado, es necesario guardarlo en el formato de R (.RData) para no
+perderlo al cerrar la sesión de R. Para ello vamos al menú de Datos/Conjunto de datos Activo/Guardar el conjunto
+de datos activo
+cpu <- read.table("./datos/CPU.txt",            header=TRUE, sep="", na.strings="NA", dec=".", strip.white=TRUE)
+save("cpu", file="cpu.RData")
+attach(cpu)
+
+Cuando se quiera volver a utilizar un conjunto de datos que ya está guardado en formato de R (.RData)
+simplemente hay que ir al menú Estadística Básica/Datos/Cargar conjunto de datos. . . :
+load("./datos/cpu.RData")
+
+
+6.1.5   Obtención de datos de internet
+Existen muchas vias para obtener datos en internet. Aquí os mostraremos como obtener algunos datos de la
+página web del Instituto Gale de Estadística (IGE):
+   1. Acceder al apartado “Poboación -> Padrón municipal de habitantes e Nomenclátor -> Poboación segundo sexo
+      e grupos quinquenais de idade”:
+   2. Seleccionamos (ver imagen) el año correspondiente, en Sexo seleccionamos “Total”, todos los grupos
+      de edad salvo “Total”, y el municipio de “Ourense”.
+
+
+
+
+   3. Para importar los datos al RCommander, lo más cómodo es pinchar en Obter URL de descarga, con lo
+      cual obtendremos:
+http://www.ige.eu/igebdt/igeapi/datos/100/0:2018,1:0,2:1:2:3:4:5:6:7:8:9:10:11:12:13:14:15:16:17:18,9915
+
+
+
+
+                                                      13
+  4. Ahora en RCommander vamos a Datos/Importar datos/desde archivo de texto, portapapeles o URL. . . y
+     seleccionamos, tal como aparece en el siguiente gráfico:
+        • Nombre del conjunto de datos: Poblacion
+        • Dirección URL
+        • Separador de campos: Coma
+        • Carácter decimal: Coma[,]
+      Después de darle a Aceptar pegamos la dirección URL que obtuvimos en la página web del IGE:
+
+
+
+
+Poblacion <-
+  read.table("https://www.ige.gal/igebdt/igeapi/csv/datos/142/0:2024,1:0,2:1:2:3:4:5:6:7:8:9:10:11:12:13
+             na.strings="NA",dec=",", strip.white=TRUE)
+head(Poblacion)
+
+##   CodTempo Tempo Sexo Grupos.de.idade CodEspazo       Espazo DatoN DatoT
+## 1     2024 2024 Total             0-4      3205 3205 Ourense 4035 4.035
+## 2     2024 2024 Total             5-9      3205 3205 Ourense 5437 5.437
+## 3     2024 2024 Total           10-14      3205 3205 Ourense 6384 6.384
+## 4     2024 2024 Total           15-19      3205 3205 Ourense 6640 6.640
+## 5     2024 2024 Total           20-24      3205 3205 Ourense 6255 6.255
+## 6     2024 2024 Total           25-29      3205 3205 Ourense 6425 6.425
+Nota: El RCommander puede tener varios archivos de datos abiertos al mismo tiempo, pero sólo uno activo.
+Para saber cuál es el activo vemos debajo del menú el nombre que está en color azul al lado de Conjunto de
+Datos. Si queremos cambiar de conjunto de datos activo, sólo tenemos que pinchar en el nombre del conjunto,
+en color azul, y aparecerá un desplegable con los conjuntos abiertos en ese momento.
+
+6.2   Archivos de instrucciones
+En la ventana de R Script van apareciendo el código que se ejecuta al pinchar en el botón Aceptar de
+las ventanas de RCommander. Estas instrucciones se corresponden con los menús superiores. Además de
+poder modificar el código que aparece (y también incluir nuevo código) podemos ejecutarlo usando el boton
+Ejecutar entre el panel Rscript y Salida. Para ello solamente tenemos que seleccionar la parte de código
+que queremos ejecutar.
+Nota: Las ejecuciones realizadas con este mecanismo pueden no ser detectadas con el RCommander, es
+decir, si modificamos una variable posiblemente RCommander no actualice la variable. Es recomendable
+después de realizar este tipo de operaciones actualizar el conjunto de datos en el menú Datos/Conjunto de
+datos activo/Actualizar conjunto de datos activo.
+
+
+
+                                                    14
+6.2.1    Cargar/Guardar archivos de instrucciones
+Los archivos de instrucciones se guardan desde el menú Fichero/Guardar las instrucciones . . . con la extensión
+.R. Estos archivos están en formato código ASCII plano y por lo tanto se pueden abrir/modificar/crear con
+cualquier editor de datos (Notepad, Word, . . . )
+
+6.3     Archivos de resultados
+Las salidas de los procedimientos estadísticos (menús) aparecen en la ventana Salida junto con el código
+generado. Estas salidas se pueden copiar o guardar usando el menú Fichero/Guardar resultados. El formato
+del archivo de resultados es un .txt. Si la salida es un gráfico, se abre una ventana gráfica:
+
+
+
+
+En el menú Archivo/Guardar como. . . se pueden guardar los gráficos en formatos Metafile/bmp/jpeg/png/tiff/pdf.
+
+6.3.1    Archivos Markdown
+Este tipo de archivos permite guardar resultados de texto y gráficos con un formato muy sencillo. Es un
+fichero con extensión .Rmd que puede ser compilado y generar un html (o docx, rtf, tex, pdf) con los resultados
+de la la sesión. Al lado de la pestaña de R Script, aparece otra pestaña con R Markdown. Ahí podemos ver y
+modificar el archivo RMarkdown. Para ver el fichero html resultante sólo tenemos que pinchar en el botón
+de Generar Informe situado entre las dos ventanas del RCommander.
+Cada operación generada con los menús de RCommander se obtiene un chunk (código entre delimitadores),
+que se va añadiendo al final del archivo. Podemos editar el documento RMarkdown (Editar/Editar el documento
+RMarkdown) y añadir/formatear el texto. Más información en estos enlaces ‘R Markdown from R-Studio’ o
+en el ‘libro’
+
+
+7       Operaciones sobre los conjuntos de datos
+Vamos a realizar diversas operaciones con las variables del archivo cpu.txt abierto anteriormente. Empeza-
+remos con la revisión de la clasificación de las variables.
+
+
+
+
+                                                      15
+7.1   Cambiar tipo de variable.
+Lo primero que hay que hacer después de obtener los datos es comprobar si estos están bien clasificados
+(ver la sección 1.2 del Tema 1 Estadística Descriptiva para la definición de variable nominal, ordinal,
+discreta y continua). Por ejemplo, existen procedimientos estadísticos para variables categóricas que no
+se pueden aplicar a variables continuas. El plugin de RcmdrPlugin.TeachStat aporta el menú Estadística
+Básica/Datos/Conjunto de datos activo/Variables y tipos del conjunto de datos activo para realizar esta tarea:
+listTypesVariables("cpu")
+
+## [1] "vendor[factor]"                      "Model[factor]"
+## [3] "MYCT[integer]"                       "MMIN[integer]"
+## [5] "MMAX[integer]"                       "CACH[integer]"
+## [7] "CHMIN[integer]"                      "CHMAX[integer]"
+## [9] "PRP[integer]"                        "ERP[integer]"
+## [11] "ERP_agrup[ordered factor]"          "CACH_agrup[ordered factor]"
+En este caso no estarían bien clasificadas las variables variables ERP_agrup y CACH_agrup ya que serían
+variables cualitativas ordinales y deberían estar catalogadas como ordered factor. Para cambiar el tipo de
+variable vamos al menú Estadística Básica/Datos/Modificar variables del conjunto de datos activo/Cambiar tipo
+de variables. . . y, utilizando los botones que aparecen en la ventana, colocamos cada variable en su tipo
+correspondiente:
+
+
+
+
+cpu <- within(cpu, {
+   CACH_agrup <- as.ordered(CACH_agrup)
+   ERP_agrup <- as.ordered(ERP_agrup)
+})
+
+listTypesVariables("cpu")
+
+## [1] "vendor[factor]"                      "Model[factor]"
+## [3] "MYCT[integer]"                       "MMIN[integer]"
+## [5] "MMAX[integer]"                       "CACH[integer]"
+## [7] "CHMIN[integer]"                      "CHMAX[integer]"
+## [9] "PRP[integer]"                        "ERP[integer]"
+## [11] "ERP_agrup[ordered factor]"          "CACH_agrup[ordered factor]"
+
+7.2   Ordenar niveles de factor.
+En una variable cualitativa ordinal es muy importante que los distintos valores (niveles) que puede tomar
+la variable estén ordenados. Por defecto, R ordena los niveles de un factor utilizando el orden alfabético y
+este puede no ser el adecuado. En el caso del conjunto de datos cpu, los nives de las variables ordinales no
+están bien ordenados y para proceder a su correcta ordenación hay que ir al menú Estadística Básica/Datos/
+Modificar Variables del Conjunto de Datos Activo/Reordenar Niveles de Factor. . .
+
+
+
+
+                                                     16
+cpu <- within(cpu, {
+   CACH_agrup <- factor(CACH_agrup, levels=c('(-Inf,12]','(12,32]','(32,65]','(65,160]',
+                                             '(160,256]'), ordered=TRUE)
+   ERP_agrup <- factor(ERP_agrup, levels=c('BAJA','MEDIA','ALTA'),ordered=TRUE)
+})
+
+
+7.3   Ordenar datos.
+Se puede ordenar el conjunto de datos en función de una variable numérica existente (en sentido creciente o
+decreciente) y se puede guardar el resultado en un fichero nuevo. Para ello se utilizará el menú de Estadística
+Básica/Datos/Conjunto de datos activo/Ordenar el conjunto de datos activo. . . .
+Como ejemplo vamos a ordernar el conjunto de datos cpu en sentido creciente de memoria caché (variable
+CACH) y guardar el resultado en un nuevo fichero que llamaremos CPU_ord.
+
+
+
+
+                                                      17
+CPU_ord <- with(cpu, cpu[order(CACH, decreasing=FALSE), ])
+
+
+7.4    Filtrar datos.
+Podemos filtrar el conjunto de datos en función de características de sus variables en el menú de Estadística
+Básica/Datos/Conjunto de datos activo/Filtrar el conjunto de datos activo. . . .
+Supongamos que queremos filtrar el conjunto de datos cpu (cuidado con el conjunto de datos que está
+activo) y quedarnos sólo con los casos donde la memoria caché está entre 30 y 160, ambos inclusive, y
+guardar el resultado en un fichero llamado CPU_FILTRADO. La orden de filtrado que habría que escribir sería:
+(CACH>=30) & (CACH<=160) (recordar que los nombres de las variables hay que escribirlos tal cuál están en
+el conjunto de datos).
+
+
+
+
+CPU_FILTRADO <- subset(cpu, subset=(CACH>=30)&(CACH<=160))
+
+Recordatorio: Si pinchamos en el nombre en azul del conjunto de datos activo, se despliega la pestaña con
+todos los archivos abiertos y generados en esta sesión de R. Podemos pasar de uno a otro sin más que pinchar
+en el nombre. Recuérdese también que si no se guardan los archivos en el menú visto anteriormente, estos
+cambios se perderán al cerrar la sesión de R. Por tanto, ya que hemos creado varios conjuntos de datos, sería
+un buen momento para guardarlos.
+Revisar: Los operadores lógicos de R: help("&") y las funciones genéricas de R: help("groupGeneric").
+
+7.5    Eliminar niveles de factor sin uso
+A veces nos podemos encontrar con variables de tipo factor en los que un determinador valor de la variable
+no se usa, es decir, no existe ningún sujeto en el conjunto de datos que tome ese valor para la variable. Por
+ejemplo, al realizar el filtrado anterior sobre el conjunto de datos cpu, se han eliminado todos los sujetos que
+tomaban un determinado valor de alguna de las variables (Estadística Básica/Estadística Descritiva/ Conjunto de
+datos activo):
+##    ERP_agrup       CACH_agrup
+##    BAJA : 0    (-Inf,12]: 0
+##    MEDIA:11    (12,32] :27
+##    ALTA :53    (32,65] :24
+##                (65,160] :13
+##                (160,256]: 0
+
+
+
+
+                                                      18
+Este hecho puede afectar bastante a determinadas técnicas estadísticas e incluso llegar a conseguir que no
+funcionen. Por eso es muy importante descartar estos niveles sin uso. En RCommander podemos realizarlo
+en el menú Estadística Básica/Datos/ Modificar Variables del Conjunto de Datos Activo/Descartar niveles sin uso. . . :
+
+
+
+
+CPU_FILTRADO <- droplevels(CPU_FILTRADO)
+
+Y ahora las variables tomarían los valores:
+##    ERP_agrup        CACH_agrup
+##    MEDIA:11      (12,32] :27
+##    ALTA :53      (32,65] :24
+##                  (65,160]:13
+
+7.6     Recodificar una variable
+El RCommander permite recodificar una variable introducciéndo nuevos valores y renombrándola. Supon-
+gamos que queremos recodificar la variable MMAX del siguiente modo:
+     • valores menores o iguales a 10000 como bajo
+     • mayores de 10000 y menores o iguales a 50000 como medio
+     • el resto como alto.
+El siguiente gráfico indica cómo rellenar el cuadro de diálogo disponible en el menú de Estadística Básica/Datos/
+Modificar Variables del Conjunto de Datos Activo/Recodificar Variables. Obsérvese que el significado especial de
+las siguientes variables:
+     • lo representa el valor más bajo que toma la variable en el conjunto de datos,
+     • hi representa el valor más alto que toma la variable en el conjunto de datos,
+     • else representa a todos los valores que no verifican el resto de condiciones (incluidos los valores NA, si
+       correspondiese).
+
+
+
+
+                                                         19
+cpu <- within(cpu, {
+   MMAX_recod <- Recode(MMAX, 'lo:10000="bajo"; 10000:50000="medio"; else="alto"',
+   as.factor=TRUE)
+})
+
+Chequear en el conjunto de datos que ha generado la nueva variable recodificada. Además, en este caso, la
+variable generada es de tipo ordinal y por tanto habría que comprobar que los niveles de esa variable están
+ordenados:
+##    MMAX_recod
+##    alto : 4
+##    bajo :129
+##    medio: 76
+Como podemos observar, en este caso no están bien ordenados los niveles. Por tanto habría que ordenarlos
+en el menú anteriormente comentado:
+cpu <- within(cpu, {
+   MMAX_recod <- factor(MMAX_recod, levels=c('bajo','medio','alto'), ordered=TRUE)
+})
+
+##    MMAX_recod
+##    bajo :129
+##    medio: 76
+##    alto : 4
+NOTA: La recodificación de intervalos es usando intervalos cerrados, es decir, 10000:50000= [10000, 50000].
+En el proceso el menú de recodificar va por orden usando intervalos cerrados, por ejemplo, si primero hace
+lo:10000, está considerando [lo, 10000], la siguiente directriz 10000:50000 se corresponde con [10000, 50000]
+pero como no quedan valores 10000, esta instrucción es equivalente a (10000, 50000].
+
+7.7    Segmentar una variable numérica
+Relacionado con recodificar variables existe un procedimiento para segmentar variables numéricas utilizando
+alguna técnica adecuada para establecer los puntos de corte. Esto se realiza en el menú Estadística Básica/Datos/
+Modificar Variables del Conjunto de Datos Activo/Segmentar variable numérica. . . . En este menú te permite
+seleccionar el número de intervalos, establecer nombres, números, rangos o puntos medios del rango a
+las categorías. También tiene varios métodos de segmentación: equidistantes, de igual cantidad de datos o
+mediante el algoritmo de agrupación de k-medias.
+
+
+                                                       20
+Como ejemplo, trabajaremos con la variable ERP, la vamos a segmentar esta vez en 3 intervalos equidistantes
+(de igual longitud) y le asignaremos como nombres de los niveles, el rango al que pertenecen. De esta manera
+se sabrán los puntos de corte que se han utilizado.
+
+
+
+
+cpu$ERP_seg <- as.ordered(with(cpu, binVariable(ERP, bins=3, method='intervals',
+                                                 labels=NULL)))
+
+##              ERP_seg
+##    (13.8,423]    :203
+##    (423,830]     : 3
+##    (830,1.24e+03]: 3
+Al realizar una segmentación, la variable generada es de tipo ordinal y por lo tanto habrá que comprobar
+que los niveles de las nuevas variables están ordenados. Como podemos observar anteriormente, en este
+caso ya está ordenada.
+Comparemos ahora la segmentación anterior con la segmentación por intervalos de igual cantidad de
+valores:
+cpu$ERP_seg2 <- as.ordered(with(cpu, binVariable(ERP, bins=3, method='proportions',
+                                                 labels=NULL)))
+
+##             ERP_seg2
+##    [15,31]      :71
+##    (31,74]      :69
+##    (74,1.24e+03]:69
+
+7.8    Calcular una nueva variable.
+R Commander permite calcular una nueva variable a partir de otra u otras del archivo escribiendo el código
+directamente en la ventana de script o mediante el menú de Estadística Básica/Datos/ Modificar Variables del
+Conjunto de Datos Activo/Calcular una nueva variable. . . . Vamos a calcular la diferencia entre MMAX y MMIN.
+Notar que no es necesario escribir los nombres de las variables que se quieran utilizar en la operación,
+simplemente haciendo doble click sobre ellas ya se traslada su nombre al cuadro de texto donde haya que
+escribir la expresión a calcular.
+
+
+
+
+                                                     21
+cpu$Dif_Memoria <- with(cpu, MMAX- MMIN)
+
+Por defecto, para nombrar una variable en el script es encesario poner el nombre del archivo y el símbolo \$,
+por ejemplo cpu$MMAX. Si no queremos poner el nombre del archivo y referirnos a la varible solamente, es
+encesario utilizar la función attach con el nombre del conjunto de datos, es decir, attach(cpu). A partir de
+ahí el software reconoce que MMAX es la variable correspondiente al conjunto de datos cpu. Otra opción
+sería trabajar con la función with, como en la línea de comandos anterior.
+
+
+8    Actividades
+    1. Obtener de la página web del IGE (http://www.ige.eu) los datos de población del año 2018 de
+       cualquier municipio que os interese de la mima forma que se hizo en la sección 5.2.4.
+        a. Importar los datos a R.
+        b. Eliminar todas las variables salvo Grupos.de.idade, Espazo y DatoN.
+        c. Clasificar las variables y convertir al formato de R adecuado aquellas variables que sea necesario.
+           Recuerda reordenar los niveles de factor de aquellas variables que lo necesiten.
+    2. Abre el archivo de datos airquality del paquete datasets. Estos datos indican los datos de Ozono,
+       Temperatura, radiación solar y Velocidad del viento de varios días en una estación meteorológica.
+        a. Lee la ayuda que proporciona R para el conjunto de datos (help(airquality)) y clasifica todas
+           las variables estadísticas que tiene el conjunto de datos.
+        b. La variable Month que representa el mes de la medición, está considerada como numérica, aunque
+           en realidad es una variable cualitativa. Transforma la variable Month a varible factor de tipo
+           ordinal.
+        c. Ordena el conjunto de datos de manera decreciente en función de la variable Ozone.
+        d. Recodifica la variable Month con los nombres de los meses correspondientes y guarda la nueva
+           variable como Month_text. Ordena los niveles si fuese necesario.
+        e. Recodifica la variable Ozone en los siguientes intervalos: [0,50], (50,100] y (100,170] y guardala
+           como Ozone_cat. (Cuidado con los valores NA). Ordena los niveles si fuese necesario.
+         f. Segmenta la variable Wind en 4 segmentos de igual longitud (equidistantes). Utiliza los rangos
+            como nombres de los niveles y guarda la nueva variable como Wind_seg1. Ordena los niveles si
+            fuese necesario.
+        g. Segmenta la variable Wind en 4 segmentos de igual cantidad. Utiliza los rangos como nombres de
+           los niveles y guarad la nueva variable como Wind_seg2. Ordena los niveles si fuese necesario.
+        h. Realiza un resumen numérico básico y compara las variables Wind_seg1 y Wind_seg2.
+
+
+
+
+                                                     22
+     i. La variable Wind está medida en millas/h, crear una nueva variable Wind_kmh que mida la velocidad
+        en km/h (el factor de conversión es 1.609344).
+     j. La variable Temp está representada en grados Fahrenheit. Hacer la conversión a grados Celsius en
+        una nueva variable Temp_C (utilizar la fórmula de conversión: C = ( F − 32) · 95 ).
+    k. Crear un nuevo conjunto de datos donde la temperatura sea superior a 25 ºC y el nivel de ozono
+       inferior a 65 ppm. (utilizar el menú de filtrar).
+3. Abre el archivo Ocupaciones.csv utilizando un editor de texto plano. En él aparecen una lista de
+   personas con algunos datos característicos:
+     • edad: Edad en años,
+     • estudios: Nivel de estudios alcanzado, siendo
+         – 1: Primarios
+         – 2: Secundarios
+         – 3: Superiores
+     • ocupacion: Sector de ocupación, siendo
+         – 1: Parado, jubilado o estudiante
+         – 2: Servicios
+         – 3: Construccion
+         – 4: Industria
+     • peso: Peso en Kg
+     • altura: Altura en m
+     • edad_r: Edad recodificada en 3 rangos: 0-16, 17-65 y Más de 65.
+  Con este conjunto de datos realiza las siguientes tareas:
+    a. Importar el conjunto de datos y clasifica todas las variables estadisticas que tiene.
+    b. Convierte cada variable al tipo de R adecuado.
+    c. Recodifica las variables estudios y ocupacion según los valores que se indican arriba. Recuerda
+       clasificar bien las nuevas variables y reordenar los niveles de los factores si fuese necesario.
+    d. Comprueba si existe algún error de introducción de datos en la variable altura y corrígelo.
+    e. La variable ‘edad_r’ contiene algún error de codificación. Para localizarlo, recodifica de nuevo la
+       variable edad en los mismos rangos. Intenta localizar donde están los errores. (PISTA: Nos puede
+       ayudar realizar una tabla de contingencia en el menú Estadística Básica/Estadística Descriptiva/Tabla
+       de contingencia/Tabla de doble entrada. . . y para localizar los errores podríamos filtrar el conjunto de
+       datos)
+     f. Calcula una nueva variable que nos proporcione el índice de masa corporal (IMC) y guárdala con
+                                              peso en kg
+        el nombre IMC (recordar que I MC = (altura en m)2 ).
+
+    g. Segmenta las variables peso y altura en 3 partes de igual cantidad. Ordena los niveles si fuese
+       necesario.
+    h. Crea un nuevo conjunto de datos con todas las personas que no son paradas, jubiladas o estudian-
+       tes y llámalo ocupaciones_activos (en R != significa distinto). Comprueba si existen niveles de
+       factores sin uso y descártalos.
+
+
+
+
+                                                    23
+

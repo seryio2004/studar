@@ -1,0 +1,238 @@
+ABP 2026-2027 · Sesión 4 · Ejercicio por libre
+
+
+Prompts sueltos frente a
+especificación
+Repetid el ejemplo de clase con otra funcionalidad
+
+
+
+Trabajo en equipo (o individual) · para antes de la sesión 5 (07/10/2026)
+Profesor: Gerardo Rodríguez Martínez
+Índice
+Qué tenéis que hacer............................................................................................................... 3
+
+1. Elegid la funcionalidad..........................................................................................................3
+
+2. Ronda 1 · Prompts sueltos.................................................................................................... 4
+
+3. Ronda 2 · Diseñad la especificación...................................................................................... 5
+
+4. Generad y verificad............................................................................................................... 7
+
+5. Comparación........................................................................................................................ 7
+
+6. Bitácora para la sesión 5.......................................................................................................8
+
+
+
+
+ABP 2026-2027 · Ejercicio por libre: prompts sueltos vs. especificación                                                   Página 2 de 8
+Qué tenéis que hacer
+En clase habéis visto un ejemplo completo: el filtro de recomendaciones por categoría, pedido primero con
+un prompt suelto y después desde una especificación. Ahora os toca repetirlo con otra funcionalidad, a
+vuestro ritmo. No hay una respuesta «correcta» que adivinar: lo importante es que observéis qué cambia
+cuando la IA trabaja a partir de una especificación clara.
+  • Cuándo: antes de la sesión 5 (07/10). La sesión empieza con una puesta en común de lo que os haya
+    pasado.
+  • Tiempo orientativo: 45-60 minutos en equipo.
+  • Qué traer: esta ficha rellena (o una foto) y la bitácora del apartado 6.
+  • Evaluación: no se evalúa; es el entrenamiento para el taller de la sesión 5 y para vuestro Sprint 2.
+Usad el asistente que queráis (ChatGPT, Claude, Gemini, Copilot…). Una regla: la ronda 2 siempre en una
+conversación nueva, para que la IA no arrastre lo de la ronda 1.
+
+
+1. Elegid la funcionalidad
+Opción A (recomendada). Una historia «Must» de vuestro backlog de la sesión 3. Así el ejercicio os sirve
+directamente para el proyecto.
+Opción B. Filtrar las recomendaciones por un rango numérico de vuestro dominio (año, precio, duración,
+valoración…). Podéis partir de este código:
+
+  # catalogo: dict id -> {"titulo": str, "categorias": list[str], "descripcion": str}
+  # ranking_similares(item_id) -> list[tuple[id, float]]
+  #   Ranking COMPLETO de ítems ordenados por similitud descendente
+  #   (excluye el propio item_id). Ya implementado: no lo modifiquéis.
+
+  def recomendar(item_id, n=10):
+      return [{"id": i, "titulo": catalogo[i]["titulo"], "score": s}
+              for i, s in ranking_similares(item_id)[:n]]
+
+
+
+Funcionalidad elegida: ________________________________
+
+Dominio de vuestro recomendador: ________________________________
+
+
+
+
+ABP 2026-2027 · Ejercicio por libre: prompts sueltos vs. especificación                     Página 3 de 8
+2. Ronda 1 · Prompts sueltos
+Pedid la funcionalidad al asistente como lo haríais normalmente, sin preparar nada. Podéis iterar tantas
+veces como queráis. Anotad cada prompt y qué falló.
+
+ #       Prompt (resumido)                                                ¿Qué falló o qué tuvisteis que corregir?
+
+ 1
+
+
+ 2
+
+
+ 3
+
+
+ 4
+
+
+ 5
+
+
+
+Tiempo total de la ronda (min): ________________________________
+
+Número de iteraciones: ________________________________
+
+¿Qué decisiones tomó la IA por vosotros sin que se las pidierais? (revisad el código con calma):
+
+
+
+
+ABP 2026-2027 · Ejercicio por libre: prompts sueltos vs. especificación                                      Página 4 de 8
+3. Ronda 2 · Diseñad la especificación
+Seguid los seis pasos vistos en clase. Cada paso responde a una pregunta; si no sabéis responderla, la IA
+tampoco lo sabrá y lo decidirá por vosotros.
+a) Objetivo — ¿quién lo usa y para qué? (historia de usuario):
+
+
+
+
+b) Entradas y salidas — ¿qué recibe y qué devuelve exactamente?
+
+
+
+
+c) Requisitos — ¿qué debe hacer, sin decir cómo? (RF1, RF2…):
+
+
+
+
+d) Criterios de aceptación — ¿cómo sabréis que funciona? (datos concretos):
+
+ #          Dado… (situación de partida)                  Cuando… (acción)             Entonces… (resultado esperado)
+
+ CA1
+
+ CA2
+
+ CA3
+
+ CA4
+
+ CA5
+
+
+
+e) Casos límite — ¿y si…?
+
+  p. ej.: valor ausente, lista vacía, elemento inexistente, fuera de rango, empates, menos resultados de los pedidos…
+
+
+
+
+ABP 2026-2027 · Ejercicio por libre: prompts sueltos vs. especificación                                         Página 5 de 8
+f) Restricciones y fuera de alcance — ¿qué no se toca y qué no se hace?
+
+
+
+
+Antes de seguir, pasad la checklist:
+
+ Comprobación                                                                       ✓
+
+ Dice qué debe hacer el sistema, no cómo programarlo
+
+ Entradas y salidas definidas: nombres, tipos, formato del resultado
+
+ Cada requisito tiene al menos un criterio de aceptación con datos concretos
+
+ Hay casos límite: vacío, inexistente, fuera de rango, empates
+
+ Dice qué no se puede tocar y qué queda fuera de alcance
+
+ Otra persona del equipo la entiende sin preguntaros nada
+
+
+
+
+ABP 2026-2027 · Ejercicio por libre: prompts sueltos vs. especificación        Página 6 de 8
+4. Generad y verificad
+Abrid una conversación nueva, pegad la especificación completa y pedid: «genera el código y un test por
+cada criterio de aceptación». Después, comprobad cada criterio:
+
+ Criterio             ¿Se cumple? (sí / no)             Si falla: ¿se corrige el código o la especificación?
+
+ CA1
+
+ CA2
+
+ CA3
+
+ CA4
+
+ CA5
+
+
+Tiempo total de la ronda 2 (min): ________________________________
+
+Extra (muy recomendable): pasad también vuestros criterios de aceptación a la versión de la ronda 1. En el
+ejemplo de clase, la versión del prompt suelto solo cumplía 2 de 6.
+
+
+5. Comparación
+Puntuad cada ronda de 1 (muy mal) a 5 (muy bien), salvo las filas de tiempo e iteraciones, donde anotáis el
+valor real:
+
+ Criterio                                                             Ronda 1 · prompts sueltos    Ronda 2 · especificación
+
+ Corrección: hace lo que se pedía
+
+ Casos límite cubiertos
+
+ Tiempo total (min)
+
+ Número de iteraciones
+
+ Facilidad para verificar el resultado
+
+ Mantenibilidad y legibilidad del código
+
+ ¿Sabríais explicar cada línea del código?
+
+
+¿Para qué tareas de vuestro proyecto usaríais cada enfoque?
+
+
+
+
+ABP 2026-2027 · Ejercicio por libre: prompts sueltos vs. especificación                                         Página 7 de 8
+6. Bitácora para la sesión 5
+Durante la semana, anotad también cualquier otra experiencia usando asistentes de IA en vuestro
+proyecto. La sesión 5 empieza con estas tres preguntas: ¿dónde os ahorró tiempo la IA de verdad?, ¿dónde
+os lo hizo perder?, ¿compensó escribir antes una especificación?
+
+                                                             Enfoque (prompts
+ Fecha             Tarea del proyecto                                                    Resultado y lección aprendida
+                                                             sueltos / especificación)
+
+
+
+
+Recordad: el código generado por IA que entreguéis es vuestro. Si no sabéis explicar una línea, todavía no
+está terminado.
+
+
+
+
+ABP 2026-2027 · Ejercicio por libre: prompts sueltos vs. especificación                                       Página 8 de 8
+

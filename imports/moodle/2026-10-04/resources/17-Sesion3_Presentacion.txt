@@ -1,0 +1,320 @@
+ABP · INGENIERÍA INFORMÁTICA · UNIVERSIDAD DE VIGO
+
+
+Sesión 3
+
+Metodologías ágiles:
+Scrum y Kanban
+
+4º curso · 23 de septiembre de 2026
+Prof. Gerardo Rodríguez Martínez
+
+
+Cómo planificar en iteraciones cortas cuando los requisitos cambian sobre la marcha
+   Objetivos de hoy
+   Al terminar esta sesión deberíais poder responder a tres preguntas
+
+
+
+                    ¿Qué es el manifiesto ágil?
+        1
+                    Sus cuatro valores, y qué cambia frente a la gestión clásica de la sesión 2.
+
+
+
+
+                    ¿Cómo funciona Scrum?
+        2
+                    Roles, sprints, product backlog y las cuatro ceremonias que ritman el trabajo en equipo.
+
+
+
+
+                    ¿Cómo funciona Kanban?
+        3
+                    Tablero visual, límite de trabajo en curso (WIP) y flujo continuo, frente al trabajo por sprints.
+
+
+
+
+Gerardo Rodríguez Martínez · Introducción                                                                               Sesión 3 · 23 de septiembre de 2026
+   El manifiesto ágil: qué cambia y por qué
+   En 2001, diecisiete desarrolladores hartos de la burocracia de la
+   gestión clásica firmaron el Manifiesto Ágil: valores que priorizan      Los cuatro valores del manifiesto
+   entregar software que funcione sobre seguir un plan cerrado.
+                                                                           – Individuos e interacciones sobre procesos y herramientas
+
+                                                                           – Software funcionando sobre documentación exhaustiva
+
+   No es «ir sin plan»: es aceptar que los requisitos van a cambiar y      – Colaboración con el cliente y respuesta al cambio, sobre negociar
+   organizar el trabajo en iteraciones cortas para poder responder a ese   contratos y seguir un plan cerrado
+   cambio.
+                                                                           Por qué os importa hoy
+                                                                              A partir de hoy, cada sprint de vuestro proyecto se planifica así —
+                                                                              no como en la sesión 2
+                                                                              Los principios del manifiesto son la base de Scrum y Kanban, que
+                                                                              vais a aplicar en las 13 sesiones prácticas
+                                                                              No hay que elegir «para siempre»: muchos equipos combinan
+                                                                              clásico y ágil según el momento del proyecto
+
+
+
+
+Gerardo Rodríguez Martínez · Manifiesto ágil                                                                                  Sesión 3 · 23 de septiembre de 2026
+   Las cuatro ceremonias de Scrum
+
+   Cada sprint se ritma con cuatro reuniones breves. Son la estructura mínima para coordinarse sin perder tiempo en reuniones
+   eternas.
+
+
+
+
+            Sprint planning                                                      Daily scrum
+            Al empezar el sprint: qué historias del backlog se van a abordar y   Reunión diaria breve (10-15 min): qué hice, qué voy a hacer, qué me
+            cómo.                                                                bloquea.
+
+
+
+            Sprint review                                                        Retrospectiva
+            Al cerrar el sprint: se enseña lo construido y se recoge feedback.   Qué ha ido bien, qué mejorar y qué cambiar en el próximo sprint.
+
+
+
+
+Gerardo Rodríguez Martínez · Scrum                                                                                                Sesión 3 · 23 de septiembre de 2026
+   Scrum: los tres roles
+   Responsabilidades distintas que no se solapan; en equipos de hasta 4 personas es habitual repartirlas o rotarlas
+
+
+
+
+           PO                                           SM                                              EQ
+
+        Product Owner                                 Scrum Master                                    Equipo de desarrollo
+        Define y prioriza el product backlog: qué     Facilita el proceso, elimina bloqueos del       Construye el incremento cada sprint.
+        hay que construir y en qué orden,             equipo y vela por que se sigan las              Autoorganizado: decide entre todos
+        representando la visión del proyecto.         ceremonias — no es el jefe del equipo.          cómo abordar el trabajo comprometido.
+
+
+
+
+Gerardo Rodríguez Martínez · Scrum                                                                                          Sesión 3 · 23 de septiembre de 2026
+   Scrum: sprint y product backlog
+   Un sprint es una iteración de duración fija (normalmente 1-4
+   semanas) al final de la cual el equipo entrega un incremento              Qué caracteriza un buen backlog
+   funcional del producto.
+                                                                             – Priorizado: lo más importante o más incierto va arriba
+
+                                                                             – Detallado de forma desigual: lo próximo, muy concreto; lo lejano,
+                                                                             todavía difuso
+   El product backlog es la lista viva y priorizada de todo lo que el        – Estimado: cada historia tiene un tamaño relativo aproximado
+   proyecto podría necesitar. No es una lista cerrada: se reordena y crece
+   durante todo el proyecto.
+                                                                             Por qué os importa hoy
+                                                                                Las 13 sesiones prácticas que quedan se organizan como sprints
+                                                                                sucesivos
+                                                                                Hoy vais a construir la primera versión del backlog de vuestro
+                                                                                proyecto de recomendación
+                                                                                El backlog de hoy es de partida: se revisará y crecerá sprint a sprint
+
+
+
+
+Gerardo Rodríguez Martínez · Scrum                                                                                               Sesión 3 · 23 de septiembre de 2026
+   Kanban: tablero, WIP y flujo continuo
+   Sin sprints: el trabajo fluye de forma continua
+
+
+
+
+            T                                         WIP                                       F
+
+        Tablero visual                               Límite de WIP                           Flujo continuo
+        Columnas que representan el estado del       Un número máximo de tarjetas por        No hay sprints ni ceremonias fijas: las
+        trabajo (p. ej. Por hacer / En curso /       columna «en curso»: obliga a terminar   tareas entran y salen del tablero según
+        Hecho); cada tarjeta es una tarea.           antes de empezar algo nuevo.            van estando listas.
+
+
+
+
+Gerardo Rodríguez Martínez · Kanban                                                                                  Sesión 3 · 23 de septiembre de 2026
+   Scrum frente a Kanban: cuándo usar cada uno
+
+   Ambos son marcos ágiles, pero organizan el trabajo de forma
+   distinta: Scrum divide el tiempo en sprints; Kanban limita el trabajo   Scrum encaja mejor cuando…
+   en curso en todo momento.
+                                                                           – Hay hitos y entregas fijadas (como los sprints de las sesiones prácticas)
+
+
+                                                                           – El equipo se beneficia de comprometerse a un alcance por iteración
+
+   Muchos equipos combinan ambos: sprints de Scrum con un tablero
+                                                                           – Conviene una cadencia predecible de revisión y feedback
+   Kanban dentro de cada sprint (a veces llamado «Scrumban»).
+
+
+
+                                                                           Kanban encaja mejor cuando…
+                                                                               El trabajo llega de forma continua e impredecible (soporte,
+                                                                               mantenimiento)
+                                                                               El equipo es muy pequeño o trabaja en solitario y los sprints resultan
+                                                                               artificiales
+                                                                               Interesa visualizar cuellos de botella más que cumplir un plazo fijo
+
+
+
+
+Gerardo Rodríguez Martínez · Comparativa                                                                                          Sesión 3 · 23 de septiembre de 2026
+   Ágil frente a predictivo: cuándo conviene cada uno
+
+   La sesión 2 vio la gestión clásica: buena cuando los requisitos son
+   estables y hay que fijar alcance y presupuesto por contrato antes de           Ágil conviene cuando…
+   empezar.
+                                                                                  – Los requisitos no están cerrados desde el principio y van a evolucionar
+
+
+                                                                                  – Interesa mostrar resultados funcionando pronto y con frecuencia, no
+                                                                                  solo al final
+   El proyecto de la asignatura se gestionará en sprints ágiles, porque la idea
+                                                                                  – El equipo puede autoorganizarse y decidir sobre la marcha
+   de cada equipo se irá afinando a medida que avance el curso.
+
+
+
+                                                                                  Seguirá conviniendo lo clásico cuando…
+                                                                                      Los requisitos son estables y contractuales (obra civil, sistemas
+                                                                                      regulados)
+                                                                                      Hay que fijar alcance y presupuesto cerrados antes de empezar
+
+
+                                                                                      No es «uno mejor que otro»: es elegir el enfoque según el contexto
+
+
+
+
+Gerardo Rodríguez Martínez · Comparativa                                                                                                Sesión 3 · 23 de septiembre de 2026
+   Adaptar Scrum y Kanban a equipos pequeños
+   Scrum y Kanban se diseñaron pensando en equipos de 5-9
+   personas. Vuestros equipos tienen como máximo 4 —y alguien                  Cómo simplificar en la práctica
+   puede trabajar en solitario—, así que conviene simplificar sin
+                                                                               – Los roles de Scrum pueden repartirse o rotar entre 2-4 personas
+   perder la esencia.
+                                                                               – El daily puede ser asíncrono (un mensaje de chat) en vez de una
+                                                                               reunión
+   La regla general: mantened la disciplina (backlog priorizado, límite de     – Trabajando en solitario, Kanban con límite de WIP suele funcionar
+   trabajo en curso, revisión periódica) y aligerad el ritual (reuniones más   mejor que Scrum
+   cortas, roles compartidos).
+                                                                               Por qué os importa hoy
+                                                                                  Las sesiones prácticas son sprints reales: el ritmo que eligáis hoy lo
+                                                                                  mantendréis varias semanas
+                                                                                  No hay una única forma correcta: elegid la que mejor encaje con el
+                                                                                  tamaño de vuestro equipo
+                                                                                  Podéis cambiar de enfoque más adelante si el elegido hoy no
+                                                                                  funciona
+
+
+
+
+Gerardo Rodríguez Martínez · Adaptación                                                                                            Sesión 3 · 23 de septiembre de 2026
+   Actividad de hoy
+   Backlog inicial + simulación de sprint planning · 30 min
+
+   Antes de la próxima sesión práctica, dais los primeros pasos reales de gestión ágil de vuestro proyecto.
+
+
+
+
+             1 · Product backlog inicial — 18 min
+         En equipo (o individualmente), listad y priorizad las primeras historias de usuario de vuestro recomendador — ver Sesion3_Ficha_Alumnado.docx.
+
+
+
+
+             2 · Simulación de sprint planning — 12 min
+         Elegid un sprint goal y comprometeos con 3-5 historias del backlog para vuestro primer sprint.
+
+
+
+
+   Guardad el backlog: es la base del que mantendréis y actualizaréis en cada sesión práctica.
+
+
+
+Gerardo Rodríguez Martínez · Actividad                                                                                                     Sesión 3 · 23 de septiembre de 2026
+   Actividad 1 · Product backlog inicial
+   Cómo repartimos los próximos 18 minutos
+
+
+                   3 min                 Formar equipos (o confirmar que trabajáis en solitario) y elegir el dominio del recomendador si aún no está decidido.
+
+
+
+
+                   8 min                 Lluvia de historias de usuario: «como [usuario], quiero [funcionalidad], para [beneficio]» — cuantas más, mejor.
+
+
+
+
+                   5 min                 Priorizad con MoSCoW (Must/Should/Could/Won't) y estimad el tamaño relativo de cada una (S/M/L).
+
+
+
+
+                   2 min                 Marcad las 5-8 historias que consideraríais imprescindibles para una primera versión mínima.
+
+
+
+
+Gerardo Rodríguez Martínez · Actividad                                                                                                         Sesión 3 · 23 de septiembre de 2026
+   Actividad 2 · Simulación de sprint planning
+   Cómo repartimos los próximos 12 minutos
+
+
+                   2 min                 Definid la duración de vuestro primer sprint (recomendado: hasta la próxima revisión formal en prácticas).
+
+
+
+
+                   4 min                 Escribid un sprint goal: una frase que resuma qué querréis poder enseñar al final del sprint.
+
+
+
+
+                   4 min                 Comprometeos con 3-5 historias del backlog que sirvan a ese objetivo — ni más, ni tan pocas que sobre tiempo.
+
+
+
+
+                   2 min                 Anotad quién se ocupa de qué, aunque sea de forma provisional.
+
+
+
+
+Gerardo Rodríguez Martínez · Actividad                                                                                                        Sesión 3 · 23 de septiembre de 2026
+   Antes de la próxima sesión
+
+
+                                             Sesión 4: desarrollo de software en la era de la IA (I) — de la programación tradicional al desarrollo
+                       Teoría · 30/09
+                                             basado en especificaciones.
+
+
+
+
+                                             Primera sesión práctica ya en marcha: seguid explorando datasets y afinando la propuesta de
+               Práctica · semana del 21/09
+                                             proyecto.
+
+
+
+
+                                             Formar equipo (máx. 4) y validar el dominio de vuestro recomendador — el backlog de hoy es el
+                      Antes del 25/09
+                                             primer paso.
+
+
+
+
+   ¿Preguntas?
+Gerardo Rodríguez Martínez · Cierre                                                                                              Sesión 3 · 23 de septiembre de 2026
+

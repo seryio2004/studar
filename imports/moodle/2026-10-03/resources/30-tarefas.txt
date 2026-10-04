@@ -1,0 +1,24 @@
+1.- Tarefa:
+	Visualiza os videos de instalación e instalar a última versión de R e R-Commander "on-line". Despois instala o plugin "RcmdrPlugin.TeachStat".
+	Descarga o zip comprimido e executa "R_TeachStat.exe".
+
+	Cáles son as versións de cada un deles?
+		Portable:
+			- versión R:
+			- versión R-Commander:
+			- versión RcmdrPlugin.TeachStat:
+		On-line:
+			- versión R:
+			- versión R-Commander:
+			- versión RcmdrPlugin.TeachStat:
+
+
+2.- Tarefa:
+	Executar o R e efectuar operacións matemáticas sinxelas en consola.
+	Traballar con scripts. Abrir, gardar, pechar scripts. Escribir e executar sentencias.
+	Cargar a librería R-Commander, e o plugin RcmdrPlugin.TeachStat.
+	Diferenciar entre a "Ventana de resultados", "ventana de instrucciones" e a "ventana de mensajes".
+	Crear, gardar, modificar, abrir un conxunto de datos.
+	Acceder ás páxinas de documentación das funcións cargadas en memoria:
+	    - función help, usar "help(help)"
+	    - usando a función "help.search()" buscar unha función que sume os 10 primeiros enteiros. Tede en conta que a axuda está en ingles.

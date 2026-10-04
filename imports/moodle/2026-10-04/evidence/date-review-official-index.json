@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://esei.uvigo.es/documentos/grao-exames-1-cuatrimestre/",
+    "final_url": "https://esei.uvigo.es/documentos/grao-exames-1-cuatrimestre/",
+    "status": 200,
+    "type": "application/pdf",
+    "pdf": true,
+    "consulted_at": "2026-10-04T11:32:12.904Z"
+  },
+  {
+    "url": "https://esei.uvigo.es/documentos/grao-exames-2-cuatrimestre/",
+    "final_url": "https://esei.uvigo.es/documentos/grao-exames-2-cuatrimestre/",
+    "status": 200,
+    "type": "application/pdf",
+    "pdf": true,
+    "consulted_at": "2026-10-04T11:32:12.902Z"
+  },
+  {
+    "url": "https://esei.uvigo.es/documentos/grao-exames-xullo/",
+    "final_url": "https://esei.uvigo.es/documentos/grao-exames-xullo/",
+    "status": 200,
+    "type": "application/pdf",
+    "pdf": true,
+    "consulted_at": "2026-10-04T11:32:12.960Z"
+  }
+]
