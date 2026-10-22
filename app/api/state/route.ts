@@ -1,4 +1,4 @@
-import { storage } from '../../../db/storage';
+import { storage } from '#storage';
 import {dayKey,safeUrl,type Project,type Idea} from '../../../lib/types';
 export async function GET(){try{const db=await storage();const results=await db.batch([db.prepare('SELECT * FROM projects'),db.prepare('SELECT * FROM ideas'),db.prepare('SELECT * FROM events ORDER BY date DESC')]);return Response.json({projects:results[0].results.map((r:any)=>({...JSON.parse(r.payload),revision:r.revision})),ideas:results[1].results.map((r:any)=>JSON.parse(r.payload)),events:results[2].results},{headers:{'Cache-Control':'no-store'}});}catch{return Response.json({error:'No se pudieron cargar tus datos. Inténtalo de nuevo.'},{status:500})}}
 const invalid=(message:string,status=400)=>Response.json({error:message},{status});

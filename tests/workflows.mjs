@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-const base=process.env.TEST_BASE_URL||'http://localhost:3000';
+const base=process.env.TEST_BASE_URL||'http://localhost:3001';
 async function state(){const r=await fetch(base+'/api/state');assert.equal(r.status,200);return r.json()}
 async function send(body,expected=200){const r=await fetch(base+'/api/state',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});assert.equal(r.status,expected,await r.clone().text());return r.json()}
 const id='test-'+crypto.randomUUID();let project={id,title:'Proyecto de verificación',description:'Solo datos locales de prueba',category:'Hardware',status:'Activo',priority:1,repo:'https://github.com/example/repo',notion:'',tasks:[],materials:[],docs:[],revision:0};

@@ -40,3 +40,7 @@ yarn-error.log*
 /work/
 
 *.tsbuildinfo
+
+# Local persistent storage and backups
+/data/
+/backups/

@@ -2,6 +2,7 @@ import { sites } from "@openai/sites-vite-plugin";
 import vinext from "vinext";
 import { defineConfig } from "vite";
 import hostingConfig from "./.openai/hosting.json";
+import { fileURLToPath } from "node:url";
 
 const SITE_CREATOR_PLACEHOLDER_DATABASE_ID =
   "00000000-0000-4000-8000-000000000000";
@@ -34,6 +35,17 @@ const localBindingConfig = {
 };
 
 export default defineConfig(async () => {
+  // Self-hosting uses Node and a real SQLite file, without Cloudflare bindings.
+  if (process.env.APP_RUNTIME === "node") {
+    return {
+      resolve: {
+        alias: {
+          "#storage": fileURLToPath(new URL("./db/storage.node.ts", import.meta.url)),
+        },
+      },
+      plugins: [vinext()],
+    };
+  }
   // Keep Wrangler and Miniflare state project-local. These are non-secret tool
   // settings; application environment belongs in ignored `.env*` files.
   process.env.WRANGLER_WRITE_LOGS ??= "false";
